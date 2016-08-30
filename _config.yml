@@ -6,7 +6,7 @@
 baseurl: ""
 
 # If you're using GitHub pages without custom domain, this is "[github_username].github.io". Prepend with "http://"
-url: "http://mlh.github.io/mlh-hackathon-boilerplate"
+url: "https://mlh.github.io/mlh-hackathon-boilerplate"
 
 # The ability to use custom themes.
 style:
