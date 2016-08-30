@@ -2,6 +2,8 @@
 
 This is a boilerplate template for any hackathon to use. It has a [configuration](_config.yml) that covers everything you'll want to make your hackathon website accessible, discoverable & ready for registration with our single sign on solution [MyMLH](https://my.mlh.io). It was first announced at [Hackcon EU 2016](https://hackcon.mlh.io/eu/) in Eindhoven, The Netherlands.
 
+Click [here to view a demo](https://mlh.github.io/mlh-hackathon-boilerplate).
+
 ## Getting Started
 
 1. Create a [GitHub](https://github.com/join) account if you haven't already.
