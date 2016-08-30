@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: #44D5FF;
+  background-color: #F5699C;
 }
 
 section {
@@ -49,7 +49,7 @@ section {
  */
 
 .hero {
-  background-color: #44D5FF;
+  background-color: #F5699C;
   min-height: 110vh;
 }
 
@@ -70,11 +70,12 @@ section {
 
 .hero .wrapper h1 {
   background: #fff;
+  background: rgba(255, 255, 255, .3);
   display: inline-block;
   font-size: 60px;
   font-weight: 800;
   letter-spacing: -2px;
-  padding: 10px;
+  padding: 10px 30px;
 }
 
 .hero .wrapper h2 {
@@ -182,9 +183,9 @@ section {
  */
 
 .faq {
-  background-color: #FF7FA8;
+  background-color: #fff;
   margin-top: 15px;
-  padding-top: 100px;
+  padding: 100px 0;
   position: relative;
 }
 
@@ -222,7 +223,7 @@ section {
  */
 
 .footer {
-  background-color: #0F2C34;
+  background-color: #F5699C;
   color: #fff;
   padding: 30px 0;
 }
