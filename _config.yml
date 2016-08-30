@@ -22,17 +22,16 @@ social:
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title:       "MLH Prime | 5/6 August 2016"
+  title:       "Example Hacks | 5/6 August 2016"
   description: "Come join us on the 5 & 6th August 2016 for a wonderful hackathon in the New York Area."
   image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
 # Event information.
 event:
-  name: "MLH Prime"
-  logo: "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
+  name:        "Example Hacks"
   description: "Come hack with 400 hackers in New Jersey this August!"
-  date: "5 & 6 August 2016"
-  location: "Holmdel, NJ, United States"
+  date:        "5 & 6 August 2016"
+  location:    "Holmdel, NJ, United States"
 
   trust_badge:
     year:   "2017"  # year
@@ -44,13 +43,13 @@ event:
       - text: "Apply"
         my_mlh:
           client_id:    "b2cd21334755d96a29663d60e59482faa6fa09829b63f3620ea357a4d63d2800"
-          redirect_uri: "http://mlh.github.io/mlh-hackathon-boilerplate/success.html"
+          redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
       - text: "Sponsor"
         href: "mailto:sponsorship@website.com"
 
   about:
     description: >
-      MLH Prime is a series of hackathons that bring together the most dedicated, passionate hackers
+      Example Hacks is a series of hackathons that bring together the most dedicated, passionate hackers
       from the MLH Hackathon Season.
 
   info:
@@ -87,6 +86,10 @@ event:
     - question: "Is there a code of conduct?"
       answer: >
         Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+
+  register:
+    message: >
+      You'll receive more information closer to the event.
 
 # ****************************************************
 # -- Ignore this unless you know what you're doing. --
