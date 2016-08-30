@@ -1,8 +1,8 @@
-# **************
+# --------------
 # -- Settings --
-# **************
+# --------------
 
-# Ignore this. This is only if you're hosting this in a subfolder.
+# Ignore this. This is only if you're hosting this in a sub-folder.
 baseurl: ""
 
 # If you're using GitHub pages without custom domain, this is "[github_username].github.io". Prepend with "http://"
@@ -23,20 +23,20 @@ social:
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
   title:       "Example Hacks | 5/6 August 2016"
-  description: "Come join us on the 5 & 6th August 2016 for a wonderful hackathon in the New York Area."
+  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
   image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
 # Event information.
 event:
   name:        "Example Hacks"
-  description: "Come hack with 400 hackers in New Jersey this August!"
+  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
   date:        "5 & 6 August 2016"
   location:    "Holmdel, NJ, United States"
 
   trust_badge:
-    year:   "2017"  # year
-    region: "eu"    # na or eu
-    color:  "white" # white, black, grey, red, blue, yellow
+    year:   "2017"  # season year
+    region: "eu"    # "na" or "eu"
+    color:  "white" # "white", "black", "grey", "red", "blue" or "yellow"
 
   hero:
     links:
@@ -49,51 +49,58 @@ event:
 
   about:
     description: >
-      Example Hacks is a series of hackathons that bring together the most dedicated, passionate hackers
-      from the MLH Hackathon Season.
+      Example Hacks is a hackathon hosted at The University of Example.
+      This is your opportunity to describe your event, what to expect, where it is & anything unique to your event.
+      Keep it straightforward, don't make it too long.
 
+  # Info Sections
   info:
     sections:
       - image: "images/image1.png"
         title: "LEARN."
         description: >
-          Fingerstache farm-to-table microdosing PBR&B literally before they sold out. Artisan leggings celiac keffiyeh.
+          We can write something nice with a graphic (as above) to make the event more appealing.
       - image: "images/image2.png"
         title: "BUILD."
         description: >
-          Fingerstache farm-to-table microdosing PBR&B literally before they sold out. Artisan leggings celiac keffiyeh.
+          We can write something nice with a graphic (as above) to make the event more appealing.
       - image: "images/image3.png"
         title: "SHARE."
         description: >
-          Fingerstache farm-to-table microdosing PBR&B literally before they sold out. Artisan leggings celiac keffiyeh.
+          We can write something nice with a graphic (as above) to make the event more appealing.
 
+  # Frequently asked questions.
   faq:
     - question: "What is a hackathon?"
       answer: >
-        Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+        A hackathon is an invention marathon. Students come together to build cool
+        software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
     - question: "How much does it cost?"
       answer: >
-        Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+        Nothing. Attending a hackathon is free.
     - question: "Do I need to be a student to attend?"
       answer: >
-        Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+        Yes. Only students who are currently enrolled at a college/university or
+        have graduated within the past 12 months are eligible to attend.
     - question: "Where is the event?"
       answer: >
-        Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+        The event is being hosted at [insert venue location here].
     - question: "What is Major League Hacking?"
       answer: >
-        Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+        Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
+        We work with over 200 Member Events and empower over 70,000 students every year.
     - question: "Is there a code of conduct?"
       answer: >
-        Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+        Yes there is. We enforce it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
 
+  # This is the message you'll receive once you've registered.
   register:
     message: >
-      You'll receive more information closer to the event.
+      You'll receive more information closer to the hackathon.
 
-# ****************************************************
+# ----------------------------------------------------
 # -- Ignore this unless you know what you're doing. --
-# ****************************************************
+# ----------------------------------------------------
 
 markdown: kramdown
 exclude:

@@ -6,7 +6,9 @@ layout: default
 
 <section class="about">
   <div class="container">
-    <p class="col-xs-12 col-sm-8 col-sm-offset-2 text-center">{{ site.event.about.description }}</p>
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+      {{ site.event.about.description | markdownify }}
+    </div>
   </div>
 </section>
 
@@ -35,7 +37,7 @@ layout: default
         <div class="question col-xs-12 col-sm-12">
           <h2>{{ item.question }}</h2>
           <hr>
-          <p>{{ item.answer }}</p>
+          {{ item.answer | markdownify }}
         </div>
         {% endfor %}
       </div>
