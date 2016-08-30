@@ -1,0 +1,264 @@
+/*
+* RegistrationHacks Style File
+* http://bit.ly/1ywfhq7
+*/
+
+/* Open Sans Google Font */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,700);
+
+
+/* Montserrat Google Font */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/*
+ * Primary Blue: #44D5FF;
+ * Dark Blue: #0F2C34;
+ * Primary Pink: #FF7FA8;
+ */
+
+* {
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+
+body {
+  background-color: #44D5FF;
+}
+
+section {
+  overflow-x:hidden;
+}
+
+/*
+ * Trust Badge
+ */
+
+#mlh-trust-badge {
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: fixed;
+  right: 50px;
+  top: 0;
+  width: 10%;
+  z-index: 10000;
+}
+
+/* 
+ * Hero Section
+ */
+
+.hero {
+  background-color: #44D5FF;
+  min-height: 110vh;
+}
+
+.hero img {
+  max-width: 400px;
+}
+
+.hero hr {
+  border-top: 15px solid #0F2C34;
+  margin: 0;
+  position: relative;
+  top: -14px;
+}
+
+.hero .wrapper {
+  padding-top: 30vh;
+}
+
+.hero .wrapper h1 {
+  background: #fff;
+  display: inline-block;
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  padding: 10px;
+}
+
+.hero .wrapper h2 {
+  font-size: 28px;
+  font-weight: 200;
+}
+
+.hero .wrapper h3 {
+  font-size: 20px;
+  font-weight: 200;
+  padding-bottom: 35px;
+}
+
+.hero .buttons {
+  margin: 40px 0;
+}
+
+.hero .buttons a {
+  background: #fff;
+  border: 10px solid #0F2C34;
+  border-radius: 40px;
+  color: #0F2C34;
+  display: inline;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 70px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero .buttons a:hover,
+.hero .buttons a:focus {
+  background-color: #0F2C34;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+.hero .buttons .apply {
+  margin-right: 10px;
+}
+
+.hero .buttons .sponsor {
+  border-bottom-right-radius: 0;
+  margin-left: 10px;
+  padding: 10px 45px;
+}
+
+/* 
+ * About Section
+ */
+
+.about {
+  border-width: 15px 0;
+  background-color: #fff;
+  padding: 130px 0;
+  position: relative;
+}
+
+.about p {
+  color: #0F2C34;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.6em;
+  letter-spacing: -.3px;
+}
+
+.about p span {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*
+ * Info Section
+ */
+
+.info {
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 100px 0;
+  position: relative;
+}
+
+.info .item {
+  padding: 20px;
+}
+
+.info .item h1 {
+  font-family: 'Montserrat';
+  font-size: 45px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.info .item img {
+  max-width: 220px;
+}
+
+.info .item p {
+  font-size: 20px;
+}
+
+/*
+ * FAQ Section
+ */
+
+.faq {
+  background-color: #FF7FA8;
+  margin-top: 15px;
+  padding-top: 100px;
+  position: relative;
+}
+
+.faq h1 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  margin: 30px 0;
+}
+
+.faq .question h2 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.faq .question hr {
+  border-top: 8px solid #0F2C34;
+  margin: 20px 0;
+  width: 80px;
+}
+
+.faq .question p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.faq img {
+  margin-bottom: -2px;
+  margin-top: 40px;
+  width: 300px;
+}
+
+/*
+ * Footer Section
+ */
+
+.footer {
+  background-color: #0F2C34;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer img {
+  max-width: 250px;
+  margin-bottom: 15px;
+}
+
+.footer h3 {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+}
+
+.footer h3 a {
+  color: #fff;
+}
+
+@media(max-width: 768px) {
+  .hero .buttons a.apply,
+  .hero .buttons a.sponsor {
+    border-width: 8px;
+    display: block;
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .hero img {
+    width: 250px;
+  }
+
+  .hero hr {
+    border-top-width: 8px;
+    top: -8px;
+  }
+}

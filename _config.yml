@@ -1,0 +1,103 @@
+# **************
+# -- Settings --
+# **************
+
+# Ignore this. This is only if you're hosting this in a subfolder.
+baseurl: ""
+
+# If you're using GitHub pages without custom domain, this is "[github_username].github.io". Prepend with "http://"
+url: "http://mlh.github.io/mlh-hackathon-boilerplate"
+
+# The ability to use custom themes.
+style:
+  theme: "original"
+
+# This will help you track who's visiting your website.
+tracking:
+  google_analytics: "UA-43729070-14"
+
+# Let people connect & engage with you through social media.
+social:
+  twitter_handle: "MLHacks"
+
+# This is Search Engine Optimization. It'll help your website look better on search.
+seo:
+  title:       "MLH Prime | 5/6 August 2016"
+  description: "Come join us on the 5 & 6th August 2016 for a wonderful hackathon in the New York Area."
+  image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
+
+# Event information.
+event:
+  name: "MLH Prime"
+  logo: "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
+  description: "Come hack with 400 hackers in New Jersey this August!"
+  date: "5 & 6 August 2016"
+  location: "Holmdel, NJ, United States"
+
+  trust_badge:
+    year:   "2017"  # year
+    region: "eu"    # na or eu
+    color:  "white" # white, black, grey, red, blue, yellow
+
+  hero:
+    links:
+      - text: "Apply"
+        my_mlh:
+          client_id:    "b2cd21334755d96a29663d60e59482faa6fa09829b63f3620ea357a4d63d2800"
+          redirect_uri: "http://mlh.github.io/mlh-hackathon-boilerplate/success.html"
+      - text: "Sponsor"
+        href: "mailto:sponsorship@website.com"
+
+  about:
+    description: >
+      MLH Prime is a series of hackathons that bring together the most dedicated, passionate hackers
+      from the MLH Hackathon Season.
+
+  info:
+    sections:
+      - image: "images/image1.png"
+        title: "LEARN."
+        description: >
+          Fingerstache farm-to-table microdosing PBR&B literally before they sold out. Artisan leggings celiac keffiyeh.
+      - image: "images/image2.png"
+        title: "BUILD."
+        description: >
+          Fingerstache farm-to-table microdosing PBR&B literally before they sold out. Artisan leggings celiac keffiyeh.
+      - image: "images/image3.png"
+        title: "SHARE."
+        description: >
+          Fingerstache farm-to-table microdosing PBR&B literally before they sold out. Artisan leggings celiac keffiyeh.
+
+  faq:
+    - question: "What is a hackathon?"
+      answer: >
+        Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+    - question: "How much does it cost?"
+      answer: >
+        Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+    - question: "Do I need to be a student to attend?"
+      answer: >
+        Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+    - question: "Where is the event?"
+      answer: >
+        Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+    - question: "What is Major League Hacking?"
+      answer: >
+        Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+    - question: "Is there a code of conduct?"
+      answer: >
+        Meditation readymade skateboard, beard venmo whatever ugh. Farm-to-table brooklyn selvage.
+
+# ****************************************************
+# -- Ignore this unless you know what you're doing. --
+# ****************************************************
+
+markdown: kramdown
+exclude:
+ - node_modules
+ - gulpfile.js
+ - Gemfile
+ - Gemfile.lock
+ - package.json
+ - README.md
+ - CNAME
