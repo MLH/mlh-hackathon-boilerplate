@@ -114,14 +114,8 @@ section {
   transition: all 0.2s ease;
 }
 
-.hero .buttons .apply {
+.hero .buttons a:not(:last-child) {
   margin-right: 10px;
-}
-
-.hero .buttons .sponsor {
-  border-bottom-right-radius: 0;
-  margin-left: 10px;
-  padding: 10px 45px;
 }
 
 /* 
@@ -246,8 +240,7 @@ section {
 }
 
 @media(max-width: 768px) {
-  .hero .buttons a.apply,
-  .hero .buttons a.sponsor {
+  .hero .buttons a {
     border-width: 8px;
     display: block;
     font-size: 20px;
