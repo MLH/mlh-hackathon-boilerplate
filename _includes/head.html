@@ -21,11 +21,11 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic" />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="{{ '/css/bootstrap.min.css' | prepend: site.baseurl }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/base.css' | prepend: site.baseurl }}" />
-  <link rel="stylesheet" type="text/css" href="{{ '/css/' | prepend: site.baseurl }}{{ site.style.theme | append: '.css' }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/bootstrap.min.css' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/base.css' | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="stylesheet" type="text/css" href="{{ '/css/' | prepend: site.baseurl | prepend: site.url }}{{ site.style.theme | append: '.css' }}" />
 
   <!-- Favicon -->
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="icon"      href="{{ '/img/favicon.ico' | prepend: site.baseurl }}">
+  <link rel="icon"      href="{{ '/img/favicon.ico' | prepend: site.baseurl | prepend: site.url }}">
 </head>
