@@ -8,11 +8,16 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.seo.description }}{% endif %}">
 
   <!-- Twitter Handle -->
-  <meta name="twitter:card"    content="summary" />
-  <meta name="twitter:site"    content="@{{ site.social.twitter_handle }}" />
-  <meta name="twitter:creator" content="@{{ site.social.twitter_handle }}" />
+  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:site"        content="@{{ site.social.twitter_handle }}" />
+  <meta name="twitter:creator"     content="@{{ site.social.twitter_handle }}" />
+  <meta name="twitter:title"       content="{{ site.seo.title }}">
+  <meta name="twitter:description" content="{{ site.seo.description }}">
+  {% if site.seo.image %}<meta name="twitter:image" content="{ site.seo.image }}">{% endif %}
 
   <!-- Open Graph -->
+  <meta property="og:site_name"   content="{{ site.event.name }}" />
+  <meta property="og:type"        content="website" />
   <meta property="og:url"         content="{{ site.baseurl | prepend: site.url }}" />
   <meta property="og:title"       content="{{ site.seo.title }}" />
   <meta property="og:description" content="{{ site.seo.description }}" />
@@ -24,6 +29,7 @@
   <link rel="stylesheet" type="text/css" href="{{ '/css/bootstrap.min.css' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="stylesheet" type="text/css" href="{{ '/css/base.css' | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="stylesheet" type="text/css" href="{{ '/css/' | prepend: site.baseurl | prepend: site.url }}{{ site.style.theme | append: '.css' }}" />
+  <!-- link rel="icon" href="/img/favicon.ico" -->
 
   <!-- Favicon -->
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | prepend: site.url }}">
