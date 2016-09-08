@@ -4,6 +4,10 @@ This is a boilerplate template for any hackathon to use. It has a [configuration
 
 Click [here to view a demo](https://mlh.github.io/mlh-hackathon-boilerplate).
 
+## Changelog
+
+- (**30 Aug 2016**) Initial release.
+
 ## Getting Started
 
 1. Create a [GitHub](https://github.com/join) account if you haven't already.
