@@ -6,7 +6,7 @@ Click [here to view a demo](https://mlh.github.io/mlh-hackathon-boilerplate).
 
 ## Changelog
 
-- (**30 Aug 2016**) Initial release.
+- (**30 Aug 2016**) Initial release of version 0.1.0
 
 ## Getting Started
 
