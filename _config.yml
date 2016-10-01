@@ -29,7 +29,7 @@ seo:
 # Event information.
 event:
   name:        "Woven Hacks"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
+  description: "The very first student hackathon league in Africa."
   date:        "December 3, 2016"
   location:    "Ashesi University, Ghana"
 
@@ -49,9 +49,7 @@ event:
 
   about:
     description: >
-      Example Hacks is a hackathon hosted at The University of Example.
-      This is your opportunity to describe your event, what to expect, where it is & anything unique to your event.
-      Keep it straightforward, don't make it too long.
+      Woven Hacks is an official student hackathon league in Africa - which will be unveiled in Ghana, West Africa on December 3rd, 2016. Each year, we plan to power a weekend-long invention competitions that will inspire innovation, cultivate communities and teach computer science skills to multiple students in Africa. Woven Hacks is an engaged and passionate maker community, consisting of the next generation of technology leaders and entrepreneurs.
 
   # Info Sections
   info:
