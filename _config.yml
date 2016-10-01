@@ -45,7 +45,7 @@ event:
           client_id:    "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
           redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
       - text: "Sponsor"
-        href: "mailto:info@wovenhacks.com"
+        href: "mailto:sponsor@wovenhacks.com"
 
   about:
     description: >
