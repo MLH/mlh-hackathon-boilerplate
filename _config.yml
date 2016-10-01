@@ -6,7 +6,7 @@
 baseurl: ""
 
 # If you're using GitHub pages without custom domain, this is "[github_username].github.io". Prepend with "http://"
-url: "https://mlh.github.io/mlh-hackathon-boilerplate"
+url: "https://wovenhacks.github.io/mlh-hackathon-boilerplate"
 
 # The ability to use custom themes.
 style:
@@ -18,20 +18,20 @@ tracking:
 
 # Let people connect & engage with you through social media.
 social:
-  twitter_handle: "MLHacks"
+  twitter_handle: "wovenhacks"
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title:       "Example Hacks | 5/6 August 2016"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
+  title:       "Woven Hacks | December 3, 2016"
+  description: "The very first student hackathon league in Africa."
   image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
 # Event information.
 event:
-  name:        "Example Hacks"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
-  date:        "5 & 6 August 2016"
-  location:    "Holmdel, NJ, United States"
+  name:        "Woven Hacks"
+  description: "The very first student hackathon league in Africa."
+  date:        "December 3, 2016"
+  location:    "Ashesi University, Ghana"
 
   trust_badge:
     year:   "2017"  # season year
@@ -45,13 +45,11 @@ event:
           client_id:    "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
           redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
       - text: "Sponsor"
-        href: "mailto:sponsorship@website.com"
+        href: "mailto:sponsor@wovenhacks.com"
 
   about:
     description: >
-      Example Hacks is a hackathon hosted at The University of Example.
-      This is your opportunity to describe your event, what to expect, where it is & anything unique to your event.
-      Keep it straightforward, don't make it too long.
+      Woven Hacks is an official student hackathon league in Africa - which will be unveiled in Ghana, West Africa on December 3rd, 2016. Each year, we plan to power a weekend-long invention competitions that will inspire innovation, cultivate communities and teach computer science skills to multiple students in Africa. Woven Hacks is an engaged and passionate maker community, consisting of the next generation of technology leaders and entrepreneurs.
 
   # Info Sections
   info:
@@ -84,7 +82,7 @@ event:
         have graduated within the past 12 months are eligible to attend.
     - question: "Where is the event?"
       answer: >
-        The event is being hosted at [insert venue location here].
+        The event is being hosted at Ashesi University, Ghana.
     - question: "What is Major League Hacking?"
       answer: >
         Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
