@@ -1,39 +1,55 @@
 # MLH/mlh-hackathon-boilerplate
 
-This is a boilerplate template for any hackathon to use. It has a [configuration](_config.yml) that covers everything you'll want to make your hackathon website accessible, discoverable & ready for registration with our single sign on solution [MyMLH](https://my.mlh.io). It was first announced at [Hackcon EU 2016](https://hackcon.mlh.io/eu/) in Eindhoven, The Netherlands.
+This is a hackathon boilerplate created by [Major League Hacking][mlh-github]. Using [Jekyll][jekyll], it has a extensible [configuration][config] that covers basic event information. You can then fork the website and have it hosted free through [GitHub Pages][github-pages]. It's free to use.
 
-Click [here to view a demo](https://mlh.github.io/mlh-hackathon-boilerplate).
+Advantages:
 
-## Changelog
+- Built in support for [MyMLH][my-mlh]
+- Community-owned and maintained
+- Free hosting through [GitHub Pages][github-pages]
+- Discoverable through Google Search, Twitter and Facebook
 
-- (**30 Aug 2016**) Initial release of version 0.1.0
+[mlh-github]: https://github.com/MLH
+[jekyll]: https://jekyllrb.com
+[config]: _config.yml
+[github-pages]: https://pages.github.com
+[my-mlh]: https://my.mlh.io
 
 ## Getting Started
 
-1. Create a [GitHub](https://github.com/join) account if you haven't already.
-2. Fork this repository to your own account. [Click here to do so](https://github.com/MLH/mlh-hackathon-boilerplate/fork).
-3. Edit `_config.yml` to configure for your own hackathon website.
+1. Create a [GitHub][create-account] account if you haven't already.
+2. Fork this repository to your own account. [Click here to fork this repo][fork-repo].
+3. Edit [`_config.yml`][config] to configure for your own hackathon website.
 4. That's it - you should be able to access at `https://[github username].github.io/mlh-hackathon-boilerplate/`
+
+[create-account]: https://github.com/join
+[fork-repo]: https://github.com/MLH/mlh-hackathon-boilerplate/fork
 
 ### Setting up a custom domain
 
-Want to configure for your own custom domain? Great! Through our excellent partners [Domain.com](https://domain.com/mlh), Major League Hacking is offering free domains to student hackathon organizers. Reach out to [hi@mlh.io](mailto:hi@mlh.io) to obtain your free coupon code.
+Want to configure for your own custom domain? Great! Through our excellent partners [Domain.com][domain-com], Major League Hacking is offering free domains to student hackathon organizers. Reach out to [hi@mlh.io][email-mlh] to obtain your free coupon code.
 
 1. Register your domain.
 2. Update the domain `www` to `CNAME [github username].github.io`
 3. Update the domain `@` to `A 192.30.252.153` and `A 192.30.252.154`
 4. Update the `CNAME` in your GitHub fork of `mlh-hackathon-boilerplate` to your new domain (i.e. `examplehacks.com`)
 
-[Reference: GitHub - Setting up an apex domain](https://help.github.com/articles/setting-up-an-apex-domain/)
+[Reference: GitHub - Setting up an apex domain][github-apex-domain]
+
+[domain-com]: https://domain.com/mlh
+[email-mlh]: mailto:hi@mlh.io
+[github-apex-domain]: https://help.github.com/articles/setting-up-an-apex-domain/
 
 ### Setting up SSL
 
-We'd highly recommend looking into [Cloudflare](http://cloudflare.com) for SSL with your domain. It's compatible with GitHub Pages and this project.
+We'd highly recommend looking into [Cloudflare][cloudflare] for SSL with your domain. It's compatible with [GitHub Pages][github-pages] and this project.
+
+[cloudflare]: https://cloudflare.com
 
 ## Contributing
 
-Our boilerplate is written entirely in Jekyll, which GitHub automatically compiles. This dramatically reduces the technical barrier needed to setup a hackathon website. We'd love to receive your contributions towards making this even better. A couple of things to note:
+Our boilerplate is written entirely in [Jekyll][jekyll], which GitHub automatically compiles. This dramatically reduces the technical barrier needed to setup a hackathon website. We'd love to receive your contributions towards making this even better. A couple of things to note:
 
-- GitHub's variant of Jekyll doesn't allow custom plugins. We can't accept Jekyll plugins for this reason.
-- Please ensure you have the correct permissions inside all of your PRs.
-- Before creating a PR, it would be better if you created a GitHub Issue explaining the contribution. This isn't required, but advised.
+- We can't accept custom plugins because it's not supported by [GitHub Pages][github-pages].
+- If adding any external images or components, please ensure you have the correct permission to use them.
+- We advise creating a GitHub issue first explaining the issue.
