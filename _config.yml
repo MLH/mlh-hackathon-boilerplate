@@ -24,30 +24,23 @@ social:
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title:       "Example Hacks | 5/6 August 2016"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
+  title:       "Example Hacks | July 2017"
+  description: "Blah blah blah"
   image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
 # Event information.
 event:
   name:        "Hackathon Clubes de Ciencia Bolivia"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
+  description: "Que tal?"
   date:        "27 July 2017"
   location:    "Santa Cruz de la Sierra, Bolivia"
-
-  trust_badge:
-    year:   "2017"  # season year
-    region: "eu"    # "na" or "eu"
-    color:  "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
   hero:
     links:
       - text: "Apply"
-        my_mlh:
-          client_id:    "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
-          redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
+        href: "https://ferrufino.typeform.com/to/jDxP1F"
       - text: "Sponsor"
-        href: "mailto:sponsorship@website.com"
+        href: "mailto:ferru@test.com"
 
   about:
     description: >
