@@ -69,8 +69,8 @@ section {
 }
 
 .hero .wrapper h1 {
-  background: #fff;
-  background: rgba(255, 255, 255, .3);
+  background: rgba(0, 0, 0, .9);
+  background: rgba(255, 255, 255, 0.0);
   display: inline-block;
   font-size: 60px;
   font-weight: 800;

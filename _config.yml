@@ -12,7 +12,7 @@ url: "https://ferrufino.github.io"
 
 # The ability to use custom themes.
 style:
-  theme: "minima"
+  theme: "original"
 
 # This will help you track who's visiting your website.
 tracking:
