@@ -59,8 +59,24 @@ layout: default
 
 <section class="about">
   <div class="container">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
-      {{ site.event.about.description | markdownify }}
+    <div class="row" style="display: inline-flex;">
+      <div class="big-terminal" style="width: 400px;"> 
+      <div class=fakeMenu>
+        <div class="fakeButtons fakeClose"></div>
+        <div class="fakeButtons fakeMinimize"></div>
+        <div class="fakeButtons fakeZoom"></div>
+      </div>
+      <div class="fakeScreen">
+        <p class="lineStart">> hackBo init hackathon</p>
+        <p class="line1">Configuration File: <br/> Aplicación llenada<span class="cursor1">_</span></p>
+        <p class="line2">Source: Fecha 27 de Julio <br/> Lugar UPSA anotado <span class="cursor2">_</span></p>
+        <p class="line3">Destination: HackBo Ready<span class="cursor3">_</span></p>
+        <p class="line4">><span class="cursor4">_</span></p>
+      </div>
+      </div>
+      <div class="col-xs-12 col-sm-8" style="padding-top: 70px;">
+        {{ site.event.about.description | markdownify }}
+      </div>
     </div>
   </div>
 </section>
@@ -72,7 +88,6 @@ layout: default
       {% for section in site.event.info.sections %}
       <div class="col-xs-12 col-sm-4 text-center">
         <div class="item">
-          <img src="{{ section.image }}" />
           <h1>{{ section.title }}</h1>
           <p>{{ section.description }}</p>
         </div>
@@ -102,11 +117,11 @@ layout: default
 <section class="faq">
   <div class="container">
     <h1 class="text-center">Partners </h1>
-        {% for item in site.event.partner %}
-        <div class="question col-xs-12 col-sm-4">
-          <img src="{{ item.image }}" />
-        </div>
-        {% endfor %}
+    {% for item in site.event.partner %}
+    <div class="question col-xs-12 col-sm-4">
+      <img src="{{ item.image }}" />
+    </div>
+    {% endfor %}
   </div>
 </section>
 

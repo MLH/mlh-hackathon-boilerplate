@@ -24,7 +24,7 @@ tracking:
 
 # Let people connect & engage with you through social media.
 social:
-  twitter_handle: "MLHacks"
+  twitter_handle: "HackBo"
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
@@ -36,8 +36,8 @@ seo:
 event:
   name:        "HackBo"
   description: "Clubes de Ciencia Bolivia"
-  date:        "27 de Julio 2017"
-  location:    "Santa Cruz de la Sierra, Bolivia"
+  date:        "27 y 28 de Julio 2017"
+  location:    "UPSA"
 
   hero:
     links:
@@ -46,7 +46,7 @@ event:
         class: "typeform-share link"
         data-mode: "2"
         target: "_blank"
-      - text: "Auspicianos"
+      - text: "Patrocinios"
         href: "mailto:ferru@test.com"
         class: ""
         data-mode: ""
@@ -54,25 +54,25 @@ event:
 
   about:
     description: >
-      HackBo es un hackathon estudiantil, donde apasionados por la tecnología colaboran durante 24hrs. 
-      entre equipos y compiten para crear la mejor solución de software o hardware 
-      y ganar uno de los tres primeros lugares, y obviamente, premios!      
+      HackBo es el hackathon estudiantil más grande en Bolivia, donde apasionados por la tecnología colaboran durante 24hrs. 
+      entre equipos y compiten para desarrollar la mejor solución de software o hardware 
+      y ganar uno de los tres primeros lugares, al igual que premios!      
 
   # Info Sections
   info:
     sections:
       - image: "images/design.png"
-        title: "DISEÑA."
+        title: "DISEÑA"
         description: >
           Diseña bien tu proyecto! Deberías de ser capaz de responder ¿Que necesidad soluciona mi propuesta?
           (Civico, Salud, Social, Educacion, etc.)
       - image: "images/develop.png"
-        title: "DESARROLLA."
+        title: "DESARROLLA"
         description: >
           Debe de ser un proyecto de software o hardware. 
           Si durante el hackathon tienes dudas, no te preocupes, tendres grandes mentores para que te asesoren. ;) 
       - image: "images/present.png"
-        title: "PRESENTA."
+        title: "PRESENTA"
         description: >
           Asegurate que tu hack este estable, y no te olvides de preparar tu presentación ante los jueces. Buena suerte!
 
@@ -80,7 +80,7 @@ event:
   faq:
     - question: "¿Que es un Hackathon?"
       answer: >
-        Un hackathon es un maratón de creadores. Estudiantes se juntan para crear cool Software y Hardware hacks en 24hrs.
+        Un hackathon es un maratón de creadores. Estudiantes se juntan para crear un proyecto cool de Software o Hardware en 24hrs.
     - question: "¿Cuanto Cuesta?"
       answer: >
         Nada. Atender el Hackathon es gratis

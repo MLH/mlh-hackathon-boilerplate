@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: #212F3D;
+  background-color: #12AA50;
 }
 
 section {
@@ -36,28 +36,12 @@ section {
 
 
 
-
-/*
- * Trust Badge
- */
-
-#mlh-trust-badge {
-  display: block;
-  max-width: 100px;
-  min-width: 60px;
-  position: fixed;
-  right: 50px;
-  top: 0;
-  width: 10%;
-  z-index: 10000;
-}
-
 /* 
  * Hero Section
  */
 
 .hero {
-  background-color: #212F3D;
+  background-color: #12AA50;
   min-height: 60vh;
 }
 
@@ -66,7 +50,7 @@ section {
 }
 
 .hero hr {
-  border-top: 15px solid #fff;
+  border-top: 15px solid #12AA50;
   margin: 0;
   position: relative;
   top: -14px;
@@ -116,7 +100,7 @@ section {
 
 .hero .buttons a:hover,
 .hero .buttons a:focus {
-  background-color: #0F2C34;
+  background-color: #12AA50;
   color: #fff;
   transition: all 0.2s ease;
 }
@@ -137,7 +121,6 @@ section {
 }
 
 .about p {
-  color: #0F2C34;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.6em;
@@ -203,7 +186,7 @@ section {
 }
 
 .faq .question hr {
-  border-top: 8px solid #0F2C34;
+  border-top: 8px solid #12AA50;
   margin: 20px 0;
   width: 80px;
 }
@@ -332,7 +315,7 @@ section {
 }
 
 body {
-  background: #212F3D;
+  background: #12AA50;
 }
 
 .container-coder {
@@ -340,7 +323,7 @@ body {
   margin: 20px auto;
   height: 420px;
   width: 750px;
-  background: #212F3D;
+  background: #12AA50;
 }
 
 .desk {
@@ -718,7 +701,7 @@ body {
   left: 24%;
   height: 10%;
   width: 6%;
-  background: #D496A7;
+  background: #E51C19;
   border-radius: 2px 2px 10px 10px;
   border: 1.5px solid #32383C;
 }
@@ -729,7 +712,7 @@ body {
   left: 100%;
   height: 50%;
   width: 30%;
-  background: #D496A7;
+  background: #E51C19;
   border-radius: 0 50% 50% 0;
   border: 1.5px solid #32383C;
   border-left: none;
@@ -741,7 +724,7 @@ body {
   left: 100%;
   height: 30%;
   width: 20%;
-  background: #212F3D;
+  background: #12AA50;
   border-radius: 0 50% 50% 0;
   border: 1.5px solid #32383C;
 }
@@ -1059,3 +1042,234 @@ body {
   transform: rotate(-30deg);
 }
 
+/*
+*
+*HACKBO TERMINAL
+CREADIT: https://codepen.io/anon/pen/jmoVKq;
+*/
+
+
+
+.fakeButtons {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  position: relative;
+  top: 6px;
+  left: 6px;
+  background-color: #ff3b47;
+  border-color: #9d252b;
+  display: inline-block;
+}
+
+.fakeMinimize {
+  left: 11px;
+  background-color: #ffc100;
+  border-color: #9d802c;
+}
+
+.fakeZoom {
+  left: 16px;
+  background-color: #00d742;
+  border-color: #049931;
+}
+
+.fakeMenu {
+  width: 350px;
+  box-sizing: border-box;
+  height: 25px;
+  background-color: #bbb;
+  margin: 0 auto;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.fakeScreen {
+  background-color: #151515;
+  box-sizing: border-box;
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.fakeScreen p {
+  position: relative;
+  left: 50%;
+  margin-left: -8.5em;
+  text-align: left;
+  font-size: 1.25em;
+  font-family: monospace;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.fakeScreen span {
+  color: #fff;
+  font-weight: bold;
+}
+
+.line1 {
+  color: #9CD9F0;
+  -webkit-animation: type .5s 1s steps(20, end) forwards;
+  -moz-animation: type .5s 1s steps(20, end) forwards;
+  -o-animation: type .5s 1s steps(20, end) forwards;
+  animation: type .5s 1s steps(20, end) forwards;
+}
+
+.cursor1 {
+  -webkit-animation: blink 1s 2s 2 forwards;
+  -moz-animation: blink 1s 2s 2 forwards;
+  -o-animation: blink 1s 2s 2 forwards;
+  animation: blink 1s 2s 2 forwards;
+}
+
+.line2 {
+  color: #CDEE69;
+  -webkit-animation: type .5s 4.25s steps(20, end) forwards;
+  -moz-animation: type .5s 4.25s steps(20, end) forwards;
+  -o-animation: type .5s 4.25s steps(20, end) forwards;
+  animation: type .5s 4.25s steps(20, end) forwards;
+}
+
+.cursor2 {
+  -webkit-animation: blink 1s 5.25s 2 forwards;
+  -moz-animation: blink 1s 5.25s 2 forwards;
+  -o-animation: blink 1s 5.25s 2 forwards;
+  animation: blink 1s 5.25s 2 forwards;
+}
+
+.line3 {
+  color: #E09690;
+  -webkit-animation: type .5s 7.5s steps(20, end) forwards;
+  -moz-animation: type .5s 7.5s steps(20, end) forwards;
+  -o-animation: type .5s 7.5s steps(20, end) forwards;
+  animation: type .5s 7.5s steps(20, end) forwards;
+}
+
+.cursor3 {
+  -webkit-animation: blink 1s 8.5s 2 forwards;
+  -moz-animation: blink 1s 8.5s 2 forwards;
+  -o-animation: blink 1s 8.5s 2 forwards;
+  animation: blink 1s 8.5s 2 forwards;
+}
+
+.line4 {
+  color: #fff;
+  -webkit-animation: type .5s 10.75s steps(20, end) forwards;
+  -moz-animation: type .5s 10.75s steps(20, end) forwards;
+  -o-animation: type .5s 10.75s steps(20, end) forwards;
+  animation: type .5s 10.75s steps(20, end) forwards;
+}
+.lineStart{
+  color: #fff;
+   -webkit-animation: type .0s 0.75s steps(20, end) forwards;
+  -moz-animation: type .0s 0.75s steps(20, end) forwards;
+  -o-animation: type .0s 0.75s steps(20, end) forwards;
+  animation: type .0s 0.75s steps(20, end) forwards;
+}
+.cursor4 {
+  -webkit-animation: blink 1s 11.5s infinite;
+  -moz-animation: blink 1s 8.5s infinite;
+  -o-animation: blink 1s 8.5s infinite;
+  animation: blink 1s 8.5s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-o-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes type {
+  to {
+    width: 17em;
+  }
+}
+
+@-moz-keyframes type {
+  to {
+    width: 17em;
+  }
+}
+
+@-o-keyframes type {
+  to {
+    width: 17em;
+  }
+}
+
+@keyframes type {
+  to {
+    width: 17em;
+  }
+}
