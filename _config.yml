@@ -43,8 +43,14 @@ event:
     links:
       - text: "Aplica"
         href: "https://ferrufino.typeform.com/to/jDxP1F"
+        class: "typeform-share link"
+        data-mode: "2"
+        target: "_blank"
       - text: "Auspicianos"
         href: "mailto:ferru@test.com"
+        class: ""
+        data-mode: ""
+        target: ""
 
   about:
     description: >
