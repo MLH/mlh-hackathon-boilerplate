@@ -54,7 +54,7 @@ event:
 
   about:
     description: >
-      HackBo es un hackathon estudiantil donde apasionados por la tecnología colaboran durante 24hrs. 
+      HackBo es un hackathon estudiantil, donde apasionados por la tecnología colaboran durante 24hrs. 
       entre equipos y compiten para crear la mejor solución de software o hardware 
       y ganar uno de los tres primeros lugares, y obviamente, premios!      
 
@@ -93,7 +93,7 @@ event:
         El evento va ser realizado en la UPSA del 27 al 28 de Julio
     - question: "¿Existe un codigo de conducta?"
       answer: >
-        Si existe. Lo vamos a enforcar y respetar en su plenitud. Puedes encontrarlo [aqui](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+        Si existe. Participantes deben de respetar esto en su plenitud. Puedes encontrarlo [aqui](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
     - question: "¿Quienes estan organizando este evento?"
       answer: >
         [Clubes de Ciencia Bolivia](http://www.clubesdecienciabolivia.com/)
