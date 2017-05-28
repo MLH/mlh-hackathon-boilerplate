@@ -2,6 +2,10 @@
 # -- Settings --
 # --------------
 
+#coder table done by brittany walker 
+#https://codepen.io/trekkiegirl/pen/mWLWJy
+
+
 # Ignore this. This is only if you're hosting this in a sub-folder.
 # If you're using GitHub pages, they automatically override this with the right value.
 baseurl: ""
@@ -24,22 +28,22 @@ social:
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title:       "Example Hacks | July 2017"
-  description: "Blah blah blah"
-  image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
+  title:       "Hackbo"
+  description: "Hackathon Bolivia Santa Cruz de la Sierra"
+  image:       ""
 
 # Event information.
 event:
-  name:        "Hackathon Clubes de Ciencia Bolivia"
-  description: "Que tal?"
-  date:        "27 July 2017"
+  name:        "HackBo"
+  description: "Clubes de Ciencia Bolivia"
+  date:        "27 de Julio 2017"
   location:    "Santa Cruz de la Sierra, Bolivia"
 
   hero:
     links:
-      - text: "Apply"
+      - text: "Aplica"
         href: "https://ferrufino.typeform.com/to/jDxP1F"
-      - text: "Sponsor"
+      - text: "Auspicianos"
         href: "mailto:ferru@test.com"
 
   about:
@@ -52,15 +56,15 @@ event:
   info:
     sections:
       - image: "images/image1.png"
-        title: "LEARN."
+        title: "APRENDE."
         description: >
           We can write something nice with a graphic (as above) to make the event more appealing.
       - image: "images/image2.png"
-        title: "BUILD."
+        title: "CONSTRUYE."
         description: >
           We can write something nice with a graphic (as above) to make the event more appealing.
       - image: "images/image3.png"
-        title: "SHARE."
+        title: "COMPARTE."
         description: >
           We can write something nice with a graphic (as above) to make the event more appealing.
 
@@ -87,6 +91,20 @@ event:
     - question: "Is there a code of conduct?"
       answer: >
         Yes there is. We enforce it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+
+  test:
+    - temp: "Sup"
+      aux: >
+        yoyoyoyo
+    - temp: "Sup"
+      aux: >
+        yoyoyoyo
+    - temp: "Sup"
+      aux: >
+        yoyoyoyo
+    - temp: "Sup"
+      aux: >
+        yoyoyoyo
 
   # This is the message you'll receive once you've registered.
   register:

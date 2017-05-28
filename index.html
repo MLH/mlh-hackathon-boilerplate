@@ -1,6 +1,59 @@
 ---
 layout: default
 ---
+<section >
+  <div class="container-coder">
+    <div class="monitor">
+      <div class="monitor-screen">
+        <div class="browser-left">
+          <div class="youtube"></div>
+        </div>
+        <div class="browser-right">
+          <div class="preview"></div>
+        </div>
+        <div class="browser-bar-left"></div>
+        <div class="browser-bar-right"></div>
+      </div>
+      <div class="post-it"></div>
+    </div>
+    <div class="lamp-arm"></div>
+    <div class="lamp-base"></div>
+    <div class="lamp"></div>
+    <div class="light"></div>
+    <div class="desk"></div>
+    <div class="desk-shelf"></div>
+    <div class="laptop">
+      <div class="laptop-screen">
+        <div class="window-bar"></div>
+        <div class="sublime">
+          <div class="line-short"></div>
+          <div class="line-med"></div>
+          <div class="line-long"></div>
+        </div>
+      </div>
+    </div>
+    <div class="laptop-base"></div>
+    <div class="cell">
+      <div class="messages"></div>
+    </div>
+    <div class="cell-stand"></div>
+    <div class="spock">
+      <div class="arm-left"></div>
+      <div class="arm-right"></div>
+      <div class="arms"></div>
+      <div class="legs"></div>
+      <div class="body"></div>
+      <div class="ears"></div>
+      <div class="head"></div>
+      <div class="hair"></div>
+      <div class="insignia"></div>
+    </div>
+    <div class="bulb"></div>
+    <div class="books"></div>
+    <div class="steam"></div>
+    <div class="mug"></div>
+  </div>
+</section>
 
 {% include hero.html %}
 
@@ -12,17 +65,18 @@ layout: default
   </div>
 </section>
 
+
 <section class="info">
   <div class="container">
     <div class="items row">
       {% for section in site.event.info.sections %}
-        <div class="col-xs-12 col-sm-4 text-center">
-          <div class="item">
-            <img src="{{ section.image }}" />
-            <h1>{{ section.title }}</h1>
-            <p>{{ section.description }}</p>
-          </div>
+      <div class="col-xs-12 col-sm-4 text-center">
+        <div class="item">
+          <img src="{{ section.image }}" />
+          <h1>{{ section.title }}</h1>
+          <p>{{ section.description }}</p>
         </div>
+      </div>
       {% endfor %}
     </div>
   </div>
@@ -31,10 +85,10 @@ layout: default
 <section class="faq">
   <div class="container">
     <h1 class="text-center">FAQ</h1>
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+    <div class="">
+      <div class="">
         {% for item in site.event.faq %}
-        <div class="question col-xs-12 col-sm-12">
+        <div class="question col-xs-12 col-sm-4">
           <h2>{{ item.question }}</h2>
           <hr>
           {{ item.answer | markdownify }}
@@ -44,3 +98,4 @@ layout: default
     </div>
   </div>
 </section>
+
