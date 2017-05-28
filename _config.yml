@@ -28,8 +28,8 @@ social:
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title:       "Hackbo"
-  description: "Hackathon Bolivia Santa Cruz de la Sierra"
+  title:       "HackBo"
+  description: "Hackathon Clubes de Ciencia Bolivia Santa Cruz de la Sierra"
   image:       ""
 
 # Event information.
@@ -48,63 +48,53 @@ event:
 
   about:
     description: >
-      Example Hacks is a hackathon hosted at The University of Example.
-      This is your opportunity to describe your event, what to expect, where it is & anything unique to your event.
-      Keep it straightforward, don't make it too long.
+      HackBo es un hackathon estudiantil donde apasionados por la tecnología colaboran durante 24hrs. 
+      entre equipos y compiten para crear la mejor solución de software o hardware 
+      y ganar uno de los tres primeros lugares, y obviamente, premios!      
 
   # Info Sections
   info:
     sections:
-      - image: "images/image1.png"
-        title: "APRENDE."
+      - image: "images/design.png"
+        title: "DISEÑA."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
-      - image: "images/image2.png"
-        title: "CONSTRUYE."
+          Diseña bien tu proyecto! Deberías de ser capaz de responder ¿Que necesidad soluciona mi propuesta?
+          (Impacto Civico, Saludo, Social, etc.)
+      - image: "images/develop.png"
+        title: "DESARROLLA."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
-      - image: "images/image3.png"
-        title: "COMPARTE."
+          Tu desarrollo debe de ser un programa de software o de electronica. 
+          Si durante el hackathon tienes dudas no te preocupes, tendres grandes mentores para asesorarte. ;) 
+      - image: "images/present.png"
+        title: "PRESENTA."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          Asegurate que tu hack este estable, y prepara la presentación ante los jueces! Buena suerte!
 
   # Frequently asked questions.
   faq:
-    - question: "What is a hackathon?"
+    - question: "¿Que es un Hackathon?"
       answer: >
-        A hackathon is an invention marathon. Students come together to build cool
-        software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
-    - question: "How much does it cost?"
+        Un hackathon es un maratón de creadores. Estudiantes se juntan para crear cool Software y Hardware hacks en 24hrs.
+    - question: "¿Cuanto Cuesta?"
       answer: >
-        Nothing. Attending a hackathon is free.
-    - question: "Do I need to be a student to attend?"
+        Nada. Atender el Hackathon es gratis
+    - question: "¿Necesito ser estudiante para atender este Hackathon?"
       answer: >
-        Yes. Only students who are currently enrolled at a college/university or
-        have graduated within the past 12 months are eligible to attend.
-    - question: "Where is the event?"
+        Si. Solo estudiantes que esten inscritos en universidad o bien ultimos años de colegio (con permiso de su tutor legal)
+        pueden participar de este evento.
+    - question: "¿Donde es el evento?"
       answer: >
-        The event is being hosted at [insert venue location here].
-    - question: "What is Major League Hacking?"
+        El evento va ser realizado en la UPSA del 27 al 28 de Julio
+    - question: "¿Existe un codigo de conducta?"
       answer: >
-        Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
-        We work with over 200 Member Events and empower over 70,000 students every year.
-    - question: "Is there a code of conduct?"
+        Si existe. Lo vamos a enforcar y respetar en su plenitud. Puedes encontrarlo [aqui](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+    - question: "¿Quienes estan organizando este evento?"
       answer: >
-        Yes there is. We enforce it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+        [Clubes de Ciencia Bolivia](http://www.clubesdecienciabolivia.com/)
 
-  test:
-    - temp: "Sup"
-      aux: >
-        yoyoyoyo
-    - temp: "Sup"
-      aux: >
-        yoyoyoyo
-    - temp: "Sup"
-      aux: >
-        yoyoyoyo
-    - temp: "Sup"
-      aux: >
-        yoyoyoyo
+  # Partners
+  partner:
+    - image: "images/upsa.png"
 
   # This is the message you'll receive once you've registered.
   register:

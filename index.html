@@ -99,3 +99,15 @@ layout: default
   </div>
 </section>
 
+<section class="faq">
+  <div class="container">
+    <h1 class="text-center">Partners </h1>
+        {% for item in site.event.partner %}
+        <div class="question col-xs-12 col-sm-4">
+          <img src="{{ item.image }}" />
+        </div>
+        {% endfor %}
+  </div>
+</section>
+
+
