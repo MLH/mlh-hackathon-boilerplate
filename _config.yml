@@ -65,16 +65,16 @@ event:
         title: "DISEÑA."
         description: >
           Diseña bien tu proyecto! Deberías de ser capaz de responder ¿Que necesidad soluciona mi propuesta?
-          (Impacto Civico, Saludo, Social, etc.)
+          (Civico, Salud, Social, Educacion, etc.)
       - image: "images/develop.png"
         title: "DESARROLLA."
         description: >
-          Tu desarrollo debe de ser un programa de software o de electronica. 
-          Si durante el hackathon tienes dudas no te preocupes, tendres grandes mentores para asesorarte. ;) 
+          Debe de ser un proyecto de software o hardware. 
+          Si durante el hackathon tienes dudas, no te preocupes, tendres grandes mentores para que te asesoren. ;) 
       - image: "images/present.png"
         title: "PRESENTA."
         description: >
-          Asegurate que tu hack este estable, y prepara la presentación ante los jueces! Buena suerte!
+          Asegurate que tu hack este estable, y no te olvides de preparar tu presentación ante los jueces. Buena suerte!
 
   # Frequently asked questions.
   faq:
