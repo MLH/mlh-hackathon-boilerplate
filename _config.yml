@@ -70,7 +70,7 @@ event:
         title: "DESARROLLA"
         description: >
           Debe de ser un proyecto de software o hardware. 
-          Si durante el hackathon tienes dudas, no te preocupes, tendres grandes mentores para que te asesoren. ;) 
+          Si durante el hackathon tienes dudas, no te preocupes, tendras grandes mentores para que te asesoren. ;) 
       - image: "images/present.png"
         title: "PRESENTA"
         description: >
@@ -83,7 +83,7 @@ event:
         Un hackathon es un maratón de creadores. Estudiantes se juntan para crear un proyecto cool de Software o Hardware en 24hrs.
     - question: "¿Cuanto Cuesta?"
       answer: >
-        Nada. Atender el Hackathon es gratis
+        Nada. Atender el Hackathon es gratis.
     - question: "¿Necesito ser estudiante para atender este Hackathon?"
       answer: >
         Si. Solo estudiantes que esten inscritos en universidad o bien ultimos años de colegio (con permiso de su tutor legal)

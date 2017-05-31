@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: #12AA50;
+  background-color: #FFB241;
 }
 
 section {
@@ -35,7 +35,7 @@ section {
  */
 
 .hero {
-  background-color: #12AA50;
+  background-color: #FFB241;
   min-height: 60vh;
 }
 
@@ -44,7 +44,7 @@ section {
 }
 
 .hero hr {
-  border-top: 15px solid #12AA50;
+  border-top: 15px solid #FFB241;
   margin: 0;
   position: relative;
   top: -14px;
@@ -94,7 +94,7 @@ section {
 
 .hero .buttons a:hover,
 .hero .buttons a:focus {
-  background-color: #12AA50;
+  background-color: #FFB241;
   color: #fff;
   transition: all 0.2s ease;
 }
@@ -180,7 +180,7 @@ section {
 }
 
 .faq .question hr {
-  border-top: 8px solid #12AA50;
+  border-top: 8px solid #FFB241;
   margin: 20px 0;
   width: 80px;
 }
@@ -309,7 +309,7 @@ section {
 }
 
 body {
-  background: #12AA50;
+  background: #FFB241;
 }
 
 .container-coder {
@@ -317,7 +317,7 @@ body {
   margin: 20px auto;
   height: 420px;
   width: 750px;
-  background: #12AA50;
+  background: #FFB241;
 }
 
 .desk {
@@ -326,8 +326,7 @@ body {
   left: 10%;
   height: 5%;
   width: 80%;
-  background: #FFFFFF; /*A288A6*/
-  border: 1.5px solid #32383C;
+  background: #B3ACB1; /*A288A6*/
 }
 .desk:before, .desk:after {
   position: absolute;
@@ -335,9 +334,7 @@ body {
   top: 100%;
   height: 335%;
   width: 3%;
-  background: #FFFFFF;/*#7d6081;*/
-  border: 1.5px solid #32383C;
-  border-bottom: none;
+  background: #A09EA0;/*#7d6081;*/
 }
 .desk:before {
   left: 5%;
@@ -352,9 +349,7 @@ body {
   height: 15%;
   width: 75%;
   left: 12.5%;
-  background: #FFFFFF;/*#FFFBF7;*/
-  border: 1.5px solid #32383C;
-  border-bottom: none;
+  background: #949C95;/*#FFFBF7;*/
 }
 .desk-shelf:before, .desk-shelf:after {
   position: absolute;
@@ -363,8 +358,7 @@ body {
   left: 2%;
   height: 70%;
   width: 25%;
-  background: #FFFFFF;/*#6f5672;*/
-  border: 1.5px solid #32383C;
+  background: #6C6C6C;/*#6f5672;*/
 }
 .desk-shelf:after {
   left: 72%;
@@ -378,7 +372,6 @@ body {
   height: 75%;
   width: 90%;
   border-radius: 5px;
-  border: 1px solid black;
 }
 .monitor-screen .browser-left,
 .monitor-screen .browser-right {
@@ -386,7 +379,6 @@ body {
   top: 15%;
   background: #FFFBF7;
   border-radius: 0 0 2px 2px;
-  border: 1px solid black;
 }
 .monitor-screen .browser-left {
   left: 5%;
@@ -460,9 +452,6 @@ body {
   top: 10%;
   height: 5%;
   background: #212F3D;
-  border-radius: 2px 2px 0 0;
-  border: 1px solid black;
-  border-bottom: none;
 }
 .monitor-screen .browser-bar-right {
   right: 5%;
@@ -481,30 +470,26 @@ body {
   height: 45%;
   width: 35%;
   background: white;
-  border-radius: 5px;
-  border: 1.5px solid #32383C;
+  border-radius: 10px;
 }
 .monitor:before {
   position: absolute;
   content: '';
-  background: #e6e6e6;
+  background: #D5D5D5;
   top: 100%;
   left: 45%;
   height: 20%;
   width: 10%;
-  border: 1.5px solid #32383C;
 }
 .monitor:after {
   position: absolute;
   content: '';
-  background: #f2f2f2;
+  background: #D5D5D5;
   top: 116.5%;
   left: 35%;
   height: 6%;
   width: 30%;
   border-radius: 50% 50% 0 0;
-  border: 1.5px solid #32383C;
-  border-bottom: none;
 }
 .monitor .post-it {
   position: absolute;
@@ -512,7 +497,7 @@ body {
   left: 5%;
   height: 20%;
   width: 13%;
-  background: #4281A4;
+  background: #FF0523;
 }
 .monitor .post-it:before, .monitor .post-it:after {
   position: absolute;
@@ -523,12 +508,12 @@ body {
 .monitor .post-it:before {
   left: 60%;
   transform: rotate(-10deg);
-  background: #D496A7;
+  background: #FED36F;
 }
 .monitor .post-it:after {
   left: 190%;
   transform: rotate(-5deg);
-  background: #F2CC8F;
+  background: #00D763;
 }
 
 .lamp {
@@ -537,10 +522,9 @@ body {
   left: 73%;
   height: 13%;
   width: 8%;
-  background: #81B29A;
+  background: #DE361B;
   border-radius: 50px 50px 0 0;
   transform: rotate(35deg);
-  border: 1.5px solid #32383C;
 }
 .lamp:before {
   position: absolute;
@@ -549,9 +533,8 @@ body {
   left: 33%;
   height: 35%;
   width: 35%;
-  background: #81B29A;
+  background: #DE361B;
   border-radius: 5px 5px 0 0;
-  border: 1.5px solid #32383C;
 }
 .lamp:after {
   position: absolute;
@@ -561,9 +544,8 @@ body {
   height: 109%;
   width: 19%;
   border-radius: 50%;
-  background: #b0cfc0;
+  background: #D77060;
   transform: rotate(90deg);
-  border: 1.5px solid #32383C;
 }
 
 .lamp-arm {
@@ -572,22 +554,20 @@ body {
   left: 84%;
   height: 20%;
   width: 2%;
-  background: #81B29A;
+  background: #DE361B;
   border-radius: 0 0 5px 5px;
   transform: rotate(-45deg);
-  border: 1.5px solid #32383C;
 }
 .lamp-arm:before {
   position: absolute;
   content: '';
-  top: 50%;
-  left: -300%;
-  height: 120%;
-  width: 100%;
-  background: #81B29A;
-  border-radius: 5px;
+  top: 60%;
+  left: -270%;
+  height: 100%;
+  width: 90%;
+  background: #DE361B;
+  border-radius: 100px;
   transform: rotate(70deg);
-  border: 1.5px solid #32383C;
 }
 
 .lamp-base {
@@ -596,9 +576,8 @@ body {
   left: 80%;
   height: 2.5%;
   width: 7%;
-  background: #81B29A;
+  background: #DE361B;
   border-radius: 50% 50% 0 0;
-  border: 1.5px solid #32383C;
   border-bottom: none;
 }
 
@@ -611,7 +590,6 @@ body {
   background: #F2CC8F;
   border-radius: 0 0 50% 50%;
   transform: rotate(35deg);
-  border: 1.5px solid #32383C;
 }
 
 .light {
@@ -635,9 +613,8 @@ body {
   left: 14.5%;
   height: 4%;
   width: 15%;
-  background: #DBD3D8;
+  background: #00C2CB;
   border-radius: 5px;
-  border: 1.5px solid #32383C;
 }
 .books:before {
   position: absolute;
@@ -647,7 +624,6 @@ body {
   width: 100%;
   background: #CCBCBC;
   border-radius: 5px;
-  border: 1.5px solid #32383C;
 }
 .books:after {
   position: absolute;
@@ -655,9 +631,8 @@ body {
   top: -115%;
   height: 45%;
   width: 100%;
-  background: #FFFBF7;
+  background: #B485A1;
   border-radius: 5px;
-  border: 1.5px solid #32383C;
 }
 
 .steam {
@@ -697,7 +672,6 @@ body {
   width: 6%;
   background: #E51C19;
   border-radius: 2px 2px 10px 10px;
-  border: 1.5px solid #32383C;
 }
 .mug:before {
   position: absolute;
@@ -708,8 +682,6 @@ body {
   width: 30%;
   background: #E51C19;
   border-radius: 0 50% 50% 0;
-  border: 1.5px solid #32383C;
-  border-left: none;
 }
 .mug:after {
   position: absolute;
@@ -718,9 +690,8 @@ body {
   left: 100%;
   height: 30%;
   width: 20%;
-  background: #12AA50;
+  background: #FFB241;
   border-radius: 0 50% 50% 0;
-  border: 1.5px solid #32383C;
 }
 
 .laptop {
@@ -729,9 +700,8 @@ body {
   left: 49%;
   height: 22%;
   width: 19%;
-  background: #CBC8C3;
+  background: #B5B5B5;
   border-radius: 5px;
-  border: 1.5px solid #32383C;
 }
 .laptop .laptop-screen {
   position: absolute;
@@ -741,7 +711,6 @@ body {
   width: 90%;
   background: #F2CC8F;
   border-radius: 2px;
-  border: 1.5px solid #32383C;
 }
 .laptop .laptop-screen .window-bar {
   position: absolute;
@@ -751,8 +720,6 @@ body {
   width: 80%;
   background: #212F3D;
   border-radius: 2px 2px 0 0;
-  border: 1.5px solid #32383C;
-  border-bottom: none;
 }
 .laptop .laptop-screen .window-bar:before {
   position: absolute;
@@ -772,7 +739,6 @@ body {
   height: 75%;
   width: 80%;
   background: #FFFBF7;
-  border: 1.5px solid #32383C;
 }
 .laptop .laptop-screen .sublime:before {
   position: absolute;
@@ -828,9 +794,8 @@ body {
   left: 47.5%;
   height: 3%;
   width: 22%;
-  background: #CBC8C3;
+  background: #CDCAC4;
   border-radius: 2px 2px 5px 5px;
-  border: 1.5px solid #32383C;
 }
 
 .cell {
@@ -840,7 +805,7 @@ body {
   height: 15%;
   width: 5%;
   background: black;
-  border-radius: 2px;
+  border-radius: 4px;
   border-bottom: none;
 }
 .cell:before {
@@ -852,7 +817,6 @@ body {
   width: 77%;
   background: #FFFBF7;
   border-radius: 2px;
-  border: 1.5px solid #32383C;
 }
 .cell .messages {
   position: absolute;
@@ -907,8 +871,7 @@ body {
   height: 3%;
   width: 7%;
   background: #32383C;
-  border-radius: 2px;
-  border: 1px solid black;
+  border-radius: 6px;
 }
 
 .spock {
@@ -983,7 +946,6 @@ body {
   width: 70%;
   background: #4281A4;
   border-radius: 10px 10px 2px 2px;
-  border: 1.5px solid #32383C;
 }
 .spock .legs {
   position: absolute;
@@ -1014,7 +976,6 @@ body {
   height: 40%;
   width: 25%;
   border-radius: 5px;
-  border: 1.5px solid #32383C;
 }
 .spock .arm-left:before,
 .spock .arm-right:before {
