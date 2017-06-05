@@ -2,62 +2,67 @@
 layout: default
 ---
 <section >
-  <div class="container-coder">
-    <div class="monitor">
-      <div class="monitor-screen">
-        <div class="browser-left">
-          <div class="youtube"></div>
-        </div>
-        <div class="browser-right">
-          <div class="preview"></div>
-        </div>
-        <div class="browser-bar-left"></div>
-        <div class="browser-bar-right"></div>
-      </div>
-      <div class="post-it"></div>
-    </div>
-    <div class="lamp-arm"></div>
-    <div class="lamp-base"></div>
-    <div class="lamp"></div>
-    <div class="light"></div>
-    <div class="desk"></div>
-    <div class="desk-shelf"></div>
-    <div class="laptop">
-      <div class="laptop-screen">
-        <div class="window-bar"></div>
-        <div class="sublime">
-          <div class="line-short"></div>
-          <div class="line-med"></div>
-          <div class="line-long"></div>
-        </div>
-      </div>
-    </div>
-    <div class="laptop-base"></div>
-    <div class="cell">
-      <div class="messages"></div>
-    </div>
-    <div class="cell-stand"></div>
-    <div class="spock">
-      <div class="arm-left"></div>
-      <div class="arm-right"></div>
-      <div class="arms"></div>
-      <div class="legs"></div>
-      <div class="body"></div>
-      <div class="ears"></div>
-      <div class="head"></div>
-      <div class="hair"></div>
-      <div class="insignia"></div>
-    </div>
-    <div class="bulb"></div>
-    <div class="books"></div>
-    <div class="steam"></div>
-    <div class="mug"></div>
-  </div>
-   {% for item in site.event.logo %}
-    <div class="wrapper text-center" >
-      <img src="{{ item.image }}" />
-    </div>
+  {% for item in site.event.logo %}
+     <div style="float: right; padding-top: 20px; padding-left: 20px;">
+      <img src="{{ item.imageCdeCBo }}" />
+     </div>
     {% endfor %}
+  <div class="container-coder">
+  <div class="monitor">
+    <div class="monitor-screen">
+      <div class="browser-left">
+        <div class="youtube"></div>
+      </div>
+      <div class="browser-right">
+        <div class="preview"></div>
+      </div>
+      <div class="browser-bar-left"></div>
+      <div class="browser-bar-right"></div>
+    </div>
+    <div class="post-it"></div>
+  </div>
+  <div class="lamp-arm"></div>
+  <div class="lamp-base"></div>
+  <div class="lamp"></div>
+  <div class="light"></div>
+  <div class="desk"></div>
+  <div class="desk-shelf"></div>
+  <div class="laptop">
+    <div class="laptop-screen">
+      <div class="window-bar"></div>
+      <div class="sublime">
+        <div class="line-short"></div>
+        <div class="line-med"></div>
+        <div class="line-long"></div>
+      </div>
+    </div>
+  </div>
+  <div class="laptop-base"></div>
+  <div class="cell">
+    <div class="messages"></div>
+  </div>
+  <div class="cell-stand"></div>
+  <div class="spock">
+    <div class="arm-left"></div>
+    <div class="arm-right"></div>
+    <div class="arms"></div>
+    <div class="legs"></div>
+    <div class="body"></div>
+    <div class="ears"></div>
+    <div class="head"></div>
+    <div class="hair"></div>
+    <div class="insignia"></div>
+  </div>
+  <div class="bulb"></div>
+  <div class="books"></div>
+  <div class="steam"></div>
+  <div class="mug"></div>
+</div>
+{% for item in site.event.logo %}
+<div class="wrapper text-center" >
+  <img src="{{ item.image }}" />
+</div>
+{% endfor %}
 </section>
 
 
@@ -66,22 +71,23 @@ layout: default
 
 {% include hero.html %}
 
+
 <section class="about">
   <div class="container">
     <div class="row" style="display: inline-flex;">
       <div class="big-terminal" style="width: 400px;"> 
-      <div class=fakeMenu>
-        <div class="fakeButtons fakeClose"></div>
-        <div class="fakeButtons fakeMinimize"></div>
-        <div class="fakeButtons fakeZoom"></div>
-      </div>
-      <div class="fakeScreen">
-        <p class="lineStart">> hackBo init hackathon</p>
-        <p class="line1">Configuration File: <br/> Aplicación llenada<span class="cursor1">_</span></p>
-        <p class="line2">Source: Fecha 27 de Julio <br/> Lugar UPSA anotado <span class="cursor2">_</span></p>
-        <p class="line3">Destination: HackBo Ready<span class="cursor3">_</span></p>
-        <p class="line4">><span class="cursor4">_</span></p>
-      </div>
+        <div class=fakeMenu>
+          <div class="fakeButtons fakeClose"></div>
+          <div class="fakeButtons fakeMinimize"></div>
+          <div class="fakeButtons fakeZoom"></div>
+        </div>
+        <div class="fakeScreen">
+          <p class="lineStart">> hackBo init hackathon</p>
+          <p class="line1">Configuration File: <br/> Aplicación llenada<span class="cursor1">_</span></p>
+          <p class="line2">Source: Fecha 27 de Julio <br/> Lugar UPSA anotado <span class="cursor2">_</span></p>
+          <p class="line3">Destination: HackBo Ready<span class="cursor3">_</span></p>
+          <p class="line4">><span class="cursor4">_</span></p>
+        </div>
       </div>
       <div class="col-xs-12 col-sm-8" style="padding-top: 70px;">
         {{ site.event.about.description | markdownify }}
@@ -97,6 +103,7 @@ layout: default
       {% for section in site.event.info.sections %}
       <div class="col-xs-12 col-sm-4 text-center">
         <div class="item">
+          <img src="{{section.image}}" />
           <h1>{{ section.title }}</h1>
           <p>{{ section.description }}</p>
         </div>

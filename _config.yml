@@ -62,17 +62,17 @@ event:
   # Info Sections
   info:
     sections:
-      - image: "images/design.png"
+      - image: "images/Disenha.png"
         title: "DISEÑA"
         description: >
           Diseña bien tu proyecto! Deberías de ser capaz de responder ¿Que necesidad soluciona mi propuesta?
           (Civico, Salud, Social, Educacion, etc.)
-      - image: "images/develop.png"
+      - image: "images/Desarrolla.png"
         title: "DESARROLLA"
         description: >
           Debe de ser un proyecto de software o hardware. 
           Si durante el hackathon tienes dudas, no te preocupes, tendras grandes mentores para que te asesoren. ;) 
-      - image: "images/present.png"
+      - image: "images/Presenta.png"
         title: "PRESENTA"
         description: >
           Asegurate que tu hack este estable, y no te olvides de preparar tu presentación ante los jueces. Buena suerte!
@@ -106,6 +106,7 @@ event:
   logo:
     - image: "images/hackbo2x.png"
     - imageSmall: "images/hackbo.png"
+    - imageCdeCBo: "images/CdeCBo@2x.png"
 
   # This is the message you'll receive once you've registered.
   register:

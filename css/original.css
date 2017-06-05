@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: #FF7B7B;
+  background-color: #6AD3BF;
 }
 
 section {
@@ -35,8 +35,8 @@ section {
  */
 
 .hero {
-  background-color: #FF7B7B;
-  min-height: 60vh;
+  background-color: #6AD3BF;
+  min-height: 40vh;
 }
 
 .hero img {
@@ -79,10 +79,9 @@ section {
 }
 
 .hero .buttons a {
-  background: #B22222;
-  border: 10px solid #fff;
+  background: #fff;
   border-radius: 40px;
-  color: #fff;
+  color: #6AD3BF;
   display: inline;
   font-family: Montserrat;
   font-size: 24px;
@@ -94,7 +93,7 @@ section {
 
 .hero .buttons a:hover,
 .hero .buttons a:focus {
-  background-color: #FFB241;
+  background-color: #59B2A1;
   color: #fff;
   transition: all 0.2s ease;
 }
@@ -180,7 +179,7 @@ section {
 }
 
 .faq .question hr {
-  border-top: 8px solid #FFB241;
+  border-top: 8px solid #6AD3BF;
   margin: 20px 0;
   width: 80px;
 }
@@ -201,7 +200,7 @@ section {
  */
 
 .footer {
-  background-color: #B22222;
+  background-color: #6AD3BF;
   color: #fff;
   padding: 30px 0;
 }
@@ -687,7 +686,7 @@ section {
   left: 100%;
   height: 30%;
   width: 20%;
-  background: #fff;
+  background: #6AD3BF; /*mug space*/
   border-radius: 0 50% 50% 0;
 }
 
