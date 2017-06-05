@@ -337,7 +337,7 @@ section {
   left: 10%;
   height: 5%;
   width: 80%;
-  background: #B3ACB1; /*A288A6*/
+  background: #ffb77b; /*A288A6*/
 }
 .desk:before, .desk:after {
   position: absolute;
@@ -345,7 +345,7 @@ section {
   top: 100%;
   height: 335%;
   width: 3%;
-  background: #A09EA0;/*#7d6081;*/
+  background: #757575;/*#7d6081;*/
 }
 .desk:before {
   left: 5%;
@@ -360,7 +360,7 @@ section {
   height: 15%;
   width: 75%;
   left: 12.5%;
-  background: #949C95;/*#FFFBF7;*/
+  background: #ffc897;/*#FFFBF7;*/
 }
 .desk-shelf:before, .desk-shelf:after {
   position: absolute;
@@ -369,7 +369,7 @@ section {
   left: 2%;
   height: 70%;
   width: 25%;
-  background: #6C6C6C;/*#6f5672;*/
+  background: #d89e5d;/*#6f5672;*/
 }
 .desk-shelf:after {
   left: 72%;
@@ -377,7 +377,7 @@ section {
 
 .monitor-screen {
   position: absolute;
-  background: #62E8C8;
+  background: #66B2D3;
   top: 10%;
   left: 5%;
   height: 75%;
@@ -403,7 +403,7 @@ section {
   left: 7%;
   height: 35%;
   width: 55%;
-  background: #C74F44;
+  background: #ff8878;
 }
 .monitor-screen .browser-left:before {
   position: absolute;
@@ -412,8 +412,8 @@ section {
   left: 70%;
   height: 18%;
   width: 25%;
-  background: #a63c32;
-  box-shadow: 0 25px 0 #a63c32, 0 50px 0 #a63c32, 0 75px 0 #a63c32;
+  background: #ff8878;
+  box-shadow: 0 25px 0 #ff8878, 0 50px 0 #ff8878, 0 75px 0 #ff8878;
 }
 .monitor-screen .browser-left:after {
   position: absolute;
@@ -437,7 +437,7 @@ section {
   left: 10%;
   height: 30%;
   width: 80%;
-  background: #F2CC8F;
+  background: #6AD3BF;
 }
 .monitor-screen .browser-right .preview:before {
   position: absolute;
@@ -454,7 +454,7 @@ section {
   top: 215%;
   height: 90%;
   width: 28%;
-  background: #D496A7;
+  background: #ff8878;
   box-shadow: 26px 0 0 #48A9A6, 51px 0 0 #A288A6;
 }
 .monitor-screen .browser-bar-right,
@@ -480,7 +480,7 @@ section {
   left: 32%;
   height: 45%;
   width: 35%;
-  background: #C4C4C4;
+  background: #fff;
   border-radius: 10px;
 }
 .monitor:before {
