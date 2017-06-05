@@ -20,6 +20,7 @@ body {
 }
 
 section {
+
   overflow-x:hidden;
 }
 
@@ -116,6 +117,7 @@ section {
 .hero .buttons a:not(:last-child) {
   margin-right: 10px;
 }
+
 
 /* 
  * About Section
@@ -326,7 +328,7 @@ section {
 .container-coder {
   position: relative;
   margin: 20px auto;
-  height: 420px;
+  height: 380px;
   width: 750px;
 
 }
