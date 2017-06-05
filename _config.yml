@@ -106,7 +106,7 @@ event:
   logo:
     - image: "images/hackbo2x.png"
     - imageSmall: "images/hackbo.png"
-    - imageCdeCBo: "images/CdeCBo@2x.png"
+    - imageCdeCBo: "images/cdecbo.png"
 
   # This is the message you'll receive once you've registered.
   register:
