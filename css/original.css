@@ -16,7 +16,7 @@
 }
 
 body {
-  background-color: #FFB241;
+  background-color: #FF7B7B;
 }
 
 section {
@@ -35,7 +35,7 @@ section {
  */
 
 .hero {
-  background-color: #FFB241;
+  background-color: #FF7B7B;
   min-height: 60vh;
 }
 
@@ -308,16 +308,13 @@ section {
   box-sizing: border-box;
 }
 
-body {
-  background: #FFB241;
-}
 
 .container-coder {
   position: relative;
   margin: 20px auto;
   height: 420px;
   width: 750px;
-  background: #FFB241;
+
 }
 
 .desk {
@@ -366,7 +363,7 @@ body {
 
 .monitor-screen {
   position: absolute;
-  background: #CCBCBC;
+  background: #62E8C8;
   top: 10%;
   left: 5%;
   height: 75%;
@@ -469,7 +466,7 @@ body {
   left: 32%;
   height: 45%;
   width: 35%;
-  background: white;
+  background: #C4C4C4;
   border-radius: 10px;
 }
 .monitor:before {
@@ -690,7 +687,7 @@ body {
   left: 100%;
   height: 30%;
   width: 20%;
-  background: #FFB241;
+  background: #fff;
   border-radius: 0 50% 50% 0;
 }
 
