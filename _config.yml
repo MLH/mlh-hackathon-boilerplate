@@ -1,4 +1,5 @@
-# --------------
+# bundle exec jekyll serve
+#--------------
 # -- Settings --
 # --------------
 
@@ -101,6 +102,10 @@ event:
   # Partners
   partner:
     - image: "images/upsa.png"
+
+  logo:
+    - image: "images/hackbo2x.png"
+    - imageSmall: "images/hackbo.png"
 
   # This is the message you'll receive once you've registered.
   register:

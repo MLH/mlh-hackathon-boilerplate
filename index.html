@@ -53,7 +53,16 @@ layout: default
     <div class="steam"></div>
     <div class="mug"></div>
   </div>
+   {% for item in site.event.logo %}
+    <div class="wrapper text-center" >
+      <img src="{{ item.image }}" />
+    </div>
+    {% endfor %}
 </section>
+
+
+
+
 
 {% include hero.html %}
 
