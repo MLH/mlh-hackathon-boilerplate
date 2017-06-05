@@ -21,7 +21,7 @@ style:
 
 # This will help you track who's visiting your website.
 tracking:
-  google_analytics: "UA-43729070-14"
+  google_analytics: "UA-100454271-1"
 
 # Let people connect & engage with you through social media.
 social:
@@ -56,8 +56,8 @@ event:
   about:
     description: >
       HackBo es el hackathon estudiantil más grande en Bolivia, donde apasionados por la tecnología colaboran durante 24hrs. 
-      entre equipos y compiten para desarrollar la mejor solución de software o hardware 
-      y ganar uno de los tres primeros lugares, al igual que premios!      
+      En equipos, compiten para desarrollar la mejor solución de software o hardware 
+      y ganar uno de los tres primeros lugares, al igual que muchos premios!      
 
   # Info Sections
   info:
@@ -65,13 +65,13 @@ event:
       - image: "images/Disenha.png"
         title: "DISEÑA"
         description: >
-          Diseña bien tu proyecto! Deberías de ser capaz de responder ¿Que necesidad soluciona mi propuesta?
-          (Civico, Salud, Social, Educacion, etc.)
+          Diseña bien tu proyecto! Deberías de ser capaz de responder ¿Qu&eacute; necesidad soluciona mi propuesta?
+          (Civico, Salud, Social, Educaci&oacute;n, etc.)
       - image: "images/Desarrolla.png"
         title: "DESARROLLA"
         description: >
           Debe de ser un proyecto de software o hardware. 
-          Si durante el hackathon tienes dudas, no te preocupes, tendras grandes mentores para que te asesoren. ;) 
+          Si durante el hackathon tienes dudas, no te preocupes, tendr&aacute;s grandes mentores para que te asesoren. ;) 
       - image: "images/Presenta.png"
         title: "PRESENTA"
         description: >
@@ -79,23 +79,23 @@ event:
 
   # Frequently asked questions.
   faq:
-    - question: "¿Que es un Hackathon?"
+    - question: "¿Qué es un Hackathon?"
       answer: >
         Un hackathon es un maratón de creadores. Estudiantes se juntan para crear un proyecto cool de Software o Hardware en 24hrs.
-    - question: "¿Cuanto Cuesta?"
+    - question: "¿Cuánto Cuesta?"
       answer: >
         Nada. Atender el Hackathon es gratis.
     - question: "¿Necesito ser estudiante para atender este Hackathon?"
       answer: >
-        Si. Solo estudiantes que esten inscritos en universidad o bien ultimos años de colegio (con permiso de su tutor legal)
+        Si. Solo estudiantes que est&eacute;n inscritos en universidad o bien &uacute;ltimos años de colegio (con permiso de su tutor legal)
         pueden participar de este evento.
     - question: "¿Donde es el evento?"
       answer: >
         El evento va ser realizado en la UPSA del 27 al 28 de Julio
-    - question: "¿Existe un codigo de conducta?"
+    - question: "¿Existe un c&oacute;digo de conducta?"
       answer: >
-        Si existe. Participantes deben de respetar esto en su plenitud. Puedes encontrarlo [aqui](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
-    - question: "¿Quienes estan organizando este evento?"
+        Si existe. Participantes deben de respetar esto en su plenitud. Puedes encontrarlo [aqu&iacute;](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+    - question: "¿Quienes est&aacute;n organizando este evento?"
       answer: >
         [Clubes de Ciencia Bolivia](http://www.clubesdecienciabolivia.com/)
 
