@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+{% include head.html %}
 
-  <body{% if page.custom_class %} class="{{ page.custom_class }}"{% endif %}>
-    {% include trust_badge.html %}
+<body{% if page.custom_class %} class="{{ page.custom_class }}"{% endif %}>
+{% include trust_badge.html %}
 
-    {{ content }}
+{{ content }}
 
-    <section class="footer">
-      <div class="container text-center">
-        
-        {% for item in site.event.logo %}
+<section class="footer">
+  <div class="container text-center">
+
+    {% for item in site.event.logo %}
     <div class="wrapper text-center" >
       <img src="{{ item.imageSmall }}" />
     </div>
     {% endfor %}
-        <h3>&copy; 2017 Clubes de Ciencia Bolivia</h3>
-      </div>
-    </section>
+    
+    <h3>&copy; 2017 Clubes de Ciencia Bolivia</h3>
+  </div>
+</section>
 
-    <script src="{{ '/js/jquery-1.11.3.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ '/js/jquery-1.11.3.js' | prepend: site.baseurl | prepend: site.url }}"></script>
 
-    {% include analytics/google_analytics.html ga_id=site.tracking.google_analytics %}
-  </body>
+{% include analytics/google_analytics.html ga_id=site.tracking.google_analytics %}
+</body>
 </html>

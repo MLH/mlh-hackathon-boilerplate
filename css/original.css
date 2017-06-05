@@ -23,13 +23,28 @@ section {
   overflow-x:hidden;
 }
 
-/*
-*
-*
-*/
+@media screen and (max-width: 560px) {
+    .smallHackbo{
+      display: initial;
+    }
+    .bigHackbo{
+      display: none;
+    }
+}
+@media screen and (min-width: 561px) {
+    .smallHackbo{
+      display: none;
+    }
+    .bigHackbo{
+      display: initial;
+    }
+}
 
-
-
+.cdeclogo{
+  float: right; 
+  padding-top: 20px; 
+  padding-left: 20px;
+}
 /* 
  * Hero Section
  */
@@ -1012,6 +1027,7 @@ CREADIT: https://codepen.io/anon/pen/jmoVKq;
   background-color: #ff3b47;
   border-color: #9d252b;
   display: inline-block;
+  float: left;
 }
 
 .fakeMinimize {

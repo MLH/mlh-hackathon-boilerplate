@@ -3,11 +3,12 @@ layout: default
 ---
 <section >
   {% for item in site.event.logo %}
-     <div class="col-xs-12" style="float: right; padding-top: 20px; padding-left: 20px;">
+     <div class="cdeclogo">
       <a href="http://www.clubesdecienciabolivia.com/"><img src="{{ item.imageCdeCBo }}" /></a>
      </div>
     {% endfor %}
-  <div class="container-coder col-xs-12">
+<div class="bigHackbo">
+  <div class="container-coder">
   <div class="monitor">
     <div class="monitor-screen">
       <div class="browser-left">
@@ -63,6 +64,14 @@ layout: default
   <img src="{{ item.image }}" />
 </div>
 {% endfor %}
+</div>
+<div class="smallHackbo">
+  {% for item in site.event.logo %}
+    <div class="wrapper text-center" >
+      <img src="{{ item.imageSmall }}" />
+    </div>
+    {% endfor %}
+</div>
 </section>
 
 
@@ -75,7 +84,7 @@ layout: default
 <section class="about">
   <div class="container">
     <div class="row">
-    <div class="col-xs-12 col-md-6 col-sm-4 text-center">
+    <div class="col-xs-12 col-md-5 col-sm-4 text-center">
       <div class="big-terminal" style="width: 400px;"> 
         <div class=fakeMenu>
           <div class="fakeButtons fakeClose"></div>
@@ -92,7 +101,7 @@ layout: default
       </div>
       </div>
 
-      <div class="col-xs-12 col-md-6 col-sm-8" style="padding-top: 70px;">
+      <div class="col-xs-12 col-md-7 col-sm-8" style="padding-top: 70px;">
         {{ site.event.about.description | markdownify }}
       </div>
 
