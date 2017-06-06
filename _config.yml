@@ -53,8 +53,10 @@ event:
         class: "btn btn-lg btn-danger"
         data-mode: ""
         target: ""
-        data-toggle: "popover"
-        data-content: "gustavo.fdlf@gmail.com"
+        toggle: "popover"
+        content: "gustavo.fdlf@gmail.com"
+        placement: "auto"
+        trigger: "hover"
 
 
   about:
