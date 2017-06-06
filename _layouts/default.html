@@ -1,21 +1,32 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+{% include head.html %}
 
-  <body{% if page.custom_class %} class="{{ page.custom_class }}"{% endif %}>
-    {% include trust_badge.html %}
+<body{% if page.custom_class %} class="{{ page.custom_class }}"{% endif %}>
+{% include trust_badge.html %}
 
-    {{ content }}
+{{ content }}
 
-    <section class="footer">
-      <div class="container text-center">
-        <h1>{{ site.event.name }}</h1>
-        <h3>&copy; 2016 {{ site.event.name }}. Template by <a href="https://github.com/nlaz">Niko Lazaris</a>.</h3>
-      </div>
-    </section>
+<section class="footer">
+  <div class="container text-center">
 
-    <script src="{{ '/js/jquery-1.11.3.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+    {% for item in site.event.logo %}
+    <div class="wrapper text-center" >
+      <img src="{{ item.imageSmall }}" />
+    </div>
+    {% endfor %}
 
-    {% include analytics/google_analytics.html ga_id=site.tracking.google_analytics %}
-  </body>
+    <h3>&copy; 2017 Clubes de Ciencia Bolivia</h3>
+  </div>
+</section>
+
+<script src="{{ '/js/jquery-1.11.3.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+<script src="{{ '/js/bootstrap.min.js' | prepend: site.baseurl | prepend: site.url }}"></script>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+{% include analytics/google_analytics.html ga_id=site.tracking.google_analytics %}
+</body>
 </html>
