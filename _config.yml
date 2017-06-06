@@ -47,11 +47,15 @@ event:
         class: "typeform-share link"
         data-mode: "2"
         target: "_blank"
+        data-toggle: ""
       - text: "Patrocinios"
         href: "mailto:gustavo.fdlf@gmail.com"
-        class: ""
+        class: "btn btn-lg btn-danger"
         data-mode: ""
         target: ""
+        data-toggle: "popover"
+        data-content: "gustavo.fdlf@gmail.com"
+
 
   about:
     description: >
@@ -94,7 +98,7 @@ event:
         El evento va ser realizado en la UPSA del 27 al 28 de Julio
     - question: "¿Existe un c&oacute;digo de conducta?"
       answer: >
-        Si existe. Participantes deben de respetar esto en su plenitud. Puedes encontrarlo [aqu&iacute;](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+        Si existe. Se debe de respetar el establecimiento, los componentes tecnológicos y demas participates del hackathon.
     - question: "¿Quienes est&aacute;n organizando este evento?"
       answer: >
         [Clubes de Ciencia Bolivia](http://www.clubesdecienciabolivia.com/)
