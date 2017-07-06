@@ -30,10 +30,10 @@ seo:
 
 # Event information.
 event:
-  name:        "Example Hacks"
+  name:        "Demon Hacks"
   description: "This is a sample hackathon website that you can use by following instructions on GitHub."
-  date:        "5 & 6 August 2016"
-  location:    "Holmdel, NJ, United States"
+  date:        "November 2017"
+  location:    "Chicago, IL, United States"
 
   trust_badge:
     year:   "2017"  # season year
