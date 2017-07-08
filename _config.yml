@@ -24,7 +24,7 @@ social:
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title:       "Example Hacks | 5/6 August 2016"
+  title:       "Demon Hacks | November 2017"
   description: "This is a sample hackathon website that you can use by following instructions on GitHub."
   image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
@@ -51,7 +51,7 @@ event:
 
   about:
     description: >
-      Example Hacks is a hackathon hosted at The University of Example.
+      Demon Hacks is a hackathon hosted by DePaul University.
       This is your opportunity to describe your event, what to expect, where it is & anything unique to your event.
       Keep it straightforward, don't make it too long.
 
