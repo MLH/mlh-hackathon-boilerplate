@@ -22,8 +22,7 @@
 }
 
 body {
-  /*background-color: #F5699C;*/
-  background-color: #4286f4;
+  background-color: #F5699C;
 }
 
 section {
@@ -50,7 +49,7 @@ section {
  */
 
 .hero {
-  background-color: #F5699C;
+  background-color: #0F2C34;
   min-height: 110vh;
 }
 
