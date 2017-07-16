@@ -56,20 +56,20 @@ event:
       Keep it straightforward, don't make it too long.
 
   # Info Sections
-  info:
-    sections:
-      - image: "images/image1.png"
-        title: "LEARN."
-        description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
-      - image: "images/image2.png"
-        title: "BUILD."
-        description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
-      - image: "images/image3.png"
-        title: "SHARE."
-        description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+  #info:
+    #sections:
+      #- image: "images/image1.png"
+        #title: "LEARN."
+        #description: >
+        #  We can write something nice with a graphic (as above) to make the event more appealing.
+      #- image: "images/image2.png"
+      #  title: "BUILD."
+      #  description: >
+      #    We can write something nice with a graphic (as above) to make the event more appealing.
+      #- image: "images/image3.png"
+      #  title: "SHARE."
+      #  description: >
+      #    We can write something nice with a graphic (as above) to make the event more appealing.
 
   # Frequently asked questions.
   faq:
