@@ -12,7 +12,7 @@
 
 /*
  * Primary Blue: #44D5FF;
- * Dark Blue: #1c51a8;
+ * Dark Blue: #285eb7;
  * Primary Pink: #FF7FA8;
  */
 
@@ -49,7 +49,7 @@ section {
  */
 
 .hero {
-  background-color: #1c51a8;
+  background-color: #285eb7;
   min-height: 110vh;
 }
 
@@ -58,7 +58,7 @@ section {
 }
 
 .hero hr {
-  border-top: 15px solid #1c51a8;
+  border-top: 15px solid #285eb7;
   margin: 0;
   position: relative;
   top: -14px;
@@ -95,9 +95,9 @@ section {
 
 .hero .buttons a {
   background: #fff;
-  border: 10px solid #1c51a8;
+  border: 10px solid #285eb7;
   border-radius: 40px;
-  color: #1c51a8;
+  color: #285eb7;
   display: inline;
   font-family: Montserrat;
   font-size: 24px;
@@ -109,7 +109,7 @@ section {
 
 .hero .buttons a:hover,
 .hero .buttons a:focus {
-  background-color: #1c51a8;
+  background-color: #285eb7;
   color: #fff;
   transition: all 0.2s ease;
 }
@@ -130,7 +130,7 @@ section {
 }
 
 .about p {
-  color: #1c51a8;
+  color: #285eb7;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.6em;
@@ -196,7 +196,7 @@ section {
 }
 
 .faq .question hr {
-  border-top: 8px solid #1c51a8;
+  border-top: 8px solid #285eb7;
   margin: 20px 0;
   width: 80px;
 }
