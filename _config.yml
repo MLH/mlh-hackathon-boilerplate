@@ -25,13 +25,13 @@ social:
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
   title:       "Demon Hacks | November 2017"
-  description: "Pursue Greatness."
+  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
   image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
 # Event information.
 event:
   name:        "Demon Hacks"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
+  description: "Pursue Greatness."
   date:        "November 2017"
   location:    "Chicago, IL, United States"
 
