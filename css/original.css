@@ -22,7 +22,8 @@
 }
 
 body {
-  background-color: #0F2C34;
+  /* background-color: #0F2C34; */
+  background-image: url("http://chicagohacks.tech/2017/img/background.jpg");
 }
 
 section {
