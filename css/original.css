@@ -22,10 +22,13 @@
 }
 
 body {
-  /* background-color: #0F2C34; */
-  background-image: url("http://chicagohacks.tech/2017/img/background.jpg");
+  background-color: #0F2C34;
 }
 
+header {
+  background-image: url("http://chicagohacks.tech/2017/img/background.jpg");
+  
+}
 section {
   overflow-x:hidden;
 }
@@ -239,6 +242,11 @@ section {
 .footer h3 a {
   color: #fff;
 }
+
+/*
+ * FAQ Section
+ */
+
 
 @media(max-width: 768px) {
   .hero .buttons a {
