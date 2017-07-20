@@ -75,7 +75,7 @@ event:
   faq:
     - question: "Where is Chicago?"
       answer: >
-        In your pants
+        http://bfy.tw/1CQf
     - question: "What is a hackathon?"
       answer: >
         A hackathon is an invention marathon. Students come together to build cool
@@ -97,7 +97,8 @@ event:
     - question: "Is there a code of conduct?"
       answer: >
         Yes there is, you can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
-
+  schedule:
+    day: "MONWEDNESDAY"
   # This is the message you'll receive once you've registered.
   register:
     message: >
