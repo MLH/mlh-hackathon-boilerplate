@@ -97,8 +97,11 @@ event:
     - question: "Is there a code of conduct?"
       answer: >
         Yes there is, you can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+  
+  # sched mockup - Mack
   schedule:
-    day: "MONWEDNESDAY"
+    - day: "MONWEDNESDAY"
+  
   # This is the message you'll receive once you've registered.
   register:
     message: >
