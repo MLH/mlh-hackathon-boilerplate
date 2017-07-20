@@ -44,3 +44,23 @@ layout: default
     </div>
   </div>
 </section>
+<section class="schedule">
+  <div class="container">
+    <h1 class="text-center">Schedule</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        {% for item in site.event.Schedule %}
+        <div class="Day col-xs-12 col-sm-12">
+          <h2>{{ item.day }}</h2>
+          <hr>
+          {{ item.event | markdownify }}
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div> 
+ </section>
+<section class="About Us">
+  <div class="container">
+  </div>
+</section>
