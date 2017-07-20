@@ -73,6 +73,9 @@ event:
 
   # Frequently asked questions.
   faq:
+    - question: "Where is Chicago?"
+      answer: >
+        In your pants
     - question: "What is a hackathon?"
       answer: >
         A hackathon is an invention marathon. Students come together to build cool
