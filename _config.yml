@@ -101,6 +101,8 @@ event:
   # sched mockup - Mack
   schedule:
     - day: "MONWEDNESDAY"
+      event: >
+        6:00am Breakfast
   
   # This is the message you'll receive once you've registered.
   register:
