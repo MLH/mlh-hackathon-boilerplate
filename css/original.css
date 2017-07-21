@@ -54,8 +54,7 @@ section {
 .hero { 	
   /*background-color: #44D5FF;*/
   background-image: url("http://chicagohacks.tech/2017/img/background.jpg");
-  overflow-x: hidden;
-  overflow-y: hidden;
+  background-repeat:no-repeat;
   max-height: 100vh;
 }
 
