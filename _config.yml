@@ -103,17 +103,21 @@ event:
     - day: "Day 1"
       event: >
         6:00am Breakfast
-        \n12:00pm Lunch
-        \n6:00pm Dinner
+        12:00pm Lunch
+        6:00pm Dinner
+        12:00am Snack
     - day: "Day 2"
-      - event: 6:00am Breakfast
-      - event:12:00pm Lunch
-        \n6:00pm Dinner
+      - event: >
+        6:00am Breakfast
+        12:00pm Lunch
+        6:00pm Dinner
+        12:00am Snack
     - day: "Day 3"
       event: >
         6:00am Breakfast
-        \n12:00pm Lunch
-        \n6:00pm Dinner
+        12:00pm Lunch
+        6:00pm Dinner
+        12:00am Snack
   
   # This is the message you'll receive once you've registered.
   register:
