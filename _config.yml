@@ -105,12 +105,12 @@ event:
         6:00am Breakfast
         12:00pm Lunch
         6:00pm Dinner
-     - day: "Day 2"
+    - day: "Day 2"
       event: >
         6:00am Breakfast
         12:00pm Lunch
         6:00pm Dinner
-     - day: "Day 1"
+    - day: "Day 3"
       event: >
         6:00am Breakfast
         12:00pm Lunch
