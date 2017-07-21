@@ -50,7 +50,7 @@ section {
 
 .hero { 	
   /*background-color: #44D5FF;*/
-  background: url("http://chicagohacks.tech/2017/img/background.jpg") center center no-repeat;
+  background: url("http://www.styledesign.de/images/referenzen/DeluxeBad24-LogoBig.png") center center no-repeat;
   background-size: cover;
   min-height: 110vh;
   &:before {
