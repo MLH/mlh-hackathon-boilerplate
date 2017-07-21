@@ -100,9 +100,21 @@ event:
   
   # sched mockup - Mack
   schedule:
-    - day: "MONWEDNESDAY"
+    - day: "Day 1"
       event: >
         6:00am Breakfast
+        12:00pm Lunch
+        6:00pm Dinner
+     - day: "Day 2"
+      event: >
+        6:00am Breakfast
+        12:00pm Lunch
+        6:00pm Dinner
+     - day: "Day 1"
+      event: >
+        6:00am Breakfast
+        12:00pm Lunch
+        6:00pm Dinner
   
   # This is the message you'll receive once you've registered.
   register:
