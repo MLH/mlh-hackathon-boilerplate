@@ -119,6 +119,16 @@ event:
         6:00pm Dinner
         12:00am Snack
   
+  # About Us section
+  About Us:
+    - person: "Artur McSexyface"
+    - person: "Megan Presidentsauce"
+    - person: "John Pridmore"
+    - person: "Captain Obvious"
+    - person: "Shannon Lineras"
+    
+    
+  
   # This is the message you'll receive once you've registered.
   register:
     message: >
