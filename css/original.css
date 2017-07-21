@@ -53,7 +53,7 @@ section {
 
 .hero { 	
   /*background-color: #44D5FF;*/
-  background-image: url("http://chicagohacks.tech/2017/img/background.jpg");
+  background: url("http://chicagohacks.tech/2017/img/background.jpg") center center no-repeat;
   background-size: cover;
   min-height: 110vh;
 }
