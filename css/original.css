@@ -56,7 +56,7 @@ section {
   background-image: url("http://chicagohacks.tech/2017/img/background.jpg");
   overflow-x: hidden;
   overflow-y: hidden;
-  min-height: 110vh;
+  min-height: 100vh;
 }
 
 .hero img {
