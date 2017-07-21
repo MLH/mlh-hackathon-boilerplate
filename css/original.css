@@ -26,7 +26,6 @@ body {
 }
 
 header {
-  background-image: url("http://chicagohacks.tech/2017/img/background.jpg");
   
 }
 section {
@@ -53,7 +52,8 @@ section {
  */
 
 .hero { 	
-  background-color: #44D5FF;
+  /*background-color: #44D5FF;*/
+  background-image: url("http://chicagohacks.tech/2017/img/background.jpg");
   min-height: 110vh;
 }
 
