@@ -107,7 +107,7 @@ event:
         6:00pm Dinner
         12:00am Snack
     - day: "Day 2"
-      - event: >
+      event: >
         6:00am Breakfast
         12:00pm Lunch
         6:00pm Dinner
