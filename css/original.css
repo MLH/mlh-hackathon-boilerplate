@@ -246,6 +246,12 @@ section {
 /*
  * Schedule Section
  */
+.schedule {
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 0;
+  position: relative;
+}
 
 .schedule h1 {
   font-family: 'Montserrat';
