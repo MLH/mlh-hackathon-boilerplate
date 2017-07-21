@@ -106,9 +106,8 @@ event:
         \n12:00pm Lunch
         \n6:00pm Dinner
     - day: "Day 2"
-      event: >
-        6:00am Breakfast
-        \n12:00pm Lunch
+      - event: 6:00am Breakfast
+      - event:12:00pm Lunch
         \n6:00pm Dinner
     - day: "Day 3"
       event: >
