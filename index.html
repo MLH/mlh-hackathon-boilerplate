@@ -52,6 +52,8 @@ layout: default
           <h2>{{ item.day }}</h2>
           <hr>
           {% for event in item.day.event %}
+          <h3>{{ item.event }}</h3>
+          {% endfor %}
         </div>
         {% endfor %}
       </div>
