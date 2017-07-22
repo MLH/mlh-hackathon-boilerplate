@@ -53,6 +53,7 @@ section {
   background: url("http://www.styledesign.de/images/referenzen/DeluxeBad24-LogoBig.png") center center no-repeat;
   background-size: cover;
   min-height: 110vh;
+  color: red;
   &:before {
     content: '';
     position: absolute;
