@@ -37,7 +37,7 @@ event:
 
   trust_badge:
     year:   "2018"  # season year
-    region: "eu"    # "na" or "eu"
+    region: "na"    # "na" or "eu"
     color:  "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
   hero:
