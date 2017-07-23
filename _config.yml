@@ -90,6 +90,9 @@ event:
     - question: "Where is the event?"
       answer: >
         The event is being hosted at DePaul University's loop campus. Primarily In the CDM building located at  243 S Wabash Ave, Chicago, IL 60604.
+    - question: "Will there be travel reimbursement?"
+      answer: >
+        [Click Here to find out](https://goo.gl/w9TwfR)
     - question: "What is Major League Hacking?"
       answer: >
         Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
@@ -100,9 +103,34 @@ event:
   
   # sched mockup - Mack
   schedule:
-    - day: "MONWEDNESDAY"
+    - day: "Day 1"
       event: >
         6:00am Breakfast
+        12:00pm Lunch
+        6:00pm Dinner
+        12:00am Snack
+    - day: "Day 2"
+      event: >
+        6:00am Breakfast
+        12:00pm Lunch
+        6:00pm Dinner
+        12:00am Snack
+    - day: "Day 3"
+      event: >
+        6:00am Breakfast
+        12:00pm Lunch
+        6:00pm Dinner
+        12:00am Snack
+  
+  # About Us section
+  About Us:
+    - person: "Artur McSexyface"
+    - person: "Megan Presidentsauce"
+    - person: "John Pridmore"
+    - person: "Captain Obvious"
+    - person: "Shannon Lineras"
+    
+    
   
   # This is the message you'll receive once you've registered.
   register:

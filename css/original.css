@@ -25,10 +25,6 @@ body {
   background-color: #0F2C34;
 }
 
-header {
-  background-image: url("http://chicagohacks.tech/2017/img/background.jpg");
-  
-}
 section {
   overflow-x:hidden;
 }
@@ -53,12 +49,25 @@ section {
  */
 
 .hero { 	
-  background-color: #44D5FF;
+  /*background-color: #44D5FF;*/
+  background: url("http://www.styledesign.de/images/referenzen/DeluxeBad24-LogoBig.png") center center no-repeat;
+  background-size: cover;
   min-height: 110vh;
+  color: rgb(201, 0, 0);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*background-image: linear-gradient(to bottom right,#002f4b,#dc4225);*/
+    opacity: .6; 
+  }
 }
 
 .hero img {
-  max-width: 400px;
+  /*max-width: 400px;*/
 }
 
 .hero hr {
@@ -246,9 +255,18 @@ section {
 /*
  * Schedule Section
  */
+.schedule {
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 0;
+  position: relative;
+}
 
-/* .schedule */
-
+.schedule h1 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  margin: 30px 0;
+}
 /* .schedule .day */
 
 /* .schedule .event */
