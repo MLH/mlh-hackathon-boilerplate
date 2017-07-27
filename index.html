@@ -51,9 +51,12 @@ layout: default
         <div class="day col-xs-12 col-sm-12">
           <h2>{{ item.day }}</h2>
           <hr>
+          <h3>{{ item.event }}</h3>
+          <!-- Trying to generate it as ul
           {% for event in site.event.schedule.day %}
           <h3>{{ item.event }}</h3>
           {% endfor %}
+          -->
         </div>
         {% endfor %}
       </div>
