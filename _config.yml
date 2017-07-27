@@ -106,10 +106,21 @@ event:
     - day: "Day 1"
       event: >
         6:00am Breakfast
-        12:00pm Lunch
-        6:00pm Dinner
-        12:00am Snack
-    - day: "Day 2"
+    - day: ""        
+      event: >
+        12:00am - 8:00am Sleeping area available: [LOCATION] 
+    - day: ""
+      event: >
+        12:00am - Midnight Snack - [LOCATION]
+      event: >
+        7:30am - 9:00am -  Breakfast - [LOCATION]
+      event: >
+        TBD - Keynote Speaker - [LOCATION]
+      event: >
+        12:00pm - TBD   - [LOCATION]
+      event: >
+        
+    - day: "Sunday, [DAY OF MONTH]th October"
       event: >
         6:00am Breakfast
         12:00pm Lunch
