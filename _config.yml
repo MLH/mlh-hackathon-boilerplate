@@ -31,12 +31,12 @@ seo:
 # Event information.
 event:
   name:        "Demon Hacks"
-  description: "Disregard sleep; \nPursue Greatness;"
+  description: "Disregard sleep; Pursue Greatness;"
   date:        "November 2017"
   location:    "Chicago, IL, United States"
 
   trust_badge:
-    year:   "2018"  # season year
+    year:   "2017"  # season year
     region: "na"    # "na" or "eu"
     color:  "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
@@ -51,9 +51,8 @@ event:
 
   about:
     description: >
-      Demon Hacks is a hackathon hosted by DePaul University.
-      This is your opportunity to describe your event, what to expect, where it is & anything unique to your event.
-      Keep it straightforward, don't make it too long.
+      Demon Hacks is a hackathon hosted by DePaul University in Chicago, IL. DePaul's Loop campus is right next to the Art Institute 
+      of Chicago and Millenium Park. Demon Hacks is a 36 hour hackathon, anything unique to your event.
 
   # Info Sections
   #info:
@@ -100,10 +99,17 @@ event:
     - question: "Is there a code of conduct?"
       answer: >
         Yes there is, you can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
-  
+    - question: "What should I bring to a Hackathon?"
+      answer: >
+        We recommend that you bring anything you'd need for an extended stay away from home:
+        tolietries (toobrush, toothpaste, etc...)
+        sleeping bag
+        sleeping pad (e.g. Thermarest--the floor isn't always the most comfortable)
+        appropriate changes of clothes
+        
   # sched mockup - Mack
   schedule:
-    - day: "Day 1"
+    - day: "Saturday 1"
       event: >
         6:00am Breakfast
     - day: ""        
@@ -112,10 +118,13 @@ event:
     - day: ""
       event: >
         12:00am - Midnight Snack - [LOCATION]
+    - day: ""
       event: >
         7:30am - 9:00am -  Breakfast - [LOCATION]
+    - day: ""
       event: >
         TBD - Keynote Speaker - [LOCATION]
+    - day: ""
       event: >
         12:00pm - TBD   - [LOCATION]
       event: >
@@ -135,10 +144,11 @@ event:
   
   # About Us section
   About Us:
-    - person: "Artur McSexyface"
-    - person: "Megan Presidentsauce"
+    - person: "Artur Oganezov"
+      info:
+    - person: "Megan Pecho"
+      info:
     - person: "John Pridmore"
-    - person: "Captain Obvious"
     - person: "Shannon Lineras"
     
     
