@@ -50,7 +50,7 @@ section {
 
 .hero { 	
   /*background-color: #44D5FF;*/
-  background: url("http://www.styledesign.de/images/referenzen/DeluxeBad24-LogoBig.png") center center no-repeat;
+  background: url("images/bg-chicago.png") center center no-repeat;
   background-size: cover;
   min-height: 110vh;
   color: rgb(201, 0, 0);
