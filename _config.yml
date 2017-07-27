@@ -72,6 +72,7 @@ event:
 
   # Frequently asked questions.
   faq:
+    # TODO: JOKE QUESTION -- REMOVE
     - question: "Where is Chicago?"
       answer: >
         [Right here](http://bfy.tw/1CQf)
@@ -102,18 +103,16 @@ event:
     - question: "What should I bring to a Hackathon?"
       answer: >
         We recommend that you bring anything you'd need for an extended stay away from home:
-        * tolietries (toobrush, toothpaste, etc...)
-        * sleeping bag
-        * sleeping pad (e.g. Thermarest--the floor isn't always the most comfortable)
-        * appropriate changes of clothes
+        tolietries (toobrush, toothpaste, etc...)
+        > sleeping bag
+        > sleeping pad (e.g. Thermarest--the floor isn't always the most comfortable)
+        > appropriate changes of clothes
         
-  # sched mockup - Mack
+  # sched information section
   schedule:
     - day: "Saturday"
     - day: "  6:00am Breakfast"
     - day: "  12:00am - 8:00am Sleeping area available: [LOCATION]"        
-      event: >
-        
     - day: ""
       event: >
         12:00am - Midnight Snack - [LOCATION]
