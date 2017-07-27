@@ -109,25 +109,24 @@ event:
         
   # sched mockup - Mack
   schedule:
-    - day: "Saturday 1"
+    - day: "Saturday"
+    - day: "  6:00am Breakfast"
+    - day: "  12:00am - 8:00am Sleeping area available: [LOCATION]"        
       event: >
-        6:00am Breakfast
-    - day: ""        
-      event: >
-        12:00am - 8:00am Sleeping area available: [LOCATION] 
+        
     - day: ""
       event: >
         12:00am - Midnight Snack - [LOCATION]
     - day: ""
       event: >
         7:30am - 9:00am -  Breakfast - [LOCATION]
+        
     - day: ""
       event: >
         TBD - Keynote Speaker - [LOCATION]
     - day: ""
       event: >
         12:00pm - TBD   - [LOCATION]
-      event: >
         
     - day: "Sunday, [DAY OF MONTH]th October"
       event: >
