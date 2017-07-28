@@ -36,7 +36,7 @@ event:
   location:    "Chicago, IL, United States"
 
   trust_badge:
-    year:   "2018"  # season year
+    year:   "2017"  # season year
     region: "na"    # "na" or "eu"
     color:  "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
@@ -47,7 +47,7 @@ event:
           client_id:    "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
           redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
       - text: "Sponsor"
-        href: "mailto:sponsorship@demonhacks.com"
+        href: "mailto:sponsoRp@demonhacks.com"
 
   about:
     description: >
@@ -103,18 +103,26 @@ event:
     - question: "What should I bring to a Hackathon?"
       answer: >
         We recommend that you bring anything you'd need for an extended stay away from home:
-        tolietries (toobrush, toothpaste, etc...)
-        > sleeping bag
-        > sleeping pad (e.g. Thermarest--the floor isn't always the most comfortable)
-        > appropriate changes of clothes
+        tolietries (toobrush, toothpaste, etc...);
+        sleeping bag; 
+        sleeping pad (e.g. Thermarest--the floor isn't always the most comfortable);
+        appropriate changes of clothes
         
   # sched information section
   schedule:
+    - day: "Friday"
+    - day: "  3:00pm - 4:30pm - Setup    [DePaul Center, Concourse level and CDM floors]"
+    - day: "  4:30pm - 6:30pm - Check-in [DePaul Center, Concourse level and CDM floors]"
+    - day: "  6:00pm - 6:45pm - Kick-off [DePaul Center, Concourse level]"
+    - day: "  6:45pm - 8:00pm - Dinner   [DePaul Center, Concourse level]"
+    - day: "  8:00pm - Hacking begins    [DePaul Center, Concourse level]"
+    
+    
+    
     - day: "Saturday"
     - day: "  6:00am Breakfast"
     - day: "  12:00am - 8:00am Sleeping area available: [LOCATION]"        
-    - day: ""
-      event: >
+    - day: "  "
         12:00am - Midnight Snack - [LOCATION]
     - day: ""
       event: >
