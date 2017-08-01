@@ -109,44 +109,34 @@ event:
         appropriate changes of clothes
         
   # sched information section
-  schedule:
-    - day: "Friday"
-    - day: "  3:00pm - 4:30pm - Setup    [DePaul Center, Concourse level and CDM floors]"
-    - day: "  4:30pm - 6:30pm - Check-in [DePaul Center, Concourse level and CDM floors]"
-    - day: "  6:00pm - 6:45pm - Kick-off [DePaul Center, Concourse level]"
-    - day: "  6:45pm - 8:00pm - Dinner   [DePaul Center, Concourse level]"
-    - day: "  8:00pm - Hacking begins    [DePaul Center, Concourse level]"
-    
-    
-    
-    - day: "Saturday"
-    - day: "  6:00am Breakfast"
-    - day: "  12:00am - 8:00am Sleeping area available: [LOCATION]"        
-    - day: "  "
-        12:00am - Midnight Snack - [LOCATION]
-    - day: ""
-      event: >
-        7:30am - 9:00am -  Breakfast - [LOCATION]
-        
-    - day: ""
-      event: >
-        TBD - Keynote Speaker - [LOCATION]
-    - day: ""
-      event: >
-        12:00pm - TBD   - [LOCATION]
-        
-    - day: "Sunday, [DAY OF MONTH]th October"
-      event: >
-        6:00am Breakfast
-        12:00pm Lunch
-        6:00pm Dinner
-        12:00am Snack
-    - day: "Day 3"
-      event: >
-        6:00am Breakfast
-        12:00pm Lunch
-        6:00pm Dinner
-        12:00am Snack
+ schedule:
+  - day: "Friday"
+  - day: "__3:00 pm - 4:30 pm - Set-up (DePaul Center, Concourse level AND CDM floors)"
+  - day: "__4:30 pm - 6:30 pm - Check-in (DePaul Center, Concourse level)"
+  - day: "__6:00 pm - 6:45 pm - Kick-Off (DePaul Center, Concourse level)"
+  - day: "__6:45 pm - 8:00 pm - Dinner, representative tables, icebreaker(?)(DePaul Center, Concourselevel
+  - day: "__(Migrate to CDM)
+  - day: "__8:00 pm - Hacking Starts (CDM, Various classrooms)"
+  - day: "__10:00 pm - Activity (CDM, TBD)"
+
+  - day: "Saturday"
+  - day: "__12:00 am (- 8 am) - Sleeping Area Available (CDM, 5th floor?)"
+  - day: "__12:00 am - Midnight Snack (CDM, 9th floor)"
+  - day: "__7:30 am - 9:00 am - Breakfast (CDM, 9th floor)"
+  - day: "__TBD - Keynote speaker (CDM, Theater)"
+  - day: "__12:00 pm - 1:00 pm - Lunch (CDM, 9th floor)"
+  - day: "__TBD - Keynote Speaker (CDM, Theater)"
+  - day: "__6:00 pm - 7:00 pm - Dinner (CDM, 9th floor)"
+  - day: "__10:00 pm - Activity (CDM, TBD)"
+
+  - day: "Sunday"
+	- day: "__12:00 am (- 8 am) - Sleeping Area Available (CDM, 5th floor?)"
+	- day: "__12:00 am - Midnight Snack (CDM, 9th floor)"
+	- day: "__7:30 am - 9:00 am - Breakfast (CDM, 9th floor)"
+	- day: "__8 am - Hacking ends"
+	- day: "__9 am - 11 am - Project Expo (CDM, Various classrooms)"
+	- day: "__12:00 pm - 2:00 pm - Closing Stuff (DePaul Center, Concourse level OR Daley Building, Basement)"
+ 
   
   # About Us section
   About Us:
