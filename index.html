@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-
 {% include hero.html %}
-
 <section class="about">
   <div class="container">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
@@ -11,7 +9,7 @@ layout: default
     </div>
   </div>
 </section>
-
+<!--
 <section class="info">
   <div class="container">
     <div class="items row">
@@ -27,7 +25,7 @@ layout: default
     </div>
   </div>
 </section>
-
+-->
 <section class="faq">
   <div class="container">
     <h1 class="text-center">FAQ</h1>
@@ -44,3 +42,29 @@ layout: default
     </div>
   </div>
 </section>
+<section class="schedule">
+  <div class="container">
+    <h1 class="text-center">Schedule</h1>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        {% for item in site.event.schedule %}
+        <div class="day col-xs-12 col-sm-12">
+          <h2>{{ item.day }}</h2>
+          <hr>
+          <h3>{{ item.event }}</h3>
+          <!-- Trying to generate it as ul
+          {% for event in site.event.schedule.day %}
+          <h3>{{ item.event }}</h3>
+          {% endfor %}
+          -->
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div> 
+ </section>
+<!--<section class="About Us">
+  <div class="container">
+  </div>
+</section>-->
+

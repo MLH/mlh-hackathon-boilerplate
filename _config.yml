@@ -8,7 +8,7 @@ baseurl: ""
 
 # If you're using GitHub pages without a custom domain, this is "https://[github username].github.io"
 # If you're using GitHub pages with a custom domain, this is "http://[your domain]" (or https if you're using SSL)
-url: "https://mlh.github.io"
+url: "https://aoganezo.github.io"
 
 # The ability to use custom themes.
 style:
@@ -16,7 +16,7 @@ style:
 
 # This will help you track who's visiting your website.
 tracking:
-  google_analytics: "UA-43729070-14"
+  google_analytics: "UA-102955394-1"
 
 # Let people connect & engage with you through social media.
 social:
@@ -24,20 +24,20 @@ social:
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title:       "Example Hacks | 5/6 August 2016"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
+  title:       "Demon Hacks | November 2017 | DemonHacks "
+  description: "Demon Hacks."
   image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
 # Event information.
 event:
-  name:        "Example Hacks"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
-  date:        "5 & 6 August 2016"
-  location:    "Holmdel, NJ, United States"
+  name:        "Demon Hacks"
+  description: "Disregard sleep; Pursue Greatness;"
+  date:        "November 2017"
+  location:    "Chicago, IL, United States"
 
   trust_badge:
     year:   "2017"  # season year
-    region: "eu"    # "na" or "eu"
+    region: "na"    # "na" or "eu"
     color:  "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
   hero:
@@ -47,54 +47,108 @@ event:
           client_id:    "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
           redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
       - text: "Sponsor"
-        href: "mailto:sponsorship@website.com"
+        href: "mailto:sponsoRp@demonhacks.com"
 
   about:
     description: >
-      Example Hacks is a hackathon hosted at The University of Example.
-      This is your opportunity to describe your event, what to expect, where it is & anything unique to your event.
-      Keep it straightforward, don't make it too long.
+      Demon Hacks is a hackathon hosted by DePaul University in Chicago, IL. DePaul's Loop campus is right next to the Art Institute 
+      of Chicago and Millenium Park. Demon Hacks is a 36 hour hackathon, anything unique to your event.
 
   # Info Sections
-  info:
-    sections:
-      - image: "images/image1.png"
-        title: "LEARN."
-        description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
-      - image: "images/image2.png"
-        title: "BUILD."
-        description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
-      - image: "images/image3.png"
-        title: "SHARE."
-        description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+  #info:
+    #sections:
+      #- image: "images/image1.png"
+        #title: "LEARN."
+        #description: >
+        #  We can write something nice with a graphic (as above) to make the event more appealing.
+      #- image: "images/image2.png"
+      #  title: "BUILD."
+      #  description: >
+      #    We can write something nice with a graphic (as above) to make the event more appealing.
+      #- image: "images/image3.png"
+      #  title: "SHARE."
+      #  description: >
+      #    We can write something nice with a graphic (as above) to make the event more appealing.
 
   # Frequently asked questions.
   faq:
+    # TODO: JOKE QUESTION -- REMOVE
+    - question: "Where is Chicago?"
+      answer: >
+        [Right here](http://bfy.tw/1CQf)
     - question: "What is a hackathon?"
       answer: >
         A hackathon is an invention marathon. Students come together to build cool
         software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
     - question: "How much does it cost?"
       answer: >
-        Nothing. Attending a hackathon is free.
+        Nothing, attending a hackathon is free!
     - question: "Do I need to be a student to attend?"
       answer: >
         Yes. Only students who are currently enrolled at a college/university or
         have graduated within the past 12 months are eligible to attend.
     - question: "Where is the event?"
       answer: >
-        The event is being hosted at [insert venue location here].
+        The event is being hosted at DePaul University's loop campus. Primarily In the CDM building located at  243 S Wabash Ave, Chicago, IL 60604.
+    - question: "Will there be travel reimbursement?"
+      answer: >
+        [Click Here to find out](https://goo.gl/w9TwfR)
     - question: "What is Major League Hacking?"
       answer: >
         Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
         We work with over 200 Member Events and empower over 70,000 students every year.
     - question: "Is there a code of conduct?"
       answer: >
-        Yes there is. We enforce it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+        Yes there is, you can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+    - question: "What should I bring to a Hackathon?"
+      answer: >
+        We recommend that you bring anything you'd need for an extended stay away from home:
+        tolietries (toobrush, toothpaste, etc...);
+        sleeping bag; 
+        sleeping pad (e.g. Thermarest--the floor isn't always the most comfortable);
+        appropriate changes of clothes
+        
+  # sched information section
+ schedule:
+  - day: "Friday"
+  - day: "__3:00 pm - 4:30 pm - Set-up (DePaul Center, Concourse level AND CDM floors)"
+  - day: "__4:30 pm - 6:30 pm - Check-in (DePaul Center, Concourse level)"
+  - day: "__6:00 pm - 6:45 pm - Kick-Off (DePaul Center, Concourse level)"
+  - day: "__6:45 pm - 8:00 pm - Dinner, representative tables, icebreaker(?)(DePaul Center, Concourselevel
+  - day: "__(Migrate to CDM)
+  - day: "__8:00 pm - Hacking Starts (CDM, Various classrooms)"
+  - day: "__10:00 pm - Activity (CDM, TBD)"
 
+  - day: "Saturday"
+  - day: "__12:00 am (- 8 am) - Sleeping Area Available (CDM, 5th floor?)"
+  - day: "__12:00 am - Midnight Snack (CDM, 9th floor)"
+  - day: "__7:30 am - 9:00 am - Breakfast (CDM, 9th floor)"
+  - day: "__TBD - Keynote speaker (CDM, Theater)"
+  - day: "__12:00 pm - 1:00 pm - Lunch (CDM, 9th floor)"
+  - day: "__TBD - Keynote Speaker (CDM, Theater)"
+  - day: "__6:00 pm - 7:00 pm - Dinner (CDM, 9th floor)"
+  - day: "__10:00 pm - Activity (CDM, TBD)"
+
+  - day: "Sunday"
+  - day: "__12:00 am (- 8 am) - Sleeping Area Available (CDM, 5th floor?)"
+  - day: "__12:00 am - Midnight Snack (CDM, 9th floor)"
+  - day: "__7:30 am - 9:00 am - Breakfast (CDM, 9th floor)"
+  - day: "__8 am - Hacking ends"
+  - day: "__9 am - 11 am - Project Expo (CDM, Various classrooms)"
+  - day: "__12:00 pm - 2:00 pm - Closing Stuff (DePaul Center, Concourse level OR Daley Building, Basement)"
+ 
+  
+  # About Us section
+  About Us:
+    - person: "Artur Oganezov"
+      info:
+    - person: "Megan Pecho"
+      info:
+    - person: "John Pridmore"
+    - person: "Shannon Lineras"
+    
+    
+  
   # This is the message you'll receive once you've registered.
   register:
     message: >
