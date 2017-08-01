@@ -131,11 +131,11 @@ event:
 
   - day: "Sunday"
   - day: "__12:00 am (- 8 am) - Sleeping Area Available (CDM, 5th floor?)"
-	- day: "__12:00 am - Midnight Snack (CDM, 9th floor)"
-	- day: "__7:30 am - 9:00 am - Breakfast (CDM, 9th floor)"
-	- day: "__8 am - Hacking ends"
-	- day: "__9 am - 11 am - Project Expo (CDM, Various classrooms)"
-	- day: "__12:00 pm - 2:00 pm - Closing Stuff (DePaul Center, Concourse level OR Daley Building, Basement)"
+  - day: "__12:00 am - Midnight Snack (CDM, 9th floor)"
+  - day: "__7:30 am - 9:00 am - Breakfast (CDM, 9th floor)"
+  - day: "__8 am - Hacking ends"
+  - day: "__9 am - 11 am - Project Expo (CDM, Various classrooms)"
+  - day: "__12:00 pm - 2:00 pm - Closing Stuff (DePaul Center, Concourse level OR Daley Building, Basement)"
  
   
   # About Us section
