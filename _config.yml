@@ -130,7 +130,7 @@ event:
   - day: "__10:00 pm - Activity (CDM, TBD)"
 
   - day: "Sunday"
-	- day: "__12:00 am (- 8 am) - Sleeping Area Available (CDM, 5th floor?)"
+  - day: "__12:00 am (- 8 am) - Sleeping Area Available (CDM, 5th floor?)"
 	- day: "__12:00 am - Midnight Snack (CDM, 9th floor)"
 	- day: "__7:30 am - 9:00 am - Breakfast (CDM, 9th floor)"
 	- day: "__8 am - Hacking ends"
