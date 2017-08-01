@@ -12,7 +12,7 @@
 
 /*
  * Primary Blue: #44D5FF;
- * Dark Blue: #0F2C34;
+ * Dark Blue: ##0F2C34;
  * Primary Pink: #FF7FA8;
  */
 
@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: #F5699C;
+  background-color: #0F2C34;
 }
 
 section {
@@ -48,13 +48,26 @@ section {
  * Hero Section
  */
 
-.hero {
-  background-color: #F5699C;
+.hero { 	
+  /*background-color: #44D5FF;*/
+  background: url("../../images/bg-chicago.png") center center no-repeat;
+  background-size: cover;
   min-height: 110vh;
+  color: rgb(201, 0, 0);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*background-image: linear-gradient(to bottom right,#002f4b,#dc4225);*/
+    opacity: .6; 
+  }
 }
 
 .hero img {
-  max-width: 400px;
+  /*max-width: 400px;*/
 }
 
 .hero hr {
@@ -109,7 +122,7 @@ section {
 
 .hero .buttons a:hover,
 .hero .buttons a:focus {
-  background-color: #0F2C34;
+  background-color: #44D5FF;
   color: #fff;
   transition: all 0.2s ease;
 }
@@ -179,7 +192,7 @@ section {
 .faq {
   background-color: #fff;
   margin-top: 15px;
-  padding: 100px 0;
+  padding: 0;
   position: relative;
 }
 
@@ -196,7 +209,7 @@ section {
 }
 
 .faq .question hr {
-  border-top: 8px solid #0F2C34;
+  border-top: 8px solid #44D5FF;
   margin: 20px 0;
   width: 80px;
 }
@@ -217,7 +230,7 @@ section {
  */
 
 .footer {
-  background-color: #F5699C;
+  background-color: #0F2C34;
   color: #fff;
   padding: 30px 0;
 }
@@ -238,6 +251,26 @@ section {
 .footer h3 a {
   color: #fff;
 }
+
+/*
+ * Schedule Section
+ */
+.schedule {
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 0;
+  position: relative;
+}
+
+.schedule h1 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  margin: 30px 0;
+}
+/* .schedule .day */
+
+/* .schedule .event */
+
 
 @media(max-width: 768px) {
   .hero .buttons a {
