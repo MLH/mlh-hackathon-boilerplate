@@ -19,8 +19,8 @@ tracking:
   google_analytics: "UA-43729070-14"
 
 # Let people connect & engage with you through social media.
-# social:  TODO Once we have a twitter
-#   twitter_handle: "MLHacks"
+social:
+  twitter_handle: "MLHacks"
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
