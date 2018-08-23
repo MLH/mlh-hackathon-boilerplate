@@ -163,6 +163,9 @@ banner
 	text-transform: uppercase;
 	padding-bottom:15px;
 }
+.btn:hover, .btn:active{
+    background-color:purple;
+}
 .btn-appoint, .btn-appoint:hover, .btn-appoint:focus{
 	margin-top: 10px;
 	padding: 20px 30px;
