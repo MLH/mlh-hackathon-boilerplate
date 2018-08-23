@@ -61,7 +61,6 @@ hr.botm-line {
 banner
 ***************************************/
 .navbar {
-    margin-bottom: 0px;
     border: 0px;
 }
 .navbar {
@@ -88,7 +87,7 @@ banner
 
 .navbar-brand img {
     padding-top: 2px;
-    width: 120px !important;
+    
 }
 
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
