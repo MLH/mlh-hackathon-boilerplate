@@ -149,7 +149,7 @@ banner
 	min-height: 650px;
 }
 .banner-info{
-	padding-top: 190px;
+	padding-top: 100px;
 }
 .banner-logo img{
 	display: inline-block;
@@ -174,11 +174,11 @@ banner
 	border-radius: 3px;
 	color: #fff;
 }
-.overlay-detail a i {
+.overlay-detail{
     text-align: center;
     position: absolute;
     bottom: 25px;
-    font-size: 38px;
+    font-size: 10px;
     color: #fff;
     margin: 0 auto;
 }
@@ -285,10 +285,6 @@ Faq - Accordian
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 
-
-.gray-bg {
-    background-color: #f2fefe;
-}
 
 a {
     text-decoration: none;
