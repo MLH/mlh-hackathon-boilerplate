@@ -203,7 +203,7 @@ cta-1
 	color: #fff;
 	font-weight: 600;
 }
-.btn:hover{
+.btn:hover , .btn:active{
     background-color:purple;
 }
 .medi-info-btn, .medi-info-btn:hover, .medi-info-btn:focus {
