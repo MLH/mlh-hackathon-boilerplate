@@ -102,7 +102,7 @@ banner
 
 .top-nav-collapse {
     padding: 0;
-    background: rgba(74, 36, 90, 0.9);
+    background: rgba(94, 42, 140, 0.9);
 }
 
 .white, .white:hover, .white:focus
@@ -119,7 +119,7 @@ banner
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
     color: #fff;
     text-transform: uppercase;
-    background-color: rgba(184, 19, 15, 0.21);
+    background-color: rgba(247, 17, 9, 0.3);
 }
 .navbar-default .navbar-nav > li > a
 {
@@ -132,7 +132,7 @@ banner
 {
 	color: #fff;
     text-transform: uppercase;
-    background-color: rgba(184, 19, 15, 0.21);
+    background-color: rgba(247, 17, 9, 0.3);
 }
 .affix {
     background-color: #ffffff !important;
@@ -145,7 +145,7 @@ banner
 	position: relative;
 }
 .bg-color{
-	background-color: rgba(74, 36, 90, 0.9);
+	background-color: rgba(94, 42, 140, 0.9);
 	min-height: 650px;
 }
 .banner-info{
@@ -164,13 +164,13 @@ banner
 	padding-bottom:15px;
 }
 .btn:hover, .btn:active{
-    background-color:purple;
+    background-color:rgba(94, 42, 140, 0.9);
 }
 .btn-appoint, .btn-appoint:hover, .btn-appoint:focus{
 	margin-top: 10px;
 	padding: 20px 30px;
 	font-size: 40px;
-	background-color: rgba(222, 13, 25, 0.91);
+	background-color: rgb(247, 17, 9);
 	border-radius: 3px;
 	color: #fff;
 }
@@ -426,7 +426,7 @@ cta -2
 footer
 ***************************************/
 #footer{
-	background-color: #4a245a;
+	background-color: rgba(94, 42, 140, 1);
 }
 .ftr-tle {
     height: 50px;
