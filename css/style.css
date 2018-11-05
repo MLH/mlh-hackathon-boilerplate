@@ -138,6 +138,18 @@ banner
     background-color: #ffffff !important;
 }
 
+[hidden]{
+    display: none !important;
+
+}
+.resume{
+    font-family: 'Open Sans', sans-serif!important;
+}
+
+[hidden]:hover {
+    color: #ffffff;
+}
+
 #banner{
 	background: url('../img/bg-banner.jpg') no-repeat fixed;
 	background-size: cover;

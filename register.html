@@ -1,23 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>HackCCNY</title>
-        <meta name="description" content="HackCCNY">
-        <meta name="keywords"
-              content="CCNY, CUNY, HackCCNY">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HackCCNY</title>
+    <meta name="description" content="HackCCNY">
+    <meta name="keywords"
+          content="CCNY, CUNY, HackCCNY">
 
-        <link rel="icon" href="img\favicon.ico">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
-        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="css/themify-icons.css">
-    </head>
+    <link rel="icon" href="img\favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Candal">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var team = false;
+
+            //Inputs that determine what fields to show
+            var rating = $('#registration input:radio[name=comingWithTeam]');
+
+            var numberOnTeam = $("#numberOnTeam").parent();
+            var teamName = $("#teamName").parent();
+            var teammateNames = $("#teammateNames").parent();
+
+            var all = numberOnTeam.add(teamName).add(teammateNames);
+
+            rating.change(function () {
+                    var value = this.value;
+                    all.addClass('hidden');
+                    if (value == 'yes') {
+                        all.removeClass("hidden");
+                    }
+                }
+            );
+
+            var agree = false;
+
+            var agree_button = $("#registration input:checkbox[name=agreetoTerms]");
+            var button = $("#register");
+
+            agree_button.change(function () {
+                    if(this.checked) {
+                        button.removeClass("disabled");
+                    }
+                    else{
+                        button.addClass('disabled');
+                    }
+                }
+            );
+
+        });
+    </script>
 
 </head>
+
+
 <body>
 <section style="min-height: 125px">
     <div style="background-color: #5e2a8c!important;">
@@ -31,7 +73,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="img-responsive"
-                                                              style="height: 60px; width: 60px; margin-top: -16px;"></a>
+                                                                       style="height: 60px; width: 60px; margin-top: -16px;"></a>
                     </div>
                     <div class="collapse navbar-collapse navbar-right" id="myNavbar">
                         <h1 class="white" style="margin-top: 5px;">HackCCNY</h1>
@@ -46,11 +88,18 @@
     <div class="container col-md-offset-3">
 
         <br>
-        <form method="post" class="gform pure-form pure-form-stacked" action="https://script.google.com/a/gtest.ccny.cuny.edu/macros/s/AKfycbxbi37GYSqXtAmIDkkcJSbdV22eZaZos7lnxs6r/exec">
-            <div class="form-group col-md-10">
-                <label for="fullName" class="black" style="padding-bottom: 5px">Full Name <sup
+        <form method="post" class="gform pure-form pure-form-stacked" id="registration"
+              action="https://script.google.com/macros/s/AKfycbzO10rzDfvtMzXus7w8AIFYzHtMKHGpS_QDcgDFAYnLasW5Ooo/exec">
+            <div class="form-group col-md-5">
+                <label for="firstName" class="black" style="padding-bottom: 5px">First Name <sup
                         style="color:#ff4441; font-size: 13px;">*</sup></label>
-                <input type="text" class="form-control" name="name" id="fullName" aria-describedby="fullNameHelp"
+                <input type="text" class="form-control" name="firstname" id="firstName" aria-describedby="firstNameHelp"
+                       placeholder="" required>
+            </div>
+            <div class="form-group col-md-5">
+                <label for="lastName" class="black" style="padding-bottom: 5px">Last Name <sup
+                        style="color:#ff4441; font-size: 13px;">*</sup></label>
+                <input type="text" class="form-control" name="lastname" id="lastName" aria-describedby="lastNameHelp"
                        placeholder="" required>
             </div>
             <div class="form-group col-md-10">
@@ -72,10 +121,37 @@
                 </select>
             </div>
 
-            <div class="form-group col-md-10">
-                <label for="age" class="black" style="padding-bottom: 5px">Age <sup
+            <div class="form-check col-md-10">
+                <label class="black" style="padding-bottom: 5px">Are you 18 or over? <sup
+                        style="color:#ff4441; font-size: 13px;">*</sup></a></label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="greaterThan18" id="yes1" value="yes" required>
+                    <label class="form-check-label" style="color:#424242" for="yes1">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="greaterThan18" id="no1" value="no" required>
+                    <label class="form-check-label" style="color:#424242" for="no1">
+                        No
+                    </label>
+                </div>
+
+                </label>
+
+            </div>
+
+            <div class="form-group col-md-5">
+                <label for="city" class="black" style="padding-bottom: 5px">What city do you currently live in? <sup
                         style="color:#ff4441; font-size: 13px;">*</sup></label>
-                <input type="number" name="age" class="form-control" id="age" aria-describedby="ageHelp"
+                <input type="text" name="city" class="form-control" id="city" aria-describedby="cityHelp"
+                       placeholder="" required>
+            </div>
+
+            <div class="form-group col-md-5">
+                <label for="city" class="black" style="padding-bottom: 5px">What state do you currently live in? <sup
+                        style="color:#ff4441; font-size: 13px;">*</sup></label>
+                <input type="text" name="state" class="form-control" id="state" aria-describedby="stateHelp"
                        placeholder="" required>
             </div>
 
@@ -111,14 +187,26 @@
             <div class="form-group col-md-10">
                 <label for="selfDescription" class="black" style="padding-bottom: 5px">What would you describe yourself
                     as? <sup style="color:#ff4441; font-size: 13px;">*</sup></label>
-                <input type="text" class="form-control" name="selfDescription" id="selfDescription" aria-describedby="selfDescriptionHelp"
+                <input type="text" class="form-control" name="selfDescription" id="selfDescription"
+                       aria-describedby="selfDescriptionHelp"
                        placeholder="Beginner Hacker, Designer, Data Wizard, ..." required>
             </div>
             <div class="form-group col-md-10">
                 <label for="resume" class="black" style="padding-bottom: 5px">Resume (Google Docs, Dropbox, Website, or
                     Portfolio link please) <sup style="color:#ff4441; font-size: 13px;">*</sup></a></label>
-                <input type="text" class="form-control" name="resumeLocation" id="resume" aria-describedby="resumeHelp"
-                       placeholder="" required>
+                <label class="btn btn-default resume">
+                    Browse <input type="file" class="resume" id="resume" name="resume" hidden required>
+                </label>
+            </div>
+            <div class="form-group col-md-10">
+                <label for="diet" class="black" style="padding-bottom: 5px">Your Github Repo: </label>
+                <input type="text" class="form-control" name="gHub" id="gHub" aria-describedby="gHub"
+                       placeholder="">
+            </div>
+            <div class="form-group col-md-10">
+                <label for="diet" class="black" style="padding-bottom: 5px">Your LinkedIn Page: </label>
+                <input type="text" class="form-control" name="linkedIn" id="linkedIn" aria-describedby="linkedIn"
+                       placeholder="">
             </div>
             <div class="form-group col-md-10">
                 <label for="diet" class="black" style="padding-bottom: 5px">Dietary Restrictions <sup
@@ -131,7 +219,8 @@
                 <label class="black" style="padding-bottom: 5px">How did you hear about HackCCNY? <sup
                         style="color:#ff4441; font-size: 13px;">*</sup></a></label>
                 <div>
-                    <input class="form-check-input" type="checkbox" name="hearAbout" value="socialMedia" id="socialMedia">
+                    <input class="form-check-input" type="checkbox" name="hearAbout" value="socialMedia"
+                           id="socialMedia">
                     <label class="form-check-label" style="color:#424242" for="socialMedia">
                         Social Media
                     </label>
@@ -155,7 +244,8 @@
                     </label>
                 </div>
                 <div>
-                    <input class="form-check-input" type="checkbox" name="hearAbout" value="WordofMouth" id="WordofMouth">
+                    <input class="form-check-input" type="checkbox" name="hearAbout" value="WordofMouth"
+                           id="WordofMouth">
                     <label class="form-check-label" style="color:#424242" for="WordofMouth">
                         Word of Mouth
                     </label>
@@ -224,12 +314,75 @@
                 <label for="getOutOf" class="black">What would you want to learn/get out of HackCCNY?</label>
                 <textarea class="form-control" name="getOutOf" id="getOutOf" rows="10"></textarea>
             </div>
+
+            <div class="form-check col-md-10">
+                <label class="black" style="padding-bottom: 5px">Are you coming with a team? <sup
+                        style="color:#ff4441; font-size: 13px;">*</sup></a></label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="comingWithTeam" id="yes2" value="yes" required>
+                    <label class="form-check-label" style="color:#424242" for="yes2">
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="comingWithTeam" id="no2" value="no" required>
+                    <label class="form-check-label" style="color:#424242" for="no2">
+                        No
+                    </label>
+                </div>
+
+                </label>
+
+            </div>
+
+            <div class="form-group col-md-10 hidden">
+                <label for="InputSchool" class="black" style="padding-bottom: 5px">How many people will be on the team?
+                    <sup
+                            style="color:#ff4441; font-size: 13px;">*</sup></label>
+                <input type="number" name="numberOnTeam" class="form-control" id="numberOnTeam"
+                       aria-describedby="numberOnTeam"
+                       placeholder="" required>
+            </div>
+
+            <div class="form-group col-md-10 hidden">
+                <label for="InputSchool" class="black" style="padding-bottom: 5px">What do you want your team name to
+                    be? <sup
+                            style="color:#ff4441; font-size: 13px;">*</sup></label>
+                <input type="number" name="teamName" class="form-control" id="teamName" aria-describedby="teamName"
+                       placeholder="" required>
+            </div>
+
+            <div class="form-group col-md-10 hidden">
+                <label for="InputSchool" class="black" style="padding-bottom: 5px">What are the names of your teammates?
+                    <sup
+                            style="color:#ff4441; font-size: 13px;">*</sup></label>
+                <input type="number" name="teammateNames" class="form-control" id="teammateNames"
+                       aria-describedby="teammateNames"
+                       placeholder="" required>
+            </div>
+
             <div class="form-group col-md-10">
-                <button class="btn btn-primary btn-lg" type="submit">Register!</button>
+                <label for="InputSchool" class="black" style="padding-bottom: 5px">While participating in any event at
+                    CCNY/CUNY it is expected that you will adhere to the student code of conduct, <a href="">which can
+                        be found here. </a>
+                    <sup style="color:#ff4441; font-size: 13px;">*</sup></label>
+                <div>
+                    <input class="form-check-input" type="checkbox" name="agreetoTerms" value="yes"
+                           id="agreetoTermsYes">
+                    <label class="form-check-label" style="color:#424242" for="agreetoTermsYes">
+                        Agree
+                    </label>
+                </div>
+            </div>
+
+
+            <div class="form-group col-md-10">
+                <button class="btn btn-primary btn-lg disabled" id="register" type="submit">Register!</button>
             </div>
 
             <div class="thankyou_message" style="display:none;">
-                <h2>Thank you for registering! We will contact you with more details about the hackathon as we get closer to the date!</h2>
+                <h2>Thank you for registering! We will contact you with more details about the hackathon as we get
+                    closer to the date!</h2>
             </div>
 
         </form>
@@ -237,9 +390,6 @@
 </section>
 
 <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
