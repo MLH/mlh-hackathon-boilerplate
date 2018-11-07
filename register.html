@@ -45,10 +45,10 @@
             var button = $("#register");
 
             agree_button.change(function () {
-                    if(this.checked) {
+                    if (this.checked) {
                         button.removeClass("disabled");
                     }
-                    else{
+                    else {
                         button.addClass('disabled');
                     }
                 }
@@ -185,18 +185,10 @@
                 </select>
             </div>
             <div class="form-group col-md-10">
-                <label for="selfDescription" class="black" style="padding-bottom: 5px">What would you describe yourself
-                    as? <sup style="color:#ff4441; font-size: 13px;">*</sup></label>
-                <input type="text" class="form-control" name="selfDescription" id="selfDescription"
-                       aria-describedby="selfDescriptionHelp"
-                       placeholder="Beginner Hacker, Designer, Data Wizard, ..." required>
-            </div>
-            <div class="form-group col-md-10">
-                <label for="resume" class="black" style="padding-bottom: 5px">Resume (Google Docs, Dropbox, Website, or
-                    Portfolio link please) <sup style="color:#ff4441; font-size: 13px;">*</sup></a></label>
-                <label class="btn btn-default resume">
-                    Browse <input type="file" class="resume" id="resume" name="resume" hidden required>
-                </label>
+                <label for="resume" class="black" style="padding-bottom: 5px">Resume (Google Docs or Dropbox pdf link
+                    please) <sup style="color:#ff4441; font-size: 13px;">*</sup></a></label>
+                <input type="text" class="form-control" name="resumeLocation" id="resume" aria-describedby="resumeHelp"
+                       placeholder="" required>
             </div>
             <div class="form-group col-md-10">
                 <label for="diet" class="black" style="padding-bottom: 5px">Your Github Repo: </label>
@@ -363,7 +355,9 @@
 
             <div class="form-group col-md-10">
                 <label for="InputSchool" class="black" style="padding-bottom: 5px">While participating in any event at
-                    CCNY/CUNY it is expected that you will adhere to the student code of conduct, <a href="">which can
+                    CCNY/CUNY it is expected that you will adhere to the student code of conduct, <a
+                            href="http://www2.cuny.edu/about/administration/offices/ovsa/policies/" target="_blank">which
+                        can
                         be found here. </a>
                     <sup style="color:#ff4441; font-size: 13px;">*</sup></label>
                 <div>
