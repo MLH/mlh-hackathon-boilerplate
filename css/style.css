@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5, h6
 	font-weight: 600;
 	color: #222222;
 }
+.form-group{
+    margin-bottom: 17px;
+}
+
 a, a:hover, a:focus, a:active{
     outline: none;
 }

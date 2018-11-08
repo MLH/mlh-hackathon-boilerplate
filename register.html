@@ -19,6 +19,10 @@
     <script src="js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function () {
+            $("#register").click(function () {
+                $("#thankyou").removeClass("hidden");
+                $("#registration").addClass("hidden");
+            });
             var team = false;
 
             //Inputs that determine what fields to show
@@ -54,6 +58,7 @@
                 }
             );
 
+
         });
     </script>
 
@@ -84,12 +89,13 @@
     </div>
 </section>
 <section>
-    <h1 class="text-center">Registration!</h1>
-    <div class="container col-md-offset-3">
+    <form method="post" class="gform pure-form pure-form-stacked" id="registration"
+          action="https://script.google.com/macros/s/AKfycbzO10rzDfvtMzXus7w8AIFYzHtMKHGpS_QDcgDFAYnLasW5Ooo/exec">
+        <h1 class="text-center">Registration!</h1>
+        <div class="container col-md-offset-3">
 
-        <br>
-        <form method="post" class="gform pure-form pure-form-stacked" id="registration"
-              action="https://script.google.com/macros/s/AKfycbzO10rzDfvtMzXus7w8AIFYzHtMKHGpS_QDcgDFAYnLasW5Ooo/exec">
+            <br>
+
             <div class="form-group col-md-5">
                 <label for="firstName" class="black" style="padding-bottom: 5px">First Name <sup
                         style="color:#ff4441; font-size: 13px;">*</sup></label>
@@ -121,7 +127,7 @@
                 </select>
             </div>
 
-            <div class="form-check col-md-10">
+            <div class="form-check form-group col-md-10 container">
                 <label class="black" style="padding-bottom: 5px">Are you 18 or over? <sup
                         style="color:#ff4441; font-size: 13px;">*</sup></a></label>
                 <div class="form-check">
@@ -207,7 +213,7 @@
                        placeholder="" required>
             </div>
 
-            <div class="form-check col-md-10">
+            <div class="form-check form-group col-md-10">
                 <label class="black" style="padding-bottom: 5px">How did you hear about HackCCNY? <sup
                         style="color:#ff4441; font-size: 13px;">*</sup></a></label>
                 <div>
@@ -250,27 +256,48 @@
                 </div>
             </div>
 
-            <div class="form-check col-md-10">
-                <label class="black" style="padding-bottom: 5px">Is this your first Hackathon? <sup
+            <div class="form-check form-group col-md-10">
+                <label class="black" style="padding-bottom: 5px">How many hackathons have you been to in the past? <sup
                         style="color:#ff4441; font-size: 13px;">*</sup></a></label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="firstHackathon" id="yes" value="yes" required>
-                    <label class="form-check-label" style="color:#424242" for="yes">
-                        Yes
+                    <input class="form-check-input" type="radio" name="howManyHackathon" id="one" value="one" required>
+                    <label class="form-check-label" style="color:#424242" for="one">
+                        1
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="firstHackathon" id="no" value="no" required>
-                    <label class="form-check-label" style="color:#424242" for="no">
-                        No
+                    <input class="form-check-input" type="radio" name="howManyHackathon" id="2to3" value="2to3"
+                           required>
+                    <label class="form-check-label" style="color:#424242" for="2to3">
+                        2-3
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="howManyHackathon" id="4to5" value="4to5"
+                           required>
+                    <label class="form-check-label" style="color:#424242" for="4to5">
+                        4-5
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="howManyHackathon" id="6to7" value="6to7"
+                           required>
+                    <label class="form-check-label" style="color:#424242" for="6to7">
+                        6-7
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="howManyHackathon" id="eightplus"
+                           value="eightplus" required>
+                    <label class="form-check-label" style="color:#424242" for="eightplus">
+                        8+
                     </label>
                 </div>
 
-                </label>
 
             </div>
 
-            <div class="form-check col-md-10">
+            <div class="form-check form-group col-md-10">
                 <label class="black" style="padding-bottom: 5px">What is your shirt size? <sup
                         style="color:#ff4441; font-size: 13px;">*</sup></a></label>
                 <div class="form-check">
@@ -354,33 +381,39 @@
             </div>
 
             <div class="form-group col-md-10">
-                <label for="InputSchool" class="black" style="padding-bottom: 5px">While participating in any event at
+                <label for="agreetoTermsYes" class="black" style="padding-bottom: 5px">While participating in any event
+                    at
                     CCNY/CUNY it is expected that you will adhere to the student code of conduct, <a
                             href="http://www2.cuny.edu/about/administration/offices/ovsa/policies/" target="_blank">which
                         can
                         be found here. </a>
                     <sup style="color:#ff4441; font-size: 13px;">*</sup></label>
-                <div>
+                <div style="margin-bottom: 10px;">
                     <input class="form-check-input" type="checkbox" name="agreetoTerms" value="yes"
                            id="agreetoTermsYes">
                     <label class="form-check-label" style="color:#424242" for="agreetoTermsYes">
                         Agree
                     </label>
                 </div>
+                <!--</div>-->
+
+
+                <div class="form-group col-md-10">
+                    <button class="btn btn-primary btn-lg disabled" id="register" type="submit">Register!</button>
+                </div>
+
+
             </div>
-
-
-            <div class="form-group col-md-10">
-                <button class="btn btn-primary btn-lg disabled" id="register" type="submit">Register!</button>
-            </div>
-
-            <div class="thankyou_message" style="display:none;">
-                <h2>Thank you for registering! We will contact you with more details about the hackathon as we get
-                    closer to the date!</h2>
-            </div>
-
-        </form>
+        </div>
+    </form>
+    <div class="container col-md-offset-3 col-md-6">
+        <div class="hidden" id="thankyou">
+            <h3 style="font-family: 'Raleway'; text-align: center ">Thank you for registering! We will contact you with
+                more details about the hackathon as we get
+                closer to the date!</h3>
+        </div>
     </div>
+
 </section>
 
 <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
