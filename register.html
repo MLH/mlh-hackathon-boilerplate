@@ -34,15 +34,15 @@
             var team = false;
 
             //Inputs that determine what fields to show
-            var rating = $('#registration input:radio[name=comingWithTeam]');
-
+            var teammed = $('#registration input:radio[name=comingWithTeam]');
+            
             var numberOnTeam = $("#numberOnTeam").parent();
             var teamName = $("#teamName").parent();
             var teammateNames = $("#teammateNames").parent();
 
             var all = numberOnTeam.add(teamName).add(teammateNames);
 
-            rating.change(function () {
+            teammed.change(function () {
                     var value = this.value;
                     all.addClass('hidden');
                     if (value == 'yes') {
