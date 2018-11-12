@@ -47,6 +47,8 @@
                     all.addClass('hidden');
                     if (value == 'yes') {
                         all.removeClass("hidden");
+                        $("#numberOnTeam").prop('required', true);
+                        $("#teammateNames").prop('required', true);
                     }
                 }
             );
@@ -456,28 +458,28 @@
             </div>
 
             <div class="form-group col-md-10 hidden">
-                <label for="InputSchool" class="black" style="padding-bottom: 5px">How many people will be on the team?
+                <label for="numberOnTeam" class="black" style="padding-bottom: 5px">How many people will be on the team?
                     <sup
                             style="color:#ff4441; font-size: 13px;">*</sup></label>
                 <input type="number" name="numberOnTeam" class="form-control" id="numberOnTeam"
                        aria-describedby="numberOnTeam"
-                       placeholder="" required>
+                       placeholder="">
             </div>
 
             <div class="form-group col-md-10 hidden">
-                <label for="InputSchool" class="black" style="padding-bottom: 5px">What do you want your team name to
+                <label for="teamName" class="black" style="padding-bottom: 5px">What do you want your team name to
                     be? </label>
                 <input type="text" name="teamName" class="form-control" id="teamName" aria-describedby="teamName"
                        placeholder="">
             </div>
 
             <div class="form-group col-md-10 hidden">
-                <label for="InputSchool" class="black" style="padding-bottom: 5px">What are the names of your teammates?
+                <label for="teammateNames" class="black" style="padding-bottom: 5px">What are the names of your teammates?
                     <sup
                             style="color:#ff4441; font-size: 13px;">*</sup></label>
                 <input type="text" name="teammateNames" class="form-control" id="teammateNames"
                        aria-describedby="teammateNames"
-                       placeholder="" required>
+                       placeholder="">
             </div>
 
             <div class="form-group col-md-10">
