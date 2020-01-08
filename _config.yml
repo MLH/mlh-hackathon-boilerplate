@@ -35,11 +35,6 @@ event:
   date:        "7 & 8 March 2020"
   location:    "Omaha, NE, United States"
 
-  trust_badge:
-    year:   "2020"  # season year
-    region: "na"    # "na" or "eu"
-    color:  "blue" # "white", "black", "gray", "red", "blue" or "yellow"
-
   hero:
     links:
       - text: "Apply"
@@ -68,6 +63,8 @@ event:
         title: "SHARE."
         description: >
           We can write something nice with a graphic (as above) to make the event more appealing.
+          
+  sponsors:
 
   # Frequently asked questions.
   faq:
