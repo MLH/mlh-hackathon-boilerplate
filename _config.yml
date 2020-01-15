@@ -54,15 +54,15 @@ event:
       - image: "images/image1.png"
         title: "LEARN."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          Pickup new technologies in a collaborative and friendly environment.
       - image: "images/image2.png"
         title: "BUILD."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          Create awesome software and hardware projects.
       - image: "images/image3.png"
         title: "SHARE."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          Show off your project to judges and win prizes.
           
   sponsors:
 
@@ -83,10 +83,10 @@ event:
     - question: "Where is the event?"
       answer: >
         The event is being hosted at the Peter Kiewit Institute at the University of Nebraska at Omaha campus in Omaha, Nebraska.
-    - question: "What is Major League Hacking?"
-      answer: >
-        Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
-        We work with over 200 Member Events and empower over 70,000 students every year.
+    #- question: "What is Major League Hacking?"
+    #  answer: >
+    #    Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
+    #    We work with over 200 Member Events and empower over 70,000 students every year.
     - question: "Is there a code of conduct?"
       answer: >
         Yes there is. We enforce it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
@@ -96,6 +96,9 @@ event:
     - question: "Is there a theme?"
       answer: >
         The theme for HackUNO 2020 is going to be weather!
+    - question: "Is there a schedule available?"
+      answer: >
+        The schedule for HackUNO 2020 is still being decided.
     - question: "Will there be prizes?"
       answer: >
         The prizes for HackUNO are still being decided.
