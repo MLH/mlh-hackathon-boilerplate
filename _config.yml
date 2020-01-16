@@ -51,15 +51,15 @@ event:
   # Info Sections
   info:
     sections:
-      - image: "images/image1.png"
+      - image: "images/square.png"
         title: "LEARN."
         description: >
           Pickup new technologies in a collaborative and friendly environment.
-      - image: "images/image2.png"
+      - image: "images/gear.png"
         title: "BUILD."
         description: >
           Create awesome software and hardware projects.
-      - image: "images/image3.png"
+      - image: "images/nodes.png"
         title: "SHARE."
         description: >
           Show off your project to judges and win prizes.
