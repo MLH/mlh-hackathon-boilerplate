@@ -173,6 +173,23 @@ section {
 }
 
 /*
+ * Sponsor Section
+ */
+
+.sponsors {
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 100px 0;
+  position: relative;
+}
+
+.sponsors img {
+  margin-bottom: -2px;
+  margin-top: 40px;
+  width: 300px;
+}
+
+/*
  * FAQ Section
  */
 
