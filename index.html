@@ -28,6 +28,20 @@ layout: default
   </div>
 </section>
 
+<section class="sponsors">
+  <div class="container>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+        {% for sponsor in site.event.sponsors %}
+          <div class="col-xs-12 col-sm-12">
+            <img src="{{sponsor.image}}" alt="{{sponsor.title}}" />
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="faq">
   <div class="container">
     <h1 class="text-center">FAQ</h1>
