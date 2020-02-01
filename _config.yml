@@ -65,7 +65,7 @@ event:
           Show off your project to judges and win prizes.
           
   sponsors:
-    - image: "images/fnbo_1.jpg"
+    - image: "images/sponsors/fnbo_1.jpg"
       title: "First National Bank of Omaha"
 
   # Frequently asked questions.
