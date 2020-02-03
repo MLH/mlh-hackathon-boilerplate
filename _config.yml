@@ -68,6 +68,9 @@ event:
     - image: "images/sponsors/fnbo_1.jpg"
       title: "First National Bank of Omaha"
 
+    - image: "images/sponsors/ConAgra_Brands.jpg"
+      title: "ConAgra Brands"
+
   # Frequently asked questions.
   faq:
     - question: "What is a hackathon?"
