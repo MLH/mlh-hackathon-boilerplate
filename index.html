@@ -34,8 +34,8 @@ layout: default
     <div class="row">
       <div class="col-xs-12 col-sm-8 col-sm-offset-2">
         {% for sponsor in site.event.sponsors %}
-          <div class="col-xs-12 col-sm-12">
-            <img src="{{sponsor.image}}" alt="{{sponsor.title}}" />
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <img src="{{sponsor.image}}" alt="{{sponsor.title}}" title="{{sponsor.title}}" />
           </div>
         {% endfor %}
       </div>
