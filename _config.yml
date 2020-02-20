@@ -71,6 +71,9 @@ event:
     - image: "images/sponsors/ConAgra_Brands.jpg"
       title: "ConAgra Brands"
 
+    - image: "images/sponsors/MavProGrant.png"
+      title: "Maverick Productions Grant Program"
+
   # Frequently asked questions.
   faq:
     - question: "What is a hackathon?"
