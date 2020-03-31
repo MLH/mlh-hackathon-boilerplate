@@ -7,7 +7,9 @@ layout: default
 <section class="about">
   <div class="container">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
-      {{ site.event.about.description | markdownify }}
+      {
+        { site.event.about.description | markdownify }
+      }
     </div>
   </div>
 </section>
@@ -15,6 +17,7 @@ layout: default
 <section class="info">
   <div class="container">
     <div class="items row">
+<!--       Usage of For LOOPS in HTML -->
       {% for section in site.event.info.sections %}
         <div class="col-xs-12 col-sm-4 text-center">
           <div class="item">
