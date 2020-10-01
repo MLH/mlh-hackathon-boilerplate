@@ -54,7 +54,9 @@ section {
 }
 
 .hero img {
-  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero hr {
@@ -207,9 +209,9 @@ section {
 }
 
 .faq img {
-  margin-bottom: -2px;
-  margin-top: 40px;
-  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*
@@ -223,8 +225,9 @@ section {
 }
 
 .footer img {
-  max-width: 250px;
-  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer h3 {
@@ -248,7 +251,9 @@ section {
   }
 
   .hero img {
-    width: 250px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
   }
 
   .hero hr {
