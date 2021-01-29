@@ -24,7 +24,7 @@ tracking:
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title:       "HackUNO | 7/8 March 2020"
+  title:       "HackUNO | 6/7 March 2020"
   description: "HackUNO is a 24 hour coding marathon that encourages teams to think outside the box and find creative solutions to real world problems! After the 24 hours, teams will present what they have created to a panel of judges that consists of UNO students and companies from the Omaha area, who will decide the winners!"
   image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
@@ -32,13 +32,13 @@ seo:
 event:
   name:        "HackUNO"
   description: "HackUNO is a 24 hour coding marathon that encourages teams to think outside the box and find creative solutions to real world problems!"
-  date:        "7 & 8 March 2020"
-  location:    "Omaha, NE, United States"
+  date:        "6 & 7 March 2020"
+  location:    "Virtual from Omaha, NE, United States"
 
   hero:
     links:
       - text: "Apply"
-        href: "https://forms.gle/jZzxu9MYLVLLqB1M9"
+        href: "https://forms.gle/QEnz565HzYFNqhuRA"
       - text: "Sponsor"
         href: "mailto:unoacm@unomaha.edu"
 
@@ -65,14 +65,8 @@ event:
           Show off your project to judges and win prizes.
           
   sponsors:
-    - image: "images/sponsors/fnbo_1.jpg"
-      title: "First National Bank of Omaha"
-
-    - image: "images/sponsors/ConAgra_Brands.jpg"
-      title: "ConAgra Brands"
-
-    - image: "images/sponsors/MavProGrant.png"
-      title: "Maverick Productions Grant Program"
+    - image: "images/sponsors/werner.png"
+      title: "Werner Enterprises"
 
   # Frequently asked questions.
   faq:
@@ -83,14 +77,14 @@ event:
         the core features of their idea.
     - question: "How much does it cost?"
       answer: >
-        Nothing! Food, drinks, and snacks are all provided!
+        Nothing! 
     - question: "Do I need to be a student to attend?"
       answer: >
         Yes. Only students who are currently enrolled at a college/university or
         have graduated within the past 12 months are eligible to attend.
     - question: "Where is the event?"
       answer: >
-        The event is being hosted at the Peter Kiewit Institute at the University of Nebraska at Omaha campus in Omaha, Nebraska.
+        The event is being hosted virtually using Discord, Zoom, and Devpost.
     #- question: "What is Major League Hacking?"
     #  answer: >
     #    Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
@@ -103,13 +97,13 @@ event:
         Teams can be as small as 1 and as large as 3.
     - question: "Is there a theme?"
       answer: >
-        The theme for HackUNO 2020 is going to be weather!
+        The theme for HackUNO 2021 is going to be health!
     - question: "Is there a schedule available?"
       answer: >
-        The schedule for HackUNO 2020 is still being decided.
+        The schedule for HackUNO 2021 will be available soon.
     - question: "Will there be prizes?"
       answer: >
-        The prizes for HackUNO are still being decided.
+        There will be $2,500+ worth of prizes throughout HackUNO 2021.
 
   # This is the message you'll receive once you've registered.
   register:
