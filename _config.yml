@@ -29,36 +29,35 @@ social:
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title:       "Example Hacks | 5-6 August 2022"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
-  image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
+  title: "VikingHacks | April 1-2 2023"
+  description: "48 Hour Hackathon Held at Western Washington University"
+  image: "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
 # Event information.
 event:
-  name:        "Example Hacks"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
-  date:        "5 - 6 August 2022"
-  location:    "Holmdel, NJ, United States"
+  name: "VikingHacks"
+  description: "48 Hour Hackathon Held at Western Washington University"
+  date: "April 1-2 2023"
+  location: "Bellingham, WA, United States"
 
   trust_badge:
-    year:   "2017"  # season year
-    region: "eu"    # "na" or "eu"
-    color:  "white" # "white", "black", "gray", "red", "blue" or "yellow"
+    year: "2023" # season year
+    color: "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
   hero:
     links:
       - text: "Apply"
         my_mlh:
-          client_id:    "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
+          client_id: "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
           redirect_uri: "https://whatcom-coders-winter2023.github.io/mlh-hackathon-boilerplate/success.html"
       - text: "Sponsor"
-        href: "mailto:sponsorship@website.com"
+        href: "mailto:whatcomcoders@gmail.com"
 
   about:
     description: >
-      Example Hacks is a hackathon hosted at The University of Example.
-      This is your opportunity to describe your event, what to expect, where it is & anything unique to your event.
-      Keep it straightforward, don't make it too long.
+      VikingHacks will be the first iteration of Whatcom Coders large-scale, student-run hackathon. 
+      Over the weekend of April 1st-2nd, students from across Whatcom County will gather to build the coolest 
+      and most innovative web, mobile, and hardware applications; meet amazing people and win prizes and awards.
 
   # Info Sections
   info:
@@ -66,16 +65,15 @@ event:
       - image: "images/image1.png"
         title: "LEARN."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          Our goal is to help educate new hackers on practical development skills and expand their professional portfolios
       - image: "images/image2.png"
         title: "BUILD."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          We believe project-based learning is the best way to familiarize students with new technologies, techniques, and practice.
       - image: "images/image3.png"
         title: "SHARE."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
-
+          VikingHacks will enable students to develop their portfolios and give sponsors the opportunity to connect with the best and the brightest.
   # Frequently asked questions.
   faq:
     - question: "What is a hackathon?"
@@ -91,7 +89,7 @@ event:
         have graduated within the past 12 months are eligible to attend.
     - question: "Where is the event?"
       answer: >
-        The event is being hosted at [insert venue location here].
+        The event is being hosted at Western Washington University in Bellingham, WA.
     - question: "What is Major League Hacking?"
       answer: >
         Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
@@ -111,10 +109,10 @@ event:
 
 markdown: kramdown
 exclude:
- - node_modules
- - gulpfile.js
- - Gemfile
- - Gemfile.lock
- - package.json
- - README.md
- - CNAME
+  - node_modules
+  - gulpfile.js
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - CNAME
