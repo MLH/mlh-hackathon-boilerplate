@@ -5,7 +5,7 @@
 # If you are hosting in a sub-folder, for example: https://mlh.github.io/mlh-hackathon-boilerplate/,
 # you must specify it as the baseurl
 # If you hosting as a root, for example: htttps://[github username].github.io, then leave it blank
-baseurl: "/mlh-hackathon-boilerplate"
+baseurl: "/vikingHacks2023"
 
 # uncomment the next line if you are hosting as a root and not sub-folder
 # for example, when runnig locally at http://127.0.0.1:4000/
