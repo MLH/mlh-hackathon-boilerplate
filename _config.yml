@@ -5,7 +5,7 @@
 # If you are hosting in a sub-folder, for example: https://mlh.github.io/mlh-hackathon-boilerplate/,
 # you must specify it as the baseurl
 # If you hosting as a root, for example: htttps://[github username].github.io, then leave it blank
-baseurl: "/vikingHacks2023"
+baseurl: "/vikinghacks2023"
 
 # uncomment the next line if you are hosting as a root and not sub-folder
 # for example, when runnig locally at http://127.0.0.1:4000/
@@ -13,7 +13,7 @@ baseurl: "/vikingHacks2023"
 
 # If you're using GitHub pages without a custom domain, this is "https://[github username].github.io"
 # If you're using GitHub pages with a custom domain, this is "http://[your domain]" (or https if you're using SSL)
-url: "https://WhatcomCoders2023.github.io"
+url: "https://whatcomcoders2023.github.io/""
 
 # The ability to use custom themes.
 style:
@@ -49,7 +49,7 @@ event:
       - text: "Apply"
         my_mlh:
           client_id: "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
-          redirect_uri: "https://WhatcomCoders2023.github.io/mlh-hackathon-boilerplate/success.html"
+          redirect_uri: "https://whatcomcoders2023.github.io//vikinghacks2023/success.html"
       - text: "Sponsor"
         href: "mailto:whatcomcoders@gmail.com"
 
