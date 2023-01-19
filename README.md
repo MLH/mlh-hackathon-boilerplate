@@ -33,7 +33,7 @@ If you would like to populate and test the website locally, follow these steps:
 2. Install Jekyll and bundler gems `gem install jekyll bundler`
 3. Build and serve the site locally `bundle exec jekyll serve`
 4. Head over to [http://localhost:4000/][localhost]
-5. Make sure everything looks good 
+5. Make sure everything looks good
 
 [jekyll-guides]: https://jekyllrb.com/docs/installation/
 [localhost]: http://localhost:4000/
@@ -67,6 +67,6 @@ If you setup HTTPS correctly, make sure you do not refernece HTTP anywhere on yo
 
 Our boilerplate is written entirely in [Jekyll][jekyll], which GitHub automatically compiles. This dramatically reduces the technical barrier needed to setup a hackathon website. We'd love to receive your contributions towards making this even better. A couple of things to note:
 
-- We can't accept custom plugins because it's not supported by [GitHub Pages][github-pages]
+- We can't accept custom plugins because it's not supported by [GitHub Pages][github-pages].
 - If adding any external images or components, please ensure you have the correct permission to use them
 - We advise creating a GitHub issue first explaining the issue
