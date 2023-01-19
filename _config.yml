@@ -46,12 +46,13 @@ event:
 
   hero:
     links:
-      - text: "Apply"
-        my_mlh:
-          client_id: "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
-          redirect_uri: "https://whatcomcoders2023.github.io//vikinghacks2023/success.html"
-      - text: "Sponsor"
-        href: "mailto:whatcomcoders@gmail.com"
+      - text: "Interest Form"
+        href: "https://forms.gle/BNc33h1JtJihXka36"
+        # my_mlh:
+        #   client_id: "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
+        #   redirect_uri: "https://whatcomcoders2023.github.io//vikinghacks2023/success.html"
+      - text: "Sponsor Us"
+        href: "https://drive.google.com/file/d/1yU3eeAwSufD_dpsErAPPOO--AThruLCa/view?usp=sharing"
 
   about:
     description: >
