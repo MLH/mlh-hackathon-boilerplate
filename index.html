@@ -12,7 +12,7 @@ layout: default
   </div>
 </section>
 
-<section class="info">
+<!-- <section class="info">
   <div class="container">
     <div class="items row">
       {% for section in site.event.info.sections %}
@@ -21,6 +21,61 @@ layout: default
             <img src="{{ section.image }}" />
             <h1>{{ section.title }}</h1>
             <p>{{ section.description }}</p>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section> -->
+
+<section class="sponsors">
+  <div class="container">
+    <h1 class="text-center">Sponsors</h1>
+    <div class="items row row-centered">
+      {% for section in site.event.sponsors.sections.gold %}
+        <div class="col-xs-12 col-sm-12 col-centered text-center">
+          <div class="item text-center gold">
+            {% if section.link %}<a href="{{ section.link }}">{% endif %}
+            {% if section.image %}<img src="{{ section.image }}" />{% endif %}
+            {% if section.description %}<p>{{ section.description }}</p>{% endif %}
+            {% if section.link %}</a>{% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="items row row-centered">
+      {% for section in site.event.sponsors.sections.silver %}
+        <div class="col-xs-12 col-sm-6 col-centered text-center">
+          <div class="item text-center silver">
+            {% if section.link %}<a href="{{ section.link }}">{% endif %}
+            {% if section.image %}<img src="{{ section.image }}" />{% endif %}
+            {% if section.description %}<p>{{ section.description }}</p>{% endif %}
+            {% if section.link %}</a>{% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="items row row-centered">
+      {% for section in site.event.sponsors.sections.bronze %}
+        <div class="col-xs-12 col-sm-4 col-centered text-center">
+          <div class="item text-center bronze">
+            {% if section.link %}<a href="{{ section.link }}">{% endif %}
+            {% if section.image %}<img src="{{ section.image }}" />{% endif %}
+            {% if section.description %}<p>{{ section.description }}</p>{% endif %}
+            {% if section.link %}</a>{% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <h1 class="text-center">Partners</h1>
+    <div class="items row row-centered">
+      {% for section in site.event.partners.sections %}
+        <div class="col-xs-12 col-sm-4 col-centered text-center">
+          <div class="item text-center">
+            {% if section.link %}<a href="{{ section.link }}">{% endif %}
+            {% if section.image %}<img src="{{ section.image }}" />{% endif %}
+            {% if section.description %}<p>{{ section.description }}</p>{% endif %}
+            {% if section.link %}</a>{% endif %}
           </div>
         </div>
       {% endfor %}

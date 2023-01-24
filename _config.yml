@@ -17,7 +17,7 @@ url: "https://whatcomcoders2023.github.io/"
 
 # The ability to use custom themes.
 style:
-  theme: "original"
+  theme: "vikingHacks"
 
 # This will help you track who's visiting your website.
 tracking:
@@ -60,21 +60,45 @@ event:
       Over the weekend of April 1st-2nd, students from across Whatcom County will gather to build the coolest 
       and most innovative web, mobile, and hardware applications; meet amazing people and win prizes and awards.
 
-  # Info Sections
-  info:
+  # # Info Sections
+  # info:
+  #   sections:
+  #     - image: "images/image1.png"
+  #       title: "LEARN."
+  #       description: >
+  #         Our goal is to help educate new hackers on practical development skills and expand their professional portfolios
+  #     - image: "images/image2.png"
+  #       title: "BUILD."
+  #       description: >
+  #         We believe project-based learning is the best way to familiarize students with new technologies, techniques, and practice.
+  #     - image: "images/image3.png"
+  #       title: "SHARE."
+  #       description: >
+  #         VikingHacks will enable students to develop their portfolios and give sponsors the opportunity to connect with the best and the brightest.
+
+  # Sponsors
+  sponsors:
     sections:
-      - image: "images/image1.png"
-        title: "LEARN."
-        description: >
-          Our goal is to help educate new hackers on practical development skills and expand their professional portfolios
-      - image: "images/image2.png"
-        title: "BUILD."
-        description: >
-          We believe project-based learning is the best way to familiarize students with new technologies, techniques, and practice.
-      - image: "images/image3.png"
-        title: "SHARE."
-        description: >
-          VikingHacks will enable students to develop their portfolios and give sponsors the opportunity to connect with the best and the brightest.
+      gold:
+        - image: "images/github-logo.png"
+          link: "https://github.com/"
+      silver:
+        - image: "images/stackoverflow-logo.png"
+          link: "https://stackoverflow.com/"
+      bronze:
+        - image: "images/wwucse-logo.png"
+          link: "https://cse.wwu.edu/"
+
+  # Partners
+  partners:
+    sections:
+      - image: "https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.svg"
+        link: "https://mlh.io/"
+      - image: "images/agic-logo.png"
+        link: "https://wwu-awc.github.io/"
+      - image: "images/wwu_cybersecurity-logo.png"
+        link: "https://wwucyber.com/"
+
   # Frequently asked questions.
   faq:
     - question: "What is a hackathon?"
