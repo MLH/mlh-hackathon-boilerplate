@@ -29,7 +29,7 @@ social:
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title: "VikingHacks | May 12th-13th 2023"
+  title: "VikingHacks | May 13th-14th 2023"
   description: "48 Hour Hackathon Held at Western Washington University"
   image: "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
@@ -37,7 +37,7 @@ seo:
 event:
   name: "VikingHacks"
   description: "48 Hour Hackathon Held at Western Washington University"
-  date: "May 12th-13th 2023"
+  date: "May 13th-14th 2023"
   location: "Bellingham, WA, United States"
 
   trust_badge:
@@ -57,7 +57,7 @@ event:
   about:
     description: >
       VikingHacks will be the first iteration of Whatcom Coders large-scale, student-run hackathon. 
-      Over the weekend of May 12th-13th, students from across Whatcom County will gather to build the coolest 
+      Over the weekend of May 13th-14th, students from across Whatcom County will gather to build the coolest 
       and most innovative web, mobile, and hardware applications; meet amazing people and win prizes and awards.
 
   # # Info Sections
