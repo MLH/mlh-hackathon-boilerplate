@@ -83,9 +83,13 @@ event:
         - image: "images/github-logo.png"
           link: "https://github.com/"
       silver:
+        # - image: "images/stackoverflow-logo.png"
+        #   link: "https://stackoverflow.com/"
+      bronze:
+        - image: "images/elasticsearch-logo.png"
+          link: "https://www.elastic.co/"
         - image: "images/stackoverflow-logo.png"
           link: "https://stackoverflow.com/"
-      bronze:
         - image: "images/wwucse-logo.png"
           link: "https://cse.wwu.edu/"
 
