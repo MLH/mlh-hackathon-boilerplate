@@ -96,8 +96,8 @@ event:
   # Partners
   partners:
     sections:
-      - image: "https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.svg"
-        link: "https://mlh.io/"
+      # - image: "https://static.mlh.io/brand-assets/logo/official/mlh-logo-color.svg"
+      #   link: "https://mlh.io/"
       - image: "images/agic-logo.png"
         link: "https://wwu-awc.github.io/"
       - image: "images/wwu_cybersecurity-logo.png"
