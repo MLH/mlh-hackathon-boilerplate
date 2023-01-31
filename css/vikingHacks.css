@@ -68,6 +68,10 @@ section {
   display: none; /* maybe temp */
 }
 
+.hero .wrapper h1{
+  line-height: 5;
+}
+
 .hero .wrapper {
   margin-top: 10vh;
 }
