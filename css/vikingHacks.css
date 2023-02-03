@@ -114,7 +114,7 @@ section {
 
 .hero .buttons a:hover/*,
 .hero .buttons a:focus*/ {
-  background-color: rgb(229, 106, 29);
+  background-color: #0073BC;
   color: #fff;
   transition: all 0.15s ease;
 }
@@ -129,9 +129,10 @@ section {
 
 .about {
 
-  background-color: #fff;
-  padding: 130px 0;
-  position: relative;
+  background-color: #0073BC;
+  padding: 120px 0;
+  /*position: relative;*/
+  height: 50vh !important;
 }
 
 .about h1 {
@@ -141,7 +142,7 @@ section {
 }
 
 .about p {
-  color: #333;
+  color: #fff;
   font-weight: 600;
   font-size: 22px;
   line-height: 1.6em;
@@ -200,10 +201,22 @@ section {
  */
 
 .faq {
-  background-color: #fff;
+  background-color: #0073BC;
   padding: 100px 0;
   position: relative;
+  color: white;
 }
+
+a:link {
+  color: white;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(153, 153, 153);
+  text-decoration: underline;
+}
+
 
 .faq h1 {
   font-family: 'Montserrat';

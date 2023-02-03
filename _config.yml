@@ -42,7 +42,7 @@ event:
 
   trust_badge:
     year: "2023" # season year
-    color: "white" # "white", "black", "gray", "red", "blue" or "yellow"
+    color: "blue" # "white", "black", "gray", "red", "blue" or "yellow"
 
   hero:
     links:
