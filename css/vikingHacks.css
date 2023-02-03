@@ -10,10 +10,14 @@
 /* Montserrat Google Font */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+
+@import url(https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300,700&display=swap);
 /*
  * green: rgb(10, 122, 9)
  * orange: rgb(229, 106, 29)
  */
+
+ 
 
 * {
   font-family: 'Open Sans';
@@ -50,7 +54,7 @@ section {
  */
 
 .hero {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/wwu_campus.jpeg');
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/landingBackground.jpg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -69,7 +73,10 @@ section {
 }
 
 .hero .wrapper h1{
-  line-height: 5;
+  line-height: 2.5;
+  font-size: 150px;
+  font-family: 'Spline Sans Mono', monospace;
+  font-weight: 700;
 }
 
 .hero .wrapper {
@@ -151,18 +158,19 @@ section {
  */
 
 .sponsors {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/wwu_mpr.jpeg');
+  background: white;
   background-size: cover;
   background-position: center;
   padding: 100px 0;
   position: relative;
-  color: #fff;
+  color: #000;
 }
 
 .sponsors h1 {
   font-family: 'Montserrat';
   font-weight: 700;
   margin: 30px 0;
+  font-size: 60px;
 }
 
 .sponsors .item {

@@ -25,7 +25,7 @@ tracking:
 
 # Let people connect & engage with you through social media.
 social:
-  twitter_handle: "MLHacks"
+  twitter_handle: "VKHacks"
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
@@ -36,9 +36,9 @@ seo:
 # Event information.
 event:
   name: "VikingHacks"
-  description: "48 Hour Hackathon Held at Western Washington University"
+  description: "Challenging Innovators to Enhance Education and the Student Experience"
   date: "May 20-21 2023"
-  location: "Bellingham, WA, United States"
+  location: "Western Washington University, Bellingham, WA"
 
   trust_badge:
     year: "2023" # season year
@@ -56,9 +56,7 @@ event:
 
   about:
     description: >
-      VikingHacks will be the first iteration of Whatcom Coders large-scale, student-run hackathon. 
-      Over the weekend of May 20-21, students from across Whatcom County will gather to build the coolest 
-      and most innovative web, mobile, and hardware applications; meet amazing people and win prizes and awards.
+      VikingHacks, hosted by Whatcom Coders, is a premier student-run hackathon event focused on Edtech, Student Life, and Accessibility. On the weekend of May 20-21, the best students from throughout the Pacific Northwest will converge to showcase their cutting-edge web, mobile, and hardware applications that align with these themes. Attendees will have the opportunity to network with like-minded individuals, compete for prizes and awards, and drive innovation in the field of technology, with a focus on enhancing education and improving student life through accessible solutions.
 
   # # Info Sections
   # info:

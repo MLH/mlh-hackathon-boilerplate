@@ -6,7 +6,7 @@ layout: default
 
 <section class="about">
   <div class="container">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-left">
       {{ site.event.about.description | markdownify }}
     </div>
   </div>
@@ -33,8 +33,8 @@ layout: default
     <h1 class="text-center">Sponsors</h1>
     <div class="items row row-centered">
       {% for section in site.event.sponsors.sections.gold %}
-        <div class="col-xs-12 col-sm-12 col-centered text-center">
-          <div class="item text-center gold">
+        <div class="col-xs-12 col-sm-12 col-centered text-left">
+          <div class="item text-left gold">
             {% if section.link %}<a href="{{ section.link }}">{% endif %}
             {% if section.image %}<img src="{{ section.image }}" />{% endif %}
             {% if section.description %}<p>{{ section.description }}</p>{% endif %}
