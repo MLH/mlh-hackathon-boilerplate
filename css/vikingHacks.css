@@ -132,7 +132,7 @@ section {
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.15s ease;
-  margin: 10px 0;
+  margin: 10px;
 }
 
 .hero .buttons a:hover/*,
@@ -334,6 +334,7 @@ a:visited {
     width: 80%;
     font-size: 20px;
     margin-left: 0;
+    text-align: center;
   }
 
   .hero img {
@@ -347,5 +348,9 @@ a:visited {
 
   .hero .wrapper h1 {
     padding-top: 10vh
+  }
+
+  .hero .buttons {
+    
   }
 }
