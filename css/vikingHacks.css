@@ -11,7 +11,7 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 
-@import url(https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300,700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@300,800&display=swap);
 /*
  * green: rgb(10, 122, 9)
  * orange: rgb(229, 106, 29)
@@ -73,10 +73,11 @@ section {
 }
 
 .hero .wrapper h1{
-  line-height: 2.5;
-  font-size: 150px;
+  line-height: 2;
+  font-size: calc(30px + 6vw);
   font-family: 'Spline Sans Mono', monospace;
-  font-weight: 700;
+  font-weight: 800;
+  padding-top: 4vh;
 }
 
 .hero .wrapper {
@@ -84,12 +85,12 @@ section {
 }
 
 .hero .wrapper h2 {
-  font-size: 28px;
+  font-size: calc(20px + 0.390625vw);
   font-weight: 200;
 }
 
 .hero .wrapper h3 {
-  font-size: 20px;
+  font-size: calc(15px + 0.390625vw);
   font-weight: 200;
   padding-bottom: 35px;
 }
@@ -131,8 +132,9 @@ section {
 
   background-color: #0073BC;
   padding: 120px 0;
+  font-size: calc(20px + 0.390625vw);
   /*position: relative;*/
-  height: 50vh !important;
+  /*height: 55vh !important;*/
 }
 
 .about h1 {
@@ -307,8 +309,9 @@ a:visited {
   .hero .buttons a {
     border-width: 8px;
     display: block;
+    width: 80%;
     font-size: 20px;
-    margin: 5px;
+    margin-left: 0;
   }
 
   .hero img {

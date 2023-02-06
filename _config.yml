@@ -58,6 +58,8 @@ event:
     description: >
       VikingHacks, hosted by Whatcom Coders, is a premier student-run hackathon event focused on Edtech, Student Life, and Accessibility. On the weekend of May 20-21, the best students from throughout the Pacific Northwest will converge to showcase their cutting-edge web, mobile, and hardware applications that align with these themes. Attendees will have the opportunity to network with like-minded individuals, compete for prizes and awards, and drive innovation in the field of technology, with a focus on enhancing education and improving student life through accessible solutions.
 
+  tracks:
+
   # # Info Sections
   # info:
   #   sections:
