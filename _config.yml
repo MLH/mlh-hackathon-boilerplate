@@ -82,6 +82,8 @@ event:
       gold:
         - image: "images/github-logo.png"
           link: "https://github.com/"
+        - image: "images/stackoverflow-logo.png"
+          link: "https://stackoverflow.com/"
       silver:
         # - image: "images/stackoverflow-logo.png"
         #   link: "https://stackoverflow.com/"
@@ -92,8 +94,6 @@ event:
           link: "https://www.wolframalpha.com/"
         - image: "images/Logotype-Horiz-Transparent-Light@2048h.png"
           link: "https://replit.com/"
-        - image: "images/stackoverflow-logo.png"
-          link: "https://stackoverflow.com/"
         - image: "images/wwucse-logo.png"
           link: "https://cse.wwu.edu/"
 

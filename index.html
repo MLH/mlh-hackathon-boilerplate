@@ -34,7 +34,7 @@ layout: default
     <div class="items row row-centered">
       {% for section in site.event.sponsors.sections.gold %}
         <div class="col-xs-12 col-sm-12 col-centered text-left">
-          <div class="item text-left gold">
+          <div class="item text-center gold">
             {% if section.link %}<a href="{{ section.link }}">{% endif %}
             {% if section.image %}<img src="{{ section.image }}" />{% endif %}
             {% if section.description %}<p>{{ section.description }}</p>{% endif %}

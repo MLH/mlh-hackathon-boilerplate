@@ -270,8 +270,9 @@ a:visited {
  */
 
 .footer {
-  color: #fff;
+  color: #000;
   padding: 30px 0;
+  background-color: white;
 }
 
 .footer h1 {
@@ -293,7 +294,7 @@ a:visited {
 }
 
 .footer h3 a {
-  color: #fff;
+  color: #000;
 }
 
 .social {
