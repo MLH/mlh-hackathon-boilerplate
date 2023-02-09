@@ -70,3 +70,9 @@ Our boilerplate is written entirely in [Jekyll][jekyll], which GitHub automatica
 - We can't accept custom plugins because it's not supported by [GitHub Pages][github-pages]
 - If adding any external images or components, please ensure you have the correct permission to use them
 - We advise creating a GitHub issue first explaining the issue
+
+# Running henosis 
+1. gem install jekyll bundler
+2. rvm install 2.7.0
+3. bundle install
+4. bundle exec jekyll serve
