@@ -55,7 +55,7 @@ section {
  */
 
 .hero {
-  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../images/landingBackground.jpg');
+  background: white;
   background-size: cover;
   background-position: center;
   /*height: 100vh;*/
@@ -64,12 +64,18 @@ section {
 }
 
 .heroWrapper {
-  margin-left: 3vw;
   height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
-.hero img {
-  width: 300px;
+.hero svg {
+  height: 100vh;
+  overflow: clip;
+}
+
+#layer3 {
+  fill: red;
 }
 
 .hero hr {
@@ -146,13 +152,17 @@ section {
   margin-right: 10px;
 }
 
+p {
+  max-width: 60ch;
+}
+
 /*
  * About Section
  */
 
 .about {
 
-  background-color: #0073BC;
+  background-color: #2fa4ffff;
   padding: 120px 0;
   font-size: calc(20px + 0.390625vw);
   /*position: relative;*/
@@ -171,6 +181,14 @@ section {
   font-size: 22px;
   line-height: 1.6em;
   letter-spacing: -.3px;
+}
+
+#tree {
+  height: 25vh;
+}
+
+#helmet {
+  height: 20vh;
 }
 
 .about p span {
@@ -338,6 +356,14 @@ a:visited {
     text-align: center;
   }
 
+  #tree {
+    display: none;
+  }
+  
+  #helmet {
+    display: none;
+  }
+
   .hero img {
     width: 200px;
   }
@@ -354,4 +380,16 @@ a:visited {
   .hero .buttons {
     
   }
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
