@@ -35,11 +35,11 @@ section {
 
 #mlh-trust-badge {
   display: block;
-  max-width: 100px;
+  max-width: 1000px;
   min-width: 60px;
   position: fixed;
-  right: 50px;
-  top: 0;
+  top: 20px;
+  left:20px;
   width: 10%;
   z-index: 10000;
 }
@@ -69,21 +69,24 @@ section {
 }
 
 .hero .wrapper h1 {
+  color: #000;
   background: #fff;
-  background: rgba(255, 255, 255, .3);
   display: inline-block;
   font-size: 60px;
   font-weight: 800;
   letter-spacing: -2px;
   padding: 10px 30px;
+  border: 10px solid black;
 }
 
 .hero .wrapper h2 {
+  color:#fff;
   font-size: 28px;
   font-weight: 200;
 }
 
 .hero .wrapper h3 {
+  color:#fff;
   font-size: 20px;
   font-weight: 200;
   padding-bottom: 35px;
@@ -95,9 +98,9 @@ section {
 
 .hero .buttons a {
   background: #fff;
-  border: 10px solid #0F2C34;
+  border: 10px solid #000203;
   border-radius: 40px;
-  color: #0F2C34;
+  color: #000203;
   display: inline;
   font-family: Montserrat;
   font-size: 24px;
@@ -256,3 +259,15 @@ section {
     top: -8px;
   }
 }
+
+.event {
+  display: flex;
+  flex-direction: row;
+}
+.my-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
