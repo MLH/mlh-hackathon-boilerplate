@@ -30,13 +30,13 @@ social:
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
   title:       "Henosis | 25 February 2023"
-  description: "Henosis, the biggest tech fest conducted by the Departmet of Computer Science and Engineering at NGPiTECH."
+  description: "Henosis, the National level tech fest conducted by the Departmet of Computer Science and Engineering at NGPiTECH."
   image:       "https://www.drngpit.ac.in/assets/images/logo/ngp-itech-logo.png"
 
 # Event information.
 event:
   name:        "Henosis 2K23"
-  description: "Henosis, the biggest tech fest conducted by the Departmet of Computer Science and Engineering at NGPiTECH."
+  description: "Henosis, A National level tech fest conducted by the Departmet of Computer Science and Engineering at NGPiTECH."
   date:        "25 February 2023"
   location:    "Coimbatore, Tamil Nadu, India"
 
@@ -47,12 +47,11 @@ event:
 
   hero:
     links:
-      - text: "Apply"
+      - text: "Register Here"
         my_mlh:
           client_id:    "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
           redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
-      - text: "Sponsor"
-        href: "mailto:sponsorship@website.com"
+      
 
   about:
     description: >
@@ -62,17 +61,17 @@ event:
   info:
     sections:
       - image: "images/image1.png"
-        title: "LEARN."
+        title: "THINK."
         description: >
-          We can learn and have fun while doing so.
+           Think big, start small
       - image: "images/image2.png"
-        title: "BUILD."
+        title: "CREATE."
         description: >
-          We can build something cool together.
+          Create a vision, make it a reality.
       - image: "images/image3.png"
-        title: "SHARE."
+        title: "INNOVATE."
         description: >
-          We can share our knowledge with others.
+          Innovate to solve problems and create solutions.
 
   # Frequently asked questions.
   faq:
