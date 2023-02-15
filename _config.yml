@@ -50,7 +50,7 @@ event:
       - text: "Register Here"
         my_mlh:
           client_id:    "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
-          redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
+          redirect_uri: "https://docs.google.com/forms/d/e/1FAIpQLSczPY6dCAUdvDTifDieIFfnUqPP31nNSd2ZCAfk8m3VU7GLDg/viewform"
       
 
   about:
@@ -72,33 +72,31 @@ event:
         title: "INNOVATE."
         description: >
           Innovate to solve problems and create solutions.
-      - image: "images/Code wars.png"
-        title: "CODE WARS"
-        description: >
 
   # Frequently asked questions.
   faq:
     - question: "What are the events conducted?"
       answer: >
-        A hackathon is an invention marathon. Students come together to build cool
-        software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
+        There are 4 technical events conducted , they are paper presentation, 
+        project presentation, code wars and wise quacks. 
     - question: "How many members can participate as a team?"
       answer: >
-        Nothing. Attending a hackathon is free.
+        For team competitions such as paper and project presentations there are 4 members
+        per team ,for wisequacks quiz 2 members as per the team, for other events individual 
+        participants were encouraged
     - question: "At what time events will commences?"
       answer: >
-        Yes. Only students who are currently enrolled at a college/university or
-        have graduated within the past 12 months are eligible to attend.
+        The event sharply commences at 9 am IST
     - question: "How much registration amount to be paid for a member in a team?"
       answer: >
-        The event is being hosted at [insert venue location here].
+        The registration fee for single participant in a team is 150 RS,
+        for workshop 200 RS per person.
     - question: "What is the last date to register for the fest?"
       answer: >
-        Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
-        We work with over 200 Member Events and empower over 70,000 students every year.
+        ONspot Registrations only avaliable.
     - question: "What is the registration amount to be paid per team?"
       answer: >
-        Yes there is. We enforce it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+        For 4 members per team the fee to be paid is 600 RS.
     - question: ""
       answer: >
   # This is the message you'll receive once you've registered.
