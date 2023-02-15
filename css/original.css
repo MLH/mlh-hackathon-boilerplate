@@ -256,3 +256,14 @@ section {
     top: -8px;
   }
 }
+
+.event {
+  display: flex;
+  flex-direction: row;
+}
+.my-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
