@@ -269,6 +269,7 @@ section {
 @media only screen and (max-width: 600px) {
   .event {
     flex-direction: column;
+    gap: 10vh;
   }
 }
 
