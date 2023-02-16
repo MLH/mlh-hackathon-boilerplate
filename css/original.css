@@ -263,7 +263,15 @@ section {
 .event {
   display: flex;
   flex-direction: row;
+  gap: 50vh;
 }
+
+@media only screen and (max-width: 600px) {
+  .event {
+    flex-direction: column;
+  }
+}
+
 .my-button {
   background-color: blue;
   color: white;
