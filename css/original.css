@@ -76,7 +76,6 @@ section {
   font-weight: 800;
   letter-spacing: -2px;
   padding: 10px 30px;
-  border: 10px solid black;
 }
 
 .hero .wrapper h2 {
@@ -279,4 +278,14 @@ section {
   border: none;
   padding: 10px 20px;
 }
+.ngpitech {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 150px;
+  left: 560px;
+}
+
 
