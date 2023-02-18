@@ -77,28 +77,36 @@ event:
   faq:
     - question: "What are the events conducted?"
       answer: >
-        There are 4 technical events conducted , they are paper presentation, 
+        There are four technical events: paper presentation, 
         project presentation, code wars and wise quacks. 
     - question: "How many members can participate as a team?"
       answer: >
-        For team competitions such as paper and project presentations there are 4 members
-        per team ,for wisequacks quiz 2 members as per the team, for other events individual 
-        participants were encouraged
-    - question: "At what time events will commences?"
+        For team competitions such as paper and project presentations there can be upto 4 members
+        per team, for wisequacks upto 2 members per team and for code wars only individuals can participate.
+    - question: "At what time will the event commence?"
       answer: >
-        The event sharply commences at 9 am IST
-    - question: "How much registration amount to be paid for a member in a team?"
+        The event begins promptly at 9 a.m. IST.
+    - question: "How much is the registration fee?"
       answer: >
-        The registration fee for single participant in a team is 150 RS,
-        for workshop 200 RS per person.
-    - question: "What is the last date to register for the fest?"
+        For technical events, the registration fee is Rs. 150. For workshops, the registration fee is Rs. 200. A participant can register for both the events. For technical events the participant can participate in any number of events.
+    - question: "Should we pay for individual events?"
       answer: >
-        ONspot Registrations only avaliable.
+        No, the registration fee is for all the technical events. You can participate in any number of events.
+    - question: "How to pay the registration fee?"
+      answer: >
+        The registration fee can only be paid on-site.
+    - question: "What is the last date to register?"
+      answer: >
+        The last date to register is 25th February 2023. On-site registrations is available.
     - question: "What is the registration amount to be paid per team?"
       answer: >
-        For 4 members per team the fee to be paid is 600 RS.
-    - question: ""
+        Individual registration fee is Rs. 150. So, for a team of 4 members, the registration fee is Rs. 600.
+    - question: "What are the rules for paper presentation?"
       answer: >
+        Rules for all the events are available in the events section above.
+    - question: "What are the timings for the events?"
+      answer: >
+        The timings will be announced on the day of the event.
   # This is the message you'll receive once you've registered.
   register:
     message: >
