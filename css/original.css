@@ -270,6 +270,10 @@ section {
     flex-direction: column;
     gap: 10vh;
   }
+
+  .info .item h1 {
+    font-size: 35px;
+  }
 }
 
 .my-button {
