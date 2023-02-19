@@ -46,7 +46,7 @@ event:
 
   hero:
     links:
-      - text: "Interest Form"
+      - text: "Sign up"
         href: "https://forms.gle/BNc33h1JtJihXka36"
         # my_mlh:
         #   client_id: "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
