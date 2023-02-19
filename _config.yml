@@ -107,6 +107,12 @@ event:
     - question: "What are the timings for the events?"
       answer: >
         The timings will be announced on the day of the event.
+    - question: "Accommodation?"
+      answer: >
+        Since the event is a one day event, accommodation is not provided.
+    - question: "Food?"
+      answer: >
+        Food can be purchased from the canteen.
   # This is the message you'll receive once you've registered.
   register:
     message: >
