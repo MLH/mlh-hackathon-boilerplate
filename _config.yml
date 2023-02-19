@@ -84,6 +84,8 @@ event:
           link: "https://github.com/"
         - image: "images/stackoverflow-logo.png"
           link: "https://stackoverflow.com/"
+        - image: "images/radix-logo.png"
+          link: "https://radix.website/"
       silver:
         # - image: "images/stackoverflow-logo.png"
         #   link: "https://stackoverflow.com/"
