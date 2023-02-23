@@ -9,6 +9,7 @@
       <img id="titleImg" src="images/vHacksTitle.svg">
       <div id="info">
         <h2>{{ site.event.description }}</h2>
+        <h3>{{ site.event.date }} | {{ site.event.location }}</h3>
         <div class="buttons">
           {% for link in site.event.hero.links %}
             {% if link.href %}
@@ -20,6 +21,7 @@
         </div>
       </div>
     </div>
+    <h1>VikingHacks</h1>
     
     
     
