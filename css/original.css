@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: #F5699C;
+  background-color: #049af8;
 }
 
 section {
@@ -35,11 +35,11 @@ section {
 
 #mlh-trust-badge {
   display: block;
-  max-width: 100px;
+  max-width: 1000px;
   min-width: 60px;
   position: fixed;
-  right: 50px;
-  top: 0;
+  top: 20px;
+  left:20px;
   width: 10%;
   z-index: 10000;
 }
@@ -49,7 +49,7 @@ section {
  */
 
 .hero {
-  background-color: #F5699C;
+  background-color: #0574fc;
   min-height: 110vh;
 }
 
@@ -69,8 +69,8 @@ section {
 }
 
 .hero .wrapper h1 {
+  color: #000;
   background: #fff;
-  background: rgba(255, 255, 255, .3);
   display: inline-block;
   font-size: 60px;
   font-weight: 800;
@@ -79,11 +79,13 @@ section {
 }
 
 .hero .wrapper h2 {
+  color:#fff;
   font-size: 28px;
   font-weight: 200;
 }
 
 .hero .wrapper h3 {
+  color:#fff;
   font-size: 20px;
   font-weight: 200;
   padding-bottom: 35px;
@@ -95,9 +97,9 @@ section {
 
 .hero .buttons a {
   background: #fff;
-  border: 10px solid #0F2C34;
+  border: 10px solid #000203;
   border-radius: 40px;
-  color: #0F2C34;
+  color: #000203;
   display: inline;
   font-family: Montserrat;
   font-size: 24px;
@@ -217,7 +219,7 @@ section {
  */
 
 .footer {
-  background-color: #F5699C;
+  background-color: #0a48f0;
   color: #fff;
   padding: 30px 0;
 }
@@ -256,3 +258,30 @@ section {
     top: -8px;
   }
 }
+
+.event {
+  display: flex;
+  flex-direction: row;
+  gap: 50vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .event {
+    flex-direction: column;
+    gap: 10vh;
+  }
+
+  .info .item h1 {
+    font-size: 35px;
+  }
+}
+
+.my-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+}
+
+
+
