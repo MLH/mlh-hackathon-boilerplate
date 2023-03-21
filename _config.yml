@@ -5,7 +5,7 @@
 # If you are hosting in a sub-folder, for example: https://mlh.github.io/mlh-hackathon-boilerplate/,
 # you must specify it as the baseurl
 # If you hosting as a root, for example: htttps://[github username].github.io, then leave it blank
-baseurl: "/mlh-hackathon-boilerplate"
+baseurl: "/GTPNhackathon"
 
 # uncomment the next line if you are hosting as a root and not sub-folder
 # for example, when runnig locally at http://127.0.0.1:4000/
@@ -13,7 +13,7 @@ baseurl: "/mlh-hackathon-boilerplate"
 
 # If you're using GitHub pages without a custom domain, this is "https://[github username].github.io"
 # If you're using GitHub pages with a custom domain, this is "http://[your domain]" (or https if you're using SSL)
-url: "https://mlh.github.io"
+url: "https://rinchenlama0075.github.io"
 
 # The ability to use custom themes.
 style:
@@ -25,24 +25,24 @@ tracking:
 
 # Let people connect & engage with you through social media.
 social:
-  twitter_handle: "MLHacks"
+  twitter_handle: "ComingSoon"
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title:       "Example Hacks | 5-6 August 2022"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
+  title:       "GTPN Hackathon | 29-30 July 2023"
+  description: "GTPN is excited to present it's first Hackathon! What will you build to solve problems or tackle challenges that affect everyone?"
   image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
 
 # Event information.
 event:
-  name:        "Example Hacks"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
-  date:        "5 - 6 August 2022"
-  location:    "Holmdel, NJ, United States"
+  name:        "GTPN Hackathon"
+  description: "GTPN is excited to present it's first Hackathon! What will you build to solve problems or tackle challenges that affect everyone?"
+  date:        "29 - 30 July 2023"
+  location:    "Queens, NY, U.S.A"
 
   trust_badge:
-    year:   "2017"  # season year
-    region: "eu"    # "na" or "eu"
+    year:   "2023"  # season year
+    region: "na"    # "na" or "eu"
     color:  "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
   hero:
@@ -56,25 +56,25 @@ event:
 
   about:
     description: >
-      Example Hacks is a hackathon hosted at The University of Example.
-      This is your opportunity to describe your event, what to expect, where it is & anything unique to your event.
-      Keep it straightforward, don't make it too long.
+      GTPN hackathon will be hosted at (TBD).
+      Come together to learn, innovate and inspire.
+
 
   # Info Sections
   info:
     sections:
       - image: "images/image1.png"
-        title: "LEARN."
+        title: "LEARN"
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          from friends, mentors and guest speakers about technologies and various topics from Data Science to UX/UI and much more!
       - image: "images/image2.png"
-        title: "BUILD."
+        title: "BUILD"
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          amazing projects with your teammates and hack together your imagination to win awesome prizes!
       - image: "images/image3.png"
-        title: "SHARE."
+        title: "SHARE"
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          what you know with your community so we can all grow together!
 
   # Frequently asked questions.
   faq:
