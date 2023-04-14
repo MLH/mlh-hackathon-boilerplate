@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: #00820f;
+  background-color: #fff;
 }
 
 section {
@@ -49,7 +49,7 @@ section {
  */
 
 .hero {
-  background-color: #00820f;
+  background-color: #fff;
   min-height: 110vh;
 }
 
@@ -58,10 +58,10 @@ section {
 }
 
 .hero hr {
-  border-top: 15px solid #0F2C34;
+  border-top: 15px solid #fff;
   margin: 0;
   position: relative;
-  top: -14px;
+  top: -8px;
 }
 
 .hero .wrapper {
@@ -69,18 +69,20 @@ section {
 }
 
 .hero .wrapper h1 {
-  background: #fff;
+  color: #192841;
   background: rgba(255, 255, 255, .3);
   display: inline-block;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 800;
-  letter-spacing: -2px;
+  letter-spacing: 1px;
   padding: 10px 30px;
+  font-family: 'Sans Forgetica'
 }
 
 .hero .wrapper h2 {
   font-size: 28px;
   font-weight: 200;
+  color: #1c2e4a
 }
 
 .hero .wrapper h3 {
@@ -95,14 +97,14 @@ section {
 
 .hero .buttons a {
   background: #fff;
-  border: 10px solid #0F2C34;
-  border-radius: 40px;
-  color: #0F2C34;
+  border: 5px solid #069;
+  border-radius: 10px;
+  color: #069;
   display: inline;
-  font-family: Montserrat;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  padding: 10px 70px;
+  padding: 10px 50px;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -158,10 +160,11 @@ section {
 }
 
 .info .item h1 {
-  font-family: 'Montserrat';
+  font-family: 'velvetica';
   font-size: 45px;
   font-weight: 700;
   margin: 20px 0;
+  color: #1c2e4a
 }
 
 .info .item img {
@@ -181,6 +184,7 @@ section {
   margin-top: 15px;
   padding: 100px 0;
   position: relative;
+  color: #192841
 }
 
 .faq h1 {
@@ -196,7 +200,7 @@ section {
 }
 
 .faq .question hr {
-  border-top: 8px solid #0F2C34;
+  border-top: 8px solid #0f2c34;
   margin: 20px 0;
   width: 80px;
 }
@@ -217,8 +221,8 @@ section {
  */
 
 .footer {
-  background-color: #00820f;
-  color: #fff;
+  background-color: #f0fff0;
+  color: #000;
   padding: 30px 0;
 }
 
@@ -228,7 +232,7 @@ section {
 }
 
 .footer h3 {
-  font-family: 'Montserrat';
+  font-family: 'sans forgetica';
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -236,7 +240,7 @@ section {
 }
 
 .footer h3 a {
-  color: #fff;
+  color: #000;
 }
 
 @media(max-width: 768px) {
