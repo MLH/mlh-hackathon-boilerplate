@@ -1,72 +1,72 @@
-# MLH/mlh-hackathon-boilerplate
+# MLH/mlh-hackathon-repetitivo
 
-This is a hackathon boilerplate created by [Major League Hacking][mlh-github]. Using [Jekyll][jekyll], it has a extensible [configuration][config] that covers basic event information. You can then fork the website and have it hosted free through [GitHub Pages][github-pages]. It's free to use.
+Este es un modelo estándar de hackathon creado por [Major League Hacking][mlh-github]. Al usar [Jekyll][jekyll], tiene una [configuración][config] extensible que cubre información básica de eventos. Luego puede bifurcar el sitio web y alojarlo de forma gratuita a través de [GitHub Pages][github-pages]. Es de uso gratuito.
 
-Advantages:
+Ventajas:
 
-- Built in support for [MyMLH][my-mlh]
-- Community-owned and maintained
-- Free hosting through [GitHub Pages][github-pages]
-- Discoverable through Google Search, Twitter and Facebook
+- Soporte integrado para [MyMLH][my-mlh]
+- Propiedad y mantenimiento de la comunidad
+- Alojamiento gratuito a través de [Páginas de GitHub][páginas de github]
+- Descubrible a través de la Búsqueda de Google, Twitter y Facebook
 
 [mlh-github]: https://github.com/MLH
 [jekyll]: https://jekyllrb.com
-[config]: _config.yml
-[github-pages]: https://pages.github.com
-[my-mlh]: https://my.mlh.io
+[configuración]: _config.yml
+[páginas de github]: https://pages.github.com
+[mi-mlh]: https://my.mlh.io
 
-## Getting Started
+## Empezando
 
-1. Create a [GitHub][create-account] account if you haven't already
-2. Fork this repository to your own account. [Click here to fork this repo][fork-repo]
-3. Edit [`_config.yml`][config] to configure for your own hackathon website
-4. That's it - you should be able to access at `https://[github username].github.io/mlh-hackathon-boilerplate/`
+1. Cree una cuenta [GitHub][create-account] si aún no lo has hecho
+2. Bifurque este repositorio en su propia cuenta. [Haga clic aquí para bifurcar este repositorio][fork-repo]
+3. Edite [`_config.yml`][config] para configurar su propio sitio web de hackathon
+4. Eso es todo: deberías poder acceder en `https://[nombre de usuario de github].github.io/mlh-hackathon-boilerplate/`
 
-[create-account]: https://github.com/join
-[fork-repo]: https://github.com/MLH/mlh-hackathon-boilerplate/fork
+[crear cuenta]: https://github.com/join
+[repo-tenedor]: https://github.com/MLH/mlh-hackathon-boilerplate/fork
 
-### Run Locally
+### Ejecutar localmente
 
-If you would like to populate and test the website locally, follow these steps:
+Si desea completar y probar el sitio web localmente, siga estos pasos:
 
-1. Install Jekyll prerequisites by following one of the [guides][jekyll-guides]
-2. Install Jekyll and bundler gems `gem install jekyll bundler`
-3. Build and serve the site locally `bundle exec jekyll serve`
-4. Head over to [http://localhost:4000/][localhost]
-5. Make sure everything looks good 
+1. Instale los requisitos previos de Jekyll siguiendo una de las [guías][jekyll-guides]
+2. Instale Jekyll y Bundler Gems `Gem Install Jekyll Bundler`
+3. Cree y proporcione el sitio localmente "bundle exec jekyllserve"
+4. Dirígete a [http://localhost:4000/][localhost]
+5.Asegúrate de que todo luzca bien
 
-[jekyll-guides]: https://jekyllrb.com/docs/installation/
+[guías-jekyll]: https://jekyllrb.com/docs/installation/
 [localhost]: http://localhost:4000/
 
-### Setting up a custom domain
+### Configurar un dominio personalizado
 
-Want to configure for your own custom domain? Great! Through our excellent partners [Domain.com][domain-com], Major League Hacking is offering free domains to student hackathon organizers. Reach out to [hi@mlh.io][email-mlh] to obtain your free coupon code.
+¿Quiere configurar su propio dominio personalizado? ¡Excelente! A través de nuestros excelentes socios [Domain.com][domain-com], Major League Hacking ofrece dominios gratuitos a los organizadores de hackathon estudiantiles. Comuníquese con [hi@mlh.io][email-mlh] para obtener su código de cupón gratuito.
 
-1. Register your domain
-2. Update the domain `www` to `CNAME [github username].github.io`
-3. Update the domain `@` to `A 192.30.252.153` and `A 192.30.252.154`
-4. Update the `CNAME` in your GitHub fork of `mlh-hackathon-boilerplate` to your new domain (i.e. `examplehacks.com`)
+1. Registra tu dominio
+2. Actualice el dominio `www` a `CNAME [nombre de usuario de github].github.io`
+3. Actualice el dominio `@` a `A 192.30.252.153` y `A 192.30.252.154`
+4. Actualice el `CNAME` en su bifurcación de GitHub de `mlh-hackathon-boilerplate` a su nuevo dominio (es decir, `examplehacks.com`)
 
-[Reference: GitHub - Setting up an apex domain][github-apex-domain]
+[Referencia: GitHub - Configuración de un dominio apex][github-apex-domain]
 
-[domain-com]: https://domain.com/mlh
-[email-mlh]: mailto:hi@mlh.io
-[github-apex-domain]: https://help.github.com/articles/setting-up-an-apex-domain/
+[dominio-com]: https://dominio.com/mlh
+[correo electrónico-mlh]: mailto:hi@mlh.io
+[dominio-apex-github]: https://help.github.com/articles/setting-up-an-apex-domain/
 
-### Setting up SSL
+### Configurar SSL
 
-GitHub Pages now provides you with an option to Enforce HTTPS which will create an SSL certificate for you. All you need is to select the Enforce HTTPS checkmark when setting up custom domain in the step above.
+GitHub Pages ahora le ofrece una opción para aplicar HTTPS que creará un certificado SSL para usted. Todo lo que necesita es seleccionar la marca de verificación Aplicar HTTPS al configurar un dominio personalizado en el paso anterior.
 
-Give the process some time, but if it has not completed after several minutes, click **Remove** next to your domain name, retype the domain name, and then click **Save**. This will restart the SSL issuing process.
+Espere algo de tiempo al proceso, pero si no se completa después de varios minutos, haga clic en **Eliminar** junto a su nombre de dominio, vuelva a escribir el nombre de dominio y luego haga clic en **Guardar**. Esto reiniciará el proceso de emisión de SSL.
 
-If you setup HTTPS correctly, make sure you do not refernece HTTP anywhere on your website. Servinig [mixed][mixed] content will make your website less secure.
+Si configura HTTPS correctamente, asegúrese de no hacer referencia a HTTP en ninguna parte de su sitio web. Servir contenido [mixto][mixto] hará que su sitio web sea menos seguro.
 
-[mixed]: https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https#resolving-problems-with-mixed-content
+[mixto]: https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https#resolving-problems-with-mixed- contenido
 
-## Contributing
+## Contribuyendo
 
-Our boilerplate is written entirely in [Jekyll][jekyll], which GitHub automatically compiles. This dramatically reduces the technical barrier needed to setup a hackathon website. We'd love to receive your contributions towards making this even better. A couple of things to note:
+Nuestro texto estándar está escrito completamente en [Jekyll][jekyll], que GitHub compila automáticamente. Esto reduce drásticamente la barrera técnica necesaria para configurar un sitio web de hackathon. Nos encantaría recibir sus contribuciones para hacer esto aún mejor. Un par de cosas a anotar:
 
-- We can't accept custom plugins because it's not supported by [GitHub Pages][github-pages]
-- If adding any external images or components, please ensure you have the correct permission to use them
-- We advise creating a GitHub issue first explaining the issue
+- No podemos aceptar complementos personalizados porque no son compatibles con [GitHub Pages][github-pages]
+- Si agrega imágenes o componentes externos, asegúrese de tener el permiso correcto para usarlos
+- Recomendamos crear primero una incidencia en GitHub explicando la incidencia.
