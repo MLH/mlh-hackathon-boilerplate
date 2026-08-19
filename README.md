@@ -38,15 +38,6 @@ If you would like to populate and test the website locally, follow these steps:
 [jekyll-guides]: https://jekyllrb.com/docs/installation/
 [localhost]: http://localhost:4000/
 
-### Setting up a custom domain
-
-Want to configure for your own custom domain? Great! Through our excellent partners [Domain.com][domain-com], Major League Hacking is offering free domains to student hackathon organizers. Reach out to [hi@mlh.io][email-mlh] to obtain your free coupon code.
-
-1. Register your domain
-2. Update the domain `www` to `CNAME [github username].github.io`
-3. Update the domain `@` to `A 192.30.252.153` and `A 192.30.252.154`
-4. Update the `CNAME` in your GitHub fork of `mlh-hackathon-boilerplate` to your new domain (i.e. `examplehacks.com`)
-
 [Reference: GitHub - Setting up an apex domain][github-apex-domain]
 
 [domain-com]: https://domain.com/mlh
