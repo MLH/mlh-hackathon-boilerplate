@@ -14,7 +14,8 @@ social:
 seo:
   title: "MakeCU 2026 | Columbia University Robotics Club"
   description: "MakeCU is Columbia University Robotics Club's 24-hour hardware hackathon, returning November 7-8, 2026 at Carleton Commons."
-  image: ""
+  image: "/images/social/makecu-2026.png"
+  image_alt: "MakeCU 2026 — November 7-8, 2026 at Columbia University at Carleton Commons"
 
 event:
   name: "MakeCU"

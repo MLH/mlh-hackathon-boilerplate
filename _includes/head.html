@@ -7,13 +7,16 @@
   <meta name="viewport"    content="width=device-width, initial-scale=1">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.seo.description }}{% endif %}">
 
+  {% if site.seo.image %}{% assign social_image = site.seo.image | prepend: site.baseurl | prepend: site.url %}{% endif %}
+
   <!-- Twitter Handle -->
-  <meta name="twitter:card"        content="summary" />
+  <meta name="twitter:card"        content="summary_large_image" />
   <meta name="twitter:site"        content="@{{ site.social.twitter_handle }}" />
   <meta name="twitter:creator"     content="@{{ site.social.twitter_handle }}" />
   <meta name="twitter:title"       content="{{ site.seo.title }}">
   <meta name="twitter:description" content="{{ site.seo.description }}">
-  {% if site.seo.image %}<meta name="twitter:image" content="{{ site.seo.image }}">{% endif %}
+  {% if social_image %}<meta name="twitter:image" content="{{ social_image }}">{% endif %}
+  {% if site.seo.image_alt %}<meta name="twitter:image:alt" content="{{ site.seo.image_alt }}">{% endif %}
 
   <!-- Open Graph -->
   <meta property="og:site_name"   content="{{ site.event.name }}" />
@@ -21,7 +24,12 @@
   <meta property="og:url"         content="{{ site.baseurl | prepend: site.url }}" />
   <meta property="og:title"       content="{{ site.seo.title }}" />
   <meta property="og:description" content="{{ site.seo.description }}" />
-  {% if site.seo.image %}<meta property="og:image" content="{{ site.seo.image }}" />{% endif %}
+  {% if social_image %}<meta property="og:image" content="{{ social_image }}" />{% endif %}
+  {% if social_image %}<meta property="og:image:secure_url" content="{{ social_image }}" />{% endif %}
+  {% if social_image %}<meta property="og:image:type" content="image/png" />{% endif %}
+  {% if social_image %}<meta property="og:image:width" content="1200" />{% endif %}
+  {% if social_image %}<meta property="og:image:height" content="630" />{% endif %}
+  {% if site.seo.image_alt %}<meta property="og:image:alt" content="{{ site.seo.image_alt }}" />{% endif %}
 
   <!-- Stylesheets -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
