@@ -850,6 +850,78 @@ a {
   display: none;
 }
 
+.prizes-intro {
+  margin: 0 auto 30px;
+  max-width: 760px;
+  text-align: center;
+}
+
+.prizes-intro p {
+  color: var(--silver);
+  font-size: 17px;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.prize-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(0, 1fr);
+  list-style: none;
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 0;
+}
+
+.prize-card {
+  background: rgba(0, 81, 154, 0.72);
+  border: 1px solid rgba(235, 235, 235, 0.3);
+  min-height: 0;
+  padding: 16px 20px;
+  position: relative;
+}
+
+.prize-card-track {
+  border-color: rgba(255, 103, 0, 0.85);
+  box-shadow: inset 4px 0 0 var(--orange);
+}
+
+.prize-card h3 {
+  color: var(--paper);
+  font-family: var(--font-heading);
+  font-size: clamp(13px, 1.5vw, 18px);
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 7px;
+}
+
+.prize-track {
+  background: var(--orange);
+  color: var(--blue-dark);
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  padding: 4px 7px;
+  text-transform: uppercase;
+}
+
+.prize-track-open {
+  background: rgba(235, 235, 235, 0.14);
+  color: var(--silver);
+}
+
+.prizes-more-text {
+  color: var(--paper);
+  font-family: var(--font-heading);
+  font-size: clamp(14px, 1.8vw, 20px);
+  line-height: 1.6;
+  margin: 24px auto 0;
+  max-width: 760px;
+  text-align: center;
+}
+
 .checklist-required-label {
   color: var(--orange);
   font-family: var(--font-heading);
@@ -2813,6 +2885,7 @@ a {
   .countdown-grid,
   .quick-facts,
   .about-page-links,
+  .prize-grid,
   .checklist-grid,
   .tracks-showcase,
   .track-grid,

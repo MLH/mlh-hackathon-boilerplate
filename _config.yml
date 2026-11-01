@@ -27,7 +27,7 @@ event:
   location: "Columbia University at Carleton Commons"
   email: "curc@columbia.edu"
   registration_url: "https://docs.google.com/forms/d/e/1FAIpQLSfJdWIQY6FtU1nswS9zYNWk3rIVp9drKUAmoozCCOo0F9EgSg/viewform"
-  volunteer_url: "https://docs.google.com/forms/d/e/1FAIpQLSdKjpNJ_RkKNWdquYlIOckF3HEzSVEsLPcyDMmyT6UbtDwoKw/viewform?usp=send_form"
+  volunteer_url: "https://forms.gle/invmo6DhChEUiwdz6"
   sponsor_interest_url: "mailto:makecu-placeholder@columbiarobotics.club?subject=MakeCU%202026%20sponsorship%20interest"
   mentor_interest_url: "mailto:makecu-placeholder@columbiarobotics.club?subject=MakeCU%202026%20mentor%20or%20judge%20interest"
   discord_url: "https://discord.gg/EPuGY7PFNn"
@@ -48,6 +48,18 @@ event:
       value: "In-person hardware"
     - label: "Teams"
       value: "1-4 students"
+
+  prizes:
+    - name: "Nothing Ear 3"
+      track: "Healthcare"
+    - name: "Keychron mechanical keyboard"
+      track: "Environmental"
+    - name: "Drone"
+      track: "Creativity"
+    - name: "Polaroid camera"
+      track: "Beginner's Choice"
+    - name: "Portable projector"
+      track: "Hacker's Choice"
 
   about:
     description: >

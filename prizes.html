@@ -1,0 +1,38 @@
+---
+layout: default
+title: "Prizes | MakeCU 2026"
+excerpt: "Explore the headline prizes for MakeCU 2026, including track-specific awards."
+permalink: /prizes/
+---
+
+{% include site_header.html %}
+
+<main id="top" class="subpage-main">
+  <section class="section prizes snap-section" aria-labelledby="prizes-heading">
+    <div class="terminal-heading">
+      <span>$</span>
+      <h2 id="prizes-heading"><span class="terminal-command">cat</span> PRIZES.txt</h2>
+    </div>
+
+    <div class="prizes-intro">
+      <p>Build something cool during our hackathon for a chance to take home a prize based on the track you participate in. We’ll also hold raffles for participants who attend workshops!</p>
+    </div>
+
+    <ol class="prize-grid">
+      {% for prize in site.event.prizes %}
+        <li class="prize-card{% if prize.track %} prize-card-track{% endif %}">
+          <div>
+            <h3>{{ prize.name }}</h3>
+            {% if prize.track %}
+              <span class="prize-track">{{ prize.track }} track</span>
+            {% else %}
+              <span class="prize-track prize-track-open">General prize</span>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+
+    <p class="prizes-more-text">Oculus Rift, software subscriptions, and more!</p>
+  </section>
+</main>
