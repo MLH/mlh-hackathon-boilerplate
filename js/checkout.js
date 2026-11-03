@@ -264,7 +264,7 @@
   };
 
   var componentMaximum = function (component) {
-    if (component.mlhOnly) {
+    if (component.mlhQuantity > 0) {
       return 0;
     }
 
@@ -312,16 +312,14 @@
       var mlhNotice = component.mlhQuantity > 0
         ? '<div class="checkout-mlh-notice"><strong>Pick up at the MLH desk</strong><p>MLH listed quantity: ' + component.mlhQuantity + '. This number is not updated by CURC.</p></div>'
         : "";
-      var quantityControls = component.mlhOnly
+      var quantityControls = component.mlhQuantity > 0
         ? ""
         : '<div class="checkout-quantity-row"><button type="button" data-quantity-change="-1" aria-label="Remove one ' + escapeHtml(component.name) + '"' + (quantity === 0 ? " disabled" : "") + '>−</button><output aria-live="polite">' + quantity + '</output><button type="button" data-quantity-change="1" aria-label="Add one ' + escapeHtml(component.name) + '"' + (quantity >= maximum ? " disabled" : "") + ">+</button></div>";
 
-      if (component.mlhOnly) {
+      if (component.mlhQuantity > 0) {
         stockClass = " checkout-stock-external";
-        stockLabel = "Not tracked by CURC";
-        limit = "";
-      } else if (component.mlhQuantity > 0) {
-        stockLabel = "Available through CURC: " + component.teamAvailableQuantity;
+        stockLabel = "Check at MLH desk";
+        limit = '<p class="checkout-limit">This component should be picked up at the MLH desk.</p>';
       }
 
       return '<article class="checkout-component-card" data-component-id="' + component.id + '">' +
@@ -459,6 +457,12 @@
       var results = await Promise.all([api("catalog"), api("team-dashboard")]);
       state.components = results[0].components;
       state.dashboard = results[1];
+      state.components.forEach(function (component) {
+        if (component.mlhQuantity > 0) {
+          delete state.cart[component.id];
+        }
+      });
+      updateCartCounts();
       renderCatalog();
       renderCooldown();
       renderTeamOrders();

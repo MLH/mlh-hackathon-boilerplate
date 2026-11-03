@@ -820,10 +820,12 @@ test("MLH-tagged quantities are informational and cannot be reserved through CUR
   });
 
   assert.equal(mlhCatalogItem.mlhOnly, true);
+  assert.equal(mlhCatalogItem.mlhManaged, true);
   assert.equal(mlhCatalogItem.mlhQuantity, 7);
   assert.equal(mlhCatalogItem.availableQuantity, 0);
   assert.equal(mlhCatalogItem.teamAvailableQuantity, 0);
   assert.equal(mixedCatalogItem.mlhOnly, false);
+  assert.equal(mixedCatalogItem.mlhManaged, true);
   assert.equal(mixedCatalogItem.mlhQuantity, 2);
   assert.equal(mixedCatalogItem.availableQuantity, 3);
 
@@ -833,8 +835,9 @@ test("MLH-tagged quantities are informational and cannot be reserved through CUR
   assert.equal(blocked.status, 409);
   assert.match(blocked.body.details.items[0].message, /MLH desk/i);
 
-  const reserved = await request("submit-order", {
+  const mixedBlocked = await request("submit-order", {
     items: [{ componentId: mixed.body.component.id, quantity: 3 }]
   }, teamCookie);
-  assert.equal(reserved.status, 201);
+  assert.equal(mixedBlocked.status, 409);
+  assert.match(mixedBlocked.body.details.items[0].message, /MLH desk/i);
 });

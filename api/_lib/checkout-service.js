@@ -38,6 +38,7 @@ function componentView(row, relationships) {
     totalQuantity: total,
     mlhQuantity: mlh,
     curcTotalQuantity: curcTotal,
+    mlhManaged: mlh > 0,
     mlhOnly: mlh > 0 && curcTotal === 0,
     reservedQuantity: reserved,
     checkedOutQuantity: checkedOut,
@@ -341,8 +342,8 @@ async function cartAdvice(database, actor, rawItems) {
     const teamLimitRemaining = row.max_active_per_team == null
       ? teamAvailable
       : Math.max(0, Number(row.max_active_per_team) - targetQuantity);
-    const mlhOnly = Number(row.mlh_quantity || 0) >= Number(row.total_quantity);
-    const severity = mlhOnly
+    const mlhManaged = Number(row.mlh_quantity || 0) > 0;
+    const severity = mlhManaged
       ? "warning"
       : row.relation_type === "requires" || row.relation_type === "compatible_driver"
       ? "required"
@@ -361,9 +362,9 @@ async function cartAdvice(database, actor, rawItems) {
       requiredQuantity,
       currentQuantity: targetQuantity,
       missingQuantity,
-      canAddQuantity: row.target_active ? Math.min(missingQuantity, teamAvailable, teamLimitRemaining) : 0,
+      canAddQuantity: mlhManaged || !row.target_active ? 0 : Math.min(missingQuantity, teamAvailable, teamLimitRemaining),
       mlhQuantity: Number(row.mlh_quantity || 0),
-      message: mlhOnly
+      message: mlhManaged
         ? `${row.message || fallback} Pick it up at the MLH desk; its quantity is not updated by CURC.`
         : row.message || fallback
     };
@@ -668,7 +669,7 @@ async function submitOrder(database, body, actor) {
         Number(component.reserved_quantity) - Number(component.checked_out_quantity) -
         Number(component.unavailable_quantity) - Number(component.protected_stock || 0));
 
-      if (Number(component.mlh_quantity || 0) >= Number(component.total_quantity)) {
+      if (Number(component.mlh_quantity || 0) > 0) {
         errors.push({ componentId, message: `${component.name}: pick this item up at the MLH desk; CURC does not track its quantity.` });
         return;
       }
@@ -810,6 +811,11 @@ async function createProtectedStockOverrideOrder(database, body, actor) {
         return;
       }
 
+      if (Number(component.mlh_quantity || 0) > 0) {
+        errors.push({ componentId, message: `${component.name}: pick this item up at the MLH desk; CURC does not track its quantity.` });
+        return;
+      }
+
       const physicalAvailable = Number(component.total_quantity) - Number(component.mlh_quantity || 0) -
         Number(component.reserved_quantity) - Number(component.checked_out_quantity) -
         Number(component.unavailable_quantity);
@@ -818,9 +824,7 @@ async function createProtectedStockOverrideOrder(database, body, actor) {
       if (quantity > physicalAvailable) {
         errors.push({
           componentId,
-          message: Number(component.mlh_quantity || 0) >= Number(component.total_quantity)
-            ? `${component.name}: pick this item up at the MLH desk; CURC does not track its quantity.`
-            : `${component.name}: only ${physicalAvailable} physically available through CURC.`
+          message: `${component.name}: only ${physicalAvailable} physically available through CURC.`
         });
       }
 
@@ -1313,7 +1317,7 @@ async function transitionOrder(database, body, actor, transition) {
         );
         const component = componentResult.rows[0];
 
-        if (Number(component.mlh_quantity || 0) >= Number(component.total_quantity)) {
+        if (Number(component.mlh_quantity || 0) > 0) {
           throw httpError(409, `${component.name} is managed by MLH and cannot be handed out through CURC.`);
         }
 
@@ -1455,7 +1459,7 @@ async function teamAdminDetail(database, teamIdInput) {
             GREATEST(0, total_quantity - mlh_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity) AS physical_available,
             GREATEST(0, total_quantity - mlh_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity - protected_stock) AS normal_available
        FROM checkout_components
-      WHERE active = TRUE AND protected_stock > 0
+      WHERE active = TRUE AND protected_stock > 0 AND mlh_quantity = 0
         AND total_quantity - mlh_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity > 0
       ORDER BY category, name`
   );
