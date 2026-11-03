@@ -16,9 +16,12 @@ function relationshipView(row) {
 
 function componentView(row, relationships) {
   const total = Number(row.total_quantity);
+  const mlh = Number(row.mlh_quantity || 0);
   const reserved = Number(row.reserved_quantity);
   const checkedOut = Number(row.checked_out_quantity);
   const unavailable = Number(row.unavailable_quantity);
+  const curcTotal = total - mlh;
+  const available = curcTotal - reserved - checkedOut - unavailable;
 
   return {
     id: Number(row.id),
@@ -33,11 +36,14 @@ function componentView(row, relationships) {
     binLocation: row.bin_location,
     technicalSpecs: row.technical_specs,
     totalQuantity: total,
+    mlhQuantity: mlh,
+    curcTotalQuantity: curcTotal,
+    mlhOnly: mlh > 0 && curcTotal === 0,
     reservedQuantity: reserved,
     checkedOutQuantity: checkedOut,
     unavailableQuantity: unavailable,
-    availableQuantity: total - reserved - checkedOut - unavailable,
-    teamAvailableQuantity: Math.max(0, total - reserved - checkedOut - unavailable - Number(row.protected_stock || 0)),
+    availableQuantity: available,
+    teamAvailableQuantity: Math.max(0, available - Number(row.protected_stock || 0)),
     protectedStock: Number(row.protected_stock || 0),
     maxActivePerTeam: row.max_active_per_team == null ? null : Number(row.max_active_per_team),
     teamActiveQuantity: Number(row.team_active_quantity || 0),
@@ -275,6 +281,7 @@ async function cartAdvice(database, actor, rawItems) {
     `SELECT relationships.*, sources.name AS source_name, targets.name AS target_name,
             targets.active AS target_active, targets.total_quantity, targets.reserved_quantity,
             targets.checked_out_quantity, targets.unavailable_quantity, targets.protected_stock,
+            targets.mlh_quantity,
             targets.max_active_per_team
        FROM checkout_component_relationships relationships
        JOIN checkout_components sources ON sources.id = relationships.source_component_id
@@ -328,12 +335,16 @@ async function cartAdvice(database, actor, rawItems) {
       return null;
     }
 
-    const teamAvailable = Math.max(0, Number(row.total_quantity) - Number(row.reserved_quantity) -
-      Number(row.checked_out_quantity) - Number(row.unavailable_quantity) - Number(row.protected_stock));
+    const teamAvailable = Math.max(0, Number(row.total_quantity) - Number(row.mlh_quantity || 0) -
+      Number(row.reserved_quantity) - Number(row.checked_out_quantity) -
+      Number(row.unavailable_quantity) - Number(row.protected_stock));
     const teamLimitRemaining = row.max_active_per_team == null
       ? teamAvailable
       : Math.max(0, Number(row.max_active_per_team) - targetQuantity);
-    const severity = row.relation_type === "requires" || row.relation_type === "compatible_driver"
+    const mlhOnly = Number(row.mlh_quantity || 0) >= Number(row.total_quantity);
+    const severity = mlhOnly
+      ? "warning"
+      : row.relation_type === "requires" || row.relation_type === "compatible_driver"
       ? "required"
       : row.relation_type === "compatible_power_supply" ? "warning" : "recommendation";
     const fallback = severity === "required"
@@ -351,7 +362,10 @@ async function cartAdvice(database, actor, rawItems) {
       currentQuantity: targetQuantity,
       missingQuantity,
       canAddQuantity: row.target_active ? Math.min(missingQuantity, teamAvailable, teamLimitRemaining) : 0,
-      message: row.message || fallback
+      mlhQuantity: Number(row.mlh_quantity || 0),
+      message: mlhOnly
+        ? `${row.message || fallback} Pick it up at the MLH desk; its quantity is not updated by CURC.`
+        : row.message || fallback
     };
   }).filter(Boolean);
 }
@@ -481,21 +495,17 @@ async function saveComponent(database, body, actor) {
     }
 
     if (!componentId) {
-      if (input.unavailableQuantity + input.protectedStock > input.totalQuantity) {
-        throw httpError(409, "Unavailable quantity and protected stock cannot exceed total inventory.");
-      }
-
       const created = await transaction.query(
         `INSERT INTO checkout_components
           (name, description, image_url, image_alt, category, compatibility,
            arduino_guidance, raspberry_pi_guidance, bin_location,
-           technical_specs, total_quantity, unavailable_quantity, protected_stock,
-           max_active_per_team, active, admin_notes)
-         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16)
+           technical_specs, total_quantity, mlh_quantity, unavailable_quantity,
+           protected_stock, max_active_per_team, active, admin_notes)
+         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17)
          RETURNING *`,
         [input.name, input.description, input.imageUrl, input.imageAlt, input.category,
           input.compatibility, input.arduinoGuidance, input.raspberryPiGuidance,
-          input.binLocation, input.technicalSpecs, input.totalQuantity,
+          input.binLocation, input.technicalSpecs, input.totalQuantity, input.mlhQuantity,
           input.unavailableQuantity, input.protectedStock, input.maxActivePerTeam,
           input.active, input.adminNotes]
       );
@@ -536,12 +546,12 @@ async function saveComponent(database, body, actor) {
 
     const allocated = Number(current.reserved_quantity) + Number(current.checked_out_quantity);
 
-    if (input.totalQuantity < allocated + input.unavailableQuantity) {
-      throw httpError(409, `Total inventory cannot be lower than the ${allocated} reserved/checked-out and ${input.unavailableQuantity} unavailable units.`);
+    if (input.totalQuantity < allocated + input.mlhQuantity + input.unavailableQuantity) {
+      throw httpError(409, `Total inventory cannot be lower than the ${allocated} reserved/checked-out, ${input.mlhQuantity} MLH-managed, and ${input.unavailableQuantity} unavailable units.`);
     }
 
-    if (input.protectedStock > input.totalQuantity - input.unavailableQuantity) {
-      throw httpError(409, "Protected stock cannot exceed usable inventory.");
+    if (input.protectedStock > input.totalQuantity - input.mlhQuantity - input.unavailableQuantity) {
+      throw httpError(409, "Protected stock cannot exceed CURC-managed usable inventory.");
     }
 
     const updatedResult = await transaction.query(
@@ -549,14 +559,14 @@ async function saveComponent(database, body, actor) {
           SET name = $2, description = $3, image_url = $4, image_alt = $5, category = $6,
                compatibility = $7, arduino_guidance = $8, raspberry_pi_guidance = $9,
                bin_location = $10, technical_specs = $11,
-               total_quantity = $12, unavailable_quantity = $13, protected_stock = $14,
-               max_active_per_team = $15, active = $16, admin_notes = $17,
+               total_quantity = $12, mlh_quantity = $13, unavailable_quantity = $14,
+               protected_stock = $15, max_active_per_team = $16, active = $17, admin_notes = $18,
               version = version + 1, updated_at = NOW()
         WHERE id = $1
         RETURNING *`,
       [componentId, input.name, input.description, input.imageUrl, input.imageAlt, input.category,
         input.compatibility, input.arduinoGuidance, input.raspberryPiGuidance,
-        input.binLocation, input.technicalSpecs, input.totalQuantity,
+        input.binLocation, input.technicalSpecs, input.totalQuantity, input.mlhQuantity,
         input.unavailableQuantity, input.protectedStock, input.maxActivePerTeam,
         input.active, input.adminNotes]
     );
@@ -654,8 +664,14 @@ async function submitOrder(database, body, actor) {
         return;
       }
 
-      const available = Math.max(0, Number(component.total_quantity) - Number(component.reserved_quantity) -
-        Number(component.checked_out_quantity) - Number(component.unavailable_quantity) - Number(component.protected_stock || 0));
+      const available = Math.max(0, Number(component.total_quantity) - Number(component.mlh_quantity || 0) -
+        Number(component.reserved_quantity) - Number(component.checked_out_quantity) -
+        Number(component.unavailable_quantity) - Number(component.protected_stock || 0));
+
+      if (Number(component.mlh_quantity || 0) >= Number(component.total_quantity)) {
+        errors.push({ componentId, message: `${component.name}: pick this item up at the MLH desk; CURC does not track its quantity.` });
+        return;
+      }
 
       if (requested > available) {
         errors.push({ componentId, message: `${component.name}: only ${available} currently available for team orders.` });
@@ -794,12 +810,18 @@ async function createProtectedStockOverrideOrder(database, body, actor) {
         return;
       }
 
-      const physicalAvailable = Number(component.total_quantity) - Number(component.reserved_quantity) -
-        Number(component.checked_out_quantity) - Number(component.unavailable_quantity);
+      const physicalAvailable = Number(component.total_quantity) - Number(component.mlh_quantity || 0) -
+        Number(component.reserved_quantity) - Number(component.checked_out_quantity) -
+        Number(component.unavailable_quantity);
       const normalAvailable = Math.max(0, physicalAvailable - Number(component.protected_stock));
 
       if (quantity > physicalAvailable) {
-        errors.push({ componentId, message: `${component.name}: only ${physicalAvailable} physically available.` });
+        errors.push({
+          componentId,
+          message: Number(component.mlh_quantity || 0) >= Number(component.total_quantity)
+            ? `${component.name}: pick this item up at the MLH desk; CURC does not track its quantity.`
+            : `${component.name}: only ${physicalAvailable} physically available through CURC.`
+        });
       }
 
       if (quantity > normalAvailable) {
@@ -1003,7 +1025,7 @@ async function adminOverview(database) {
     "SELECT status, COUNT(*) AS count FROM checkout_orders GROUP BY status"
   );
   const inventory = await database.query(
-    `SELECT COALESCE(SUM(total_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity), 0) AS available,
+    `SELECT COALESCE(SUM(total_quantity - mlh_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity), 0) AS available,
             COALESCE(SUM(reserved_quantity), 0) AS reserved,
             COALESCE(SUM(checked_out_quantity), 0) AS checked_out,
             COALESCE(SUM(unavailable_quantity), 0) AS unavailable
@@ -1291,6 +1313,10 @@ async function transitionOrder(database, body, actor, transition) {
         );
         const component = componentResult.rows[0];
 
+        if (Number(component.mlh_quantity || 0) >= Number(component.total_quantity)) {
+          throw httpError(409, `${component.name} is managed by MLH and cannot be handed out through CURC.`);
+        }
+
         if (Number(component.reserved_quantity) < quantity) {
           throw httpError(409, `Inventory state changed for ${component.name}; pickup was not processed.`);
         }
@@ -1426,11 +1452,11 @@ async function teamAdminDetail(database, teamIdInput) {
   );
   const protectedInventory = await database.query(
     `SELECT id, name, category, protected_stock,
-            GREATEST(0, total_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity) AS physical_available,
-            GREATEST(0, total_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity - protected_stock) AS normal_available
+            GREATEST(0, total_quantity - mlh_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity) AS physical_available,
+            GREATEST(0, total_quantity - mlh_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity - protected_stock) AS normal_available
        FROM checkout_components
       WHERE active = TRUE AND protected_stock > 0
-        AND total_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity > 0
+        AND total_quantity - mlh_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity > 0
       ORDER BY category, name`
   );
 
@@ -1601,7 +1627,7 @@ async function processReturn(database, body, actor) {
 
     for (const item of items.sort(function (a, b) { return a.componentId - b.componentId; })) {
       const inventoryResult = await transaction.query(
-        `SELECT inventory.checked_out_quantity, components.*
+        `SELECT inventory.checked_out_quantity AS team_checked_out_quantity, components.*
            FROM checkout_team_inventory inventory
            JOIN checkout_components components ON components.id = inventory.component_id
           WHERE inventory.team_id = $1 AND inventory.component_id = $2
@@ -1610,8 +1636,8 @@ async function processReturn(database, body, actor) {
       );
       const current = inventoryResult.rows[0];
 
-      if (!current || Number(current.checked_out_quantity) < item.quantity) {
-        const held = current ? Number(current.checked_out_quantity) : 0;
+      if (!current || Number(current.team_checked_out_quantity) < item.quantity) {
+        const held = current ? Number(current.team_checked_out_quantity) : 0;
         const name = current ? current.name : `Component #${item.componentId}`;
         throw httpError(409, `${name}: this team holds ${held}, so returning ${item.quantity} is not possible.`);
       }
@@ -1868,7 +1894,7 @@ async function discrepancyReport(database) {
   await expireOrders(database);
   const componentsResult = await database.query(
     `SELECT components.id, components.name, components.category, components.total_quantity,
-            components.reserved_quantity, components.checked_out_quantity, components.unavailable_quantity,
+            components.mlh_quantity, components.reserved_quantity, components.checked_out_quantity, components.unavailable_quantity,
             COALESCE(reservations.quantity, 0) AS expected_reserved,
             COALESCE(holdings.quantity, 0) AS expected_checked_out
        FROM checkout_components components
@@ -1902,6 +1928,7 @@ async function discrepancyReport(database) {
   );
   const correctionsResult = await database.query("SELECT COUNT(*) AS count FROM checkout_return_corrections");
   const components = componentsResult.rows.map(function (row) {
+    const mlh = Number(row.mlh_quantity || 0);
     const reserved = Number(row.reserved_quantity);
     const checkedOut = Number(row.checked_out_quantity);
     const expectedReserved = Number(row.expected_reserved);
@@ -1913,15 +1940,16 @@ async function discrepancyReport(database) {
       name: row.name,
       category: row.category,
       totalQuantity: total,
+      mlhQuantity: mlh,
       reservedQuantity: reserved,
       expectedReservedQuantity: expectedReserved,
       checkedOutQuantity: checkedOut,
       expectedCheckedOutQuantity: expectedCheckedOut,
       unavailableQuantity: unavailable,
-      availableQuantity: total - reserved - checkedOut - unavailable,
+      availableQuantity: total - mlh - reserved - checkedOut - unavailable,
       reservationDifference: reserved - expectedReserved,
       holdingDifference: checkedOut - expectedCheckedOut,
-      mismatch: reserved !== expectedReserved || checkedOut !== expectedCheckedOut || reserved + checkedOut + unavailable > total
+      mismatch: reserved !== expectedReserved || checkedOut !== expectedCheckedOut || mlh + reserved + checkedOut + unavailable > total
     };
   });
   const outstandingByTeam = new Map();

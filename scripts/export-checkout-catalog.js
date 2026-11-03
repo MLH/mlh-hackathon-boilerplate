@@ -8,7 +8,7 @@ async function exportCatalog(database) {
   const components = await database.query(
     `SELECT name, description, image_url, image_alt, category, compatibility,
             arduino_guidance, raspberry_pi_guidance, bin_location, technical_specs,
-            total_quantity, unavailable_quantity, protected_stock, max_active_per_team,
+            total_quantity, mlh_quantity, unavailable_quantity, protected_stock, max_active_per_team,
             active, admin_notes
        FROM checkout_components
       ORDER BY category, name`
@@ -39,6 +39,7 @@ async function exportCatalog(database) {
         binLocation: row.bin_location,
         technicalSpecs: row.technical_specs,
         totalQuantity: Number(row.total_quantity),
+        mlhQuantity: Number(row.mlh_quantity || 0),
         unavailableQuantity: Number(row.unavailable_quantity),
         protectedStock: Number(row.protected_stock),
         maxActivePerTeam: row.max_active_per_team == null ? null : Number(row.max_active_per_team),

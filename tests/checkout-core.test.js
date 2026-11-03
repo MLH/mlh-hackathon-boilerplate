@@ -772,3 +772,69 @@ test("end-of-event report reconciles counters and flags discrepancies", async fu
     [componentId]
   );
 });
+
+test("MLH-tagged quantities are informational and cannot be reserved through CURC", async function () {
+  await request("create-team", {
+    name: "MLH Desk Testers",
+    identifier: "mlh-desk-testers",
+    username: "mlh-desk-testers",
+    password: "mlh-desk-test-2026"
+  }, adminCookie);
+  const mlhOnly = await request("save-component", {
+    name: "MLH Test Sensor",
+    description: "Test item managed entirely by the MLH desk.",
+    imageUrl: "/images/checkout-image-pending.svg",
+    imageAlt: "Placeholder for the MLH test sensor",
+    category: "Sensor",
+    compatibility: "Arduino + Raspberry Pi",
+    totalQuantity: 7,
+    mlhQuantity: 7,
+    unavailableQuantity: 0,
+    protectedStock: 0,
+    maxActivePerTeam: 2,
+    active: true,
+    adminNotes: "Source: MLH."
+  }, adminCookie);
+  const mixed = await request("save-component", {
+    name: "Mixed Desk Test Sensor",
+    description: "Three CURC units and two informational MLH units.",
+    imageUrl: "/images/checkout-image-pending.svg",
+    imageAlt: "Placeholder for the mixed desk test sensor",
+    category: "Sensor",
+    compatibility: "Arduino + Raspberry Pi",
+    totalQuantity: 5,
+    mlhQuantity: 2,
+    unavailableQuantity: 0,
+    protectedStock: 0,
+    maxActivePerTeam: 3,
+    active: true,
+    adminNotes: "Source: CURC, MLH."
+  }, adminCookie);
+  const teamCookie = await login("mlh-desk-testers", "mlh-desk-test-2026");
+  const catalog = await request("catalog", {}, teamCookie);
+  const mlhCatalogItem = catalog.body.components.find(function (item) {
+    return item.id === mlhOnly.body.component.id;
+  });
+  const mixedCatalogItem = catalog.body.components.find(function (item) {
+    return item.id === mixed.body.component.id;
+  });
+
+  assert.equal(mlhCatalogItem.mlhOnly, true);
+  assert.equal(mlhCatalogItem.mlhQuantity, 7);
+  assert.equal(mlhCatalogItem.availableQuantity, 0);
+  assert.equal(mlhCatalogItem.teamAvailableQuantity, 0);
+  assert.equal(mixedCatalogItem.mlhOnly, false);
+  assert.equal(mixedCatalogItem.mlhQuantity, 2);
+  assert.equal(mixedCatalogItem.availableQuantity, 3);
+
+  const blocked = await request("submit-order", {
+    items: [{ componentId: mlhOnly.body.component.id, quantity: 1 }]
+  }, teamCookie);
+  assert.equal(blocked.status, 409);
+  assert.match(blocked.body.details.items[0].message, /MLH desk/i);
+
+  const reserved = await request("submit-order", {
+    items: [{ componentId: mixed.body.component.id, quantity: 3 }]
+  }, teamCookie);
+  assert.equal(reserved.status, 201);
+});

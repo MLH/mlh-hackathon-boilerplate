@@ -29,6 +29,14 @@ test("the finalized catalog imports atomically only into an empty inventory", as
   assert.equal(Number(counts.rows[0].components), 204);
   assert.equal(Number(counts.rows[0].relationships), 15);
   assert.equal(Number(counts.rows[0].transactions), 204);
+  const mlh = await database.query(
+    `SELECT
+       COUNT(*) FILTER (WHERE mlh_quantity = total_quantity AND total_quantity > 0) AS mlh_only,
+       MAX(mlh_quantity) FILTER (WHERE LOWER(name) = 'moisture sensor') AS moisture_mlh
+       FROM checkout_components`
+  );
+  assert.equal(Number(mlh.rows[0].mlh_only), 53);
+  assert.equal(Number(mlh.rows[0].moisture_mlh), 2);
   await assert.rejects(importCatalog(database, catalog), /only when checkout_components is empty/);
   await resetDatabaseForTests();
 });

@@ -731,6 +731,29 @@
   color: #a52a22;
 }
 
+.checkout-stock-external {
+  color: #315f80;
+}
+
+.checkout-mlh-notice {
+  background: #eef7fc;
+  border: 1px solid #9ec9df;
+  border-left: 4px solid #315f80;
+  border-radius: 7px;
+  margin: 0 0 12px;
+  padding: 10px 12px;
+}
+
+.checkout-mlh-notice strong {
+  color: #244f6c;
+}
+
+.checkout-mlh-notice p {
+  color: #496778;
+  font-size: 12px;
+  margin: 4px 0 0;
+}
+
 .checkout-limit {
   color: #647889;
   font-size: 12px;

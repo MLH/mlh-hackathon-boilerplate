@@ -41,6 +41,10 @@ function componentInput(body) {
   const imageUrl = cleanString(body.imageUrl, "Image URL", { max: 1000, optional: true });
   const imageAlt = cleanString(body.imageAlt, "Image description", { max: 240, optional: true });
   const active = body.active !== false;
+  const totalQuantity = positiveInteger(body.totalQuantity, "Total quantity", true);
+  const mlhQuantity = positiveInteger(body.mlhQuantity || 0, "MLH desk quantity", true);
+  const unavailableQuantity = positiveInteger(body.unavailableQuantity || 0, "Unavailable quantity", true);
+  const protectedStock = positiveInteger(body.protectedStock || 0, "Protected stock", true);
 
   if (imageUrl && !/^https?:\/\//i.test(imageUrl) && !imageUrl.startsWith("/")) {
     throw httpError(400, "Image URL must use http(s) or be a site-relative path beginning with /.");
@@ -48,6 +52,14 @@ function componentInput(body) {
 
   if (active && (!imageUrl || !imageAlt)) {
     throw httpError(400, "An active component requires both a photo and an image description.");
+  }
+
+  if (mlhQuantity + unavailableQuantity > totalQuantity) {
+    throw httpError(409, "MLH desk and unavailable quantities cannot exceed total inventory.");
+  }
+
+  if (protectedStock > totalQuantity - mlhQuantity - unavailableQuantity) {
+    throw httpError(409, "Protected stock cannot exceed CURC-managed usable inventory.");
   }
 
   return {
@@ -61,9 +73,10 @@ function componentInput(body) {
     raspberryPiGuidance: cleanString(body.raspberryPiGuidance, "Raspberry Pi guidance", { max: 2000, optional: true }),
     binLocation: cleanString(body.binLocation, "Bin location", { max: 240, optional: true }),
     technicalSpecs: cleanString(body.technicalSpecs, "Technical guidance", { max: 4000, optional: true }),
-    totalQuantity: positiveInteger(body.totalQuantity, "Total quantity", true),
-    unavailableQuantity: positiveInteger(body.unavailableQuantity || 0, "Unavailable quantity", true),
-    protectedStock: positiveInteger(body.protectedStock || 0, "Protected stock", true),
+    totalQuantity,
+    mlhQuantity,
+    unavailableQuantity,
+    protectedStock,
     maxActivePerTeam: max,
     active,
     adminNotes: cleanString(body.adminNotes, "Admin notes", { max: 2000, optional: true })
