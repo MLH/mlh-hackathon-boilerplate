@@ -37,6 +37,7 @@ CREATE TABLE IF NOT EXISTS checkout_components (
   bin_location TEXT NOT NULL DEFAULT '',
   technical_specs TEXT NOT NULL DEFAULT '',
   total_quantity INTEGER NOT NULL CHECK (total_quantity >= 0),
+  mlh_quantity INTEGER NOT NULL DEFAULT 0 CHECK (mlh_quantity >= 0),
   reserved_quantity INTEGER NOT NULL DEFAULT 0 CHECK (reserved_quantity >= 0),
   checked_out_quantity INTEGER NOT NULL DEFAULT 0 CHECK (checked_out_quantity >= 0),
   unavailable_quantity INTEGER NOT NULL DEFAULT 0 CHECK (unavailable_quantity >= 0),
@@ -47,7 +48,8 @@ CREATE TABLE IF NOT EXISTS checkout_components (
   admin_notes TEXT NOT NULL DEFAULT '',
   created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
   updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-  CHECK (reserved_quantity + checked_out_quantity + unavailable_quantity <= total_quantity)
+  CONSTRAINT checkout_components_inventory_balance_check
+    CHECK (mlh_quantity + reserved_quantity + checked_out_quantity + unavailable_quantity <= total_quantity)
 );
 
 CREATE TABLE IF NOT EXISTS checkout_orders (
@@ -213,6 +215,22 @@ ALTER TABLE checkout_components ADD COLUMN IF NOT EXISTS protected_stock INTEGER
 ALTER TABLE checkout_components ADD COLUMN IF NOT EXISTS version INTEGER NOT NULL DEFAULT 1;
 ALTER TABLE checkout_components ADD COLUMN IF NOT EXISTS arduino_guidance TEXT NOT NULL DEFAULT '';
 ALTER TABLE checkout_components ADD COLUMN IF NOT EXISTS raspberry_pi_guidance TEXT NOT NULL DEFAULT '';
+ALTER TABLE checkout_components ADD COLUMN IF NOT EXISTS mlh_quantity INTEGER;
+
+UPDATE checkout_components
+   SET mlh_quantity = CASE
+     WHEN admin_notes ILIKE '%Source: MLH.%' THEN total_quantity
+     WHEN LOWER(name) = 'moisture sensor' AND admin_notes ILIKE '%Source: CURC, MLH.%' THEN 2
+     ELSE 0
+   END
+ WHERE mlh_quantity IS NULL;
+
+ALTER TABLE checkout_components ALTER COLUMN mlh_quantity SET DEFAULT 0;
+ALTER TABLE checkout_components ALTER COLUMN mlh_quantity SET NOT NULL;
+ALTER TABLE checkout_components DROP CONSTRAINT IF EXISTS checkout_components_check;
+ALTER TABLE checkout_components DROP CONSTRAINT IF EXISTS checkout_components_inventory_balance_check;
+ALTER TABLE checkout_components ADD CONSTRAINT checkout_components_inventory_balance_check
+  CHECK (mlh_quantity >= 0 AND mlh_quantity + reserved_quantity + checked_out_quantity + unavailable_quantity <= total_quantity);
 
 ALTER TABLE checkout_orders ADD COLUMN IF NOT EXISTS receipt_code TEXT UNIQUE;
 ALTER TABLE checkout_orders ADD COLUMN IF NOT EXISTS accepted_by BIGINT REFERENCES checkout_users(id);

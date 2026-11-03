@@ -14,6 +14,7 @@ function validComponent(overrides) {
     binLocation: "Cabinet A / Drawer 1",
     technicalSpecs: "USB powered for basic use.",
     totalQuantity: 10,
+    mlhQuantity: 0,
     unavailableQuantity: 0,
     protectedStock: 0,
     maxActivePerTeam: 2,
@@ -38,6 +39,16 @@ test("active components require an image and accessible description", function (
     componentInput(validComponent({ imageUrl: "", imageAlt: "" }));
   }, /active component requires/i);
   assert.equal(componentInput(validComponent({ imageUrl: "", imageAlt: "", active: false })).active, false);
+});
+
+test("MLH quantities remain outside CURC-managed inventory", function () {
+  assert.equal(componentInput(validComponent({ totalQuantity: 10, mlhQuantity: 4 })).mlhQuantity, 4);
+  assert.throws(function () {
+    componentInput(validComponent({ totalQuantity: 10, mlhQuantity: 9, unavailableQuantity: 2 }));
+  }, /MLH desk and unavailable quantities/i);
+  assert.throws(function () {
+    componentInput(validComponent({ totalQuantity: 10, mlhQuantity: 8, protectedStock: 3 }));
+  }, /CURC-managed usable inventory/i);
 });
 
 test("damaged and missing returns require an accountability note", function () {

@@ -12,6 +12,21 @@ function readCatalog(filename) {
   return catalog;
 }
 
+function catalogMlhQuantity(component) {
+  if (component.mlhQuantity != null) {
+    return Number(component.mlhQuantity);
+  }
+
+  const notes = String(component.adminNotes || "");
+  if (/Source:\s*MLH\./i.test(notes)) {
+    return Number(component.totalQuantity);
+  }
+  if (/^Moisture sensor$/i.test(component.name) && /Source:\s*CURC,\s*MLH\./i.test(notes)) {
+    return 2;
+  }
+  return 0;
+}
+
 async function importCatalog(database, catalog) {
   return database.transaction(async function (transaction) {
     const existing = await transaction.query("SELECT COUNT(*) AS count FROM checkout_components");
@@ -36,14 +51,14 @@ async function importCatalog(database, catalog) {
         `INSERT INTO checkout_components
           (name, description, image_url, image_alt, category, compatibility,
            arduino_guidance, raspberry_pi_guidance, bin_location, technical_specs,
-           total_quantity, unavailable_quantity, protected_stock, max_active_per_team,
-           active, admin_notes)
-         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16)
+           total_quantity, mlh_quantity, unavailable_quantity, protected_stock,
+           max_active_per_team, active, admin_notes)
+         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17)
          RETURNING id`,
         [component.name, component.description, component.imageUrl, component.imageAlt,
           component.category, component.compatibility, component.arduinoGuidance,
           component.raspberryPiGuidance, component.binLocation, component.technicalSpecs,
-          component.totalQuantity, component.unavailableQuantity, component.protectedStock,
+          component.totalQuantity, catalogMlhQuantity(component), component.unavailableQuantity, component.protectedStock,
           component.maxActivePerTeam, component.active, component.adminNotes]
       );
       const id = Number(inserted.rows[0].id);
@@ -100,4 +115,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { importCatalog, readCatalog };
+module.exports = { catalogMlhQuantity, importCatalog, readCatalog };

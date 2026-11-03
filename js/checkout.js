@@ -264,6 +264,10 @@
   };
 
   var componentMaximum = function (component) {
+    if (component.mlhQuantity > 0) {
+      return 0;
+    }
+
     var stockMaximum = component.teamAvailableQuantity;
 
     if (component.maxActivePerTeam == null) {
@@ -284,7 +288,7 @@
       return (!search || haystack.indexOf(search) >= 0) &&
         (!category || component.category === category) &&
         (!compatibility || component.compatibility === compatibility) &&
-        (!availableOnly || componentMaximum(component) > 0);
+        (!availableOnly || componentMaximum(component) > 0 || component.mlhQuantity > 0);
     });
 
     if (!visible.length) {
@@ -305,17 +309,28 @@
         ? ""
         : '<p class="checkout-limit">Maximum ' + component.maxActivePerTeam + " active per team" +
           (component.teamActiveQuantity ? " · You already have/reserved " + component.teamActiveQuantity : "") + "</p>";
+      var mlhNotice = component.mlhQuantity > 0
+        ? '<div class="checkout-mlh-notice"><strong>Pick up at the MLH desk</strong><p>MLH listed quantity: ' + component.mlhQuantity + '. This number is not updated by CURC.</p></div>'
+        : "";
+      var quantityControls = component.mlhQuantity > 0
+        ? ""
+        : '<div class="checkout-quantity-row"><button type="button" data-quantity-change="-1" aria-label="Remove one ' + escapeHtml(component.name) + '"' + (quantity === 0 ? " disabled" : "") + '>−</button><output aria-live="polite">' + quantity + '</output><button type="button" data-quantity-change="1" aria-label="Add one ' + escapeHtml(component.name) + '"' + (quantity >= maximum ? " disabled" : "") + ">+</button></div>";
+
+      if (component.mlhQuantity > 0) {
+        stockClass = " checkout-stock-external";
+        stockLabel = "Check at MLH desk";
+        limit = '<p class="checkout-limit">This component should be picked up at the MLH desk.</p>';
+      }
 
       return '<article class="checkout-component-card" data-component-id="' + component.id + '">' +
         '<div class="checkout-component-image">' + imageMarkup(component) + "</div>" +
         '<div class="checkout-component-body"><h2>' + escapeHtml(component.name) + "</h2>" +
-        '<div class="checkout-tags">' + tagMarkup(component.category) + tagMarkup(component.compatibility) + "</div>" +
+        '<div class="checkout-tags">' + tagMarkup(component.category) + tagMarkup(component.compatibility) + (component.mlhQuantity > 0 ? tagMarkup("MLH desk") : "") + "</div>" +
         '<p class="checkout-component-description">' + escapeHtml(component.description) + "</p>" +
         (component.arduinoGuidance ? '<p class="checkout-compatibility-note"><strong>Arduino:</strong> ' + escapeHtml(component.arduinoGuidance) + "</p>" : "") +
         (component.raspberryPiGuidance ? '<p class="checkout-compatibility-note"><strong>Raspberry Pi:</strong> ' + escapeHtml(component.raspberryPiGuidance) + "</p>" : "") +
         (component.technicalSpecs ? '<p class="checkout-form-note">' + escapeHtml(component.technicalSpecs) + "</p>" : "") +
-        '<p class="checkout-stock' + stockClass + '">' + stockLabel + "</p>" + limit +
-        '<div class="checkout-quantity-row"><button type="button" data-quantity-change="-1" aria-label="Remove one ' + escapeHtml(component.name) + '"' + (quantity === 0 ? " disabled" : "") + '>−</button><output aria-live="polite">' + quantity + '</output><button type="button" data-quantity-change="1" aria-label="Add one ' + escapeHtml(component.name) + '"' + (quantity >= maximum ? " disabled" : "") + ">+</button></div>" +
+        '<p class="checkout-stock' + stockClass + '">' + stockLabel + "</p>" + limit + mlhNotice + quantityControls +
         "</div></article>";
     }).join("");
   };
@@ -442,6 +457,12 @@
       var results = await Promise.all([api("catalog"), api("team-dashboard")]);
       state.components = results[0].components;
       state.dashboard = results[1];
+      state.components.forEach(function (component) {
+        if (component.mlhQuantity > 0) {
+          delete state.cart[component.id];
+        }
+      });
+      updateCartCounts();
       renderCatalog();
       renderCooldown();
       renderTeamOrders();
@@ -769,7 +790,8 @@
     });
 
     document.querySelector("[data-inventory-table]").innerHTML = visible.length ? visible.map(function (component) {
-      return '<tr><td><div class="checkout-inventory-component">' + inventoryImageMarkup(component) + '<span><strong>' + escapeHtml(component.name) + '</strong><small>' + escapeHtml(component.category) + ' · ' + escapeHtml(component.compatibility) + (component.active ? "" : " · Disabled") + '</small></span></div></td><td>' + component.availableQuantity + '</td><td>' + component.reservedQuantity + '</td><td>' + component.checkedOutQuantity + '</td><td>' + component.unavailableQuantity + '</td><td>' + component.totalQuantity + '</td><td><button class="checkout-button checkout-button-secondary" type="button" data-edit-component="' + component.id + '">Edit</button></td></tr>';
+      var source = component.mlhQuantity > 0 ? ' · MLH listed: ' + component.mlhQuantity : "";
+      return '<tr><td><div class="checkout-inventory-component">' + inventoryImageMarkup(component) + '<span><strong>' + escapeHtml(component.name) + '</strong><small>' + escapeHtml(component.category) + ' · ' + escapeHtml(component.compatibility) + source + (component.active ? "" : " · Disabled") + '</small></span></div></td><td>' + component.availableQuantity + '</td><td>' + component.reservedQuantity + '</td><td>' + component.checkedOutQuantity + '</td><td>' + component.unavailableQuantity + '</td><td>' + component.totalQuantity + '</td><td><button class="checkout-button checkout-button-secondary" type="button" data-edit-component="' + component.id + '">Edit</button></td></tr>';
     }).join("") : '<tr><td class="checkout-empty" colspan="7">No components match those filters.</td></tr>';
   };
 
@@ -1366,6 +1388,7 @@
     form.binLocation.value = component ? component.binLocation : "";
     form.technicalSpecs.value = component ? component.technicalSpecs : "";
     form.totalQuantity.value = component ? component.totalQuantity : 0;
+    form.mlhQuantity.value = component ? component.mlhQuantity : 0;
     form.unavailableQuantity.value = component ? component.unavailableQuantity : 0;
     form.protectedStock.value = component ? component.protectedStock : 0;
     form.maxActivePerTeam.value = component && component.maxActivePerTeam != null ? component.maxActivePerTeam : "";
@@ -1418,6 +1441,7 @@
       binLocation: form.binLocation.value,
       technicalSpecs: form.technicalSpecs.value,
       totalQuantity: Number(form.totalQuantity.value),
+      mlhQuantity: Number(form.mlhQuantity.value),
       unavailableQuantity: Number(form.unavailableQuantity.value),
       protectedStock: Number(form.protectedStock.value),
       maxActivePerTeam: form.maxActivePerTeam.value ? Number(form.maxActivePerTeam.value) : null,

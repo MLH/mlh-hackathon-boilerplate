@@ -14,7 +14,8 @@ social:
 seo:
   title: "MakeCU 2026 | Columbia University Robotics Club"
   description: "MakeCU is Columbia University Robotics Club's 24-hour hardware hackathon, returning November 7-8, 2026 at Carleton Commons."
-  image: ""
+  image: "/images/social/makecu-2026.png"
+  image_alt: "MakeCU 2026 — November 7-8, 2026 at Columbia University at Carleton Commons"
 
 event:
   name: "MakeCU"
@@ -304,16 +305,6 @@ event:
   sponsors:
     - tier: "Gold"
       sponsors:
-        - name: "Notability"
-          logo: "/images/logos/notability-logo.png"
-          url: "https://notability.com/"
-          description: |
-            **About Notability:** Notability is the top digital note-taking app designed to help students, creators, and professionals bring their ideas to life. From sketching diagrams and recording audio-synced notes to organizing complex projects, Notability gives builders the tools to think, plan, and execute seamlessly.
-        - name: "PI (Physik Instrumente)"
-          logo: "/images/logos/pi-logo.png"
-          url: "https://www.pi-usa.us/en/"
-          description: |
-            **About PI:** PI is a leading manufacturer of motion control, nano-positioning & automation solutions for photonics, semiconductors, laser, optics, medical & aerospace.
         - name: "Midcentury Labs"
           logo: "/images/logos/Midcentury-labs.jpeg"
           url: "https://www.midcentury.xyz/"
@@ -332,6 +323,16 @@ event:
         #   url: ""
     - tier: "Silver"
       sponsors:
+        - name: "Notability"
+          logo: "/images/logos/notability-logo.png"
+          url: "https://notability.com/"
+          description: |
+            **About Notability:** Notability is the top digital note-taking app designed to help students, creators, and professionals bring their ideas to life. From sketching diagrams and recording audio-synced notes to organizing complex projects, Notability gives builders the tools to think, plan, and execute seamlessly.
+        - name: "PI (Physik Instrumente)"
+          logo: "/images/logos/pi-logo.png"
+          url: "https://www.pi-usa.us/en/"
+          description: |
+            **About PI:** PI is a leading manufacturer of motion control, nano-positioning & automation solutions for photonics, semiconductors, laser, optics, medical & aerospace.
         - name: "Clarapath"
           logo: "/images/logos/Clarapath-Logo.webp"
           url: "https://clarapath.com/"
