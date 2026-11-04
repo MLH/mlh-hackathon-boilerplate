@@ -14,11 +14,19 @@
               <div class="sponsor-brand">
                 {% if sponsor.description and sponsor.description != "" %}
                   {% assign sponsor_details_id = tier.tier | slugify | append: '-sponsor-' | append: forloop.index %}
-                  <button class="sponsor-logo-trigger" type="button" aria-expanded="false" aria-controls="{{ sponsor_details_id }}" aria-label="Show information about {{ sponsor.name }}">
+                  <button class="sponsor-logo-trigger" type="button" aria-expanded="false" aria-controls="{{ sponsor_details_id }}" aria-label="Show information about {{ sponsor.name }}{% if sponsor.products %} and its products{% endif %}">
                 {% elsif sponsor.url and sponsor.url != "" %}
-                  <a class="sponsor-logo-link" href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" aria-label="Learn more about {{ sponsor.name }}">
+                  <a class="sponsor-logo-link" href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer{% if sponsor.link_rel and sponsor.link_rel != "" %} {{ sponsor.link_rel }}{% endif %}" aria-label="Learn more about {{ sponsor.name }}">
                 {% endif %}
-                {% if sponsor.logo and sponsor.logo != "" %}
+                {% if sponsor.products %}
+                  <span class="sponsor-product-carousel" data-sponsor-product-carousel aria-hidden="true">
+                    {% for product in sponsor.products %}
+                      <span class="sponsor-product-slide{% if forloop.first %} is-current{% endif %}" data-product-name="{{ product.name }}">
+                        <img src="{{ product.logo | relative_url }}" alt="">
+                      </span>
+                    {% endfor %}
+                  </span>
+                {% elsif sponsor.logo and sponsor.logo != "" %}
                   <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.name }}">
                 {% else %}
                   <span class="sponsor-logo-placeholder" aria-hidden="true"></span>
@@ -28,7 +36,15 @@
                 {% elsif sponsor.url and sponsor.url != "" %}
                   </a>
                 {% endif %}
-                <strong>{{ sponsor.name }}</strong>
+                {% if sponsor.products %}
+                  <strong class="sponsor-product-names" aria-label="{{ sponsor.name }} products">
+                    {% for product in sponsor.products %}
+                      <span class="sponsor-product-name-slide{% if forloop.first %} is-current{% endif %}"{% unless forloop.first %} aria-hidden="true"{% endunless %}>{{ product.name }}</span>
+                    {% endfor %}
+                  </strong>
+                {% else %}
+                  <strong>{{ sponsor.name }}</strong>
+                {% endif %}
               </div>
               {% if sponsor.description and sponsor.description != "" %}
                 <div class="sponsor-details" id="{{ sponsor_details_id }}" aria-hidden="true">
@@ -36,8 +52,14 @@
                     <div class="sponsor-description">
                       {{ sponsor.description | markdownify }}
                     </div>
-                    {% if sponsor.url and sponsor.url != "" %}
-                      <a class="button sponsor-website-link" href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer">Visit {{ sponsor.name }}</a>
+                    {% if sponsor.products %}
+                      <nav class="sponsor-product-links" aria-label="{{ sponsor.name }} product websites">
+                        {% for product in sponsor.products %}
+                          <a class="button sponsor-product-link" href="{{ product.url }}" target="_blank" rel="noopener noreferrer{% if sponsor.link_rel and sponsor.link_rel != "" %} {{ sponsor.link_rel }}{% endif %}">{{ product.name }}</a>
+                        {% endfor %}
+                      </nav>
+                    {% elsif sponsor.url and sponsor.url != "" %}
+                      <a class="button sponsor-website-link" href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer{% if sponsor.link_rel and sponsor.link_rel != "" %} {{ sponsor.link_rel }}{% endif %}">Visit {{ sponsor.name }}</a>
                     {% endif %}
                   </div>
                 </div>

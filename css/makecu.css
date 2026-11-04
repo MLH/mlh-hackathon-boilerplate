@@ -2307,6 +2307,11 @@ a {
   margin-top: 22px;
 }
 
+.sponsor-tier-gold .sponsor-slots,
+.sponsor-tier-bronze .sponsor-slots {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .sponsor-slot {
   align-items: center;
   border: 1px dashed rgba(235, 235, 235, 0.5);
@@ -2331,6 +2336,7 @@ a {
 }
 
 .sponsor-slot-featured {
+  align-content: start;
   gap: 0;
   grid-template-columns: minmax(0, 1fr);
   justify-content: center;
@@ -2355,13 +2361,17 @@ a {
 }
 
 .sponsor-logo-trigger {
+  align-items: center;
   appearance: none;
   background: transparent;
   border: 0;
   box-sizing: border-box;
   cursor: pointer;
+  display: grid;
+  height: 110px;
   justify-self: center;
   margin-inline: auto;
+  overflow: hidden;
   padding: 0;
   width: min(300px, 100%);
 }
@@ -2392,6 +2402,7 @@ a {
 }
 
 .sponsor-tier-silver .sponsor-logo-trigger {
+  height: 132px;
   width: min(360px, 100%);
 }
 
@@ -2401,9 +2412,7 @@ a {
 }
 
 .sponsor-tier-gold .sponsor-logo-trigger {
-  align-items: center;
-  display: grid;
-  min-height: 158.4px;
+  height: 158.4px;
   width: min(432px, 100%);
 }
 
@@ -2418,9 +2427,7 @@ a {
 }
 
 .sponsor-tier-platinum .sponsor-logo-trigger {
-  align-items: center;
-  display: grid;
-  min-height: 190.08px;
+  height: 190.08px;
   width: min(518.4px, 100%);
 }
 
@@ -2433,11 +2440,134 @@ a {
   width: 85%;
 }
 
+.sponsor-logo-trigger img[alt="Manhattan Valley Indian Cuisine"] {
+  width: 100%;
+}
+
+.sponsor-logo-trigger img[alt="UFACTORY"] {
+  transform: scale(1.15);
+  transform-origin: center;
+}
+
+.sponsor-logo-trigger img[alt="NordVPN"] {
+  transform: scale(1.35);
+  transform-origin: center;
+  width: 100%;
+}
+
+.sponsor-product-carousel,
+.sponsor-product-names {
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
+
+.sponsor-product-carousel {
+  height: 100%;
+}
+
+.sponsor-product-slide,
+.sponsor-product-name-slide {
+  filter: blur(2px);
+  grid-area: 1 / 1;
+  opacity: 0;
+  transform: translateX(64px) scale(0.96);
+  transition:
+    opacity 380ms ease,
+    transform 720ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 480ms ease,
+    visibility 0s linear 780ms;
+  visibility: hidden;
+}
+
+.sponsor-product-slide {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+
+.sponsor-product-slide img,
+.sponsor-tier-bronze .sponsor-product-slide img {
+  max-height: 82px;
+  max-width: min(250px, 86%);
+  object-fit: contain;
+  width: auto;
+}
+
+.sponsor-product-slide[data-product-name="NordVPN"] img {
+  transform: scale(2);
+  transform-origin: center;
+}
+
+.sponsor-product-slide[data-product-name="Saily"] img {
+  transform: scale(1.45);
+  transform-origin: center;
+}
+
+.sponsor-product-slide[data-product-name="Coveron"] img {
+  transform: scale(1.28);
+  transform-origin: center;
+}
+
+.sponsor-product-slide.is-current,
+.sponsor-product-name-slide.is-current {
+  filter: blur(0);
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition-delay: 200ms, 0ms, 0ms, 0ms;
+  visibility: visible;
+}
+
+.sponsor-product-slide.is-leaving,
+.sponsor-product-name-slide.is-leaving {
+  filter: blur(2px);
+  opacity: 0;
+  transform: translateX(-64px) scale(0.96);
+  visibility: visible;
+}
+
+.sponsor-slot strong.sponsor-product-names {
+  align-items: center;
+  display: grid;
+  justify-items: center;
+  min-height: 2.8em;
+  width: 100%;
+}
+
+.sponsor-product-name-slide {
+  filter: none;
+  text-align: center;
+  transform: none;
+  transition:
+    opacity 240ms ease,
+    visibility 0s linear 240ms;
+  width: 100%;
+}
+
+.sponsor-product-name-slide.is-current {
+  filter: none;
+  transform: none;
+  transition-delay: 160ms, 0ms;
+}
+
+.sponsor-product-name-slide.is-leaving {
+  filter: none;
+  transform: none;
+  transition-delay: 0ms;
+}
+
 .sponsor-slot strong {
+  align-items: flex-start;
   color: var(--silver);
+  display: flex;
   font-family: var(--font-ui);
   font-size: 14px;
   font-weight: 400;
+  justify-content: center;
+  line-height: 1.4;
+  min-height: 2.8em;
 }
 
 .sponsor-logo-placeholder {
@@ -2487,7 +2617,7 @@ a {
 }
 
 .sponsor-slot-featured.is-active .sponsor-brand {
-  transform: translateY(-4px);
+  transform: none;
 }
 
 .sponsor-slot-featured.is-active .sponsor-details {
@@ -2506,6 +2636,20 @@ a {
 .sponsor-website-link {
   display: inline-flex;
   margin-top: 20px;
+}
+
+.sponsor-product-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.sponsor-product-link.button {
+  font-size: 12px;
+  min-height: 36px;
+  padding: 9px 13px;
 }
 
 .sponsor-description p {
@@ -2826,6 +2970,11 @@ a {
 }
 
 @media (max-width: 720px) {
+  .sponsor-tier-gold .sponsor-slots,
+  .sponsor-tier-bronze .sponsor-slots {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
   :root {
     --header-height: 104px;
   }
@@ -3175,6 +3324,15 @@ a {
 
   .sponsor-details-inner {
     transition-duration: 600ms, 600ms !important;
+  }
+
+  .sponsor-product-slide,
+  .sponsor-product-name-slide {
+    transition-duration: 420ms, 520ms, 420ms, 0s !important;
+  }
+
+  .sponsor-product-name-slide {
+    transition-duration: 180ms, 0s !important;
   }
 }
 

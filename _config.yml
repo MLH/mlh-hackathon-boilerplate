@@ -55,7 +55,7 @@ event:
       track: "Healthcare"
     - name: "Keychron mechanical keyboard"
       track: "Environmental"
-    - name: "Drone"
+    - name: "Snaptain S5C Elite Drone"
       track: "Creativity"
     - name: "Polaroid camera"
       track: "Beginner's Choice"
@@ -315,6 +315,16 @@ event:
           url: "https://botblox.com/"
           description: |
             **About BotBlox:** We build tiny, rugged networking hardware that modern autonomous systems rely on.
+        - name: "TouchTronix Robotics Inc."
+          logo: "/images/logos/TouchTronix-Robotics-Inc-Logo.png"
+          url: "https://www.touchtronix.io/"
+          description: |
+            **About TouchTronix Robotics Inc.:** TouchTronix Robotics Inc. is building end-to-end tactile data infrastructure for embodied AI, from thin-film tactile sensors (SensX) and tactile modules for robot grippers (TactX) to the FusionX multimodal data collection kit with its software and hardware. It also offers large-scale vision-tactile data collection as a service for robotics teams that need multimodal training data.
+        - name: "Trace"
+          logo: "/images/logos/Trace-Logo.png"
+          url: "https://buildwithtrace.com/"
+          description: |
+            **About Trace:** Trace is AI-native PCB design software for Windows, Linux, and macOS that takes hardware teams from idea to a manufacturable board. Its specialized agents handle the full workflow—including schematic capture, datasheet parsing, component selection, placement, layout, routing, design-rule checks, and Gerber export—so engineers can move faster while staying in control of what gets built.
         # - name: "TBD"
         #   logo: ""
         #   url: ""
@@ -347,6 +357,38 @@ event:
             **About Tutor Intelligence:** We believe general-purpose, generally-intelligent robots will be built *in our lifetimes.* Robots will work in our factories, move our goods, walk on our streets and eventually be in our homes. To build that future, research and deployment must work in lockstep: real-world operation must make the technology better and better technology must make deployment easier. We're looking for the thinkers, builders, and researchers who want to be part of that loop.
 
             As an AI robotics company that deploys its inventions directly into the facilities that need them, on state-of-the-art hardware, every line of code written at Tutor has a direct impact on the global, physical economy.
+        - name: "Manhattan Valley Indian Cuisine"
+          logo: "/images/logos/Manhattan-Valley-Indian-Cuisine.png"
+          url: "https://manhattanvalleyny.com/"
+          description: |
+            **About Manhattan Valley Indian Cuisine:** Manhattan Valley Indian Cuisine is a family-owned Indian restaurant on Broadway in the Upper West Side, proudly serving the Columbia University community for about 25 years. We cater events of every size—from student gatherings to weddings and corporate functions.
+        - name: "UFACTORY"
+          logo: "/images/logos/UFACTORY.png"
+          url: "https://www.ufactory.us/"
+          description: |
+            **About UFACTORY:** UFACTORY makes versatile collaborative robotic arms more accessible to educators, researchers, developers, and automation teams. Its xArm platform combines precise 5-, 6-, and 7-axis hardware with flexible attachments, browser-based UFACTORY Studio, and open-source APIs and SDKs, making it easier to prototype, teach, and deploy applications ranging from lab research to industrial automation.
+        - name: "NordVPN"
+          logo: "/images/logos/NordVPN-Logo.png"
+          url: "https://nordvpn.com/hackathons"
+          link_rel: "sponsored nofollow"
+          products:
+            - name: "NordVPN"
+              logo: "/images/logos/NordVPN-Logo.png"
+              url: "https://nordvpn.com/hackathons"
+            - name: "Incogni"
+              logo: "/images/logos/Incogni-Logo-White.png"
+              url: "https://incogni.com/"
+            - name: "NordPass"
+              logo: "/images/logos/NordPass-Logo-White.png"
+              url: "https://nordpass.com/"
+            - name: "Saily"
+              logo: "/images/logos/Saily-Logo-White.png"
+              url: "https://saily.com/"
+            - name: "Coveron"
+              logo: "/images/logos/Coveron-Logo-White.png"
+              url: "https://coveron.com/"
+          description: |
+            **About NordVPN:** NordVPN helps protect internet connections and everyday online activity with VPN and threat-protection tools. Its broader privacy ecosystem includes NordPass for securely managing passwords and passkeys, Coveron for identity-theft protection and monitoring, Incogni for removing personal information from data brokers, and Saily for simple, secure eSIM connectivity while traveling.
   team:
     - name: "Alice Lin"
       role: "Lead Organizer"

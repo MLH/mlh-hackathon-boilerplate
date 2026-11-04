@@ -637,6 +637,44 @@
     drawTrackWheel();
   }
 
+  var sponsorProductCarousels = Array.prototype.slice.call(document.querySelectorAll("[data-sponsor-product-carousel]"));
+
+  sponsorProductCarousels.forEach(function (carousel) {
+    var slides = Array.prototype.slice.call(carousel.querySelectorAll(".sponsor-product-slide"));
+    var brand = carousel.closest(".sponsor-brand");
+    var names = brand ? Array.prototype.slice.call(brand.querySelectorAll(".sponsor-product-name-slide")) : [];
+    var activeIndex = 0;
+
+    if (slides.length < 2) {
+      return;
+    }
+
+    window.setInterval(function () {
+      var previousIndex = activeIndex;
+      activeIndex = (activeIndex + 1) % slides.length;
+
+      [slides, names].forEach(function (items) {
+        var previous = items[previousIndex];
+        var current = items[activeIndex];
+
+        if (!previous || !current) {
+          return;
+        }
+
+        previous.classList.remove("is-current");
+        previous.classList.add("is-leaving");
+        previous.setAttribute("aria-hidden", "true");
+        current.classList.remove("is-leaving");
+        current.classList.add("is-current");
+        current.removeAttribute("aria-hidden");
+
+        window.setTimeout(function () {
+          previous.classList.remove("is-leaving");
+        }, 620);
+      });
+    }, 3600);
+  });
+
   var sponsorCards = Array.prototype.slice.call(document.querySelectorAll("[data-sponsor-details]"));
 
   if (sponsorCards.length) {
