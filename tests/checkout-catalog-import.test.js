@@ -19,23 +19,23 @@ test("the finalized catalog imports atomically only into an empty inventory", as
   const catalog = readCatalog(catalogPath);
   const result = await importCatalog(database, catalog);
 
-  assert.deepEqual(result, { componentCount: 204, relationshipCount: 15 });
+  assert.deepEqual(result, { componentCount: 205, relationshipCount: 15 });
   const counts = await database.query(
     `SELECT
        (SELECT COUNT(*) FROM checkout_components) AS components,
        (SELECT COUNT(*) FROM checkout_component_relationships) AS relationships,
        (SELECT COUNT(*) FROM checkout_inventory_transactions) AS transactions`
   );
-  assert.equal(Number(counts.rows[0].components), 204);
+  assert.equal(Number(counts.rows[0].components), 205);
   assert.equal(Number(counts.rows[0].relationships), 15);
-  assert.equal(Number(counts.rows[0].transactions), 204);
+  assert.equal(Number(counts.rows[0].transactions), 205);
   const mlh = await database.query(
     `SELECT
        COUNT(*) FILTER (WHERE mlh_quantity = total_quantity AND total_quantity > 0) AS mlh_only,
        MAX(mlh_quantity) FILTER (WHERE LOWER(name) = 'moisture sensor') AS moisture_mlh
        FROM checkout_components`
   );
-  assert.equal(Number(mlh.rows[0].mlh_only), 53);
+  assert.equal(Number(mlh.rows[0].mlh_only), 54);
   assert.equal(Number(mlh.rows[0].moisture_mlh), 2);
   await assert.rejects(importCatalog(database, catalog), /only when checkout_components is empty/);
   await resetDatabaseForTests();

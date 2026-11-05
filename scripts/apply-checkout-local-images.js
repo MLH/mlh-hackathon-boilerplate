@@ -39,6 +39,7 @@ function updateInput(component, image) {
     binLocation: component.binLocation,
     technicalSpecs: component.technicalSpecs,
     totalQuantity: component.totalQuantity,
+    mlhQuantity: component.mlhQuantity,
     unavailableQuantity: component.unavailableQuantity,
     protectedStock: component.protectedStock,
     maxActivePerTeam: component.maxActivePerTeam,
