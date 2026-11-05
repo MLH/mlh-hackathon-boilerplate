@@ -348,6 +348,11 @@ event:
           url: "https://clarapath.com/"
           description: |
             **About Clarapath:** Clarapath is a medical robotics company based in Westchester County, NY. Our mission is to transform and modernize laboratory workflows with the goal of improving patient care, decreasing costs, and enhancing the quality and consistency of laboratory processes. SectionStar™ and TrimStar Pro™ by Clarapath are ground-breaking electro-mechanical systems designed to elevate and automate histology workflows and provide pathologists with the tissue samples they need to make the most accurate diagnoses. Through the use of innovative technology, data, and precision analytics, Clarapath is paving the way for a new era of laboratory medicine.
+        - name: "Verne"
+          logo: "/images/logos/Verne-Logo.png"
+          url: "https://vernerobotics.com/"
+          description: |
+            **About Verne:** Verne builds general-purpose physical AI. We deploy robots to expand the productive capacity of the physical world.
     - tier: "Bronze"
       sponsors:
         - name: "Tutor Intelligence"

@@ -2308,6 +2308,7 @@ a {
 }
 
 .sponsor-tier-gold .sponsor-slots,
+.sponsor-tier-silver .sponsor-slots,
 .sponsor-tier-bronze .sponsor-slots {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
@@ -2409,6 +2410,11 @@ a {
 .sponsor-tier-silver .sponsor-logo-trigger img {
   max-height: 132px;
   max-width: 360px;
+}
+
+.sponsor-tier-silver .sponsor-logo-trigger img[alt="Verne"] {
+  max-height: 118.8px;
+  max-width: 324px;
 }
 
 .sponsor-tier-gold .sponsor-logo-trigger {
@@ -2971,6 +2977,7 @@ a {
 
 @media (max-width: 720px) {
   .sponsor-tier-gold .sponsor-slots,
+  .sponsor-tier-silver .sponsor-slots,
   .sponsor-tier-bronze .sponsor-slots {
     grid-template-columns: minmax(0, 1fr);
   }
