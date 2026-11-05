@@ -2408,13 +2408,13 @@ a {
 }
 
 .sponsor-tier-silver .sponsor-logo-trigger img {
-  max-height: 132px;
-  max-width: 360px;
+  max-height: 103.224px;
+  max-width: 281.52px;
 }
 
 .sponsor-tier-silver .sponsor-logo-trigger img[alt="Verne"] {
-  max-height: 118.8px;
-  max-width: 324px;
+  max-height: 92.9016px;
+  max-width: 253.368px;
 }
 
 .sponsor-tier-gold .sponsor-logo-trigger {
@@ -3089,7 +3089,7 @@ a {
   }
 
   .sponsor-tier-silver .sponsor-logo-trigger img {
-    max-width: min(336px, 100%);
+    max-width: min(262.752px, 100%);
   }
 
   .sponsor-tier-gold .sponsor-logo-trigger {
