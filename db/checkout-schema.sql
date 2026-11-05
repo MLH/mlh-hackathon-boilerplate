@@ -219,8 +219,13 @@ ALTER TABLE checkout_components ADD COLUMN IF NOT EXISTS mlh_quantity INTEGER;
 
 UPDATE checkout_components
    SET mlh_quantity = CASE
-     WHEN admin_notes ILIKE '%Source: MLH.%' THEN total_quantity
-     WHEN LOWER(name) = 'moisture sensor' AND admin_notes ILIKE '%Source: CURC, MLH.%' THEN 2
+     -- Preserve inventory that was already reserved or checked out before the
+     -- MLH allocation column existed. Treat only the unallocated remainder as
+     -- MLH-managed so this migration cannot invalidate live orders.
+     WHEN admin_notes ILIKE '%Source: MLH.%' THEN
+       GREATEST(0, total_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity)
+     WHEN LOWER(name) = 'moisture sensor' AND admin_notes ILIKE '%Source: CURC, MLH.%' THEN
+       LEAST(2, GREATEST(0, total_quantity - reserved_quantity - checked_out_quantity - unavailable_quantity))
      ELSE 0
    END
  WHERE mlh_quantity IS NULL;
@@ -228,9 +233,27 @@ UPDATE checkout_components
 ALTER TABLE checkout_components ALTER COLUMN mlh_quantity SET DEFAULT 0;
 ALTER TABLE checkout_components ALTER COLUMN mlh_quantity SET NOT NULL;
 ALTER TABLE checkout_components DROP CONSTRAINT IF EXISTS checkout_components_check;
-ALTER TABLE checkout_components DROP CONSTRAINT IF EXISTS checkout_components_inventory_balance_check;
-ALTER TABLE checkout_components ADD CONSTRAINT checkout_components_inventory_balance_check
-  CHECK (mlh_quantity >= 0 AND mlh_quantity + reserved_quantity + checked_out_quantity + unavailable_quantity <= total_quantity);
+
+-- Avoid dropping and rebuilding the inventory constraint on every serverless
+-- cold start. Besides taking an unnecessary table lock, rebuilding it lets one
+-- inconsistent row prevent the entire checkout API from starting.
+DO $$
+DECLARE
+  inventory_constraint_definition TEXT;
+BEGIN
+  SELECT pg_get_constraintdef(oid)
+    INTO inventory_constraint_definition
+    FROM pg_constraint
+   WHERE conrelid = 'checkout_components'::regclass
+     AND conname = 'checkout_components_inventory_balance_check';
+
+  IF inventory_constraint_definition IS NULL OR inventory_constraint_definition NOT ILIKE '%mlh_quantity%' THEN
+    ALTER TABLE checkout_components DROP CONSTRAINT IF EXISTS checkout_components_inventory_balance_check;
+    ALTER TABLE checkout_components ADD CONSTRAINT checkout_components_inventory_balance_check
+      CHECK (mlh_quantity >= 0 AND mlh_quantity + reserved_quantity + checked_out_quantity + unavailable_quantity <= total_quantity);
+  END IF;
+END
+$$;
 
 ALTER TABLE checkout_orders ADD COLUMN IF NOT EXISTS receipt_code TEXT UNIQUE;
 ALTER TABLE checkout_orders ADD COLUMN IF NOT EXISTS accepted_by BIGINT REFERENCES checkout_users(id);

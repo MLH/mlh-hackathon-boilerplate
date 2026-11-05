@@ -13,6 +13,8 @@
     "checkout:import-catalog": "node scripts/import-checkout-catalog.js",
     "checkout:enrich-descriptions": "node scripts/enrich-checkout-descriptions.js",
     "checkout:apply-local-images": "node scripts/apply-checkout-local-images.js",
+    "checkout:apply-inventory-review": "node scripts/apply-inventory-review-2026-11-05.js",
+    "checkout:review-catalog": "node scripts/apply-inventory-review-2026-11-05.js --catalog db/checkout-catalog.json",
     "checkout:apply-wishlist-catalog": "node scripts/apply-wishlist-catalog.js",
     "checkout:merge-components": "node scripts/merge-checkout-components.js",
     "checkout:remove-untracked-components": "node scripts/remove-checkout-components.js",

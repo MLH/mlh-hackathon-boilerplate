@@ -316,12 +316,6 @@
         ? ""
         : '<div class="checkout-quantity-row"><button type="button" data-quantity-change="-1" aria-label="Remove one ' + escapeHtml(component.name) + '"' + (quantity === 0 ? " disabled" : "") + '>−</button><output aria-live="polite">' + quantity + '</output><button type="button" data-quantity-change="1" aria-label="Add one ' + escapeHtml(component.name) + '"' + (quantity >= maximum ? " disabled" : "") + ">+</button></div>";
 
-      if (component.mlhQuantity > 0) {
-        stockClass = " checkout-stock-external";
-        stockLabel = "Check at MLH desk";
-        limit = '<p class="checkout-limit">This component should be picked up at the MLH desk.</p>';
-      }
-
       return '<article class="checkout-component-card" data-component-id="' + component.id + '">' +
         '<div class="checkout-component-image">' + imageMarkup(component) + "</div>" +
         '<div class="checkout-component-body"><h2>' + escapeHtml(component.name) + "</h2>" +
@@ -330,7 +324,7 @@
         (component.arduinoGuidance ? '<p class="checkout-compatibility-note"><strong>Arduino:</strong> ' + escapeHtml(component.arduinoGuidance) + "</p>" : "") +
         (component.raspberryPiGuidance ? '<p class="checkout-compatibility-note"><strong>Raspberry Pi:</strong> ' + escapeHtml(component.raspberryPiGuidance) + "</p>" : "") +
         (component.technicalSpecs ? '<p class="checkout-form-note">' + escapeHtml(component.technicalSpecs) + "</p>" : "") +
-        '<p class="checkout-stock' + stockClass + '">' + stockLabel + "</p>" + limit + mlhNotice + quantityControls +
+        (component.mlhQuantity > 0 ? "" : '<p class="checkout-stock' + stockClass + '">' + stockLabel + "</p>" + limit) + mlhNotice + quantityControls +
         "</div></article>";
     }).join("");
   };

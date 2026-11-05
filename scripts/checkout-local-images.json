@@ -143,5 +143,300 @@
     "name": "Rocker Switch",
     "file": "rocker-switch.webp",
     "alt": "Product photo of a panel-mount rocker switch"
+  },
+  {
+    "name": "10k Trimmer",
+    "file": "10k trimmer.webp",
+    "alt": "Product photo of a blue 10 kΩ trimmer potentiometer"
+  },
+  {
+    "name": "9V to dc jack",
+    "file": "9V to DC Jack.webp",
+    "alt": "Product photo of a 9 V battery clip to DC barrel plug adapter"
+  },
+  {
+    "name": "23904 Transistor",
+    "file": "23904 Transistor.webp",
+    "alt": "Product illustration of a 23904 three-lead transistor"
+  },
+  {
+    "name": "1N5817 Diode",
+    "file": "1N5817 Diode.webp",
+    "alt": "Product photo of 1N5817 Schottky diodes"
+  },
+  {
+    "name": "Mini Spy Camera 1528-1799-ND",
+    "file": "Mini Spy Camera.webp",
+    "alt": "Product photo of a Mini Spy Camera module with microSD board"
+  },
+  {
+    "name": "Logitech Webcams",
+    "file": "logitech webcam.webp",
+    "alt": "Product photo of a Logitech USB webcam"
+  },
+  {
+    "name": "Google Home Mini",
+    "file": "google home mini.webp",
+    "alt": "Product photo of a white Google Home Mini smart speaker"
+  },
+  {
+    "name": "Graphic LCD Display TFT",
+    "file": "Graphic LCD Display TFT.webp",
+    "alt": "Product photo of a graphic TFT LCD display with controller board"
+  },
+  {
+    "name": "Breadboards",
+    "file": "breadboards.webp",
+    "alt": "Product photo of a solderless breadboard"
+  },
+  {
+    "name": "Grove LCD",
+    "file": "Grove LCD.webp",
+    "alt": "Product photo of a Grove RGB-backlit character LCD module"
+  },
+  {
+    "name": "Grove LED",
+    "file": "Grove LED.webp",
+    "alt": "Product photo of a Grove LED module"
+  },
+  {
+    "name": "Grove Wire",
+    "file": "Grove Wire.webp",
+    "alt": "Product photo of Grove-compatible four-conductor cables"
+  },
+  {
+    "name": "Joystick",
+    "file": "joystick MLH.webp",
+    "alt": "Product photo of a compact two-axis joystick"
+  },
+  {
+    "name": "Load Cell Amplifier",
+    "file": "load cell amplifier MLH.webp",
+    "alt": "Product photo of an HX711 load-cell amplifier breakout"
+  },
+  {
+    "name": "Misc. LEDs",
+    "file": "Misc. LEDs.webp",
+    "alt": "Product photo of assorted through-hole LEDs"
+  },
+  {
+    "name": "Resistor Kit",
+    "file": "resistor kit (MLH).webp",
+    "alt": "Product photo of an assorted through-hole resistor kit"
+  },
+  {
+    "name": "Sense CAP Indicator",
+    "file": "Sense CAP Indicator.webp",
+    "alt": "Product photo of a SenseCAP Indicator display"
+  },
+  {
+    "name": "Servo Driver",
+    "file": "Servo Driver.webp",
+    "alt": "Product photo of an Adafruit PCA9685 16-channel PWM servo driver"
+  },
+  {
+    "name": "SparkFun Snappable protoboard",
+    "file": "sparkfun snappable protoboard.webp",
+    "alt": "Product photo of a SparkFun snappable protoboard"
+  },
+  {
+    "name": "Through Hole Mosfet",
+    "file": "Through Hole Mosfet.webp",
+    "alt": "Product illustration of a through-hole power MOSFET"
+  },
+  {
+    "name": "Toggle Switch SPDT Panel Mount",
+    "file": "Toggle Switch SPDT Panel Mount.webp",
+    "alt": "Product photo of a panel-mount SPDT toggle switch"
+  },
+  {
+    "name": "USB 3.1TYPE male plug breakout",
+    "file": "usb 3.1 type male plug breakout.webp",
+    "alt": "Product photo of a USB Type-C male plug breakout board"
+  },
+  {
+    "name": "Vanja SD Card Reader",
+    "file": "vanja sd card reader.webp",
+    "alt": "Product photo of a Vanja USB SD and microSD card reader"
+  },
+  {
+    "name": "XBee Shield (Wireless transceiver)",
+    "file": "xbee shield.webp",
+    "alt": "Product photo of an XBee wireless transceiver shield"
+  },
+  {
+    "name": "Arduino and Base Shields",
+    "file": "arduino and base shields.webp",
+    "alt": "Product photo of an Arduino with a Grove base shield"
+  },
+  {
+    "name": "RPI Kit",
+    "file": "RPI KIT.webp",
+    "alt": "Product photo of a Raspberry Pi project kit with accessories"
+  },
+  {
+    "name": "28BYJ-48 stepper",
+    "file": "28by j-48 stepper.webp",
+    "alt": "Product photo of a 28BYJ-48 geared stepper motor"
+  },
+  {
+    "name": "4 Phase ULN2003 Stepper Motor Driver",
+    "file": "4 Phase ULN2003 Stepper Motor Driver.webp",
+    "alt": "Product photo of a four-phase ULN2003 stepper motor driver board"
+  },
+  {
+    "name": "9g Micro Servo",
+    "file": "9g micro servo.webp",
+    "alt": "Product photo of a blue 9 g micro servo"
+  },
+  {
+    "name": "DC Gearbox",
+    "file": "dc gearbox.webp",
+    "alt": "Product photo of a yellow DC gearbox motor"
+  },
+  {
+    "name": "Grover Stepper Motor",
+    "file": "Grover stepper motor.webp",
+    "alt": "Product photo of a compact geared stepper motor"
+  },
+  {
+    "name": "Nema 17",
+    "file": "nema 17.webp",
+    "alt": "Product photo of a NEMA 17 stepper motor"
+  },
+  {
+    "name": "SG90 Servo",
+    "file": "SG90 Servo.webp",
+    "alt": "Product photo of a blue SG90 micro servo"
+  },
+  {
+    "name": "TT Gearbox motor",
+    "file": "TT Gearbox motor.webp",
+    "alt": "Product photo of a yellow TT gearbox motor"
+  },
+  {
+    "name": "Vibration Motors",
+    "file": "Vibration motors.webp",
+    "alt": "Product photo of a coin-style vibration motor"
+  },
+  {
+    "name": "DC Motors",
+    "file": "DC Motors.webp",
+    "alt": "Product photo of a small brushed DC motor"
+  },
+  {
+    "name": "Grove Buzzer",
+    "file": "Grove Buzzer.webp",
+    "alt": "Product photo of a Grove buzzer module and cable"
+  },
+  {
+    "name": "Motor Shield V2.0",
+    "file": "motor shield v2.0.webp",
+    "alt": "Product photo of a Motor Shield V2.0"
+  },
+  {
+    "name": "Motor Shield V3.0",
+    "file": "Motor shield v3.webp",
+    "alt": "Product photo of a Motor Shield V3.0 controlling motors and servos"
+  },
+  {
+    "name": "Wire Spool",
+    "file": "wire spool.webp",
+    "alt": "Product photo of assorted hookup-wire spools"
+  },
+  {
+    "name": "12-key touch sensor",
+    "file": "12-key touch sensor.webp",
+    "alt": "Product photo of a 12-key capacitive touch sensor board"
+  },
+  {
+    "name": "4x4 Matrix Keypad",
+    "file": "4x4 matrix keypad.webp",
+    "alt": "Product photo of a 4x4 matrix keypad"
+  },
+  {
+    "name": "9-DOF IMU + TEMP sensor",
+    "file": "9-dof imu + temp sensor.webp",
+    "alt": "Product photo of a 9-DOF IMU and temperature sensor board"
+  },
+  {
+    "name": "Air Quality Sensor",
+    "file": "Air quality sensor.webp",
+    "alt": "Product photo of an air-quality sensor breakout board"
+  },
+  {
+    "name": "Barometer Sense Board",
+    "file": "barometer sense board.webp",
+    "alt": "Product photo of a barometer and altimeter sensor board"
+  },
+  {
+    "name": "Grove - Piezo Vibration Sensor",
+    "file": "Grove - Piezo Vibration Sensor.webp",
+    "alt": "Product photo of a Grove piezo vibration sensor"
+  },
+  {
+    "name": "Grove 3 Axis Digital",
+    "file": "grove 3 axis digital.webp",
+    "alt": "Product photo of a Grove three-axis digital sensor"
+  },
+  {
+    "name": "Grove Light Sensor",
+    "file": "Grove light sensor.webp",
+    "alt": "Product photo of a Grove light sensor module"
+  },
+  {
+    "name": "Grove Rotary Angle Sensor",
+    "file": "Grove Rotary angle sensor.webp",
+    "alt": "Product photo of a Grove rotary angle sensor and cable"
+  },
+  {
+    "name": "IR Break Beam Sensor",
+    "file": "IR Break Beam Sensor.webp",
+    "alt": "Product photo of an infrared break-beam sensor pair"
+  },
+  {
+    "name": "IR Break Beam Sensor 1528-2526-ND",
+    "file": "IR Break Beam Sensor 1528-2526-ND.webp",
+    "alt": "Product photo of an infrared break-beam transmitter and receiver pair"
+  },
+  {
+    "name": "RGB Color Sensor with IR Filter",
+    "file": "RGB Color Sensor with IR Filter.webp",
+    "alt": "Product photo of a TCS34725 RGB color sensor with IR filter"
+  },
+  {
+    "name": "SEN-14585 (fingerprint)",
+    "file": "SEN-14585 (fingerprint).webp",
+    "alt": "Product photo of a SEN-14585 fingerprint sensor module"
+  },
+  {
+    "name": "Curved Tweezers EROP7SA-ND",
+    "file": "Curved Tweezers EROP7SA-ND.webp",
+    "alt": "Product photo of curved precision tweezers"
+  },
+  {
+    "name": "DMM",
+    "file": "DMM.webp",
+    "alt": "Product photo of a digital multimeter"
+  },
+  {
+    "name": "Flush Cutters 170MN-ND",
+    "file": "Flush Cutters 170MN-ND.webp",
+    "alt": "Product photo of flush cutters"
+  },
+  {
+    "name": "Needle Nose Pliers 243-1215-ND",
+    "file": "Needle Nose Pliers 243-1215-ND.webp",
+    "alt": "Product photo of needle-nose pliers"
+  },
+  {
+    "name": "Pointed Tweezers EROPAASA-ND",
+    "file": "Pointed Tweezers EROPAASA-ND.webp",
+    "alt": "Product photo of pointed precision tweezers"
+  },
+  {
+    "name": "Wire Strippers K604-ND",
+    "file": "Wire Strippers K604-ND.webp",
+    "alt": "Product photo of wire strippers"
   }
 ]
