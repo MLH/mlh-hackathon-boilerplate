@@ -23,7 +23,7 @@ test("the organizer inventory review is reflected in the finalized catalog", fun
   }));
 
   for (const name of ARCHIVED_COMPONENT_NAMES) {
-    assert.equal(components.get(name).active, false, `${name} should be archived`);
+    assert.equal(components.has(name), false, `${name} should be permanently removed`);
   }
 
   for (const [name, patch] of Object.entries(COMPONENT_UPDATES)) {

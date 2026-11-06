@@ -364,14 +364,21 @@ function ultrasonicMlhComponent() {
 }
 
 function reviewCatalog(catalog) {
-  const components = catalog.components.map(reviewedComponent);
+  const components = catalog.components
+    .filter(function (component) { return !ARCHIVED_COMPONENT_NAMES.includes(component.name); })
+    .map(reviewedComponent);
   if (!components.some(function (component) { return component.name === ULTRASONIC_MLH_NAME; })) {
     components.push(ultrasonicMlhComponent());
   }
   components.sort(function (left, right) {
     return left.category.localeCompare(right.category) || left.name.localeCompare(right.name);
   });
-  const relationships = catalog.relationships.map(function (relationship) {
+  const relationships = catalog.relationships
+    .filter(function (relationship) {
+      return !ARCHIVED_COMPONENT_NAMES.includes(relationship.sourceName) &&
+        !ARCHIVED_COMPONENT_NAMES.includes(relationship.targetName);
+    })
+    .map(function (relationship) {
     const requiresUln2003 = relationship.sourceName === "28BYJ-48 stepper" &&
       relationship.targetName === "4 Phase ULN2003 Stepper Motor Driver";
     return {
@@ -381,7 +388,7 @@ function reviewCatalog(catalog) {
       relationType: requiresUln2003 ? "requires" : relationship.relationType,
       message: requiresUln2003 ? "Each 28BYJ-48 stepper requires one ULN2003 driver board." : relationship.message
     };
-  });
+    });
   return { ...catalog, components, relationships };
 }
 
