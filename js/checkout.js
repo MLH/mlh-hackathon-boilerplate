@@ -24,6 +24,7 @@
     openingActivityReceiptId: null
   };
   var categories = ["Audio", "Button", "Camera", "Communication", "Distance", "Electronics", "Microcontroller", "Motor", "Motor Related", "Pi-related", "Power", "Sensor", "Tool"];
+  var maxDistinctCartItems = 10;
   var loadingState = document.querySelector("[data-loading-state]");
   var closedState = document.querySelector("[data-closed-state]");
   var loginState = document.querySelector("[data-login-state]");
@@ -80,6 +81,10 @@
       cancelled: "Cancelled",
       expired: "Expired"
     }[status] || status;
+  };
+
+  var activeOrderStatus = function (status) {
+    return ["submitted", "reviewing", "accepted", "ready"].indexOf(status) >= 0;
   };
 
   var api = async function (action, payload) {
@@ -263,6 +268,19 @@
     });
   };
 
+  var cartDistinctItemCount = function () {
+    return Object.keys(state.cart).filter(function (key) { return state.cart[key] > 0; }).length;
+  };
+
+  var canAddCartItem = function (componentId) {
+    if (state.cart[componentId] || cartDistinctItemCount() < maxDistinctCartItems) {
+      return true;
+    }
+
+    notify("Each order can contain at most 10 different items.");
+    return false;
+  };
+
   var componentMaximum = function (component) {
     if (component.mlhQuantity > 0) {
       return 0;
@@ -385,6 +403,7 @@
       '<div class="checkout-receipt-hero' + heroClass + '"><span>' + escapeHtml(statusLabel(order.status).toUpperCase()) + '</span><strong>' + escapeHtml(order.receiptCode || "#" + order.id) + "</strong><span>" + escapeHtml(order.teamName) + " · " + formatDate(order.createdAt) + "</span></div>" +
       (order.protectedStockOverrideReason ? '<div class="checkout-override-notice"><strong>Protected-stock exception</strong><p>' + escapeHtml(order.protectedStockOverrideReason) + "</p></div>" : "") +
       orderItemsMarkup(order, false) +
+      (activeOrderStatus(order.status) && order.reservationExpiresAt ? '<p><strong>This stage expires:</strong> ' + formatDate(order.reservationExpiresAt) + '</p>' : '') +
       (order.status === "ready" ? "<p><strong>Please bring this screen to the hardware desk.</strong></p>" : "") + events;
     orderDialog.showModal();
   };
@@ -426,7 +445,8 @@
     }
 
     list.innerHTML = state.dashboard.orders.map(function (order) {
-      return '<article class="checkout-order-card"><div class="checkout-order-card-header"><div><h2>' + escapeHtml(order.receiptCode || "Order #" + order.id) + '</h2><p class="checkout-order-card-meta">' + formatDate(order.createdAt) + '</p></div><span class="checkout-status checkout-status-' + order.status + '">' + escapeHtml(statusLabel(order.status)) + "</span></div>" +
+      var expiry = activeOrderStatus(order.status) && order.reservationExpiresAt ? " · expires " + formatDate(order.reservationExpiresAt) : "";
+      return '<article class="checkout-order-card"><div class="checkout-order-card-header"><div><h2>' + escapeHtml(order.receiptCode || "Order #" + order.id) + '</h2><p class="checkout-order-card-meta">' + formatDate(order.createdAt) + expiry + '</p></div><span class="checkout-status checkout-status-' + order.status + '">' + escapeHtml(statusLabel(order.status)) + "</span></div>" +
         orderItemsMarkup(order, false) + '<div class="checkout-order-actions"><button class="checkout-button checkout-button-secondary" type="button" data-view-order="' + order.id + '">Open receipt</button></div></article>';
     }).join("");
   };
@@ -482,7 +502,7 @@
     }
 
     var requiredAdvice = state.cartAdvice.some(function (item) { return item.severity === "required"; });
-    submit.disabled = state.dashboard.cooldownSeconds > 0 || requiredAdvice;
+    submit.disabled = state.dashboard.cooldownSeconds > 0 || requiredAdvice || items.length > maxDistinctCartItems;
     var rows = items.map(function (component) {
       return '<div class="checkout-cart-row"><strong>' + escapeHtml(component.name) + '</strong><span>× ' + state.cart[component.id] + '</span><button type="button" data-cart-remove="' + component.id + '">Remove</button></div>';
     }).join("");
@@ -492,7 +512,7 @@
         : "";
       return '<article class="checkout-advice checkout-advice-' + item.severity + '"><strong>' + escapeHtml(item.severity.toUpperCase()) + '</strong><p>' + escapeHtml(item.message) + '</p><small>You have/reserved ' + item.currentQuantity + '; calculated need: ' + item.requiredQuantity + ".</small>" + action + "</article>";
     }).join("") + "</section>" : "";
-    container.innerHTML = rows + advice;
+    container.innerHTML = rows + '<p class="checkout-form-note">' + items.length + ' of 10 different items used.</p>' + advice;
   };
 
   var loadCartAdvice = async function () {
@@ -563,7 +583,8 @@
       var cards = orders.length ? orders.map(function (order) {
         var adjustable = order.status === "reviewing" && order.reviewedBy === state.user.id;
         var claimMeta = order.status === "reviewing" && order.claimExpiresAt ? " · claim until " + formatDate(order.claimExpiresAt) : "";
-        return '<article class="checkout-order-card checkout-order-board-card" data-admin-order="' + order.id + '"><div class="checkout-order-card-header"><div><h2>' + escapeHtml(order.receiptCode || "#" + order.id) + " — " + escapeHtml(order.teamName) + '</h2><p class="checkout-order-card-meta">Submitted ' + formatDate(order.createdAt) + (order.reviewerName ? " · " + escapeHtml(order.reviewerName) : "") + claimMeta + "</p></div></div>" +
+        var expiryMeta = activeOrderStatus(order.status) && order.reservationExpiresAt ? " · stage expires " + formatDate(order.reservationExpiresAt) : "";
+        return '<article class="checkout-order-card checkout-order-board-card" data-admin-order="' + order.id + '"><div class="checkout-order-card-header"><div><h2>' + escapeHtml(order.receiptCode || "#" + order.id) + " — " + escapeHtml(order.teamName) + '</h2><p class="checkout-order-card-meta">Submitted ' + formatDate(order.createdAt) + (order.reviewerName ? " · " + escapeHtml(order.reviewerName) : "") + claimMeta + expiryMeta + "</p></div></div>" +
           (order.protectedStockOverrideReason ? '<div class="checkout-override-notice"><strong>Protected-stock exception</strong><p>' + escapeHtml(order.protectedStockOverrideReason) + "</p></div>" : "") +
           orderItemsMarkup(order, adjustable, true) + '<div class="checkout-order-actions">' + adminOrderActions(order) + "</div></article>";
       }).join("") : '<p class="checkout-stage-empty">No ' + stage.label.toLowerCase() + " orders.</p>";
@@ -752,8 +773,17 @@
         return '<div class="checkout-override-row" data-override-component="' + item.componentId + '"><strong>' + escapeHtml(item.name) + '<span>Normally available ' + item.normalAvailable + ' · physically available ' + item.physicalAvailable + '</span></strong><label>Quantity<input type="number" min="0" max="' + item.physicalAvailable + '" value="0" data-override-quantity></label></div>';
       }).join("") + '<label>Required override reason<textarea maxlength="500" rows="2" data-override-reason placeholder="Why should protected stock be released for this team?"></textarea></label><div class="checkout-order-actions"><button class="checkout-button checkout-button-danger" type="button" data-create-protected-order="' + detail.team.id + '">Create exception order</button></div></details>'
       : "";
+    var cooldown = detail.cooldown || { policySecondsLeft: 0, overrideAvailable: false };
+    var cooldownMinutes = Math.ceil(cooldown.policySecondsLeft / 60);
+    var timeoutControl = cooldown.policySecondsLeft > 0
+      ? '<section class="checkout-override-notice"><strong>45-minute order timeout</strong><p>' +
+        (cooldown.overrideAvailable
+          ? 'A one-order exception is ready for this team. It will be consumed by their next successful order.'
+          : 'This team can normally order again in about ' + cooldownMinutes + ' minute(s).') +
+        '</p>' + (cooldown.overrideAvailable ? '' : '<button class="checkout-button checkout-button-secondary" type="button" data-remove-order-timeout="' + detail.team.id + '">Grant one-order exception</button>') + '</section>'
+      : '';
 
-    container.innerHTML = '<div class="checkout-order-card-header"><div><span class="checkout-kicker">TEAM</span><h2>' + escapeHtml(detail.team.name) + '</h2><p class="checkout-order-card-meta">' + escapeHtml(detail.team.identifier) + '</p></div><button class="checkout-button checkout-button-secondary" type="button" data-reset-password="' + detail.team.id + '">Reset password</button></div><h3 class="checkout-section-title">Currently Holding</h3>' + holding + protectedOrder + '<h3 class="checkout-section-title">Orders & Pickup History</h3>' + orders + '<h3 class="checkout-section-title">Return History</h3>' + receipts + corrections;
+    container.innerHTML = '<div class="checkout-order-card-header"><div><span class="checkout-kicker">TEAM</span><h2>' + escapeHtml(detail.team.name) + '</h2><p class="checkout-order-card-meta">' + escapeHtml(detail.team.identifier) + '</p></div><button class="checkout-button checkout-button-secondary" type="button" data-reset-password="' + detail.team.id + '">Reset password</button></div>' + timeoutControl + '<h3 class="checkout-section-title">Currently Holding</h3>' + holding + protectedOrder + '<h3 class="checkout-section-title">Orders & Pickup History</h3>' + orders + '<h3 class="checkout-section-title">Return History</h3>' + receipts + corrections;
     container.dataset.teamDetailTeam = detail.team.id;
     restoreTeamDetailDraft(container, draft);
   };
@@ -1020,6 +1050,11 @@
     var componentId = Number(card.dataset.componentId);
     var component = state.components.find(function (item) { return item.id === componentId; });
     var next = (state.cart[componentId] || 0) + Number(button.dataset.quantityChange);
+
+    if (next > 0 && !canAddCartItem(componentId)) {
+      return;
+    }
+
     state.cart[componentId] = Math.max(0, Math.min(componentMaximum(component), next));
 
     if (!state.cart[componentId]) {
@@ -1050,6 +1085,9 @@
       loadCartAdvice().catch(function (error) { notify(error.message); });
     } else if (relatedButton) {
       var componentId = Number(relatedButton.dataset.addRelated);
+      if (!canAddCartItem(componentId)) {
+        return;
+      }
       var component = state.components.find(function (item) { return item.id === componentId; });
       var next = (state.cart[componentId] || 0) + Number(relatedButton.dataset.addRelatedQuantity);
       state.cart[componentId] = Math.min(componentMaximum(component), next);
@@ -1209,6 +1247,7 @@
     var orderButton = event.target.closest("[data-view-admin-order]");
     var protectedButton = event.target.closest("[data-create-protected-order]");
     var correctionButton = event.target.closest("[data-correct-return]");
+    var timeoutButton = event.target.closest("[data-remove-order-timeout]");
 
     try {
       if (returnButton) {
@@ -1246,6 +1285,18 @@
 
         await mutate("reset-team-password", { teamId: Number(resetButton.dataset.resetPassword), password: password });
         notify("Team password reset. Existing team sessions were signed out.");
+      } else if (timeoutButton) {
+        var timeoutReason = window.prompt("Why is this team allowed to bypass the 45-minute order timeout once?");
+        if (!timeoutReason || !timeoutReason.trim()) {
+          return;
+        }
+        setBusy(timeoutButton, true, "Granting…");
+        await mutate("grant-order-timeout-exception", {
+          teamId: Number(timeoutButton.dataset.removeOrderTimeout),
+          reason: timeoutReason.trim()
+        });
+        await loadTeamDetail(state.selectedTeamId, { preserveDraft: false });
+        notify("One-order timeout exception granted.");
       } else if (protectedButton) {
         var overrideItems = Array.prototype.slice.call(document.querySelectorAll("[data-override-component]")).map(function (row) {
           return {
@@ -1318,6 +1369,9 @@
       if (correctionButton) {
         setBusy(correctionButton, false);
       }
+      if (timeoutButton) {
+        setBusy(timeoutButton, false);
+      }
     }
   });
 
@@ -1350,7 +1404,7 @@
     }).join("");
     var types = [
       ["requires", "Requires (blocks checkout)"],
-      ["compatible_driver", "Compatible driver (blocks checkout)"],
+      ["compatible_driver", "Compatible driver (warning only)"],
       ["compatible_power_supply", "Compatible power supply (warning)"],
       ["recommends", "Recommends"]
     ].map(function (type) {

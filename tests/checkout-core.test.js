@@ -528,7 +528,7 @@ test("expired orders release their reservation and keep a receipt", async functi
   assert.equal(stored.availableQuantity, 2);
 });
 
-test("structured relationships drive cart advice and block missing required hardware", async function () {
+test("structured motor-driver relationships warn without blocking checkout", async function () {
   const team = await request("create-team", {
     name: "Relationship Test Team",
     identifier: "relationship-test-team",
@@ -609,20 +609,11 @@ test("structured relationships drive cart advice and block missing required hard
     items: [{ componentId: motor.body.component.id, quantity: 3 }]
   }, teamCookie);
   assert.equal(advice.status, 200);
-  assert.equal(advice.body.advice[0].severity, "required");
+  assert.equal(advice.body.advice[0].severity, "warning");
   assert.equal(advice.body.advice[0].missingQuantity, 2);
 
-  const blocked = await request("submit-order", {
-    items: [{ componentId: motor.body.component.id, quantity: 3 }]
-  }, teamCookie);
-  assert.equal(blocked.status, 409);
-  assert.match(blocked.body.error, /missing required supporting hardware/i);
-
   const submitted = await request("submit-order", {
-    items: [
-      { componentId: motor.body.component.id, quantity: 3 },
-      { componentId: driver.body.component.id, quantity: 2 }
-    ]
+    items: [{ componentId: motor.body.component.id, quantity: 3 }]
   }, teamCookie);
   assert.equal(submitted.status, 201);
 });

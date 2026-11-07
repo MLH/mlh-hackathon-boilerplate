@@ -488,6 +488,11 @@ exclude:
   - checkout-preview-error.log
   - CHECKOUT_IMPLEMENTATION_AUDIT.md
   - CHECKOUT_INVENTORY_QUANTITY_AUDIT.md
+  - INVENTORY_REVIEW_2026-11-07.md
+  - inventory-workbook-evidence.local.json
+  - inventory-production-before.local.json
+  - inventory-production-plan.local.json
+  - inventory-production-result.local.json
   - checkout-admin-credentials.local.json
   - checkout-admin-credentials.production.local.json
   - .env.production.local

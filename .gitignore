@@ -15,6 +15,10 @@ checkout-preview*.log
 checkout-admin-credentials*.local.json
 .env
 .env.*
+inventory-workbook-evidence.local.json
+inventory-production-before.local.json
+inventory-production-plan.local.json
+inventory-production-result.local.json
 !.env.checkout.example
 .next/
 .DS_Store

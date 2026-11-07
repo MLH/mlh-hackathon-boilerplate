@@ -7,7 +7,7 @@ process.env.CHECKOUT_FORCE_LIVE = "true";
 const { getDatabase, resetDatabaseForTests } = require("../api/_lib/checkout-db");
 const { REMOVED_COMPONENT_NAMES, applyComponentRemovals } = require("../scripts/remove-checkout-components");
 
-test("untracked loose jumper-wire inventory is removed idempotently while audit history remains", async function () {
+test("confirmed obsolete inventory is removed idempotently while audit history remains", async function () {
   const database = await getDatabase();
   await database.query(
     `INSERT INTO checkout_users (username, password_hash, role, display_name)

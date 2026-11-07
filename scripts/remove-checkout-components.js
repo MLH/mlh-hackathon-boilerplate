@@ -1,11 +1,36 @@
 const { getDatabase, resetDatabaseForTests } = require("../api/_lib/checkout-db");
+const { protectedFromRemoval } = require('./inventory-name-policy');
 
 const REMOVED_COMPONENT_NAMES = [
   "10pc Jumpers Pack",
   "Jumpers",
   "Female to Female Jumper Wire",
   "Male to Female Jumper Wire",
-  "Male to Male Jumper Wire"
+  "Male to Male Jumper Wire",
+  "Rocker Switch",
+  "1309 Series Sonic Hub (6mm Bore)",
+  "Elegoo starter Kit",
+  "Hex Inverter Buffer",
+  "Packs of mounting/replacement",
+  "Pair of Pluggable Terminal Block",
+  "Passive Eletronics Kit",
+  "Rotors",
+  "Sensor Kit",
+  "Sensors from Elegoo sensor Kit",
+  "Motor Replacement Package",
+  "Thin Film Precision Resistor",
+  "Vesc NRF dongle",
+  "Vesc motor controllers",
+  "Wireless Charger",
+  "550 Titan 12-Turn",
+  "Dark motors with no name",
+  "Motor with PCB soldered",
+  "Photosensitive Sensors",
+  "Reed Sensor",
+  "Tilt Switches",
+  "Weighing Sensor",
+  "Large Storage box",
+  "Plastic storage boxes"
 ];
 
 async function historicalReferenceCount(transaction, componentId) {
@@ -30,6 +55,7 @@ async function applyComponentRemovals(database) {
 
     const result = { removed: [], unchanged: [] };
     for (const name of REMOVED_COMPONENT_NAMES) {
+      if (protectedFromRemoval(name)) throw new Error(`${name} is explicitly protected from removal by the organizer.`);
       const componentResult = await transaction.query(
         "SELECT * FROM checkout_components WHERE LOWER(name) = LOWER($1) FOR UPDATE",
         [name]
@@ -60,7 +86,7 @@ async function applyComponentRemovals(database) {
       await transaction.query("DELETE FROM checkout_components WHERE id = $1", [component.id]);
       await transaction.query(
         "INSERT INTO checkout_activity (actor_user_id, message) VALUES ($1, $2)",
-        [actor.id, `Removed ${component.name} from tracked inventory; loose jumper wires are freely available.`]
+        [actor.id, `Permanently removed ${component.name} from tracked inventory after confirming it had no order, holding, or return references.`]
       );
       result.removed.push({ name: component.name, totalQuantity: Number(component.total_quantity) });
     }
