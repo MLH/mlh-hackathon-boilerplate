@@ -12,6 +12,7 @@
     cartAdvice: [],
     dashboard: { orders: [], inventory: [], cooldownSeconds: 0 },
     adminOrders: [],
+    adminOrdersRequestId: 0,
     teams: [],
     activity: [],
     selectedTeamId: null,
@@ -569,8 +570,20 @@
     return "";
   };
 
-  var renderAdminOrders = function () {
+  var renderAdminOrders = function (options) {
     var list = document.querySelector("[data-admin-orders]");
+    var drafts = {};
+    // Capture at render time so edits made while the request was pending survive too.
+    list.querySelectorAll("[data-admin-order]").forEach(function (card) {
+      var orderId = Number(card.dataset.adminOrder);
+      if (options && options.discardDraftOrderId === orderId) return;
+      drafts[orderId] = {};
+      card.querySelectorAll("[data-adjust-quantity], [data-adjust-reason], [data-adjust-note]").forEach(function (field) {
+        var attribute = field.hasAttribute("data-adjust-quantity") ? "data-adjust-quantity"
+          : field.hasAttribute("data-adjust-reason") ? "data-adjust-reason" : "data-adjust-note";
+        drafts[orderId][attribute + ":" + field.getAttribute(attribute)] = captureFieldDraft(field);
+      });
+    });
     var stages = [
       { status: "submitted", label: "Submitted" },
       { status: "reviewing", label: "Reviewing" },
@@ -594,6 +607,17 @@
 
       return '<section class="checkout-order-column checkout-order-column-' + stage.status + '"><header><span class="checkout-status checkout-status-' + stage.status + '">' + escapeHtml(stage.label) + '</span><strong>' + orders.length + '</strong></header><div class="checkout-order-column-cards">' + cards + "</div></section>";
     }).join("");
+
+    list.querySelectorAll("[data-admin-order]").forEach(function (card) {
+      var draft = drafts[card.dataset.adminOrder];
+      // Only rendered review controls can receive drafts; status/ownership changes still apply.
+      if (!draft) return;
+      card.querySelectorAll("[data-adjust-quantity], [data-adjust-reason], [data-adjust-note]").forEach(function (field) {
+        var attribute = field.hasAttribute("data-adjust-quantity") ? "data-adjust-quantity"
+          : field.hasAttribute("data-adjust-reason") ? "data-adjust-reason" : "data-adjust-note";
+        restoreFieldDraft(field, draft[attribute + ":" + field.getAttribute(attribute)]);
+      });
+    });
   };
 
   var loadAdminOverview = async function () {
@@ -601,7 +625,10 @@
   };
 
   var loadAdminOrders = async function () {
-    state.adminOrders = (await api("admin-orders")).orders;
+    var requestId = ++state.adminOrdersRequestId;
+    var result = await api("admin-orders");
+    if (requestId !== state.adminOrdersRequestId) return;
+    state.adminOrders = result.orders;
     renderAdminOrders();
   };
 
@@ -1187,7 +1214,11 @@
           };
         });
         setBusy(actionButton, true, "Saving…");
-        await mutate("adjust-order", { orderId: orderId, items: items });
+        var saved = await mutate("adjust-order", { orderId: orderId, items: items });
+        // Apply the confirmed values before refreshing, and invalidate older polling responses.
+        state.adminOrdersRequestId += 1;
+        state.adminOrders = state.adminOrders.map(function (item) { return item.id === orderId ? saved.order : item; });
+        renderAdminOrders({ discardDraftOrderId: orderId });
         notify("Approved quantities saved.");
       } else if (actionButton.hasAttribute("data-accept-order")) {
         if (!(await confirmAction("Accept Order #" + orderId + "?", "Approved quantities will be finalized. Mark the order ready only after gathering every approved component.", "Accept Order"))) {
