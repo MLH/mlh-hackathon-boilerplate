@@ -171,6 +171,26 @@ CREATE TABLE IF NOT EXISTS checkout_idempotency_requests (
   PRIMARY KEY (actor_user_id, action, idempotency_key)
 );
 
+CREATE TABLE IF NOT EXISTS checkout_order_cooldown_overrides (
+  id BIGSERIAL PRIMARY KEY,
+  team_id BIGINT NOT NULL REFERENCES checkout_teams(id) ON DELETE CASCADE,
+  granted_by BIGINT NOT NULL REFERENCES checkout_users(id),
+  reason TEXT NOT NULL CHECK (reason <> ''),
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  expires_at TIMESTAMPTZ NOT NULL,
+  consumed_at TIMESTAMPTZ,
+  order_id BIGINT REFERENCES checkout_orders(id),
+  CHECK ((consumed_at IS NULL AND order_id IS NULL) OR (consumed_at IS NOT NULL AND order_id IS NOT NULL))
+);
+
+CREATE TABLE IF NOT EXISTS checkout_login_attempts (
+  id BIGSERIAL PRIMARY KEY,
+  username TEXT NOT NULL,
+  client_address TEXT NOT NULL,
+  succeeded BOOLEAN NOT NULL DEFAULT FALSE,
+  attempted_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
+
 CREATE TABLE IF NOT EXISTS checkout_inventory_transactions (
   id BIGSERIAL PRIMARY KEY,
   component_id BIGINT REFERENCES checkout_components(id),
@@ -207,6 +227,10 @@ CREATE INDEX IF NOT EXISTS checkout_relationships_source_idx ON checkout_compone
 CREATE INDEX IF NOT EXISTS checkout_relationships_target_idx ON checkout_component_relationships(target_component_id);
 CREATE INDEX IF NOT EXISTS checkout_return_corrections_original_idx ON checkout_return_corrections(original_return_receipt_id);
 CREATE INDEX IF NOT EXISTS checkout_return_correction_items_original_idx ON checkout_return_correction_items(original_return_item_id);
+CREATE INDEX IF NOT EXISTS checkout_cooldown_overrides_team_idx
+  ON checkout_order_cooldown_overrides(team_id, created_at DESC);
+CREATE INDEX IF NOT EXISTS checkout_login_attempts_lookup_idx
+  ON checkout_login_attempts(username, client_address, attempted_at DESC);
 
 ALTER TABLE checkout_components ADD COLUMN IF NOT EXISTS image_alt TEXT NOT NULL DEFAULT '';
 ALTER TABLE checkout_components ADD COLUMN IF NOT EXISTS bin_location TEXT NOT NULL DEFAULT '';

@@ -5,6 +5,7 @@
     "node": ">=22"
   },
   "scripts": {
+    "checkout:reconcile-final-inventory": "node scripts/reconcile-inventory-2026-11-07.js",
     "checkout:dev": "node scripts/checkout-dev-server.js",
     "checkout:download-images": "node scripts/download-checkout-images.js",
     "checkout:optimize-images": "python scripts/convert-checkout-images-to-webp.py",

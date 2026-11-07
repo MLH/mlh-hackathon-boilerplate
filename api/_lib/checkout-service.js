@@ -1,5 +1,10 @@
 const { hashPassword } = require("./checkout-security");
 const { componentInput, cleanString, httpError, positiveInteger, relationshipInput, returnInput } = require("./checkout-validation");
+const {
+  MAX_DISTINCT_ORDER_ITEMS,
+  ORDER_COOLDOWN_MINUTES,
+  ORDER_EXPIRATION_MINUTES
+} = require("./checkout-constants");
 
 function relationshipView(row) {
   return {
@@ -260,13 +265,26 @@ async function catalog(database, user, includeInactive) {
 }
 
 function normalizedOrderItems(rawItems) {
+  if (!Array.isArray(rawItems)) {
+    throw httpError(400, "Order items must be provided as a list.");
+  }
+
+  if (rawItems.length > 50) {
+    throw httpError(400, `An order may contain at most ${MAX_DISTINCT_ORDER_ITEMS} different items.`);
+  }
+
   const normalized = new Map();
 
-  (Array.isArray(rawItems) ? rawItems : []).forEach(function (item) {
+  rawItems.forEach(function (item) {
     const componentId = positiveInteger(item.componentId, "Component ID");
     const quantity = positiveInteger(item.quantity, "Requested quantity");
     normalized.set(componentId, (normalized.get(componentId) || 0) + quantity);
   });
+
+  if (normalized.size > MAX_DISTINCT_ORDER_ITEMS) {
+    throw httpError(400, `An order may contain at most ${MAX_DISTINCT_ORDER_ITEMS} different items.`);
+  }
+
   return normalized;
 }
 
@@ -279,7 +297,8 @@ async function cartAdvice(database, actor, rawItems) {
 
   const sourceIds = Array.from(cart.keys());
   const relationshipsResult = await database.query(
-    `SELECT relationships.*, sources.name AS source_name, targets.name AS target_name,
+    `SELECT relationships.*, sources.name AS source_name, sources.category AS source_category,
+            targets.name AS target_name, targets.category AS target_category,
             targets.active AS target_active, targets.total_quantity, targets.reserved_quantity,
             targets.checked_out_quantity, targets.unavailable_quantity, targets.protected_stock,
             targets.mlh_quantity,
@@ -343,10 +362,14 @@ async function cartAdvice(database, actor, rawItems) {
       ? teamAvailable
       : Math.max(0, Number(row.max_active_per_team) - targetQuantity);
     const mlhManaged = Number(row.mlh_quantity || 0) > 0;
+    const motorDriverWarning = row.relation_type === "compatible_driver" ||
+      (row.source_category === "Motor" && /driver/i.test(row.target_name));
     const severity = mlhManaged
       ? "warning"
-      : row.relation_type === "requires" || row.relation_type === "compatible_driver"
+      : row.relation_type === "requires" && !motorDriverWarning
       ? "required"
+      : motorDriverWarning
+      ? "warning"
       : row.relation_type === "compatible_power_supply" ? "warning" : "recommendation";
     const fallback = severity === "required"
       ? `${row.source_name} requires ${row.target_name}.`
@@ -607,19 +630,12 @@ async function submitOrder(database, body, actor) {
       throw httpError(404, "Team not found.");
     }
 
-    const cooldown = await transaction.query(
-      `SELECT id, created_at,
-              GREATEST(0, CEIL(EXTRACT(EPOCH FROM (created_at + INTERVAL '10 minutes' - NOW())))) AS seconds_left
-         FROM checkout_orders
-        WHERE team_id = $1
-        ORDER BY created_at DESC
-        LIMIT 1`,
-      [actor.team_id]
-    );
+    const cooldown = await orderCooldownStatus(transaction, actor.team_id);
+    const cooldownOverrideId = cooldown.overrideAvailable ? cooldown.overrideId : null;
 
-    if (cooldown.rows[0] && Number(cooldown.rows[0].seconds_left) > 0) {
-      throw httpError(429, `You can place another order in ${Math.ceil(Number(cooldown.rows[0].seconds_left) / 60)} minute(s).`, {
-        cooldownSeconds: Number(cooldown.rows[0].seconds_left)
+    if (cooldown.policySecondsLeft > 0 && !cooldownOverrideId) {
+      throw httpError(429, `You can place another order in ${Math.ceil(cooldown.policySecondsLeft / 60)} minute(s).`, {
+        cooldownSeconds: cooldown.policySecondsLeft
       });
     }
 
@@ -701,7 +717,7 @@ async function submitOrder(database, body, actor) {
 
     const orderResult = await transaction.query(
       `INSERT INTO checkout_orders (team_id, reservation_expires_at)
-       VALUES ($1, NOW() + INTERVAL '30 minutes') RETURNING *`,
+       VALUES ($1, NOW() + INTERVAL '${ORDER_EXPIRATION_MINUTES} minutes') RETURNING *`,
       [actor.team_id]
     );
     const order = orderResult.rows[0];
@@ -711,6 +727,18 @@ async function submitOrder(database, body, actor) {
       "UPDATE checkout_orders SET receipt_code = $2 WHERE id = $1",
       [order.id, receiptCode]
     );
+
+    if (cooldownOverrideId) {
+      await transaction.query(
+        `UPDATE checkout_order_cooldown_overrides
+            SET consumed_at = NOW(), order_id = $2
+          WHERE id = $1 AND consumed_at IS NULL`,
+        [cooldownOverrideId, order.id]
+      );
+      await recordOrderEvent(transaction, order.id, actor.id, "ORDER_COOLDOWN_OVERRIDE_USED", {
+        overrideId: cooldownOverrideId
+      });
+    }
 
     for (const componentId of componentIds) {
       const quantity = normalized.get(componentId);
@@ -742,13 +770,94 @@ async function submitOrder(database, body, actor) {
     await transaction.query(
       `INSERT INTO checkout_activity (actor_user_id, team_id, order_id, message)
        VALUES ($1, $2, $3, $4)`,
-      [actor.id, actor.team_id, order.id, `Team ${actor.team_name} submitted ${receiptCode}.`]
+      [actor.id, actor.team_id, order.id,
+        `Team ${actor.team_name} submitted ${receiptCode}${cooldownOverrideId ? " using an organizer timeout exception" : ""}.`]
     );
     await recordOrderEvent(transaction, order.id, actor.id, "ORDER_SUBMITTED", {
       reservationExpiresAt: order.reservation_expires_at
     });
 
     return orderDetails(transaction, order.id);
+  });
+}
+
+async function orderCooldownStatus(database, teamId) {
+  const latestOrder = await database.query(
+    `SELECT id, created_at,
+            GREATEST(0, CEIL(EXTRACT(EPOCH FROM
+              (created_at + INTERVAL '${ORDER_COOLDOWN_MINUTES} minutes' - NOW())
+            ))) AS seconds_left
+       FROM checkout_orders
+      WHERE team_id = $1
+      ORDER BY created_at DESC
+      LIMIT 1`,
+    [teamId]
+  );
+  const override = await database.query(
+    `SELECT id, reason, expires_at
+       FROM checkout_order_cooldown_overrides
+      WHERE team_id = $1 AND consumed_at IS NULL AND expires_at > NOW()
+      ORDER BY created_at DESC
+      LIMIT 1`,
+    [teamId]
+  );
+  const policySecondsLeft = latestOrder.rows[0] ? Number(latestOrder.rows[0].seconds_left) : 0;
+  const activeOverride = override.rows[0] || null;
+
+  return {
+    secondsLeft: activeOverride ? 0 : policySecondsLeft,
+    policySecondsLeft,
+    overrideAvailable: Boolean(activeOverride),
+    overrideId: activeOverride ? Number(activeOverride.id) : null,
+    overrideReason: activeOverride ? activeOverride.reason : "",
+    overrideExpiresAt: activeOverride ? activeOverride.expires_at : null,
+    latestOrderId: latestOrder.rows[0] ? Number(latestOrder.rows[0].id) : null
+  };
+}
+
+async function grantOrderCooldownOverride(database, body, actor) {
+  const teamId = positiveInteger(body.teamId, "Team ID");
+  const reason = cleanString(body.reason, "Timeout exception reason", { max: 500 });
+
+  return database.transaction(async function (transaction) {
+    const team = await transaction.query(
+      "SELECT id, name FROM checkout_teams WHERE id = $1 FOR UPDATE",
+      [teamId]
+    );
+
+    if (!team.rows[0]) {
+      throw httpError(404, "Team not found.");
+    }
+
+    const cooldown = await orderCooldownStatus(transaction, teamId);
+
+    if (cooldown.overrideAvailable) {
+      throw httpError(409, "This team already has an unused timeout exception.");
+    }
+
+    if (cooldown.policySecondsLeft <= 0 || !cooldown.latestOrderId) {
+      throw httpError(409, "This team does not currently have an order timeout to remove.");
+    }
+
+    const inserted = await transaction.query(
+      `INSERT INTO checkout_order_cooldown_overrides
+        (team_id, granted_by, reason, expires_at)
+       SELECT $1, $2, $3, created_at + INTERVAL '${ORDER_COOLDOWN_MINUTES} minutes'
+         FROM checkout_orders WHERE id = $4
+       RETURNING id, expires_at`,
+      [teamId, actor.id, reason, cooldown.latestOrderId]
+    );
+    await transaction.query(
+      `INSERT INTO checkout_activity (actor_user_id, team_id, message)
+       VALUES ($1, $2, $3)`,
+      [actor.id, teamId, `${actor.display_name} granted ${team.rows[0].name} a one-order timeout exception: ${reason}`]
+    );
+
+    return {
+      overrideId: Number(inserted.rows[0].id),
+      expiresAt: inserted.rows[0].expires_at,
+      cooldown: await orderCooldownStatus(transaction, teamId)
+    };
   });
 }
 
@@ -860,7 +969,8 @@ async function createProtectedStockOverrideOrder(database, body, actor) {
       `INSERT INTO checkout_orders
         (team_id, status, reviewed_by, reviewing_at, claim_expires_at, reservation_expires_at,
          protected_stock_override_by, protected_stock_override_reason, protected_stock_override_at)
-       VALUES ($1, 'reviewing', $2, NOW(), NOW() + INTERVAL '7 minutes', NOW() + INTERVAL '30 minutes',
+        VALUES ($1, 'reviewing', $2, NOW(), NOW() + INTERVAL '7 minutes',
+                NOW() + INTERVAL '${ORDER_EXPIRATION_MINUTES} minutes',
                $2, $3, NOW())
        RETURNING *`,
       [teamId, actor.id, reason]
@@ -977,11 +1087,7 @@ async function teamDashboard(database, actor) {
       ORDER BY components.name`,
     [actor.team_id]
   );
-  const cooldownResult = await database.query(
-    `SELECT GREATEST(0, CEIL(EXTRACT(EPOCH FROM (created_at + INTERVAL '10 minutes' - NOW())))) AS seconds_left
-       FROM checkout_orders WHERE team_id = $1 ORDER BY created_at DESC LIMIT 1`,
-    [actor.team_id]
-  );
+  const cooldown = await orderCooldownStatus(database, actor.team_id);
 
   return {
     orders: ordersResult.rows.map(function (order) {
@@ -997,7 +1103,8 @@ async function teamDashboard(database, actor) {
         checkedOutQuantity: Number(row.checked_out_quantity)
       };
     }),
-    cooldownSeconds: cooldownResult.rows[0] ? Number(cooldownResult.rows[0].seconds_left) : 0
+    cooldownSeconds: cooldown.secondsLeft,
+    cooldownOverrideAvailable: cooldown.overrideAvailable
   };
 }
 
@@ -1071,7 +1178,10 @@ async function claimOrder(database, body, actor) {
 
     if (order.status === "reviewing" && Number(order.reviewed_by) === Number(actor.id) && !order.claim_expired) {
       await transaction.query(
-        "UPDATE checkout_orders SET claim_expires_at = NOW() + INTERVAL '7 minutes' WHERE id = $1",
+        `UPDATE checkout_orders
+            SET claim_expires_at = NOW() + INTERVAL '7 minutes',
+                reservation_expires_at = NOW() + INTERVAL '${ORDER_EXPIRATION_MINUTES} minutes'
+          WHERE id = $1`,
         [orderId]
       );
       return orderDetails(transaction, orderId);
@@ -1087,7 +1197,8 @@ async function claimOrder(database, body, actor) {
     await transaction.query(
       `UPDATE checkout_orders
           SET status = 'reviewing', reviewed_by = $2, reviewing_at = NOW(),
-              claim_expires_at = NOW() + INTERVAL '7 minutes'
+              claim_expires_at = NOW() + INTERVAL '7 minutes',
+              reservation_expires_at = NOW() + INTERVAL '${ORDER_EXPIRATION_MINUTES} minutes'
         WHERE id = $1`,
       [orderId, actor.id]
     );
@@ -1123,7 +1234,7 @@ async function releaseClaim(database, body, actor) {
       `UPDATE checkout_orders
           SET status = 'submitted', reviewed_by = NULL, reviewing_at = NULL,
               claim_expires_at = NULL,
-              reservation_expires_at = GREATEST(reservation_expires_at, NOW() + INTERVAL '20 minutes')
+              reservation_expires_at = NOW() + INTERVAL '${ORDER_EXPIRATION_MINUTES} minutes'
         WHERE id = $1`,
       [orderId]
     );
@@ -1252,7 +1363,8 @@ async function transitionOrder(database, body, actor, transition) {
       await transaction.query(
         `UPDATE checkout_orders
             SET status = 'accepted', accepted_by = $2, accepted_at = NOW(),
-                claim_expires_at = NULL, reservation_expires_at = NOW() + INTERVAL '45 minutes'
+                claim_expires_at = NULL,
+                reservation_expires_at = NOW() + INTERVAL '${ORDER_EXPIRATION_MINUTES} minutes'
           WHERE id = $1`,
         [orderId, actor.id]
       );
@@ -1277,7 +1389,7 @@ async function transitionOrder(database, body, actor, transition) {
       await transaction.query(
         `UPDATE checkout_orders
             SET status = 'ready', ready_by = $2, ready_at = NOW(),
-                reservation_expires_at = NOW() + INTERVAL '30 minutes'
+                reservation_expires_at = NOW() + INTERVAL '${ORDER_EXPIRATION_MINUTES} minutes'
           WHERE id = $1`,
         [orderId, actor.id]
       );
@@ -1549,6 +1661,7 @@ async function teamAdminDetail(database, teamIdInput) {
       ORDER BY corrections.created_at DESC, items.id`,
     [teamId]
   );
+  const cooldown = await orderCooldownStatus(database, teamId);
   const correctionMap = new Map();
 
   corrections.rows.forEach(function (row) {
@@ -1580,6 +1693,7 @@ async function teamAdminDetail(database, teamIdInput) {
       name: teamResult.rows[0].name,
       identifier: teamResult.rows[0].identifier
     },
+    cooldown,
     inventory: inventory.rows.map(function (row) {
       return {
         componentId: Number(row.id),
@@ -1995,6 +2109,7 @@ module.exports = {
   resetTeamPassword,
   saveComponent,
   submitOrder,
+  grantOrderCooldownOverride,
   createProtectedStockOverrideOrder,
   orderDetails,
   teamDashboard,

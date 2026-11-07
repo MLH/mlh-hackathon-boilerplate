@@ -1,0 +1,2823 @@
+{
+  "workbook": "MakeCU Hardware List 2026 (1).xlsx",
+  "mainSheet": "FINAL Inventory Check - 1106202",
+  "wishlistSheet": "Inventory of Wishlist 110526",
+  "main": [
+    {
+      "row": 2,
+      "name": "Adafruit Microphone Breakout",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Adafruit-I2S-MEMS-Microphone-Breakout/dp/B06XNL2GBW?crid=1VFKH7TULUIRJ&dib=eyJ2IjoiMSJ9.81O2jdwNEk3hA-Y2KZXu2F11n-bVRJXkHQlq8BeDrVcoCuk8XI_UukADvi7CZWp1rgyFX7XWqarHE3W0F0KiBWUHvFj0MydRq_XRAdCTpTg0RGF1np7SZ30Gy_gLt7_FiPy03_w7RO7TlCeqNOzo3DUV3sw3KKX1pqv15wgTX9FItWL19HQiDeOX7DRXDwLmyEUQYH-qzmGoycMnFvG5rsTGjPxdeOwMWvYwJK9CEX0.-msJKPiNZ0Dxk_ZWRaVcqWz6m4ODzZw0jKkPa2vKbm4&dib_tag=se&keywords=mini+microphone+adafruit&qid=1750639153&sprefix=mini+microphone+adafruit%2Caps%2C99&sr=8-1"
+    },
+    {
+      "row": 3,
+      "name": "Audio Amplifier",
+      "quantity": 5,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/JESSINIE-PAM8302-Single-Channel-Amplifier/dp/B0BG2F3LMP?crid=15JEMSJD63QQP&dib=eyJ2IjoiMSJ9.VUA4m2vG8PuaWBXYKp8IjAvR2yQfRyj254PkBcOvZgBfFqUd4lnX6_KFV7yz9-F0f4_bdJDKu5hxDL4OPjUZ3l7mHRTK0_m-z8xvf20iKaGGk-OJ9U0ZqjXCqPWyVvyiHB66G4OIHOOQLXo89t8jyOslY9lgRrau81L7bsucDBwAlJCZVknc37dWdl8gMWKRHqDZbRyEAHXR30B6fjJhnBIBu9Y1lyL2CVcje_KFoRY.xk8IW_cYcfr5SQN_BF7Kq1Gtgm17Pt_6P4xBgq2V8nY&dib_tag=se&keywords=adafruit+amp&qid=1750639074&sprefix=adafruit+amp%2Caps%2C109&sr=8-1"
+    },
+    {
+      "row": 4,
+      "name": "Dweii Mini Speaker",
+      "quantity": 5,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Dweii-Loundspeaker-JST-PH2-0-Electronic-Advertising/dp/B0B4D1BN4F?crid=1BLARTGDRIZJP&dib=eyJ2IjoiMSJ9.G3ktLfVh6OUrwGfRTnaC1N49FphHAp7AWX1x-v8GOd6e1gHqcSi9cSWZ9c1AaFwL2vT9XIx3qkN79kZZKV8JU1_mCwJWvZXFp5kbw6gRzmF31dGmcDtIZ30upQohuyhW6gYsuJUdDOyQbhm6eaQY0WQp01v7yTfR7151lG4UQOHNBeTOmfGdKsMjtJ1Ssh6R86zlsqr_0frMqiklizkpzg1Bg6Yx1Jljx1RbyJtJ6k8.h9fyqcOCalopXBxHv88FFSFhF0SyUJTj7Sv3kEBCuwM&dib_tag=se&keywords=1in%2Bspeaker&qid=1750638721&sprefix=1in%2Bspeaker%2Caps%2C123&sr=8-2&th=1"
+    },
+    {
+      "row": 5,
+      "name": "Electret Condenser Microphone Pickup (2 Pins, 9×7mm)",
+      "quantity": 3,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Cylewet-Cylindrical-Electret-Condenser-Microphone/dp/B01N0VMN9P/ref=sr_1_6?crid=3GSELNJDHPH2I&dib=eyJ2IjoiMSJ9.UO3HXrfM9EvcIEnUzPs3dNixBEm3Tr85sXvgdIhmyZwdLONiahiROrMgv5onWTF5U2mgxVNk9ATKxGyRIHvkwwZBQQ9haAWCKK4Gf3YPdFu-C-GC6YYrkHbAOhNpnjSAakY58oWmGUpmYMyL6PV58wQRutzgFIuzsk9-6O78BKwfnTZ6UoctwfOks6svhlp5nWL2jGrwPi2WrfYHkTwvKgUvIoywZwAmserRFJz2GSNXxs_gyhwMslAPnjpwyT64xtcT-yDUX-fXtOkgOaW1IyauUdsuZcq0OfGOG-lqG3E.Acpxy_ur8VPIJnw3dSqUp_4__aOnmRu9dBZSo3ktbVo&dib_tag=se&keywords=electret+mic&qid=1751323750&sprefix=electret+mi%2Caps%2C108&sr=8-6"
+    },
+    {
+      "row": 6,
+      "name": "OCR 180Pcs Tactile Push Button Switch 10 Values 6x6mm Micro Momentary Tact Button Switches Assortment Kit",
+      "quantity": 1,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/OCR-180PcsTactile-Momentary-Switches-Assortment/dp/B01MRP025V/ref=sr_1_3?crid=3FFX67LJMM1KH&dib=eyJ2IjoiMSJ9.AvRypuhOQ6tkKArjwP-PSRbfV0D8T0XHtc_GvDBPAKifmfYPfhElMHmDGkLB2fQ3ERQ2JaBG29KKb4PYX_Jo948rQuRFkEOyWdCPQA65_jEr-lTMeUTAAqoLKmq1BNRXfxl3kf8F14_lIhemDRYoFuWYAtuZZEloZDlfss3UD0dvp2ws6aE5ZwmQgBSaBphG1AqTlonvA2l8Nn_wG7EAhQCEIBU3V3sroAV_xgbMi-U.iQPMNYgJ2AbuDJbAmBoJk5bC3kX1N5hTtI8ogN74J6U&dib_tag=se&keywords=arduino%2Bswitches%2Band%2Bbuttons%2Bkit&qid=1751323809&sprefix=switches%2Fbuttons%2Caps%2C111&sr=8-3&th=1"
+    },
+    {
+      "row": 7,
+      "name": "Push Buttons",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/QTETAK-Momentary-Tactile-Button-Assortment/dp/B0BFWK5N8V/ref=sr_1_2?crid=3FFX67LJMM1KH&dib=eyJ2IjoiMSJ9.AvRypuhOQ6tkKArjwP-PSRbfV0D8T0XHtc_GvDBPAKifmfYPfhElMHmDGkLB2fQ3ERQ2JaBG29KKb4PYX_Jo948rQuRFkEOyWdCPQA65_jEr-lTMeUTAAqoLKmq1BNRXfxl3kf8F14_lIhemDRYoFuWYAtuZZEloZDlfss3UD0dvp2ws6aE5ZwmQgBSaBphG1AqTlonvA2l8Nn_wG7EAhQCEIBU3V3sroAV_xgbMi-U.iQPMNYgJ2AbuDJbAmBoJk5bC3kX1N5hTtI8ogN74J6U&dib_tag=se&keywords=arduino%2Bswitches%2Band%2Bbuttons%2Bkit&qid=1751323809&sprefix=switches%2Fbuttons%2Caps%2C111&sr=8-2&th=1"
+    },
+    {
+      "row": 8,
+      "name": "Rocker Switch",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/adam-tech/SW-R3-1A-A-1-2/15284445"
+    },
+    {
+      "row": 9,
+      "name": "Touch Button",
+      "quantity": 30,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/ALAMSCN-TTP223-Capacitive-Locking-Arduino/dp/B0BJDJP1ZR/ref=sr_1_2?crid=19YT5IRYYIWPX&dib=eyJ2IjoiMSJ9.R04tghGzc1J5GYS9KdYqVn-EYodrijYYQaY_n-wlWki6HTGcks83xxWdWX9U6jhBYA2fqgRV3lQ8FB0jbvNw9-ztY9nMLcFTzg20-74NL6-0uU9w8izyHIHiYHEWZaGppgJWWN55HXsoR-lL2LYIrW_F6U6It7CpxSSwz32Y57LUysEk3l4Z_NR5NlwYXvPMxUAqSGurWwt2wmyX-DZkPY3CFDsihgmTu6TW0meu0Zg.f0OVKMSPFiI7o5NgYV__ydl9Yssp_dd074_7KliHkIg&dib_tag=se&keywords=TTP223%2BTouch%2BSensor&qid=1750638961&sprefix=ttp223%2Btouch%2Bsensor%2Caps%2C121&sr=8-2&th=1"
+    },
+    {
+      "row": 10,
+      "name": "Arducam 5MP Camera",
+      "quantity": 2,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Arducam-Megapixels-Sensor-OV5647-Raspberry/dp/B012V1HEP4?crid=3AESGUV8JVFCF&dib=eyJ2IjoiMSJ9.HqkZLJZu7_XDt9jAUZcbL3qaUC0ExlPZtiJYPjRob0KtlYx3wbBaarkrrWpIQRVZkBxkSrf1MlkhHgs_5yjbfxnQ5roSYZnjbYy2oVB5FFYm_-H85XWeZehJD1KkT_Audw6mnxJGKfDjxf7QwXPjmZ7AxcP8SC52AByCYm1bl5GiuuUbylyRgNRjNsKrGfa-clTbTVLl6UOjXCCxoCG4tAbPS1aD1klwC6sG7HVd4iE.bi3okv-fukQYvqFz33Wf9wfpLjtSLZpoxKL8xUD2N2g&dib_tag=se&keywords=camera%2Badafruit&qid=1750639315&sprefix=camera%2Badafruit%2Caps%2C81&sr=8-4&th=1"
+    },
+    {
+      "row": 11,
+      "name": "ESP (Wifi + Bluetooth) with Camera",
+      "quantity": 12,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Hosyond-ESP32-CAM-Bluetooth-Development-Compatible/dp/B09TB1GJ7P/ref=sr_1_3?dib=eyJ2IjoiMSJ9.d-bLMlalRmVPcqoxgTMJ5VgYba6TMmy5dnQSPt9GXy6sV6MgXp4ADaDVD05n4DzYMBXj7gJcr7BOyB9UtYKMhZK33BT_Uh4rt448uSbxlQt7Ny_StFojZ5kngUYdCqU6pY87sjnsGGqnG36dYsyWfp6sBR3Tf_stlpo0mUxaskrQ7xwmaap8d-lM9nDRBW9eoQEOAhUzRDRb180HS1dxdu2bRWBH6cl0-c-mZ05JrGw.7tJ_USoCWeaWOixvd2EpqdVQEy-9164J477crkOVTJw&dib_tag=se&keywords=Camera+Module+%28OV7670+or+ESP32-CAM%29&qid=1750638768&sr=8-3"
+    },
+    {
+      "row": 12,
+      "name": "USB Cameras",
+      "quantity": 5,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/innomaker-Computer-Raspberry-Support-Windows/dp/B0CLRJZG8D/ref=sr_1_2?crid=465NJ5WR1K4A&dib=eyJ2IjoiMSJ9.siduUuzFQAwzFPO_7icFUyvd7hbgCD3nw43PFFOZWPbqBIwW7QIjmiOt0W-bI_Bhw7jB_Xwv2k_X8xUTb9rVNXl8on3GxZWFCPD81eWmuJ3dzq7l4mTu-vAmOTQnoYi7nsaqimYrhWVawg374Oa7UiAFfISGX0-Id2LWY_JpYnZnvQJvQCyHozvylMFxb1lXdD0HlyovSQwcmHs7YGbLwypGpZ8M_EFQfTsLxeVg6qa1fofN2XLuJH5yyOjxA-a_-bAzc-SwhjF_9o77T3GM9la4IGkHTf19h5HcNitLb3Y.7zkVJMedg4rl4UsDvVBUyIaYtFZDVfzbbM2wZhU0ID0&dib_tag=se&keywords=usb+rgb+camera+for+raspberry+pi&qid=1749908671&s=electronics&sprefix=usb+rgcamera+for+raspberry+pi%2Celectronics%2C399&sr=1-2"
+    },
+    {
+      "row": 13,
+      "name": "Pseudo-LiDAR Sensor",
+      "quantity": 5,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Single-Point-Compatible-Rasppbarry-Communication-Interface/dp/B088NVX2L7?crid=Z3O79TJVZRCZ&dib=eyJ2IjoiMSJ9.ZqY8xhprRJHGTRpaYCaYkxmj1eoWiQCZch5AQAeLntN7qPlXqsGzhqMPsR3_KHKGEsscuKmG1HEreNLUkmir_kadt0T_B3KIQJxkyw50Xg9AdNdz-cHbmPzBsJVeis0FmM3OVS5cHD7hoSf9NUEdKEensvnQx7iv-du68EpI2TowBP9dDi2YzxKhsJ0xZzx9HnqWImtyR2E3BFRDvTg3oZHArZkbCVBOjIM1uR62tIk.o9zBO58fNMxDS37p7P_CWQOwdx8-NLlNhLsm9xe1KwY&dib_tag=se&keywords=lidar+sensor&qid=1750639571&sprefix=lidar+sensor%2Caps%2C111&sr=8-1"
+    },
+    {
+      "row": 14,
+      "name": "Ultrasonic Sensor",
+      "quantity": 6,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE! WILL CONVERGE W/ ELEGOO",
+      "productUrl": "https://www.amazon.com/WWZMDiB-HC-SR04-Ultrasonic-Distance-Measuring/dp/B0B1MJJLJP/ref=sr_1_1?crid=5LW7YP8XWO5V&dib=eyJ2IjoiMSJ9.0VlpR5An1rDHrKsyEwXFZf4g67ELu997flI4iC_UhX56NA4-WQyz44ucC-bRIoOKqXwPeC_uCDRJchNTDbTCFEebAFHlkiaMjpreP1SAqZhOsIsLUeFPY44Px02-PKCdZr5x0mP6pAZN0x50_rz7oFE1NNMy7iY02z_qE3rhb9hnS_BiiOKXT_BGUfPe-Q51ddHOJekX1jMO9LmOalEYqIBPseglDUBQ28tooLvgylk.UDiNGv5HpKT5mn3a8eei47QhhI0xQI8y5GqyZcZ1R4k&dib_tag=se&keywords=HC-SR04+Ultrasonic+Sensor&qid=1750638891&sprefix=hc-sr04+ultrasonic+sensor%2Caps%2C112&sr=8-1"
+    },
+    {
+      "row": 15,
+      "name": "10pc Jumpers Pack",
+      "quantity": 3,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 16,
+      "name": "12V DC-DC Converters",
+      "quantity": 3,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 17,
+      "name": "12V DC-DC Converters",
+      "quantity": 2,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 18,
+      "name": "1309 Series Sonic Hub (6mm Bore)",
+      "quantity": 1,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE FROM WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 19,
+      "name": "4-Digit 7-segment LED  (with driver)",
+      "quantity": 2,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 20,
+      "name": "5V 650nm 5mW Red Dot Laser",
+      "quantity": 20,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/HiLetgo-10pcs-650nm-Diode-Laser/dp/B071FT9HSV/ref=sr_1_5?crid=2IT3M3LHIQ8K1&dib=eyJ2IjoiMSJ9.VJR9gldUAP9r0TxBgBEKFEEiEyyqyfw9LD9OfuSgVhFYCM1l4MspOm_4jUMVIeJiDgeN8mpGU80NNYWjIugNYBeZNT9eh56QfDOVEOtgq1Wyny1mdG5P_gVoMiLufwp9daX1BOS_iw7JQW_wBHV3ApcgqBw9tLeP7ix1zQ5Y9kZEp8b4_oy_Pnwl3SsK4Qa7BWtl4_02ECmYQsZ4dYKxzNy7x88MlwdARcvUwYZq0BwKwzjpSk8ZySQUnlcbqT8BuAATEyn_tpFDCpNBXAM9CHUd-em29Ita7y7OsUSKvhs.5hqw4KCeu2Yt2F6uA93NIvcSS4g2a_0Wifuh6l4x390&dib_tag=se&keywords=laser+module&qid=1751324070&sprefix=laser+module%2Caps%2C108&sr=8-5"
+    },
+    {
+      "row": 21,
+      "name": "50Pcs Potentiometer Kit",
+      "quantity": 1,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/ALLECIN-Potentiometer-Single-Joint-Potentiometers-Resistors/dp/B0D72XYPYD/ref=sr_1_2?crid=204NB368XN1VW&dib=eyJ2IjoiMSJ9.XD_8YnJwQAYSjLUwY3omYEOQaWQBlHJBZmVK-RpVIJEufWLObgnibrg3q831JDi1U8jHDoVVITbZKM8Y3AO2IoADbDGf27lO-LJdHFbS5pP9KrI1bNZToAis2M5c6xidpXd7Ig-OsWOklGLHWoiow4TkshIh2EY8b2WAokWnO1JbF4MdioFpAastfQiKZfnLLJWv9serlhXJD1-fx1MlvYKfob2bolKjjC08kqfHK3M.qPLP2sBf-yrr6lS-6yXcXD_djyqXcKn9b-7w60HweP4&dib_tag=se&keywords=potentiometer&qid=1751324030&sprefix=potentio%2Caps%2C228&sr=8-2"
+    },
+    {
+      "row": 22,
+      "name": "8X8 LED Matrix",
+      "quantity": 3,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 23,
+      "name": "Battery to round hole",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 24,
+      "name": "Buck Booster",
+      "quantity": 3,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 25,
+      "name": "Capacitor",
+      "quantity": 20,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "in bag, UPDATE PHOTO ON WEBSITE",
+      "productUrl": ""
+    },
+    {
+      "row": 26,
+      "name": "Ceramic Capacitor",
+      "quantity": 10,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 27,
+      "name": "Cermaic Capacitor",
+      "quantity": 10,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 28,
+      "name": "Cermaic Capacitor",
+      "quantity": 10,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 29,
+      "name": "CN0023",
+      "quantity": 2,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 30,
+      "name": "DC 5V Relay Module",
+      "quantity": 19,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/AEDIKO-Channel-Optocoupler-Isolation-Support/dp/B0BHLDW9G5/ref=sr_1_5?crid=3BQQ9RULBCJPJ&dib=eyJ2IjoiMSJ9.Ts8s233KwRwBTh-T3ocqpnEAhQMVPD83lIRmkRIwzpZOPNXVWxe3t3tMSUUj6r3oDzr0Jgn5phLDTsqAPwC_QrX6h_xtskZwC91mFsHTLkjt9GwwCy9vVt90UXD6agqEQUhSoTL1uusyirvIO-YEvLCUT2XhJ4WxrqYowoUDz2t6iWCfe5pGOoZYfhikmXTrYwiDcz1G6lpMOBWEu-QT61pO1tXotMg3Hg4LeM5kvJU.k2QyW20ErUeQnzHJkf3-eGqN2Cp8sCjgSEXm1sonAUs&dib_tag=se&keywords=relay&qid=1751323881&sprefix=relay%2Caps%2C116&sr=8-5&th=1"
+    },
+    {
+      "row": 31,
+      "name": "DC-DC Converter",
+      "quantity": 2,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 32,
+      "name": "DC5V Black Mini Active Piezo Buzzers",
+      "quantity": 20,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/mxuteuk-Electronic-Computers-Printers-Components/dp/B07VK1GJ9X/ref=sr_1_2?crid=2RJYNON3UM2ER&dib=eyJ2IjoiMSJ9.wAyBeRS6gVe44PjVRBtGDLPmlPgYRi5DSr3G85QV2M-e5YyP0JEzTn9VqCxsW88tsfMc9FPxetz3tXib5745vJyZ0GilEM2Vkq12RefJlk4tbeDoqvBwPtnl6ZKXCDS_KDNsI-1PC5UmzIDNukmKH5PkER8dimvTb0QMe0wUh1lDPwI0TDYAOd381bVXmecaa_RUSsiarX1yAM_yZaLax9r6jeMyS3oIE1Y80tNoPLU.Pn2c2FYXUpxtCWoQF2U4T9U2FV4B5sjhJlnlxvNn9xw&dib_tag=se&keywords=piezo+buzzer&qid=1751323921&sprefix=piezo+bu%2Caps%2C104&sr=8-2"
+    },
+    {
+      "row": 33,
+      "name": "Elegoo starter Kit",
+      "quantity": 10,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "As the whole kit, we will split the components NEED TO UPDATE ON WEBSITE",
+      "productUrl": ""
+    },
+    {
+      "row": 34,
+      "name": "Ethernet Breakout",
+      "quantity": 2,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.sparkfun.com/sparkfun-rj45-magjack-breakout.html"
+    },
+    {
+      "row": 35,
+      "name": "Gemma",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 36,
+      "name": "Hex Inverter Buffer",
+      "quantity": 2,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 37,
+      "name": "Inductors",
+      "quantity": 5,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 38,
+      "name": "Inductors",
+      "quantity": 5,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 39,
+      "name": "JST Headers 4 pin female",
+      "quantity": 10,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/jst-sales-america-inc/04JQ-BT/4918835"
+    },
+    {
+      "row": 40,
+      "name": "JST Headers 4 pin male",
+      "quantity": 13,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/jst-sales-america-inc/B4B-XH-A/1651047"
+    },
+    {
+      "row": 41,
+      "name": "JST Headers 4 pin male",
+      "quantity": 3,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE",
+      "productUrl": "https://www.digikey.com/en/products/detail/jst-sales-america-inc/B4B-PH-SM4-TB/926643"
+    },
+    {
+      "row": 42,
+      "name": "Jumpers",
+      "quantity": 25,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 43,
+      "name": "LCD Display",
+      "quantity": 6,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.openhacks.com/uploadsproductos/eone-1602a1.pdf"
+    },
+    {
+      "row": 44,
+      "name": "LED Green",
+      "quantity": 10,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 45,
+      "name": "mePED PCB board",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 46,
+      "name": "Motor Replacement Package",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 47,
+      "name": "Multiplexer",
+      "quantity": 6,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 48,
+      "name": "Packs of mounting/replacement",
+      "quantity": 6,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 49,
+      "name": "Pair of Pluggable Terminal Block",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 50,
+      "name": "Passive Eletronics Kit",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 51,
+      "name": "Pin headers",
+      "quantity": 25,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 52,
+      "name": "Pluggable Terminal Blocks",
+      "quantity": 10,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/adam-tech/EBWA-02-A/9830631"
+    },
+    {
+      "row": 53,
+      "name": "Power Hub",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 54,
+      "name": "Real Time Clock Module IC",
+      "quantity": 3,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 55,
+      "name": "RF 433MHz receiver",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 56,
+      "name": "RF receiver",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 57,
+      "name": "Rotors",
+      "quantity": 10,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 58,
+      "name": "Sensor Kit",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 59,
+      "name": "Sensors from Elegoo sensor Kit",
+      "quantity": 4,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE FROM WEBSITE",
+      "productUrl": ""
+    },
+    {
+      "row": 60,
+      "name": "Servo Driver",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 61,
+      "name": "Solder Pad",
+      "quantity": 6,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 62,
+      "name": "Solderless Breadboard (full)",
+      "quantity": 6,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "UPDATE QTY",
+      "productUrl": ""
+    },
+    {
+      "row": 63,
+      "name": "Solderless Breadboard (half)",
+      "quantity": 10,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 64,
+      "name": "Thin Film Precision Resistor",
+      "quantity": null,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 65,
+      "name": "Thin Film Precision Resistor",
+      "quantity": 10,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 66,
+      "name": "Thin Film Precision Resistor",
+      "quantity": 10,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 67,
+      "name": "Thin Film Precision Resistor",
+      "quantity": 30,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 68,
+      "name": "Thin Film Precision Resistor",
+      "quantity": 10,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 69,
+      "name": "Thin Film Precision Resistor",
+      "quantity": 10,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 70,
+      "name": "Thin Film Precision Resistor",
+      "quantity": 10,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 71,
+      "name": "Thin Film Precision Resistor",
+      "quantity": 10,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE IGNORED",
+      "productUrl": ""
+    },
+    {
+      "row": 72,
+      "name": "Toggle Switch SPDT Panel Mount",
+      "quantity": 5,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/c-k/E101SYZQE/484035"
+    },
+    {
+      "row": 73,
+      "name": "USB 3.1TYPE male plug breakout",
+      "quantity": 2,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 74,
+      "name": "Vesc motor controllers",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 75,
+      "name": "Vesc NRF dongle",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 76,
+      "name": "Wireless Charger",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 77,
+      "name": "Wireless Transmitter",
+      "quantity": 15,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/QCCAN-Wireless-Transmitter-Receiver-Antenna/dp/B0BLTSSMXH/ref=sr_1_1?crid=WFL3W3271PZW&dib=eyJ2IjoiMSJ9.5tVpkwOa7BRhtF6efBbFSpblQEptfYmUbGUTQc3vIyZKZyCWcGetBtrMC7rnnZZOo4kClVifgO9nUEzZsiAl00r9BAIzxhd9qUDmy3PWKkurHOxlC-OkyPe1o3PiVqQWDdbeoLAFMQEXmfAnjcUeNesobysn3dfzmkGBk2oG7bkxFf_f0MvglnpRfmEODVwjd2G35lEer1Hopaz6jjR94vtwR2trEJoLbqhBJ_jV5k0.IqDwjwU9vOCaFcfcliR6W-0cjy2_Qcl-jUPsONFXkkI&dib_tag=se&keywords=433MHz+RF+Module+Pair&qid=1750638867&sprefix=433mhz+rf+module+pair%2Caps%2C110&sr=8-1"
+    },
+    {
+      "row": 78,
+      "name": "Wires",
+      "quantity": null,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVED FROM WEBSITE",
+      "productUrl": ""
+    },
+    {
+      "row": 79,
+      "name": "XBee 3 PCB Antenna",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.sparkfun.com/xbee-3-module-pcb-antenna.html"
+    },
+    {
+      "row": 80,
+      "name": "XBee Shield (Wireless transceiver)",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 81,
+      "name": "Elegoo Kit",
+      "quantity": 8,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVED FROM WEBSITE",
+      "productUrl": "https://www.amazon.com/ELEGOO-Project-Tutorial-Controller-Projects/dp/B01D8KOZF4/ref=asc_df_B01D8KOZF4/?tag=hyprod-20&linkCode=df0&hvadid=693369603351&hvpos=&hvnetw=g&hvrand=588563250772201984&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9004078&hvtargid=pla-406302474425&psc=1&mcid=80a5b47d61dc377992c3c25d65d73272"
+    },
+    {
+      "row": 82,
+      "name": "Raspberry Pi 4 (1GB)",
+      "quantity": 10,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.adafruit.com/product/4295"
+    },
+    {
+      "row": 83,
+      "name": "Raspberry Pi 5 (2GB)",
+      "quantity": 2,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.raspberrypi.com/products/raspberry-pi-5/"
+    },
+    {
+      "row": 84,
+      "name": "Raspberry Pi 5 (4GB)",
+      "quantity": 7,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.raspberrypi.com/products/raspberry-pi-5/"
+    },
+    {
+      "row": 85,
+      "name": "2000 Series Dual Mode servo",
+      "quantity": 4,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "UPDATE WEBSITE They are with bag with the stuff below",
+      "productUrl": "https://www.gobilda.com/2000-series-dual-mode-servo-25-2-torque/"
+    },
+    {
+      "row": 86,
+      "name": "8 Channel Servo Power Node",
+      "quantity": 2,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "Took photo",
+      "productUrl": ""
+    },
+    {
+      "row": 87,
+      "name": "28BYJ-48 stepper",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 88,
+      "name": "4 Phase ULN2003 Stepper Motor Driver",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 89,
+      "name": "550 Titan 12-Turn w/ ESC",
+      "quantity": 1,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.rcsuperstore.com/traxxas-550-titan-12-turn-motor/"
+    },
+    {
+      "row": 90,
+      "name": "D646WP servo",
+      "quantity": 1,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 91,
+      "name": "Dark motors with no name",
+      "quantity": 2,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE",
+      "productUrl": ""
+    },
+    {
+      "row": 92,
+      "name": "FT5330M servo",
+      "quantity": 1,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "Took photo",
+      "productUrl": ""
+    },
+    {
+      "row": 93,
+      "name": "M200 Motor",
+      "quantity": 1,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE",
+      "productUrl": "https://bluerobotics.com/store/thrusters/t100-t200-thrusters/m200-motor/"
+    },
+    {
+      "row": 94,
+      "name": "MG90S",
+      "quantity": 18,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "Try to give with horns (1 pack of horn per team)",
+      "productUrl": "https://www.amazon.com/MG90S-Servo-Motor-Helicopter-Arduino/dp/B07L6FZVT1"
+    },
+    {
+      "row": 95,
+      "name": "Motor with PCB soldered",
+      "quantity": 1,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVE",
+      "productUrl": ""
+    },
+    {
+      "row": 96,
+      "name": "Nema 17",
+      "quantity": 2,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 97,
+      "name": "FUTABA S3004 servo",
+      "quantity": 1,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Futaba-S3004-Standard-Bearing-Servo/dp/B001KAPMG6"
+    },
+    {
+      "row": 98,
+      "name": "Sunfounder 55G Servo",
+      "quantity": 2,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 99,
+      "name": "SG90 Servo",
+      "quantity": 2,
+      "fill": 9,
+      "source": "CURC",
+      "received": false,
+      "notes": "CONVERT TO ELEGOO",
+      "productUrl": ""
+    },
+    {
+      "row": 100,
+      "name": "TT Gearbox motor",
+      "quantity": 4,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "change qty",
+      "productUrl": ""
+    },
+    {
+      "row": 101,
+      "name": "Type 130",
+      "quantity": 19,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "REMOVED, COMBINED W/ DC MOTOR",
+      "productUrl": "https://gikfun.com/products/gikfun-1-5v-6v-type-130-miniature-dc-motors-for-arduino-hobby-projects-diy-case-pack-of-6pcs"
+    },
+    {
+      "row": 102,
+      "name": "Vibration Motors",
+      "quantity": 15,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 103,
+      "name": "Buck convertor (lipos to PIs)",
+      "quantity": 12,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Converter-Module-Quadcopter-Holder-Receiver/dp/B0CDWL97P3?crid=2CP4631GSE4CN&dib=eyJ2IjoiMSJ9.WRcfYGa6OT1sWi1FalaTLDoEtzv6Iynz7QIrD7rxfJFtuwlzhuWI5-DMl_pIlzrC00OP-xL-Z58jJIq0LnnP82IoSZ0mjErLjcnSnhFmsO0X2AEZb7_Fg88YksgUe5SFQgQad8-cVxFgAA0-_3O2LoJPlKgoNxg0uiipFPp11dla4sVKHHP09_5NPybWLFIG0HrVAp6aIqvz5ADR0wOfx1SMLvdXrxaYp5O2_F4a-1SKuhJLWdDS6ynAK_hhkVL64xRYKfhNyLOaXP1O70uLZPjhJzYJOopprE2qZiQcYpk.vmLa9704pM_CqSi2dyxle6ZLycfwqueXRvY5-kCDksw&dib_tag=se&keywords=5v+ubec&qid=1759713639&sprefix=5v+ubec%2Caps%2C145&sr=8-13"
+    },
+    {
+      "row": 104,
+      "name": "DC Barrel Jack to Female Thing",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Chanzon-Female-Connector-Security-Adapter/dp/B079RCNNCK?sr=8-11"
+    },
+    {
+      "row": 105,
+      "name": "DC Motors",
+      "quantity": 36,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "updated qty",
+      "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/11696/6163657"
+    },
+    {
+      "row": 106,
+      "name": "L298N motor driver",
+      "quantity": 32,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "From previous inventory:  27 look still good, 5 unwrapped, 1/5 looks kinda cooked; we should also contemplate using these (the unwrapped ones at LEAST) in gbodies to do stuff//we should buy more stuff to like play with in gbodies",
+      "productUrl": "https://www.amazon.com/BOJACK-H-Bridge-Controller-Intelligent-Mega2560/dp/B0C5JCF5RS/ref=sr_1_1_sspa?dib=eyJ2IjoiMSJ9.hK2FjV8Ukp8CCyVTI1seMk4n3aguoO_lNXX3xoiH-O2D0ATFdYZBvy7poYvmWavF-Y8o0fCOEUW0Ic9DV63qQ8Q1d21QF4Bx9kvJ77J3uK7DWjrFN9QmMvsbJ7kLkf7Ua7UCWhfn7lwD1qYWU5-EjsLYxIVY8H3rtqMkUgdffKW5IZ1mxshxZ3oP2HFDI7lIbfBSgjO8tkVULy4Cw4U0rC7Eo8313yIKbv2NLTFJRtb1s5WGamXcSghSnhwgoEm8SN6fxRInNifJbvMw3hr-oiYZkM3nDI9jLf2bwjjmwgg.qfXpuIYPTgvpAcqbZNoQTsPcCRu4055AOGt3K40VYcs&dib_tag=se&hvadid=693917981683&hvdev=c&hvexpln=67&hvlocphy=9027759&hvnetw=g&hvocijid=17235277458154833720--&hvqmt=e&hvrand=17235277458154833720&hvtargid=kwd-876396251405&hydadcr=27055_14522414&keywords=l298n+motor+driver+amazon&mcid=66999136bb7b31d19f4e31dfc83d7773&qid=1752176886&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+    },
+    {
+      "row": 107,
+      "name": "Motor Shield V2.0",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 108,
+      "name": "Motor Shield V2.3",
+      "quantity": 2,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 109,
+      "name": "Pump",
+      "quantity": 1,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": "https://www.amazon.com/zjchao-Peristaltic-Liquid-Pump-Electronics/dp/B00HIX2PEG"
+    },
+    {
+      "row": 110,
+      "name": "Vibration Motors",
+      "quantity": 10,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/316040004/5487673"
+    },
+    {
+      "row": 111,
+      "name": "Wheels",
+      "quantity": 7,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 112,
+      "name": "Ethernet Cable (1ft, 10GB)",
+      "quantity": 5,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Cable-Matters-5-Pack-Snagless-Ethernet/dp/B00C4U030G?sr=8-8"
+    },
+    {
+      "row": 113,
+      "name": "SD Cards (16GB)",
+      "quantity": 6,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "SOME RPI HAVE THEM",
+      "productUrl": "https://www.amazon.com/KOOTION-Micro-Class-10-UHS-I-Memory/dp/B07XJVFVSJ?sr=8-14"
+    },
+    {
+      "row": 114,
+      "name": "XBee Dongle",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.sparkfun.com/sparkfun-xbee-explorer-dongle.html"
+    },
+    {
+      "row": 115,
+      "name": "3S Lipo Battery",
+      "quantity": 6,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Battery-Connector-Quadcopter-Airplane-Helicopter/dp/B09CTSCWYM?sr=8-26"
+    },
+    {
+      "row": 116,
+      "name": "Battery Bank",
+      "quantity": 14,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Miady-5000mAh-Portable-Charger-Android/dp/B08T8TDS8S/ref=sr_1_12_sspa?crid=2SMX1I99ON91P&dib=eyJ2IjoiMSJ9.nvSzYE6Uiepvy0Kf2c5PtnU-uv5ChP4gQIu4yofJPn6w2uT_WLd4rLNiypc09n2gCqUJX76O-x4wj-rkzSsocvEUQffk_Pt6gmSm87SQ1RHBoQTwKhgGWsqSrOjtxop1tzd1kVu6XOwgyF_rNj3cvID-Li96ThtCM33PFUeMI4ZYbS-HeDOcEXthRQA3Gg87M8WoiGPLRSgDQTsmv7JlBe2qwx3bG6fg78GuD4oXUNc.R2uOtL-_quR83jgsHhmTCCPk0_LHUfy2KngMQUacUj8&dib_tag=se&keywords=5%2B000%2BmAh%2BUSB%2Bpower%2Bbank&qid=1751577125&sprefix=5%2B000%2Bmah%2Busb%2Bpower%2Bbank%2Caps%2C250&sr=8-12-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1"
+    },
+    {
+      "row": 117,
+      "name": "Facmogu Power Supply",
+      "quantity": 7,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Universal-Switching-Adjustable-100-240V-Converter/dp/B083GG2H6R?sr=8-2"
+    },
+    {
+      "row": 118,
+      "name": "10Pcs Pressure Resistance Strain Gauge",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/DAOKI-BF350-3AA-High-Precision-Pressure-Resistance/dp/B07X87CJD8/ref=sr_1_5?crid=45VFGECOOAJF&dib=eyJ2IjoiMSJ9.9nP_kn1Sq6M8_m1Nv5Wm-uY9nDVUSwNFEFj0lMgw_ZkuVo7lnHiq-oUm6HHHV-Bda_AvYGVstVPQOaROSP0-fjSB8AaoEv4XfLdYC7iMmY2UVAfFXdCU8HfR57RmxstzB4HRVKMayYYQZosyvhXODhpQ7SknoRyfZo7WsA6zGrq7XpQjD8RXMUoJj35NXV_RHS3W19EqmUrRYCQkT3utXoB9qJ45oB4hIKdIVTUZjaI.DD54DR-T4i7vsIQ2QNNAirOQnnJ3knDjBAfTf58O8fg&dib_tag=se&keywords=strain+gauge&qid=1751323985&sprefix=strain+gaug%2Caps%2C110&sr=8-5"
+    },
+    {
+      "row": 119,
+      "name": "12-key touch sensor",
+      "quantity": 2,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 120,
+      "name": "3MM Photodiode",
+      "quantity": 20,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/uxcell-Photosensitive-Photodiodes-Sensitive-Receiver/dp/B07VNSX74J/ref=sr_1_3?dib=eyJ2IjoiMSJ9.EzOe48qZn1V63aKcnyyyshjyIU-GKx_PVnP850Yxu_yFluvMdLAhk5RJGuePUxWQeJTWhf4BcRDiXrxepHTgs1YZZ7Fhpko16VTj-hjXrflJlRLrE1nvOyMGjwKANUPCRVPDHrIaz09VzrjcZAc4MU7y2jp8zierCaITFfMU2kV8MEGJiMl2IIqPyzjaQcjWA5binKGpl2FOjEOaEEd5SDAz9oGNDQFy0pFGvnO62KE.IjsDcU5jZpu1i-gT9F1pra1TkJKbplPIQ0JY9_GRVeo&dib_tag=se&keywords=photodiode&qid=1751323596&sr=8-3"
+    },
+    {
+      "row": 121,
+      "name": "41mm Piezo Disc",
+      "quantity": 20,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/YQBOOM-Transducer-Microphone-Acoustic-Instrument%EF%BC%8CMic/dp/B0B2QSQNB2/ref=sr_1_3?crid=34M4484ZRUACX&dib=eyJ2IjoiMSJ9.eY9rD6ZnduBeN3b1zyYWvReQSS5B6YDg7jzBFRf6_g985sOwNouBz2aY6FsjnVw3DSHTh57MLzifEXmrnVtt7PyqW_Xiud66pc9p3g0NquM9xnjT8eKSQ05XetEPOHER67Mc2Vojsv4DgeTAQDmnlfKeioqp4QJLRCsg2rk8AkPCH-2c2gU9hWHuLEy1q4vpy1inmT3Up9FHGFDedJShpSt7xMoBsFl4XZw45FwofcA.1rGS785gBbjbWfxq0Y5hZ5rhQPVJ9HZnQWNIJaCNP6g&dib_tag=se&keywords=piezoelectric%2Bdisk&qid=1751323687&sprefix=piezoelectri%2Caps%2C112&sr=8-3&th=1"
+    },
+    {
+      "row": 122,
+      "name": "4x4 Matrix Keypad",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 123,
+      "name": "50kg Load Cell",
+      "quantity": 4,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Half-Bridge-Weighting-Amplifier-Arduino-WIshioT/dp/B07B4DNJ2L/ref=sr_1_2?crid=387OTORJKEV3S&dib=eyJ2IjoiMSJ9.guldgTOabWowWieqMRoN6a7RpwxwllDPHRMlu-VSje0Cb0tBirgnZTMyLoqXukqsBqwnCJH237D8mpOvZ5-PVwDRQC5O-SlUbE01YJep0lMSXnYWxnFtlbOlnbVvlFyKEhMMy82VkgwNgs8ipkPVtf2515jHqWpIwxJAsYFSLYUgWF2sW916nIZalxRccjbW2zOBY_bmYgt81sOSzmz3xC1qTGFL5OhkqpVDeTk1Ecg.-u1zEwtaWeeizMSpInQVIXcJpEZhzBCU7vVuMhiyN78&dib_tag=se&keywords=load+cell&qid=1751323952&sprefix=load+cell%2Caps%2C111&sr=8-2"
+    },
+    {
+      "row": 124,
+      "name": "5MM Phototransistor",
+      "quantity": 20,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/HiLetgo-Phototransistor-Photosensitive-Sensitive-Sensors/dp/B00M1PMHO4/ref=sr_1_6?crid=398SO9YI0EIMK&dib=eyJ2IjoiMSJ9.EzOe48qZn1V63aKcnyyyshjyIU-GKx_PVnP850Yxu_yFluvMdLAhk5RJGuePUxWQeJTWhf4BcRDiXrxepHTgs1YZZ7Fhpko16VTj-hjXrflJlRLrE1nvOyMGjwKANUPCRVPDHrIaz09VzrjcZAc4MU7y2jp8zierCaITFfMU2kV8MEGJiMl2IIqPyzjaQcjWA5binKGpl2FOjEOaEEd5SDAz9oGNDQFy0pFGvnO62KE.IjsDcU5jZpu1i-gT9F1pra1TkJKbplPIQ0JY9_GRVeo&dib_tag=se&keywords=photodiode&qid=1751323543&sprefix=photodiode%2Caps%2C107&sr=8-6"
+    },
+    {
+      "row": 125,
+      "name": "9-DOF IMU + TEMP sensor",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 126,
+      "name": "Encoder Sensor - slotted optical interrupter",
+      "quantity": 10,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://components101.com/sensors/moc7811-encoder-sensor-pinout-specification-working-application-datasheet"
+    },
+    {
+      "row": 127,
+      "name": "Gesture Sensor",
+      "quantity": 2,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/CQRobot-Compatible-Raspberry-Interface-Interaction/dp/B083KNC1LF/ref=sr_1_7?crid=15LBTJFO4CTN&dib=eyJ2IjoiMSJ9.BqwZS2REp5Y4A8Lj-DPAJytJ_OtKQs59ztHPXRaz6witLfpRJzc1S-oETbU_6jx2Ugi-mnWOCUY8JSZ3taNpHUSvSsU-1Q_Vn-E-IVk2JGYgWDqMMXevh5o6J0xRfS2DHqJlzHLZONX3lNpByH4rD8s3WStym7slZiT9tSHP9RXV07xLw5Y3IySh5GoWgZD7nqryEMPBslDYt1Cu5gfaCIbllgGGrvI4Z1eglsLnA9c.SGrig90c1bLWIQGE7oH1t_UPnOJItofWu6n4awvjliI&dib_tag=se&keywords=IR+Gesture+Sensor+%28APDS-9960%29&qid=1750638984&sprefix=ir+gesture+sensor+apds-9960+%2Caps%2C107&sr=8-7"
+    },
+    {
+      "row": 128,
+      "name": "GPS Module",
+      "quantity": 10,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Navigation-Positioning-Microcontroller-Compatible-Sensitivity/dp/B0B31NRSD2/ref=sr_1_2?crid=1UYUWPA7KCMXV&dib=eyJ2IjoiMSJ9.5NFiPGTIPD7CER9_21znC0Y5Lx87WFwgK52exlg2VQdTrcnmHP4v1SLz30LZaeA3f5o0gIF2471vtO8E-hRoEhWZCS5bsSfb_mhDZyUVWBA2TQfasMTqVw7p2P9QuJuVUfh1uTtWNxNddIVV3IZqRxzLiC8s1eeu2ZYiDTsvCPfUxvL5zTrrQht7lq4t2KbYx4M8SOJ3yvSlpj7KFd7LU5TMP2BFvfK8lPZbLiJEl74.ia-RC2Hi7WzMEJIh4eqnlPiF7rMN42PXn8f55YPXH0U&dib_tag=se&keywords=GPS+Module+%28NEO-6M%29&qid=1750638845&sprefix=gps+module+neo-6m+%2Caps%2C122&sr=8-2"
+    },
+    {
+      "row": 129,
+      "name": "Heart Rate Sensor",
+      "quantity": 6,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/MAX30102-Detection-Concentration-Compatible-Arduino/dp/B07ZQNC8XP/ref=sr_1_1?crid=203GWP1CZNQ87&dib=eyJ2IjoiMSJ9.udydjlP35vrcmOWNPd4yPP-iSLUZ0RU6eMUlP9Jv5pLdX8Mqsx25YSiOpVwKEnYdNShHacziblyX_ZdhItT46wSPQhcZcIsjmOnUU8PXsjiTSMdz7-2vn94xG07f4Zy7C2gQdr7Vwa-56VjjJQEfu93di2vOQMEV_a7WVzp7vlfEYeJ-Xhawz7SUIFrBn8iHXRbSjAiUNAMQvbyriH-PeEVXL2l_BbCSLJlAWvcuXrQ.Uc-hISmjkT8SNIw9hnzFFgRPbc46F62Uw3YE5kbhhRU&dib_tag=se&keywords=Heart+Rate+%2F+Pulse+Sensor+%28MAX30102%29&qid=1750639027&sprefix=heart+rate+%2F+pulse+sensor+max30102+%2Caps%2C111&sr=8-1"
+    },
+    {
+      "row": 130,
+      "name": "IMU",
+      "quantity": 15,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/HiLetgo-MPU-6050-Accelerometer-Gyroscope-Converter/dp/B00LP25V1A?sr=8-3"
+    },
+    {
+      "row": 131,
+      "name": "IMU",
+      "quantity": 3,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 132,
+      "name": "Light Dependent Resistor",
+      "quantity": 100,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/HiLetgo-Dependent-Photoresistor-Photoconductive-Resistance/dp/B00N1ZJUN4/ref=sr_1_3?crid=1EU0KC915FPTR&dib=eyJ2IjoiMSJ9.G1wPypxNK3kbL7U6ifSbg-fewIggJvvdrxBrzNraZ1dTO-MZ-JHgxYryZl2wrXph0FyR4ZICVN5TlzoY0prh5w4BAcjjky-cZGkI_LNDIKdIzXg2TK6VTjTVp4dL27tZEV4LHivKL5kM2i_QN6CbZWJsKMRltHjj7qCo_G5MlM4zhL3oMQL45lajWTjQQV33QtgZBBvAO8BAQoiSqioLPsSTtJAfWLFiEOw-dlHd8Z0.cAdD670674y6Z8-mzQ05YfSHPu4UrrbzBzmeCt05234&dib_tag=se&keywords=photoresistor&qid=1751323493&sprefix=photoresistor%2Caps%2C108&sr=8-3"
+    },
+    {
+      "row": 133,
+      "name": "Moisture sensor",
+      "quantity": 15,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/HiLetgo-Moisture-Automatic-Watering-Arduino/dp/B01DKISKLO/ref=sr_1_1?crid=3STK7N6XVFMFL&dib=eyJ2IjoiMSJ9.cXrRHdrxFdYVfBWgmjOy_fIfTjHJ3NAKEZRJ2qbu-yJ7MQoa3H6_x175ejP3cv-EfZ3_jwJoTsyqUZelKbGc9GWxU-nk7iD0UKjcnF_oDj2R9PCr_LvL6K9htiCoR3604P3vzkPnSqDvytGJi4oKTPxqw5GL22LuT7NuV-W3xCF7Xnxrzu8X-VOzfJZvO5NK8vP5t8xsYhmbFT23OUfeRO4K8-uSAcYamfzqmvFBGC8.hwCSUC4EawqLikd7bdmpabbUKhFPvd4tGYREftet_Uc&dib_tag=se&keywords=moisture+sensor+arduino&qid=1751473412&sprefix=moisture+sensor+arduino%2Caps%2C107&sr=8-1"
+    },
+    {
+      "row": 134,
+      "name": "MP503 Gas Sensor",
+      "quantity": 5,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/JESSINIE-MP2-Sensor-Liquefied-Combustible/dp/B0D8KTLT8D/ref=sr_1_4?crid=391BF0YEGW2TW&dib=eyJ2IjoiMSJ9.llpyROFpWh8uZFx6g4ytmeyFF6CeJ-vMrSofzzQYUnvb6KCSbkLToycJhkTiOjcjNl5IyxARhTGk1I9oeI5CNG8KyKaYqo1xx6gmOfpGs74w1RqBSj1Hi02XdFRMx_tpVISytde8Tq0J5IdIK4--uEG90cCH-M4u_qgmcHBxN-3SqXyGMb4zadeFr-v5cI5_.CDwUaM_uEl8tA5b06FiwMHhbQKATW4FoJWz4l69NrSQ&dib_tag=se&keywords=MP503+gas+sensor&qid=1751323431&sprefix=mp503+gas+sensor%2Caps%2C142&sr=8-4"
+    },
+    {
+      "row": 135,
+      "name": "Muscle Sensor",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://myoware.com/products/muscle-sensor/"
+    },
+    {
+      "row": 136,
+      "name": "Passive Infrared Sensor",
+      "quantity": 6,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/HiLetgo-HC-SR501-Infrared-Sensor-Arduino/dp/B07KZW86YR/ref=sr_1_2?crid=14VP069VVTX1P&dib=eyJ2IjoiMSJ9.CU24MZyMTi4rvRipNoH1T_TM1k2n6sPGhTK9YuAVK28fPj2oKPHDx-JCwYuNBD9fObdVnp0XhGHv_kCq9tfVVQoAFHHqtUyyz9RxFynT9l2EaxLz1kCAXwDO4F4CKWMLHwI1drTv3Q-i3tWoCVGkBfhPt30DzvMxZD4pHvWoZ7jcB_5D2wuZYabx3668BR-wkVI_VdvvxR4j9z2Ga8DYBMScpPJnsnBNSsr43NBf8v0._2Aq5OoHzZMe3UL3vshYu6lLsEwUh1yG-cRl4GNEm60&dib_tag=se&keywords=PIR+Motion+Sensor&qid=1750639008&sprefix=pir+motion+sensor%2Caps%2C122&sr=8-2"
+    },
+    {
+      "row": 137,
+      "name": "Photosensitive Sensors",
+      "quantity": 10,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 138,
+      "name": "PIR (motion) sensor",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 139,
+      "name": "Reed Sensor",
+      "quantity": 2,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 140,
+      "name": "RFID Kit",
+      "quantity": 6,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/HiLetgo-3pcs-RFID-Kit-Raspberry/dp/B07VLDSYRW/ref=sr_1_1?crid=27MMPMU4BE4F1&dib=eyJ2IjoiMSJ9.2BgAhpDQBZFRD2-EI6NfqM7tHxXzBLwP_S02zddRtjA7jIBGNg7OdBKcKbIqhNQ8sokySkSil6bvK94XBUGzqna4LajoBoGtZyf230KEcw4XPnawq94rPv6WbZSWOMF8AHzeE8V8TN52q40MizH4tQfgXjJ75bHikcYjVR6RUGLOdWbMZiC48O_PJgYuZjsswk1RHec7gruOgYfCv6DH7ulGp4ST7pAbLA_OumNBUVQ.hCRUNt72bmeriKsIqwR6VakyFnt1AYG2yKSnmkvH7Dc&dib_tag=se&keywords=RFID+Reader+%28RC522%29&qid=1750638808&sprefix=rfid+reader+rc522+%2Caps%2C122&sr=8-1"
+    },
+    {
+      "row": 141,
+      "name": "Temperature Sensor",
+      "quantity": 10,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/DROK-Waterproof-Temperature-Thermistor-Transimitter/dp/B0D11B8BXR/ref=sr_1_2?crid=3NFVTDKBI0LVG&dib=eyJ2IjoiMSJ9.Lw8brlDkuNyHGp8a6L_GCEg7iUJXPbmfrNmsSCbvLO0BFSIB9W5PmjJU9Wli1EhfsEcx4IUXPyimK7jRVeKO2_907a-hatlbPmLXZhB26c4as2LcsHYx1nWe6BpytWG2GAud66F1jhKPGp7kGRIy8m10r24lfVSyIU6GiOu5KMuYcEeFUoYiywcDMqCHmIjo41gc68R40vyzK-6wkQllcQ0llv0KtA13js6vRH6TElY.PBmTkSMr-Bm1b8lTx77wc2D6p7KaxKvFQgEenVsyC3I&dib_tag=se&keywords=Thermistor&qid=1751323355&sprefix=thermistor%2Caps%2C166&sr=8-2&th=1"
+    },
+    {
+      "row": 142,
+      "name": "Thin Film Pressure Sensor",
+      "quantity": 6,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Resistive-Pressure-Sensing-Resistor-Arduino/dp/B074QLDCXQ/ref=sr_1_2?crid=2AQUMB8645X9F&dib=eyJ2IjoiMSJ9.SEkK5wrPhMPMBXMZpT1cuDn8-UICfkmeh9Nb2AupclgDbzTOWYec7DTw0kwDDzztbf-4pu2GG-74HTSGLF0aTNVeECLf4XmxxsRxTCfY9oaaTsldJzEgG0hP4WX1fQNCJPNrpsh12GzKJlCHmfhFyddK2AuZZnTJk0YZ4G_L637hwOYrMuNt-OJH7-9Jkou9Dl4fXsFJEgyfFqhwxMvHSmcRaFNMVXukHoe6cQCZUX0.tvAGKfVNTBmhf-_s9hvEgifVEsMLrVCFlNKeeTTh6OQ&dib_tag=se&keywords=Force+Sensitive+Resistor+%28FSR%29&qid=1750639046&sprefix=force+sensitive+resistor+fsr+%2Caps%2C113&sr=8-2"
+    },
+    {
+      "row": 143,
+      "name": "Tilt Switches",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/nkk-switches/DSBA1P/1014883"
+    },
+    {
+      "row": 144,
+      "name": "Touch Screen",
+      "quantity": 1,
+      "fill": 8,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 145,
+      "name": "Weighing Sensor",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 146,
+      "name": "Grove Button",
+      "quantity": 7,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/101020003/5487963?s=N4IgTCBcDaIIwFYCcB2AtHMAOBaByAIiALoC%2BQA"
+    },
+    {
+      "row": 147,
+      "name": "Grove Touch Sensor",
+      "quantity": 8,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/101020014/5482603?s=N4IgTCBcDaIIwFYCcB2AtHOYFoHIBEQBdAXyA"
+    },
+    {
+      "row": 148,
+      "name": "Misc. Buttons",
+      "quantity": 20,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 149,
+      "name": "Misc. Switches",
+      "quantity": 20,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 150,
+      "name": "Logitech Webcam",
+      "quantity": 2,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/16299/17829508?s=N4IgTCBcDaIMJgOwAYAEAbA9gcwJYBcBTAYwAtUB3QgI2IEMBbEAXQF8g"
+    },
+    {
+      "row": 151,
+      "name": "Logitech Webcams",
+      "quantity": 8,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 152,
+      "name": "Mini Spy Camera 1528-1799-ND",
+      "quantity": 2,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/adafruit-industries-llc/3202/6560939?s=N4IgTCBcDaIMxgAxgAQFsCWA7DKDOADgJ4gC6AvkA"
+    },
+    {
+      "row": 153,
+      "name": "Echo DOT",
+      "quantity": 3,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Amazon-vibrant-helpful-routines-Charcoal/dp/B09B8V1LZ3"
+    },
+    {
+      "row": 154,
+      "name": "Echo Show",
+      "quantity": 2,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/All-new-Echo-Show-5/dp/B09B2SBHQK?crid=K46COYFPV728&dib=eyJ2IjoiMSJ9.b3H2x_R49wblQZyg7XssWl1sNzbMXVa0un3cOAuF4ZUwgVQRTz8MQHf7uw2OMuIYoAr65TIR7R0FjJfoQ2m6WLfTgc0mWeQ5g9a7xkpkJVZwriTs8GVOOuaWuG3JEgq62milH9vbjdvGH4Fgam-F49A1sxLJX1kwtkTOCAThYrTTX_sgDTvfypDdfH9cyqwHVomrNsk_Jo9Ogj4g5ShPiVMcw5Z10L21Bn17rwrTMQjZ4gfWXyWsPuxnUjLEmkC0lH_EMb6yzIgjZLZnUoLJD1q45CIY9bqUjGeR4B7DMik.APNbkDvs8LD-wRKcvXqyU3If_rjfAAf8awFQ60g1kpA&dib_tag=se&keywords=echo+show&qid=1761837117&s=amazon-devices&sprefix=echo+sho%2Camazon-devices%2C191&sr=1-2&ufe=app_do%3Aamzn1.fos.74097168-0c10-4b8a-b96b-8388a1a12daf"
+    },
+    {
+      "row": 155,
+      "name": "Google Home Mini",
+      "quantity": 8,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.bestbuy.com/site/home-mini-1st-generation-smart-speaker-with-google-assistant-chalk/6082194.p"
+    },
+    {
+      "row": 156,
+      "name": "Ultrasonic Distance Module",
+      "quantity": 3,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/13959/6193598?s=N4IgTCBcDaIIwFYBsAOAtHALGOaByAIiALoC%2BQA"
+    },
+    {
+      "row": 157,
+      "name": "10k Trimmer",
+      "quantity": 5,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/09806/7319606?s=N4IgTCBcDaIIwFYBsAOAtHJm0DkAiIAugL5A"
+    },
+    {
+      "row": 158,
+      "name": "1N5817 Diode",
+      "quantity": 5,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/onsemi/1N5817/977004?s=N4IgTCBcDaIIwDkCsAOOB2AYgZQMIBUBaBAERAF0BfIA"
+    },
+    {
+      "row": 159,
+      "name": "23904 Transistor",
+      "quantity": 5,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/onsemi/2N3904BU/1413?s=N4IgTCBcDa4HIGYCcAGALAMQMoFo4BEQBdAXyA"
+    },
+    {
+      "row": 160,
+      "name": "7 Segment Serial Display",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/11441/5800412?s=N4IgTCBcDaIIwFYBsAOAtIgzJtA5AIiALoC%2BQA"
+    },
+    {
+      "row": 161,
+      "name": "Breadboards",
+      "quantity": 8,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/parallax-inc/700-00012/1774444"
+    },
+    {
+      "row": 162,
+      "name": "Ceramic Capacitors",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/vishay-beyschlag-draloric-bc-components/HOTC-KIT-KH/5983098?s=N4IgTCBcDaIEIGEDMYCMSC0A5AIiAugL5A"
+    },
+    {
+      "row": 163,
+      "name": "Display",
+      "quantity": 2,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/adafruit-industries-llc/1694/5356810?s=N4IgTCBcDaIIwFYwA4C0cBsBOALKgcgCIgC6AvkA"
+    },
+    {
+      "row": 164,
+      "name": "Female to Female Jumper Wire",
+      "quantity": 40,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 165,
+      "name": "Grove LCD",
+      "quantity": 4,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/104030001/5487814?s=N4IgTCBcDaIIwFYCcB2AtHAzJgbGgcgCIgC6AvkA"
+    },
+    {
+      "row": 166,
+      "name": "Grove LED",
+      "quantity": 16,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 167,
+      "name": "Grove Wire",
+      "quantity": 25,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/m5stack-technology-co-ltd/A096/16679751?s=N4IgTCBcDa5mBGAtAQQAwE4BsSByAREAXQF8g"
+    },
+    {
+      "row": 168,
+      "name": "Joystick",
+      "quantity": 3,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/adafruit-industries-llc/2765/6193582?s=N4IgTCBcDaIIwFYwA4C0cDsBmADKgcgCIgC6AvkA"
+    },
+    {
+      "row": 169,
+      "name": "Load Cell Amplifier",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/13879/6202732?s=N4IgTCBcDaIIwFYBsAOAtHALAZiWgcgCIgC6AvkA"
+    },
+    {
+      "row": 170,
+      "name": "Male to Female Jumper Wire",
+      "quantity": 40,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 171,
+      "name": "Male to Male Jumper Wire",
+      "quantity": 40,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 172,
+      "name": "Misc. LEDs",
+      "quantity": 50,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 173,
+      "name": "Resistor Kit",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/yageo/RS125/7108"
+    },
+    {
+      "row": 174,
+      "name": "Sense CAP Indicator",
+      "quantity": 7,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 175,
+      "name": "SparkFun Snappable protoboard",
+      "quantity": 2,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/13268/5623212?s=N4IgTCBcDaIAoCUAqBaAjAZjANhAXQF8g"
+    },
+    {
+      "row": 176,
+      "name": "Through Hole Mosfet",
+      "quantity": 5,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/infineon-technologies/IRFZ44NPBF/811772?s=N4IgTCBcDaIJICUBiAtALGgcgBQEJIFpMAREAXQF8g"
+    },
+    {
+      "row": 177,
+      "name": "Vanja SD Card Reader",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 178,
+      "name": "Arduino and Base Shields",
+      "quantity": 12,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 179,
+      "name": "RPI Kit",
+      "quantity": 9,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 180,
+      "name": "9g Micro Servo",
+      "quantity": 4,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 181,
+      "name": "DC Gearbox",
+      "quantity": 4,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/adafruit-industries-llc/3777/8687221?s=N4IgTCBcDaIIwFYwA4C0YHIJyoHIBEQBdAXyA"
+    },
+    {
+      "row": 182,
+      "name": "Grover Stepper Motor",
+      "quantity": 3,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/10551/5766908?s=N4IgTCBcDaIEoHkBCBaAjABgKxbSAugL5A"
+    },
+    {
+      "row": 183,
+      "name": "Grove Buzzer",
+      "quantity": 7,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/107020000/5487964?s=N4IgTCBcDaIIwFYCcB2AtHAzAFgGxoDkAREAXQF8g"
+    },
+    {
+      "row": 184,
+      "name": "Wire Spool",
+      "quantity": 3,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/11375/5956252?s=N4IgTCBcDaIIwFYBsAOAtHAzA9A5AIiALoC%2BQA"
+    },
+    {
+      "row": 185,
+      "name": "Air Quality Sensor",
+      "quantity": 2,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/14193/7066452?s=N4IgTCBcDaIIwFYBsAOAtIgnAdjQOQBEQBdAXyA"
+    },
+    {
+      "row": 186,
+      "name": "Barometer Sense Board",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/adafruit-industries-llc/1893/4990783?s=N4IgTCBcDaIIwFYwA4C0cAMBmALKgcgCIgC6AvkA"
+    },
+    {
+      "row": 187,
+      "name": "Grove - Piezo Vibration Sensor",
+      "quantity": 5,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/101020031/5488092?s=N4IgTCBcDaIOICcD2A3ApgAgLQYAoEs0AvJDANXwCMEBDAF3yQDsMBlNJgZyQRAF0AvkA"
+    },
+    {
+      "row": 188,
+      "name": "Grove 3 Axis Digital",
+      "quantity": 7,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/114020121/12090841"
+    },
+    {
+      "row": 189,
+      "name": "Grove Light Sensor",
+      "quantity": 6,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/101020132/6558656?s=N4IgTCBcDaIIwFYCcB2AtHALHMaByAIiALoC%2BQA"
+    },
+    {
+      "row": 190,
+      "name": "Grove Rotary Angle Sensor",
+      "quantity": 7,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/101020017/5482577"
+    },
+    {
+      "row": 191,
+      "name": "Grove Sound Sensor",
+      "quantity": 7,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/seeed-technology-co-ltd/101020023/5482608?s=N4IgTCBcDaIOICcD2A3ApgAgMpIK4DsATbNfAZyQRAF0BfIA"
+    },
+    {
+      "row": 192,
+      "name": "Grove Temp Sensor",
+      "quantity": 7,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 193,
+      "name": "IR Break Beam Sensor",
+      "quantity": 2,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/dfrobot/SEN0503/15283061?s=N4IgTCBcDaIJICUAEAhATgUwIYGtXYFskBlDAOwGcB7NEAXQF8g"
+    },
+    {
+      "row": 194,
+      "name": "IR Break Beam Sensor 1528-2526-ND",
+      "quantity": 3,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/adafruit-industries-llc/2168/8258463"
+    },
+    {
+      "row": 195,
+      "name": "Moisture Sensor",
+      "quantity": 2,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/13322/5764506?s=N4IgTCBcDaIMoFEByBaAjAZg2CBdAvkA"
+    },
+    {
+      "row": 196,
+      "name": "RGB Color Sensor with IR Filter",
+      "quantity": 3,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/adafruit-industries-llc/1334/5629426?s=N4IgTCBcDaIIwFYwA4C0cDMB2NA5AIiALoC%2BQA"
+    },
+    {
+      "row": 197,
+      "name": "SEN-14585 (fingerprint)",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/14585/8556288?s=N4IgTCBcDaIIwFYBsAOAtHFBmJaByAIiALoC%2BQA"
+    },
+    {
+      "row": 198,
+      "name": "Curved Tweezers EROP7SA-ND",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/apex-tool-group/EROP7SA/114194?s=N4IgTCBcDaIKICUDyAFA7AZQIIgLoF8g"
+    },
+    {
+      "row": 199,
+      "name": "DMM",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 200,
+      "name": "Flush Cutters 170MN-ND",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/klein-tools-inc/D275-5/6596969"
+    },
+    {
+      "row": 201,
+      "name": "Large Storage box",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 202,
+      "name": "Needle Nose Pliers 243-1215-ND",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/aven-tools/10314/1992427"
+    },
+    {
+      "row": 203,
+      "name": "Plastic storage boxes",
+      "quantity": 5,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 204,
+      "name": "Pointed Tweezers EROPAASA-ND",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/apex-tool-group/EROPAASA/114196?s=N4IgTCBcDaIKICUDyAFAgmgymkBdAvkA"
+    },
+    {
+      "row": 205,
+      "name": "Wire Strippers K604-ND",
+      "quantity": 1,
+      "fill": 12,
+      "source": "MLH",
+      "received": false,
+      "notes": "",
+      "productUrl": "https://www.digikey.com/en/products/detail/jonard-tools/JIC-2030/2308356?s=N4IgTCBcDaIFIEkDCBaMAGAzOkBdAvkA"
+    },
+    {
+      "row": 206,
+      "name": "Tactile Sensors SNX0505-SNS-01",
+      "quantity": 8,
+      "fill": 6,
+      "source": "TouchTronix",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": "https://www.digikey.com/en/products/detail/touchtronix-robotics/SNX0505-SNS-01/29174646"
+    },
+    {
+      "row": 207,
+      "name": "USB C Power Supply",
+      "quantity": 1,
+      "fill": 6,
+      "source": "",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 208,
+      "name": "alligator clips",
+      "quantity": 20,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 210,
+      "name": "9V clip (no jack)",
+      "quantity": 9,
+      "fill": 6,
+      "source": "",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 211,
+      "name": "mini grabber test clips",
+      "quantity": 25,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 212,
+      "name": "Hose Clamps",
+      "quantity": 9,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 213,
+      "name": "Li ion battery pack",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 214,
+      "name": "AA batteries",
+      "quantity": 48,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 215,
+      "name": "AAA batteries",
+      "quantity": 36,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 216,
+      "name": "2057-EBWA-02-A-ND",
+      "quantity": 10,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 217,
+      "name": "Arduino USB Cable",
+      "quantity": 11,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 218,
+      "name": "USB Mini",
+      "quantity": 4,
+      "fill": 6,
+      "source": "",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 219,
+      "name": "USB C",
+      "quantity": 4,
+      "fill": 6,
+      "source": "",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 220,
+      "name": "DMM",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "",
+      "productUrl": ""
+    },
+    {
+      "row": 221,
+      "name": "liquid level sensors",
+      "quantity": 6,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 222,
+      "name": "Humidity sensor adafruit shtc3",
+      "quantity": 2,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 223,
+      "name": "5V Regulator 1584EN",
+      "quantity": 3,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 224,
+      "name": "4AA to DC jack",
+      "quantity": 1,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 225,
+      "name": "NE555P Timer",
+      "quantity": 32,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD to WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 226,
+      "name": "30A DC Motor Driver",
+      "quantity": 2,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "took photo (blue box) ADD TO WEBSITE",
+      "productUrl": ""
+    },
+    {
+      "row": 227,
+      "name": "Small tripod",
+      "quantity": 1,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 228,
+      "name": "Raspberry Pi Camera Cable set",
+      "quantity": 1,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 229,
+      "name": "MCU breakout board",
+      "quantity": 1,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "COULDNT FIND IT",
+      "productUrl": ""
+    },
+    {
+      "row": 230,
+      "name": "raspberry pi camera holder w/ cable",
+      "quantity": 1,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD to WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 231,
+      "name": "stepper motor hubs",
+      "quantity": 7,
+      "fill": 0,
+      "source": "CURC",
+      "received": false,
+      "notes": "COULDNT FIND IT",
+      "productUrl": ""
+    },
+    {
+      "row": 232,
+      "name": "SF3218MG sunfounder",
+      "quantity": 2,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB https://servodatabase.com/servo/sunfounder/55g",
+      "productUrl": ""
+    },
+    {
+      "row": 233,
+      "name": "DS3218MG 20kg DSSERVO Servo",
+      "quantity": 1,
+      "fill": 6,
+      "source": "CURC",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 234,
+      "name": "Endocosdope",
+      "quantity": 1,
+      "fill": 6,
+      "source": "",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 235,
+      "name": "Small soldareable breadboards",
+      "quantity": 6,
+      "fill": 6,
+      "source": "",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    },
+    {
+      "row": 236,
+      "name": "Sonar Altimeter + Echosounder",
+      "quantity": 1,
+      "fill": 6,
+      "source": "",
+      "received": false,
+      "notes": "ADD TO WEB",
+      "productUrl": ""
+    }
+  ],
+  "elegoo": [
+    {
+      "row": 26,
+      "name": "5V relay",
+      "quantity": 9,
+      "notes": ""
+    },
+    {
+      "row": 27,
+      "name": "Prototype Expansion Module",
+      "quantity": 9,
+      "notes": ""
+    },
+    {
+      "row": 28,
+      "name": "Power supply Module",
+      "quantity": 9,
+      "notes": ""
+    },
+    {
+      "row": 29,
+      "name": "ULN2003 Stepper Motor Driver",
+      "quantity": 8,
+      "notes": ""
+    },
+    {
+      "row": 30,
+      "name": "Stepper motor",
+      "quantity": 9,
+      "notes": ""
+    },
+    {
+      "row": 31,
+      "name": "Servo Motor SG90",
+      "quantity": 11,
+      "notes": ""
+    },
+    {
+      "row": 32,
+      "name": "IR Receiver Module",
+      "quantity": 13,
+      "notes": ""
+    },
+    {
+      "row": 33,
+      "name": "Joystick Module",
+      "quantity": 12,
+      "notes": "only 7 joystick toppers though"
+    },
+    {
+      "row": 34,
+      "name": "DHT11 Temperature and Humidity Module",
+      "quantity": 13,
+      "notes": ""
+    },
+    {
+      "row": 35,
+      "name": "Ultrasonic Sensor",
+      "quantity": 11,
+      "notes": ""
+    },
+    {
+      "row": 36,
+      "name": "Fan Blade and 3-6V Motor",
+      "quantity": 7,
+      "notes": ""
+    },
+    {
+      "row": 37,
+      "name": "Active Buzzer,  74HC595 IC and L293D IC pack, Tilt ball switch",
+      "quantity": 3,
+      "notes": ""
+    },
+    {
+      "row": 38,
+      "name": "Passive Buzzer",
+      "quantity": 4,
+      "notes": "in a pack"
+    },
+    {
+      "row": 39,
+      "name": "Arduino R3",
+      "quantity": 2,
+      "notes": ""
+    },
+    {
+      "row": 41,
+      "name": "LCD 1602 module",
+      "quantity": 9,
+      "notes": ""
+    },
+    {
+      "row": 42,
+      "name": "Potentiometer 10K",
+      "quantity": 5,
+      "notes": ""
+    },
+    {
+      "row": 43,
+      "name": "1 Digit 7 segment display",
+      "quantity": 11,
+      "notes": ""
+    },
+    {
+      "row": 44,
+      "name": "4 digit 7 segment display",
+      "quantity": 8,
+      "notes": ""
+    },
+    {
+      "row": 46,
+      "name": "Remote Control",
+      "quantity": 9,
+      "notes": ""
+    },
+    {
+      "row": 47,
+      "name": "small breadboard",
+      "quantity": 10,
+      "notes": ""
+    },
+    {
+      "row": 48,
+      "name": "USB cable Arduino",
+      "quantity": 4,
+      "notes": ""
+    },
+    {
+      "row": 49,
+      "name": "9V battery snap on connector",
+      "quantity": 7,
+      "notes": ""
+    },
+    {
+      "row": 50,
+      "name": "Photoresistor, NPN Transistor PN2222, Buttons, Thermistor, Diode Rectifier pack",
+      "quantity": 10,
+      "notes": ""
+    },
+    {
+      "row": 51,
+      "name": "Power hub",
+      "quantity": 1,
+      "notes": ""
+    },
+    {
+      "row": 52,
+      "name": "DC Motors (red and black cable)",
+      "quantity": 10,
+      "notes": ""
+    },
+    {
+      "row": 53,
+      "name": "Big breadboards",
+      "quantity": 3,
+      "notes": ""
+    },
+    {
+      "row": 54,
+      "name": "Arduino Nano",
+      "quantity": 1,
+      "notes": ""
+    }
+  ],
+  "wishlist": [
+    {
+      "row": 3,
+      "name": "INMP441 I2S MEMS Microphone",
+      "quantity": 2,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Omnidirectional-Microphone-Interface-Precision-Compatible/dp/B0GYDQC6WL/ref=sr_1_1_sspa?crid=1WUPI9QCSZAZB&dib=eyJ2IjoiMSJ9.nrbLAeuPjS6y9oDXaAExFMsXdOFUm5WGiJKuK1OWas8ubm9t6zUTNnjFOmBLxoar-zc0dRojE88-jJzp1UKaRc5tsR049UwIW-PUWRv8rVeWIZCyekkF0JDgCB6UCvT8pJ-cQg9XX0-rNZnCV7wIFvIVp-bkWlhfHOJ2rk4CrXAppANVdlLfgi9a0W_sH4BBI4XDr4hJC3-ezxPQNAHwL0FUpjhUibNXmHYrvndRb94.PKM3IOwjsB7CPpaMzrA6sZ25vTHSZAoBnqD3T5EQyBM&dib_tag=se&keywords=INMP441+I2S+MEMS+Microphone&qid=1783539788&sprefix=inmp441+i2s+mems+microphone%2Caps%2C110&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+    },
+    {
+      "row": 4,
+      "name": "ESP32-CAM",
+      "quantity": 8,
+      "fill": 8,
+      "source": "",
+      "received": true,
+      "notes": "Found 6",
+      "productUrl": "https://www.amazon.com/ESP32-CAM-Aideepen-ESP32-CAM-MB-Micro-USB/dp/B0FQP9Y114/ref=sr_1_11?crid=N9BBXZWP0ISN&dib=eyJ2IjoiMSJ9.RCjr-CcykN87-CilscZfBz9K1DYTaWA05w9AWNODazpicQWI98JOZ5m4btURlErcNGrFlJfw0xtwfAeq4prL-5s51JFKiFldCgkP5RIp7uzxf7YdxrpLr3m_nVT_BbgFvqRl02GfT8SPSK5j7IYjr4QcXkDxT4cTvN5ioW34GI69XAIgKcmMUBMjGuv7_Lfi7mHpNRJeN1LxWy_nbEtIJFjRjG-U-tum1VyC74E5nC8.oLuxtpZOw3l2jxYjJ-zUYj-zt049I2rh95u2FHlBKXY&dib_tag=se&keywords=ESP32-CAM&qid=1783539694&sprefix=esp32-cam%2Caps%2C109&sr=8-11&th=1"
+    },
+    {
+      "row": 5,
+      "name": "MLX90640 Thermal Camera (32x24)",
+      "quantity": 2,
+      "fill": 8,
+      "source": "",
+      "received": true,
+      "notes": "Found 1",
+      "productUrl": "https://www.amazon.com/Waveshare-MLX90640-Communicating-Interface-Raspberry/dp/B07ZKK8QWY/ref=sr_1_1?crid=3APYXH1VTPTA8&dib=eyJ2IjoiMSJ9.u-SNns5APlzqHkj_AOFpZ3fRG0VZ9_1rtYd1M02h5C6024-MafzCqSR6EX7wtKBaRcm6ztXhilRzXwQ_4BlnYTfv3nVNHMe2O0emYo1pGzVL3bhtvCIGwTBXUIfSlmENUwMyIPQhpZNKDUIvrAyryv2byZsYYp9seT6aoVRfFALPfHtL77YRFFJBbYzJrns6AzhaKy56U2MRZjWQoJ48GLbVhUj5CJyhDPTGghbtfbM.spGW1V8NiTmy-ldpVuqCnq9NnknflXMctPGB-YaUbqM&dib_tag=se&keywords=MLX90640+Thermal+Camera+%2832x24%29&qid=1783539904&sprefix=mlx90640+thermal+camera+32x24+%2Caps%2C106&sr=8-1"
+    },
+    {
+      "row": 6,
+      "name": "RPLIDAR A1 (360° LiDAR)",
+      "quantity": 1,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Slamtec-RPLIDAR-Scanning-Avoidance-Navigation/dp/B07TJW5SXF/ref=sr_1_1?crid=1IFPZM8WO4X07&dib=eyJ2IjoiMSJ9.4CyrYjaQawsomYOkhP-5VI2NUcnYsn_P2ANdvQxWdrLkNxM9n4uSQfBTnZLtNj-yZzUcFnlMjpFBs-nfJooHGzn19ruyRfDyWYMXBvBt0CEm9cze7XJ1Yx2hZ3DV-TpxjBb9P_WtQW2N3o4CD_asbhz9rOzObwBcg17I7kFt2rpJR8w8h9lbV-Rll_B59gw-yhndZPLiUXShJxOT4srpxHXKpVekIxDip2-02Vf_vWc.GhB55DB2wP_qkI6ipbUiZ3nlm0efub5_LaiIqlYI9pw&dib_tag=se&keywords=RPLIDAR+A1+%28360%C2%B0+LiDAR%29&qid=1783540050&sprefix=rplidar+a1+360+lidar+%2Caps%2C90&sr=8-1"
+    },
+    {
+      "row": 7,
+      "name": "ADS1115 16-bit ADC Breakout (I2C)",
+      "quantity": 5,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "FOUND 3",
+      "productUrl": "https://www.amazon.com/Qoroos-Converter-Programmable-Amplifier-Development/dp/B0F1D3KGG2/ref=sr_1_1_sspa?crid=3O2M7Z44TD101&dib=eyJ2IjoiMSJ9.0fq9Su_4OUs-Due8dQec3Yt5Yw2dTeJBajFzJtMwG0ZF1oQSPbIZTLafB77crxUOt52Qe5ySAi4mprvoW1IJv1-LiYoc_vQvsRfH1SwyHh0lZuUGXFq_blE3KQ9fKG_iIVR6M9V72JMc52WIWlrGBhOyb-HkrzFSpc0xWo8xVxXFgmrzbwbOlCxCvfR6fBDeaeuugOmOM6O6o5tFtdUDjQYb9iSzweOEX1l2HnEFu50.KQM6MSWeqyAv1wrKnpAoTiLizCmiFlEJFqS9v7I9cck&dib_tag=se&keywords=ADS1115%2B16-bit%2BADC%2BBreakout%2B(I2C)&qid=1783539448&sprefix=ads1115%2B16-bit%2Badc%2Bbreakout%2Bi2c%2B%2Caps%2C124&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1"
+    },
+    {
+      "row": 8,
+      "name": "SEZO LED Strip (5m)",
+      "quantity": 8,
+      "fill": 8,
+      "source": "",
+      "received": true,
+      "notes": "Found 7",
+      "productUrl": "https://www.amazon.com/SEZO-Individually-Addressable-Programmable-Non-Waterproof/dp/B097BWJGYK/ref=sr_1_1_sspa?crid=2W7CML976NVCD&dib=eyJ2IjoiMSJ9.8wX5aHc97kJSF2jLcUwvMopKKGxVTbPLwPXDN5-f64UISN3DtyV-H_IzV2W7shZADdMimHheYRv69ByjoSuFS1dLI7QUGJB6Q-oolSYl4jtNfqMLe5Td7GMA90jmrGIsHwfzVpRp_l_eFLjV7I4HMiCoRDHFsDVz5eiAKG7BI323NEwZOq0MQDXGKAFGFHK1jp7E1pDYnTTOZGYpAOoWod7I-RcgfBhq-PVmp2kMnwulvigpgKJm3Tvf1peCW7yamFcb5Vaj9kSny3EyM2U4B9R_wz7rwl5DpK5Y5bl3o2U.lqZHQL8cLxCcObHH5fCMSEAspSM6DbUXJG_O00YY0C4&dib_tag=se&keywords=WS2812B+%2F+NeoPixel+LED+Strip+%285m%29&qid=1783539508&sprefix=ws2812b+%2F+neopixel+led+strip+5m+%2Caps%2C141&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+    },
+    {
+      "row": 9,
+      "name": "NeoPixel Ring (24 px)",
+      "quantity": 2,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "Found 9??",
+      "productUrl": "https://www.amazon.com/DIYmall-WS2812B-Integrated-Addressable-Raspberry/dp/B0B2D7742J/ref=sr_1_3?crid=S2TE35W1XR0E&dib=eyJ2IjoiMSJ9.B9_hKK51w6JauKLL7dgsV-teQxB9-iXnFbZ-W4rE-D9bUMU1Xq1AlWffLFV_hxpUlsnb1HQIiWdNEp3ukB92Eyx89tcZ1Wni8FUSMxaW29-Y_KtGy5f3J30HXxOO8pGxeH7aT8mASposXzj2XfH7VTWQ0CRQosklzgQR-6HRZXmVvH7BzD5GSUEiQVYCcfwmefofMUEzmtO1wZtlWrLmHbS4aSK-2Ear8VJ4BH84PVE.tQQAM4Cd_01-5MnYYOejbx3YxIDNVtARdFl13eLnopQ&dib_tag=se&keywords=NeoPixel%2BRing%2B(24%2Bpx)&qid=1783539524&sprefix=neopixel%2Bring%2B24%2Bpx%2B%2Caps%2C159&sr=8-3&th=1"
+    },
+    {
+      "row": 10,
+      "name": "SSD1306 0.96\" OLED (I2C)",
+      "quantity": 3,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "http://amazon.com/Hosyond-Display-Self-Luminous-Compatible-Raspberry/dp/B09T6SJBV5/ref=sr_1_3?crid=1YDSOBTDKGPOO&dib=eyJ2IjoiMSJ9.z259gjIsNpIAfONgHGpTbQVaTxNj7sNUWN2gpOF_2Z6suuCgOm8brANXJjrGKVdI2-A0MTPS-5jEePagMnWLIKZPwNScrj2NUWZibheQvNi9W0rU1cW9pC3snRj8u3X2N6PGXzRsax3-qmJw6axH_yIIK027kxYD43yif9-TWoqeaJ_CZOSo0bdvhEg19scSf8mlo_Z7WzqTT1MMgEcgCtUvIIVI1eWFJPWTUvg2B98.5Rpmdnq8bfy209O7IL6_H9CuDPi-_dJRBxDROWVigJo&dib_tag=se&keywords=SSD1306+0.96%22+OLED+%28I2C%29&qid=1783539555&sprefix=ssd1306+0.96+oled+i2c+%2Caps%2C189&sr=8-3"
+    },
+    {
+      "row": 11,
+      "name": "Bidirectional Logic Level Shifter (4-ch)",
+      "quantity": 2,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/HiLetgo-Channels-Converter-Bi-Directional-3-3V-5V/dp/B07F7W91LC/ref=sr_1_3?crid=1Z9P23KWE110X&dib=eyJ2IjoiMSJ9.mwBqvS9LfX6aYZNLcSaoG2Dn5RDhHgdTEARCtD_Q-b_86-iIW4htccO_tep_qzW1y53T5HzWOPHHMu_Ev2beLlPRTsZHuY7f1iSXj_loAOTOA-WzB_XHR1vTiaD4zNWiS5EfRvGFndmPD2YLXY2-TYHbvBFnbccnWMZn4Y5vBojuEXNb196qF9Oz09KBoHbBbdv-mfcEW5NoypmDIWx28B8UiQl0aysF2Gwk34gHdjo.jC_RHvEL3esk1RrvBUrqy06UvhbUo3xIWNAW8OoadVE&dib_tag=se&keywords=Bidirectional+Logic+Level+Shifter+%284-ch%29&qid=1783539571&sprefix=bidirectional+logic+level+shifter+4-ch+%2Caps%2C120&sr=8-3"
+    },
+    {
+      "row": 12,
+      "name": "E-Paper Display (2.9\")",
+      "quantity": 3,
+      "fill": 8,
+      "source": "",
+      "received": true,
+      "notes": "Found 1",
+      "productUrl": "https://www.amazon.com/2-9inch-Module-Resolution-Display-Electronic/dp/B07P6MJPTD/ref=sr_1_1?crid=383SUEA0OHR15&dib=eyJ2IjoiMSJ9.Npbh9njshOggp47QZbPp8ALcGjccq80vct7wKeY0l-KXcvHFkOZPKx6tJ6u_X0CTpElKBWt6Eq6gBMof4GFCKnmrY0dqGpFOgFkcG6YQYcbM_voHCmCeSazYoKiRtdkwZUx_00Sicp3ZsFNRp_DWpzQF5_sh91cAZM2IiQpNBPkWUaiwVIIMSizcGb7ehRyBKEnqgsUUmDgVWjxSXSWa6x_NI6wjsilfEhA_EJSjzGI.wgeKV21dPQTYdfID23_hb6qqC7b7UYUDrHw41xMJ3MA&dib_tag=se&keywords=E-Paper+Display+%282.9%22%29&qid=1783539938&sprefix=e-paper+display+2.9+%2Caps%2C106&sr=8-1"
+    },
+    {
+      "row": 13,
+      "name": "Touch Screen Display",
+      "quantity": 2,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Arduino-GIGA-Display-Shield-ASX00039/dp/B0CKBZLTND/ref=sxin_19_pa_sp_search_thematic_sspa?content-id=amzn1.sym.f1e24090-399e-445e-b618-1765f1ce436c%3Aamzn1.sym.f1e24090-399e-445e-b618-1765f1ce436c&crid=3POOQKXT6OZFZ&cv_ct_cx=digital+display+screens+for+hobby+projects&keywords=digital+display+screens+for+hobby+projects&pd_rd_i=B0CKBZLTND&pd_rd_r=b2dea067-8386-4aed-ad65-eb8651ce1b48&pd_rd_w=Uc3K9&pd_rd_wg=OcNg7&pf_rd_p=f1e24090-399e-445e-b618-1765f1ce436c&pf_rd_r=Y8NCQQWQ149Y9QMVNS3E&qid=1782607611&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=digital+display+screens+for+hobby+project%2Caps%2C157&sr=1-1-72da3c38-bbeb-4ec6-a5c8-94f3516831b3-spons&aref=3MRzWxwTKh&sp_csd=d2lkZ2V0TmFtZT1zcF9zZWFyY2hfdGhlbWF0aWM&psc=1"
+    },
+    {
+      "row": 14,
+      "name": "HOSYOND Touch Screen Display",
+      "quantity": 2,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "Found 2",
+      "productUrl": "https://www.amazon.com/Hosyond-Display-1024%C3%97600-Capacitive-Raspberry/dp/B09XKC53NH/ref=sr_1_7_sspa?crid=3POOQKXT6OZFZ&dib=eyJ2IjoiMSJ9.Uar85PEkfm3M8mlkM_ImVvHqfMfUhpvvnmXW4XFybdq9NQVgwa-uOazHqDP2vqGShQdPcgT3GNqeSR6tp2OA4EOOcemOthqvzjg1VPNepylnTMhSG75xzp7q8Uzgl8Inw2riuh_TSsj2YHejSL4Ugiy_uA-cyDrrmK-drP8lCbRC_gnT2B8sedS_3v1i3jNYgLTurWg5B6a7kUSPa3CQQIRH4AQ6JSomS_E5Eb2JQTI.0t_abDYqA4_2jt8KLAsVlHfDkc4ZvrT1IfqLzkD7s7c&dib_tag=se&keywords=digital%2Bdisplay%2Bscreens%2Bfor%2Bhobby%2Bprojects&qid=1782607753&sprefix=digital%2Bdisplay%2Bscreens%2Bfor%2Bhobby%2Bproject%2Caps%2C157&sr=8-7-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9tdGY&th=1"
+    },
+    {
+      "row": 15,
+      "name": "ESP32 Dev Board (WROOM-32 / S3)",
+      "quantity": 10,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Hosyond-ESP-WROOM-32-Development-Microcontroller-Compatible/dp/B0C7C2HQ7P/ref=sr_1_3?dib=eyJ2IjoiMSJ9.K5w4yTUKNaA0_uGdlUqJh3JZD75TJuMM7-E6jLsRw8CD-qQnT54S_nIQ-MOlKPFj1Oz7U9xPGn-fDn9LFdeTxELxC9Ky2orpj-ME3GD2QbGsJ2R4Q9-JJheJnUezjyBGUljqVj_A1VgAixrvs-_cGydjxPZdvhLEjJBZcpseYBzvX-z4VisSabiYNW06du516DC6Fe-USDl1mnBFsV3CBDFMxzdBVbgJAu6eWDD5WU0.mFtm9cgrTp0xApE0ONIAYiUHDVhZogdg3Miyl98e0bs&dib_tag=se&keywords=ESP32%2BDev%2BBoard%2B(WROOM-32%2B%2F%2BS3)&qid=1783538896&sr=8-3&th=1"
+    },
+    {
+      "row": 16,
+      "name": "TB6612FNG Motor Driver",
+      "quantity": 4,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/WWZMDiB-TB6612FNG-Controller-Compatible-Raspberry/dp/B0F43L7LLD/ref=sr_1_3?crid=38TDPHTGZ0BVQ&dib=eyJ2IjoiMSJ9.ISBkyFM_6eW09JUxHqSTvQSOjr0KWg8cH_Z5YQjgvF_V61we5K9T45VymJQUi02TsLSRpDOkMWe5U1K2LJBHViTrSrwQSp8Fl-ZtLrXfFwcFmaxtvf3FGUAFHudwNQiFQrhLWSac504hEg_JhC2nhNoV35VcCewmfOx5ieYxyWiBpyXFczR3EoYFoBh6kcAXqAVoKxkyWlE9MMXj8aT9BaK2gQO3XnP-icVoDKPeaDI.IeAu95kvH5c-A4UrXPIybBmvgAtvW1zqHvPWBRMbBno&dib_tag=se&keywords=TB6612FNG+Motor+Driver&qid=1783539591&sprefix=tb6612fng+motor+driver%2Caps%2C158&sr=8-3"
+    },
+    {
+      "row": 17,
+      "name": "micro-HDMI to HDMI Cable",
+      "quantity": 2,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/Amazon-Basics-Display-High-Speed-Ethernet/dp/B07KSDB25X/ref=sr_1_3?crid=3GA1F1RFO2JDU&dib=eyJ2IjoiMSJ9.Mxpt9hit71eZekjWI9mRdqECqOe9bxM6M92s1gp3xoPK1OnhMCsWuN8XGpmUattJlv2QWyNYks-OxW5o5kka_TmumU35CNz4W9f4TOJdWf7ZuDmAAEqdHkTDTeW-iNtzKVa1XhS3X2VR5L5s6cmedzqKa27kjizzQdCqRLGTO3TvhmIq7RdOJlVAc9VT1dU7hSgaO5fASf2W10kd_8lCjZUwey5Tsx_zezTymz3mcEU.vzAFZSmbN9jBAUeODx630WopRPra-_7vJpZJRf8P4Js&dib_tag=se&keywords=micro-HDMI+to+HDMI+Cable&qid=1783539408&sprefix=micro-hdmi+to+hdmi+cable%2Caps%2C95&sr=8-3"
+    },
+    {
+      "row": 18,
+      "name": "USB Keyboard + Mouse Combo",
+      "quantity": 1,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "http://amazon.com/Logitech-Full-Size-Keyboard-High-Definition-Optical/dp/B003NR874S/ref=sr_1_5?crid=1GJ3IG243KKMC&dib=eyJ2IjoiMSJ9.CXiy0MSQ7oS5ab2-gtRxPy1JKQmF6-7YjXiFR3PT5Mn73M60jR9L0HXLMXHuAZ-kaFI6NuDVqGYPPczpHT0Kpy4APNBm4-tWn6x_7cfZYEoPYO3FkF_8nNLpNHmcn82DzZc0s0L2Tc2TLxdxwtqGpAkHjka4ZVOFW8oVuclfmbMEGWV4e7HJ4h9YA-pV_F9n-o4hILSEGCQsenVG14qOHkNu1zIpptQWXaM3hQ3JzpQ.zVIDaoDpd4yNi8vOetov8s2HZr6EebIUvjO9l1ClpjE&dib_tag=se&keywords=USB+Keyboard+%2B+Mouse+Combo&qid=1783539420&sprefix=usb+keyboard+%2B+mouse+combo%2Caps%2C153&sr=8-5"
+    },
+    {
+      "row": 19,
+      "name": "Raspberry Pi 5 PD Power Supply (27W, 5V/5A)",
+      "quantity": 12,
+      "fill": 0,
+      "source": "",
+      "received": false,
+      "notes": "NOT RECEIVED",
+      "productUrl": "https://www.amazon.com/iUniker-USB-C-Power-Supply-Raspberry/dp/B0FHH9K47T/ref=sr_1_3?crid=2AXQ3NNAIGU71&dib=eyJ2IjoiMSJ9.a5aJNvtj_QZ-1Eg0oaYO8VoKvHBPUANVBV5hByTDzoXILytym5D62VqRngCp6JuWaIy0GMb4b_MHGFG5Iu9TmVqpRUSJL9zKvptUIlmKEvZy770oHC7yDR4yz8DX3DQhvGungdya7gOF6A-cNr_XiaxO5drNG6QRpZ2OWUR5g6tjdwC8O_gUzmSe5g_MpVQtYgNbY6d2RQ1sX_CkNtjJsU3y0UdfF8g_9LskNoXT5VU.SjFg5WBrAU6rTekvpZQ9DWwh3sX5cE03gpc1zEuwc5A&dib_tag=se&keywords=Raspberry+Pi+5+PD+Power+Supply+%2827W%2C+5V%2F5A%29&nsdOptOutParam=true&qid=1783539377&sprefix=raspberry+pi+5+pd+power+supply+27w%2C+5v%2F5a+%2Caps%2C112&sr=8-3"
+    },
+    {
+      "row": 20,
+      "name": "LD2410 mmWave Presence Radar",
+      "quantity": 2,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "Found 2",
+      "productUrl": "https://www.amazon.com/Qoroos-LD2410C-HLK-LD2410-Presence-Millimeter/dp/B0F1F97422/ref=sr_1_3?crid=1S1CP2DG8YPG6&dib=eyJ2IjoiMSJ9.hfPqS30xU3NW9q30Wg9EYLXL1uYERMAMrCewKqfDA-e7645OF5JlwKEMmlfTiuFFbR7PFBtgqE8XkgDXZLEGSIPutU-V16maRSIBUQLJbK0SXbgupO6j09iYjojI9uW_rOiC5YqsjpzWsfCaGu_gbBd-y2PBmv9fgKP1q5AIoHNaQjRPVyjqFyt37Iy_50AO94pHYtltTek_QW1YL3meEGOIFZ8nDCM7N9j91_UBR6k.OAKl4Czl6AorbKQocVJcydJUW6v44dCh4x4r-ud4lS8&dib_tag=se&keywords=LD2410%2BmmWave%2BPresence%2BRadar&qid=1783539615&sprefix=ld2410%2Bmmwave%2Bpresence%2Bradar%2Caps%2C124&sr=8-3&th=1"
+    },
+    {
+      "row": 21,
+      "name": "SCD41 CO2 Gas Sensor (NDIR, I2C)",
+      "quantity": 4,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/2-4-5-5V-Temperature-Humidity-Communication-Monitoring/dp/B0F6MRMNLH/ref=sr_1_3?crid=1DD879EYNO1R3&dib=eyJ2IjoiMSJ9.3-jj1kKv45Z3XVZwTD0hrkrwFhSU0wA302pL0VK8j-dprA-_f2el95UwtFmwQioCbGX6-ovcBEHDoI8JE0OHY8gI-aSnse8c6sZOLGtB1tcC2EnqVyS1ZSta247E2vVrK4zYmMLXGg5sFXXIeuDx6AXQ20_HJbjTAhObF2xCfMo9mZDaTW1mkEfIothv3INSgn_PaSc1NKOl-wOwugjT6JNZYDqwJ4vMqlZHI7m55aU.a598-nfmeJh_LU2xd-atvAKqLi8Ux1_Jo6mVkNo7ZpM&dib_tag=se&keywords=SCD41%2BCO2%2BSensor%2B(NDIR%2C%2BI2C)&qid=1783539717&sprefix=scd41%2Bco2%2Bsensor%2Bndir%2C%2Bi2c%2B%2Caps%2C94&sr=8-3&th=1"
+    },
+    {
+      "row": 22,
+      "name": "BME680 Environmental Sensor",
+      "quantity": 3,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "Found 4",
+      "productUrl": "https://www.amazon.com/hiBCTR-BME680-Digital-Environmental-Sensor/dp/B0FQJFK4CL/ref=sr_1_2_sspa?crid=2NO05MJJ4YVY0&dib=eyJ2IjoiMSJ9.IJYmjrwY7BxLCi9DEk1LUTcXQ0Qa4gHLNDMqchdomiHSpRnVfGJ60daZtHf2yfI2nUWet3UNwywKphvoXpZtxhZvJmn0HNify1ZC0cVqlIqAGim2v_tISsOWzfv83ZhfX2mOKZCimGw3I27iGigIaPa6aKV8_DKQyhBoMkLL8HxAjSH9XLYb9I5UVLZCyWJ7x-9TJn8xYfIOf_OP5NEAEgl1fOdtlVykKyqaUrEFs_U.ZOBYndFhPRf2Yz9_0qirJv6isaeeR-kLEjgpKXhibJs&dib_tag=se&keywords=BME680+Environmental+Sensor&qid=1783539733&sprefix=bme680+environmental+sensor%2Caps%2C96&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+    },
+    {
+      "row": 23,
+      "name": "VL53L5CX Multizone ToF",
+      "quantity": 2,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/AITRIP-VL53L5X-Ranging-VL53L5CX-Arduino/dp/B0GSF96HHH/ref=sr_1_1?crid=ZYVGUE327OSA&dib=eyJ2IjoiMSJ9.8gyIIhFznNbaoZizYq-YkHHNt7a98BfN2AwFog0--9uJN2JCBJ0PrIrN_VvJX088LYEWsYXt8SsIFqQGLjQpuuIU6MUtDPxmrHd_U_w04GXhEr407SvdMiC-rd45e9b2_wwvx6dVUWWDZR_gGMhQDh3gL4g9CPMQJEhI5jkKUVh4z3WXS8lu98G5GqN_g0e49HYMvEOo6YcUQcnST0i4-hqanMq6K_Bwo31vXNku8cs.BC0On7Zm65KYOYjYuZb8GCfBltK64D4sLCVUKslAgcY&dib_tag=se&keywords=VL53L5CX+Multizone+ToF&qid=1783539750&sprefix=vl53l5cx+multizone+tof%2Caps%2C97&sr=8-1"
+    },
+    {
+      "row": 24,
+      "name": "PMS5003 PM2.5 Particulate Sensor",
+      "quantity": 3,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "Found 3",
+      "productUrl": "https://www.amazon.com/risingsaplings-Concentration-Detection-Conditioning-Raspberry/dp/B0BG62Z8L3/ref=sr_1_2_sspa?crid=3BQNMHOKQX1EB&dib=eyJ2IjoiMSJ9.r_dzq0rYr-6hR12gUtKCG9q4CdoZQhjqyJQ3BFnJb_4CQUDUKNJFTefSznhuXC7bnPe6YU2493kyOxFGfoqvoT4Dyfv8kEwXUG9Bv6uJVPeiYl0ErkttLHVqO5jyUcRsahj8CiRCYKUXZ3qFRf_IVPSzU8MFo79GFF0nB9fUbdAyiyvwRySJPYeZsuQd-a2FA9isQ2h5qxFdf0dubxg-rnB-ZJZ6cjxz4f8oOQGlaqQ.l1QBMBo6mJi8sevyVOGwDCUpQPptNKNKfYN3hOhfjkQ&dib_tag=se&keywords=PMS5003+PM2.5+Particulate+Sensor&qid=1783539766&sprefix=pms5003+pm2.5+particulate+sensor%2Caps%2C109&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+    },
+    {
+      "row": 25,
+      "name": "INA219 Current / Power Monitor",
+      "quantity": 8,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "Found 4 (each has 2)",
+      "productUrl": "https://www.amazon.com/HiLetgo-INA219-Bi-directional-Current-Breakout/dp/B01ICN5OAM/ref=sr_1_2_sspa?crid=3SLAVSFBSG9S6&dib=eyJ2IjoiMSJ9.ovOg2A2vFxiZibkRRjCnbSalW-Ru7Jp0VFJi5ZKT7GuK21XNCtgPCaEFZz5Loho_EMC5YIDtFh-WAWjFsEIvXfIRpp0Si79txRNGviYqWuMIauHbaMezyjqcq_WL221tNwyfNioXkGwR_to8-Yh7Pt_N6jBZjANCU3uGJ5-r1A96VLRJgJiqWKe9Jgqd6CwSpRmckt7FKikNZ9xMekHBc6tVqwRF9fvnZ1KsyhMSDYE.ziLq2qowk58YNiaEgITXH1MYiyTC-uzGdX3_VgYRNLQ&dib_tag=se&keywords=INA219+Current+%2F+Power+Monitor&qid=1783539777&sprefix=ina219+current+%2F+power+monitor%2Caps%2C114&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+    },
+    {
+      "row": 26,
+      "name": "MAX30102 Pulse Oximeter (HR + SpO2)",
+      "quantity": 3,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "Found 3",
+      "productUrl": "https://www.amazon.com/hiBCTR-MAX30102-Breakout-Oximetry-Solution/dp/B0FND6SJ3K/ref=sr_1_8?crid=11V4GAC3UIE8V&dib=eyJ2IjoiMSJ9.XmavtfkZ9n0FWz4Vgna1WdEJLjqadD-S8rdFW4au4kbEnC5ogTogCeBw7VHYmubGfnlUyq_exlKjvzHrSt9NSC1KZ5979hK53tdVwElgx8aRTZVQ3GRVSTbZnGfE7zuaIJIP-D7N_HaYDOkZOeuuAwAigkLuOLBF_WEu6c-mekZH0kKXoqCFwg_iLv6R65R-1w8tVsiKChnF5q_9Jfz83xkOM5dshElncEdnqo3qOh5CWHGEOyprSFPYnvqxdiAu4KHfX5FSDaZwfWEc7tyAEJyBmValeW9mmXp6G30alsg.YaYaLum_3OvaPPj7oCZXCbB032f7VauGiti9z1H8fWk&dib_tag=se&keywords=MAX30102+Pulse+Oximeter+%28HR+%2B+SpO2%29&qid=1783539803&sprefix=max30102+pulse+oximeter+hr+%2B+spo2+%2Caps%2C102&sr=8-8"
+    },
+    {
+      "row": 27,
+      "name": "AS7341 Spectral Color Sensor (11-ch)",
+      "quantity": 3,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "Found 3",
+      "productUrl": "https://www.amazon.com/Visible-Spectrum-Infrared-Spectrometer-arduino/dp/B0DBQKDV67/ref=sr_1_1?crid=3MZUC6BU14F4Q&dib=eyJ2IjoiMSJ9.xOZU1Xl-awe2GluF7Amr62MKTLhNXe9rqx8q5V80YibsRMnoiIAhfPQWFZCghksZqD8ssFUfXkH0ALvArLffNK3gGiKRuws1lawKJ7nCSjlgc3HoO9pqGbe5CSkAhTGZKuUphnYxxNrP5FAlAzwY7eOGQ6RbkUOGSdYluatdiEoQ5ZSzzmVOYFIIEoslLavIDgJm0xmUBGTutDIqDQ8Q_qgMhL0GPnlgD8wBZps79YU.i6_xg5n4w7XSCVvpF6koAoNlhN_tvYfYEd8iLdXhZ9Y&dib_tag=se&keywords=AS7341+Spectral+Color+Sensor+%2811-ch%29&qid=1783539855&sprefix=as7341+spectral+color+sensor+11-ch+%2Caps%2C95&sr=8-1"
+    },
+    {
+      "row": 28,
+      "name": "LTR390 UV + Ambient Light Sensor",
+      "quantity": 2,
+      "fill": 0,
+      "source": "",
+      "received": false,
+      "notes": "NOT RECEIVED",
+      "productUrl": "https://www.amazon.com/Direct-Index-Value-Output-I2C/dp/B09FDGTKLX/ref=sr_1_1?crid=2QBZDR44W4OBO&dib=eyJ2IjoiMSJ9.dc-idCN9zHahJkkLjq5NxOcTG5DJelBAQQ0WL2L_RgbjehJUcDsI5XkUe_uaBkCKZi15X8GHYbP_h5t9nHVSr5YtUA-cxR5GR5aVqsDnZ9nwcgFn6wZe6UDofKV8-9ezM3nmmDP4-X_jpUjxHvbuSIFLdU2jhIFbCLDHbs5IpZoHLV4fvb3pMIz5ZXnxpJSXSQ5Ej49MDZcDTnEMO9sc-skjXW1IKp6PH2VplRgkXYBJfPlOpJq33h_OMb-lpdbd6Y0Y51RwFIHLB3jrSr3nUqbr9-bIweCX8PUyKY1swF4.hupAhbAXRxNXZLlw7qPO1DSbdRIJGR-n1PcFfM7RLs8&dib_tag=se&keywords=LTR390+UV+%2B+Ambient+Light+Sensor&qid=1783539867&sprefix=ltr390+uv+%2B+ambient+light+sensor%2Caps%2C99&sr=8-1"
+    },
+    {
+      "row": 29,
+      "name": "Pack of 6 TMC2209 V1.3 Stepper Motor Driver",
+      "quantity": 1,
+      "fill": 0,
+      "source": "",
+      "received": false,
+      "notes": "NOT RECEIVED",
+      "productUrl": "https://www.amazon.com/dp/B08WZFK9KT?lv=shuf&channelId=500&plpRedirect=mhFallback&th=1"
+    },
+    {
+      "row": 30,
+      "name": "Raspberry Pi AI Camera with Sony IMX500",
+      "quantity": 1,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "https://www.adafruit.com/product/6009?src=raspberrypi"
+    },
+    {
+      "row": 31,
+      "name": "FainWan 3PCS Pulse Sensor Heart Rate Sensor",
+      "quantity": 2,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "Found 2",
+      "productUrl": "https://www.amazon.com/dp/B09PR3QQVD/ref=sspa_dk_detail_1?psc=1&pd_rd_i=B09PR3QQVD&pd_rd_w=BAQaI&content-id=amzn1.sym.17345c9b-ef8c-4a79-bcd9-8894b1e1e0ea&pf_rd_p=17345c9b-ef8c-4a79-bcd9-8894b1e1e0ea&pf_rd_r=HPDF52JTE9QF7X132MPS&pd_rd_wg=aFY3d&pd_rd_r=d2e50765-e589-4740-8516-87bfccc35673&sp_csd=d2lkZ2V0TmFtZT1zcF9kZXRhaWw"
+    },
+    {
+      "row": 32,
+      "name": "Pack of 2 Pulse and Oxygen Sensor MAX30102",
+      "quantity": 2,
+      "fill": 6,
+      "source": "",
+      "received": true,
+      "notes": "",
+      "productUrl": "https://www.amazon.com/gp/product/B07ZQNC8XP/ref=as_li_tl?ie=UTF8&tag=fairelectro-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=B07ZQNC8XP&linkId=efa4564c4f5ecce4507eda98502afd23"
+    },
+    {
+      "row": 33,
+      "name": "Flex / Bend Sensor (2.2\")",
+      "quantity": 8,
+      "fill": 0,
+      "source": "",
+      "received": false,
+      "notes": "NOT RECEIVED",
+      "productUrl": "https://www.amazon.com/FLEX-Bend-Sensor-2-2-Inch/dp/B0H1CLTHNV/ref=sr_1_3?crid=2Z4R7WTM7MPH4&dib=eyJ2IjoiMSJ9.O56EaVtf_RnwHsualCwpWjMQEcJ_5Na83FHpzSd3d6Sa5WfQKTDnojm3g9cSzj8vtBo5HUerHJLaPtL3V9PYzHWoZAM4FW7mCyIOXQC7KGnyrT9EbLDeKgv4LpnFQLEpoCCQZr1Fg7RPXCvlskoeglgWOon8uFV1pV6sy0QD5WuDfTA2sz3ErV-sX3U1rdu7bw-26rgiPrYA72mxiT09WrC3xvKSvhDERcPxpW89zJ0.c9wd24wHS7Ubxmg7sBMBcyJTFlydDn4jI8V_Fw96Lkg&dib_tag=se&keywords=Flex%2B%2F%2BBend%2BSensor%2B(2.2%22)&qid=1783539891&sprefix=flex%2B%2F%2Bbend%2Bsensor%2B2.2%2B%2Caps%2C104&sr=8-3&th=1"
+    }
+  ]
+}

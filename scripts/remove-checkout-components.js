@@ -1,4 +1,5 @@
 const { getDatabase, resetDatabaseForTests } = require("../api/_lib/checkout-db");
+const { protectedFromRemoval } = require('./inventory-name-policy');
 
 const REMOVED_COMPONENT_NAMES = [
   "10pc Jumpers Pack",
@@ -54,6 +55,7 @@ async function applyComponentRemovals(database) {
 
     const result = { removed: [], unchanged: [] };
     for (const name of REMOVED_COMPONENT_NAMES) {
+      if (protectedFromRemoval(name)) throw new Error(`${name} is explicitly protected from removal by the organizer.`);
       const componentResult = await transaction.query(
         "SELECT * FROM checkout_components WHERE LOWER(name) = LOWER($1) FOR UPDATE",
         [name]

@@ -18,7 +18,7 @@ function cleanString(value, name, options) {
 function positiveInteger(value, name, allowZero) {
   const result = Number(value);
 
-  if (!Number.isInteger(result) || result < (allowZero ? 0 : 1)) {
+  if (!Number.isSafeInteger(result) || result < (allowZero ? 0 : 1)) {
     throw httpError(400, `${name} must be ${allowZero ? "zero or a positive" : "a positive"} whole number.`);
   }
 

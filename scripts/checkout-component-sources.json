@@ -24,8 +24,9 @@
     },
     {
       "name": "Tactile Push Buttons (Assorted)",
-      "sourceRow": 7,
-      "productUrl": "https://www.amazon.com/dp/B0BFWK5N8V"
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": 6,
+      "productUrl": "https://www.amazon.com/dp/B01MRP025V"
     },
     {
       "name": "Rocker Switch",
@@ -39,14 +40,15 @@
     },
     {
       "name": "Arducam 5MP Camera",
-      "sourceRow": 11,
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": 10,
       "productUrl": "https://www.amazon.com/dp/B012V1HEP4"
     },
     {
-      "name": "ESP32-CAM Development Board with USB Programmer",
+      "name": "ESP32-CAM Camera Development Module",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 4,
-      "productUrl": "https://www.amazon.com/dp/B0FQP9Y114",
-      "sourceSheet": "Wishlist"
+      "productUrl": "https://www.amazon.com/dp/B0FQP9Y114"
     },
     {
       "name": "USB Cameras",
@@ -69,13 +71,15 @@
       "productUrl": "https://www.amazon.com/dp/B071FT9HSV"
     },
     {
-      "name": "50Pcs Potentiometer Kit",
-      "sourceRow": 22,
+      "name": "Potentiometers",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": 21,
       "productUrl": "https://www.amazon.com/dp/B0D72XYPYD"
     },
     {
       "name": "DC 5V Relay Module",
-      "sourceRow": 31,
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": 30,
       "productUrl": "https://www.amazon.com/dp/B0BHLDW9G5"
     },
     {
@@ -90,7 +94,8 @@
     },
     {
       "name": "JST Headers 4 pin female",
-      "sourceRow": 40,
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": 39,
       "productUrl": "https://www.digikey.com/en/products/detail/jst-sales-america-inc/04JQ-BT/4918835"
     },
     {
@@ -100,8 +105,9 @@
     },
     {
       "name": "JST Headers 4 pin male",
-      "sourceRow": 42,
-      "productUrl": "https://www.digikey.com/en/products/detail/jst-sales-america-inc/B4B-PH-SM4-TB/926643"
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": 40,
+      "productUrl": "https://www.digikey.com/en/products/detail/jst-sales-america-inc/B4B-XH-A/1651047"
     },
     {
       "name": "LCD Display",
@@ -110,7 +116,8 @@
     },
     {
       "name": "Pluggable Terminal Blocks",
-      "sourceRow": 53,
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": 52,
       "productUrl": "https://www.digikey.com/en/products/detail/adam-tech/EBWA-02-A/9830631"
     },
     {
@@ -120,6 +127,7 @@
     },
     {
       "name": "Toggle Switch SPDT Panel Mount",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
       "sourceRow": 72,
       "productUrl": "https://www.digikey.com/en/products/detail/c-k/E101SYZQE/484035"
     },
@@ -140,26 +148,31 @@
     },
     {
       "name": "Raspberry Pi 4 (1GB)",
-      "sourceRow": 83,
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": 82,
       "productUrl": "https://www.adafruit.com/product/4295"
     },
     {
       "name": "Raspberry Pi 5 (2GB)",
-      "sourceRow": 84,
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": 83,
       "productUrl": "https://www.raspberrypi.com/products/raspberry-pi-5/"
     },
     {
       "name": "Raspberry Pi 5 (4GB)",
-      "sourceRow": 85,
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": 84,
       "productUrl": "https://www.raspberrypi.com/products/raspberry-pi-5/"
     },
     {
       "name": "2000 Series Dual Mode servo",
-      "sourceRow": 86,
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": 85,
       "productUrl": "https://www.gobilda.com/2000-series-dual-mode-servo-25-2-torque/"
     },
     {
-      "name": "550 Titan 12-Turn",
+      "name": "Traxxas Titan 550 12-Turn Motor with ESC",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
       "sourceRow": 89,
       "productUrl": "https://www.rcsuperstore.com/traxxas-550-titan-12-turn-motor/"
     },
@@ -170,11 +183,13 @@
     },
     {
       "name": "MG90S",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
       "sourceRow": 94,
       "productUrl": "https://www.amazon.com/dp/B07L6FZVT1"
     },
     {
-      "name": "S3004 servo",
+      "name": "FUTABA S3004 servo",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
       "sourceRow": 97,
       "productUrl": "https://www.amazon.com/dp/B001KAPMG6"
     },
@@ -184,7 +199,7 @@
       "productUrl": "https://gikfun.com/products/gikfun-1-5v-6v-type-130-miniature-dc-motors-for-arduino-hobby-projects-diy-case-pack-of-6pcs"
     },
     {
-      "name": "Buck convertor (lipos to PIs)",
+      "name": "Buck converter (lipos to PIs)",
       "sourceRow": 103,
       "productUrl": "https://www.amazon.com/dp/B0CDWL97P3"
     },
@@ -195,16 +210,19 @@
     },
     {
       "name": "DC Motors",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
       "sourceRow": 105,
       "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/11696/6163657"
     },
     {
       "name": "L298N motor driver",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
       "sourceRow": 106,
       "productUrl": "https://www.amazon.com/dp/B0C5JCF5RS"
     },
     {
       "name": "Pump",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
       "sourceRow": 109,
       "productUrl": "https://www.amazon.com/dp/B00HIX2PEG"
     },
@@ -220,6 +238,7 @@
     },
     {
       "name": "SD Cards (16GB)",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
       "sourceRow": 113,
       "productUrl": "https://www.amazon.com/dp/B07XJVFVSJ"
     },
@@ -239,7 +258,8 @@
       "productUrl": "https://www.amazon.com/dp/B08T8TDS8S"
     },
     {
-      "name": "Wall power supply",
+      "name": "Facmogu Adjustable DC Power Supply",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
       "sourceRow": 117,
       "productUrl": "https://www.amazon.com/dp/B083GG2H6R"
     },
@@ -285,9 +305,9 @@
     },
     {
       "name": "MAX30102 Pulse Oximeter (Heart Rate + SpO₂)",
-      "sourceRow": 26,
-      "productUrl": "https://www.amazon.com/dp/B0FND6SJ3K",
-      "sourceSheet": "Wishlist"
+      "sourceSheet": "Inventory of Wishlist 110526",
+      "sourceRow": "26,32",
+      "productUrl": "https://www.amazon.com/dp/B0FND6SJ3K"
     },
     {
       "name": "IMU",
@@ -440,7 +460,7 @@
       "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/13268/5623212"
     },
     {
-      "name": "Through Hole Mosfet",
+      "name": "Through Hole MOSFET",
       "sourceRow": 176,
       "productUrl": "https://www.digikey.com/en/products/detail/infineon-technologies/IRFZ44NPBF/811772"
     },
@@ -450,7 +470,7 @@
       "productUrl": "https://www.digikey.com/en/products/detail/adafruit-industries-llc/3777/8687221"
     },
     {
-      "name": "Grover Stepper Motor",
+      "name": "Grove Stepper Motor",
       "sourceRow": 182,
       "productUrl": "https://www.digikey.com/en/products/detail/sparkfun-electronics/10551/5766908"
     },
@@ -546,92 +566,92 @@
     },
     {
       "name": "INMP441 I2S MEMS Microphone",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 3,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B0GYDQC6WL"
     },
     {
       "name": "MLX90640 Thermal Camera (32×24)",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 5,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B07ZKK8QWY"
     },
     {
       "name": "Slamtec RPLIDAR A1 360° Scanner",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 6,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B07TJW5SXF"
     },
     {
       "name": "ADS1115 16-bit ADC Breakout",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 7,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B0F1D3KGG2"
     },
     {
       "name": "WS2812B Addressable RGB LED Strip (5 m)",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 8,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B097BWJGYK"
     },
     {
       "name": "WS2812B NeoPixel Ring (24 pixels)",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 9,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B0B2D7742J"
     },
     {
       "name": "SSD1306 0.96-inch OLED Display",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 10,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B09T6SJBV5"
     },
     {
       "name": "4-channel Bidirectional Logic Level Shifter",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 11,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B07F7W91LC"
     },
     {
       "name": "2.9-inch E-Paper Display Module",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 12,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B07P6MJPTD"
     },
     {
       "name": "Arduino GIGA Display Shield",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 13,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B0CKBZLTND"
     },
     {
       "name": "7-inch Raspberry Pi Capacitive Touch Display",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 14,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B09XKC53NH"
     },
     {
       "name": "ESP32 ESP-WROOM-32 Development Board",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 15,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B0C7C2HQ7P"
     },
     {
       "name": "TB6612FNG Dual Motor Driver",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 16,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B0F43L7LLD"
     },
     {
       "name": "Micro-HDMI to HDMI Cable",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 17,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B07KSDB25X"
     },
     {
       "name": "USB Keyboard and Mouse Combo",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 18,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B003NR874S"
     },
     {
@@ -642,44 +662,44 @@
     },
     {
       "name": "LD2410C mmWave Presence Radar",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 20,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B0F1F97422"
     },
     {
       "name": "SCD41 NDIR CO₂ Sensor",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 21,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B0F6MRMNLH"
     },
     {
       "name": "BME680 Environmental Sensor",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 22,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B0FQJFK4CL"
     },
     {
       "name": "VL53L5CX Multizone Time-of-Flight Sensor",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 23,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B0GSF96HHH"
     },
     {
       "name": "PMS5003 Particulate Matter Sensor",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 24,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B0BG62Z8L3"
     },
     {
       "name": "INA219 Current and Power Monitor",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 25,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B01ICN5OAM"
     },
     {
       "name": "AS7341 11-channel Spectral Sensor",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 27,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B0DBQKDV67"
     },
     {
@@ -696,14 +716,14 @@
     },
     {
       "name": "Raspberry Pi AI Camera (Sony IMX500)",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 30,
-      "sourceSheet": "Wishlist",
-      "productUrl": "https://www.adafruit.com/product/6009"
+      "productUrl": "https://www.adafruit.com/product/6009?src=raspberrypi"
     },
     {
       "name": "Analog Pulse Sensor",
+      "sourceSheet": "Inventory of Wishlist 110526",
       "sourceRow": 31,
-      "sourceSheet": "Wishlist",
       "productUrl": "https://www.amazon.com/dp/B09PR3QQVD"
     },
     {
@@ -711,6 +731,174 @@
       "sourceRow": 33,
       "sourceSheet": "Wishlist",
       "productUrl": "https://www.sparkfun.com/flex-sensor-2-2.html"
+    },
+    {
+      "name": "TouchTronix SNX0505-SNS-01 Tactile Sensor",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": 206,
+      "productUrl": "https://www.digikey.com/en/products/detail/touchtronix-robotics/SNX0505-SNS-01/29174646"
+    },
+    {
+      "name": "ELEGOO 5 V Relay",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P26:R26",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO UNO R3 Prototype Expansion Shield",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P27:R27",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO Breadboard Power Supply Module",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P28:R28",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO ULN2003 Stepper Motor Driver",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P29:R29",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO 28BYJ-48 Stepper Motor",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P30:R30",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO SG90 Micro Servo",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P31:R31",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO Infrared Receiver Module",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P32:R32",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO 2-Axis Analog Joystick Module",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P33:R33",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO DHT11 Temperature and Humidity Module",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P34:R34",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO HC-SR04 Ultrasonic Distance Sensor",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P35:R35",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO 3–6 V DC Motor with Fan Blade",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P36:R36",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO UNO R3 Arduino-Compatible Controller Board",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P39:R39",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO LCD1602 16×2 Character Display Module",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P41:R41",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO 10 kΩ Potentiometer",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P42:R42",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO Single-Digit 7-Segment LED Display",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P43:R43",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO 4-Digit 7-Segment LED Display",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P44:R44",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO Infrared Remote Control",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P46:R46",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO Small Solderless Breadboard",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P47:R47",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO UNO R3 USB Cable",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P48:R48",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO 9 V Battery Snap Connector",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P49:R49",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO Power Distribution Hub",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P51:R51",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO DC Motor (Red and Black Leads)",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P52:R52",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO Large Solderless Breadboard",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P53:R53",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO Arduino Nano-Compatible Controller Board",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P54:R54",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO Active Buzzer, 74HC595, L293D and Tilt Switch Pack",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P37:R37",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO Passive Buzzer Pack",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P38:R38",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
+    },
+    {
+      "name": "ELEGOO Photoresistor, PN2222, Button, Thermistor and Rectifier Diode Pack",
+      "sourceSheet": "FINAL Inventory Check - 1106202",
+      "sourceRow": "P50:R50",
+      "productUrl": "https://us.elegoo.com/products/elegoo-uno-r3-super-starter-kit"
     }
   ]
 }

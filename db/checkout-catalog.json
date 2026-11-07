@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "source": "Finalized MakeCU 2026 checkout catalog with Wishlist additions",
+  "source": "MakeCU November 6 physical inventory and received wishlist; pending deletions require organizer confirmation",
   "components": [
     {
       "name": "Adafruit Microphone Breakout",
@@ -75,6 +75,25 @@
       "adminNotes": "Spreadsheet rows: 5. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $0.60. Original notes: Could work on a PI, but you would need an ADC (analog to digital)"
     },
     {
+      "name": "ELEGOO Passive Buzzer Pack",
+      "totalQuantity": 4,
+      "description": "Passive Buzzer Pack from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued as one whole pack per checkout unit. Individual contents have not been counted. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Audio",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO Passive Buzzer Pack",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P38:R38. Physical stock: 4 whole packs. Inventory note: in a pack"
+    },
+    {
       "description": "Digital omnidirectional MEMS microphone module with an I2S output for voice, audio classification, and sound-level projects without an external ADC.",
       "imageUrl": "/images/checkout/components/inmp441-i2s-mems-microphone-4e36d0105f.webp",
       "imageAlt": "Product photo of INMP441 I2S MEMS Microphone from the linked supplier page",
@@ -90,7 +109,7 @@
       "active": true,
       "name": "INMP441 I2S MEMS Microphone",
       "totalQuantity": 10,
-      "adminNotes": "Wishlist row 3. Two packages of five modules. Listed package cost: $9.99. Priority: Medium."
+      "adminNotes": "Wishlist row 3. Two packages of five modules. Listed package cost: $9.99. Priority: Medium.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 3. Physical stock: 10 individual checkout units."
     },
     {
       "name": "Grove Button",
@@ -148,7 +167,7 @@
     },
     {
       "name": "Tactile Push Buttons (Assorted)",
-      "description": "Assorted 6×6 mm momentary tactile push buttons in multiple actuator heights for breadboard controls, reset inputs, and compact user interfaces.",
+      "description": "Assorted tactile momentary push button switches for user controls and breadboard circuits. Organizer confirmed 250 individual switches in the combined inventory.",
       "imageUrl": "/images/checkout/components/240-pcs-24-value-micro-momentary-tactile-switch-assortment-kit-40a2c27505.webp",
       "imageAlt": "Product photo of assorted tactile push buttons",
       "category": "Button",
@@ -157,12 +176,12 @@
       "raspberryPiGuidance": "",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 440,
+      "totalQuantity": 250,
       "unavailableQuantity": 0,
       "protectedStock": 2,
       "maxActivePerTeam": 5,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 7. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $14.99"
+      "adminNotes": "Spreadsheet rows: 7. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $14.99\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 6. Physical stock: 250 individual checkout units."
     },
     {
       "name": "Touch Button",
@@ -193,16 +212,35 @@
       "raspberryPiGuidance": "",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 5,
+      "totalQuantity": 2,
       "unavailableQuantity": 0,
       "protectedStock": 0,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 11. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $6.99"
+      "adminNotes": "Spreadsheet rows: 11. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $6.99\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 10. Physical stock: 2 individual checkout units."
     },
     {
-      "name": "ESP32-CAM Development Board with USB Programmer",
-      "description": "ESP32-CAM development board with an OV2640 2 MP camera, Wi-Fi, Bluetooth, and an ESP32-CAM-MB USB programmer. Use it as a self-contained wireless camera or embedded vision controller.",
+      "name": "Endoscope Inspection Camera",
+      "totalQuantity": 1,
+      "description": "Endoscope inspection camera for viewing confined spaces. Check its connector, supported host, and software before use.",
+      "category": "Camera",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Endoscope Inspection Camera",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 234. Physical stock: 1 individual checkout units. Inventory note: ADD TO WEB"
+    },
+    {
+      "name": "ESP32-CAM Camera Development Module",
+      "description": "ESP32-CAM camera development module with Wi-Fi and Bluetooth for embedded camera and wireless vision projects. Verify the camera revision and programming connections on the supplied board.",
       "imageUrl": "/images/checkout/components/esp32-cam-development-board-with-usb-programmer-bbcc161f32.webp",
       "imageAlt": "Product photo of ESP32-CAM Development Board with USB Programmer from the linked supplier page",
       "category": "Camera",
@@ -210,13 +248,13 @@
       "arduinoGuidance": "",
       "raspberryPiGuidance": "",
       "binLocation": "",
-      "technicalSpecs": "Two-board set: ESP32-CAM with OV2640 2 MP camera plus ESP32-CAM-MB CH340G Micro-USB programmer; 2.4 GHz Wi-Fi and Bluetooth/BLE.",
-      "totalQuantity": 28,
+      "technicalSpecs": "ESP32-CAM camera module; Wi-Fi and Bluetooth. Six individual modules confirmed by organizer.",
+      "totalQuantity": 6,
       "unavailableQuantity": 0,
       "protectedStock": 1,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 12. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $8.99. Original notes: Needs adaptor to work with RPI Wishlist row 4 adds eight two-piece ESP32-CAM sets (16 checkout units) to the existing 12 units."
+      "adminNotes": "Spreadsheet rows: 12. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $8.99. Original notes: Needs adaptor to work with RPI Wishlist row 4 adds eight two-piece ESP32-CAM sets (16 checkout units) to the existing 12 units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 4. Physical stock: 6 individual checkout units. Inventory note: Found 6"
     },
     {
       "name": "Logitech Webcams",
@@ -269,8 +307,8 @@
       "maxActivePerTeam": 1,
       "active": true,
       "name": "MLX90640 Thermal Camera (32×24)",
-      "totalQuantity": 2,
-      "adminNotes": "Wishlist row 5. Two single camera modules. Listed unit cost: $68.99. Priority: Medium."
+      "totalQuantity": 1,
+      "adminNotes": "Wishlist row 5. Two single camera modules. Listed unit cost: $68.99. Priority: Medium.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 5. Physical stock: 1 individual checkout units. Inventory note: Found 1"
     },
     {
       "description": "Raspberry Pi camera module with Sony's IMX500 intelligent vision sensor for running supported neural-network inference directly on the camera.",
@@ -288,7 +326,7 @@
       "active": true,
       "name": "Raspberry Pi AI Camera (Sony IMX500)",
       "totalQuantity": 1,
-      "adminNotes": "Wishlist row 30. One camera. Listed unit cost: $77.00."
+      "adminNotes": "Wishlist row 30. One camera. Listed unit cost: $77.00.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 30. Physical stock: 1 individual checkout units."
     },
     {
       "name": "USB Cameras",
@@ -363,6 +401,25 @@
       "adminNotes": "Spreadsheet rows: 155. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: MLH. Product/vendor: bestbuy"
     },
     {
+      "name": "ELEGOO HC-SR04 Ultrasonic Distance Sensor",
+      "totalQuantity": 11,
+      "description": "HC-SR04 Ultrasonic Distance Sensor from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Distance",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO HC-SR04 Ultrasonic Distance Sensor",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P35:R35. Physical stock: 11 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P35:R35. Physical stock: 11 individual components."
+    },
+    {
       "name": "Pseudo-LiDAR Sensor",
       "description": "Single-point time-of-flight distance sensor with a serial communication interface. It provides narrow-beam ranging for obstacle detection and position measurements.",
       "imageUrl": "/images/checkout/components/pseudo-lidar-sensor-59bd5673cf.webp",
@@ -396,7 +453,7 @@
       "active": true,
       "name": "Slamtec RPLIDAR A1 360° Scanner",
       "totalQuantity": 1,
-      "adminNotes": "Wishlist row 6. One scanner. Listed unit cost: $99.00. Priority: Low."
+      "adminNotes": "Wishlist row 6. One scanner. Listed unit cost: $99.00. Priority: Low.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 6. Physical stock: 1 individual checkout units."
     },
     {
       "name": "Ultrasonic Distance Sensor (CURC)",
@@ -487,8 +544,8 @@
       "maxActivePerTeam": 1,
       "active": true,
       "name": "2.9-inch E-Paper Display Module",
-      "totalQuantity": 3,
-      "adminNotes": "Wishlist row 12. Three modules. Listed unit cost: $27.99. Priority: Medium."
+      "totalQuantity": 1,
+      "adminNotes": "Wishlist row 12. Three modules. Listed unit cost: $27.99. Priority: Medium.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 12. Physical stock: 1 individual checkout units. Inventory note: Found 1"
     },
     {
       "name": "23904 Transistor",
@@ -524,7 +581,7 @@
       "active": true,
       "name": "4-channel Bidirectional Logic Level Shifter",
       "totalQuantity": 20,
-      "adminNotes": "Wishlist row 11. Two packages of ten boards (20 checkout units). Listed package cost: $7.49. Priority: High."
+      "adminNotes": "Wishlist row 11. Two packages of ten boards (20 checkout units). Listed package cost: $7.49. Priority: High.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 11. Physical stock: 20 individual checkout units."
     },
     {
       "name": "4-Digit 7-segment LED (with driver)",
@@ -543,24 +600,6 @@
       "maxActivePerTeam": 1,
       "active": true,
       "adminNotes": "Spreadsheet rows: 20. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: not listed"
-    },
-    {
-      "name": "50Pcs Potentiometer Kit",
-      "description": "Assorted rotary potentiometers for adjustable analog controls such as volume, thresholds, and setpoints. A Raspberry Pi needs an external ADC to read the wiper voltage.",
-      "imageUrl": "/images/checkout/components/50pcs-potentiometer-kit-13de19a5a6.webp",
-      "imageAlt": "Product photo of 50Pcs Potentiometer Kit from the linked supplier page",
-      "category": "Electronics",
-      "compatibility": "Arduino",
-      "arduinoGuidance": "",
-      "raspberryPiGuidance": "",
-      "binLocation": "",
-      "technicalSpecs": "",
-      "totalQuantity": 50,
-      "unavailableQuantity": 0,
-      "protectedStock": 0,
-      "maxActivePerTeam": 5,
-      "active": true,
-      "adminNotes": "Spreadsheet rows: 22. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $12.99. Original notes: RPI can to analog, so you would need ADC"
     },
     {
       "name": "5V 650nm 5mW Red Dot Laser",
@@ -614,7 +653,7 @@
       "active": true,
       "name": "7-inch Raspberry Pi Capacitive Touch Display",
       "totalQuantity": 2,
-      "adminNotes": "Wishlist row 14. Two displays. Listed unit cost: $45.99. Priority: Medium."
+      "adminNotes": "Wishlist row 14. Two displays. Listed unit cost: $45.99. Priority: Medium.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 14. Physical stock: 2 individual checkout units. Inventory note: Found 2"
     },
     {
       "name": "8X8 LED Matrix",
@@ -667,8 +706,27 @@
       "maxActivePerTeam": 3,
       "active": true,
       "name": "ADS1115 16-bit ADC Breakout",
-      "totalQuantity": 15,
-      "adminNotes": "Wishlist row 7. Five packages of three boards (15 checkout units). Listed package cost: $12.99. Priority: Essential."
+      "totalQuantity": 9,
+      "adminNotes": "Wishlist row 7. Five packages of three boards (15 checkout units). Listed package cost: $12.99. Priority: Essential.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 7. Physical stock: 9 individual checkout units. Inventory note: FOUND 3"
+    },
+    {
+      "name": "Alligator Clip Test Lead",
+      "totalQuantity": 20,
+      "description": "Alligator clip lead for temporary electrical connections and circuit testing. Check insulation and use only with an appropriate low-voltage circuit.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Alligator Clip Test Lead",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 208. Physical stock: 20 individual checkout units. Inventory note: ADD TO WEB"
     },
     {
       "description": "Touch-enabled color display shield designed for the Arduino GIGA R1 WiFi, with onboard connectors and controls for embedded user interfaces.",
@@ -686,7 +744,26 @@
       "active": true,
       "name": "Arduino GIGA Display Shield",
       "totalQuantity": 2,
-      "adminNotes": "Wishlist row 13. Two shields. Listed unit cost: $63.60. Priority: Medium."
+      "adminNotes": "Wishlist row 13. Two shields. Listed unit cost: $63.60. Priority: Medium.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 13. Physical stock: 2 individual checkout units."
+    },
+    {
+      "name": "Arduino USB Cable",
+      "totalQuantity": 11,
+      "description": "USB cable recorded for Arduino boards. Match the board-side connector before checkout.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Arduino USB Cable",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 217. Physical stock: 11 individual checkout units."
     },
     {
       "name": "Breadboards",
@@ -740,7 +817,7 @@
       "protectedStock": 2,
       "maxActivePerTeam": 5,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 26. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Digi-Key"
+      "adminNotes": "Spreadsheet rows: 26. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Digi-Key\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 25. Physical stock: 20 individual checkout units. Inventory note: in bag, UPDATE PHOTO ON WEBSITE"
     },
     {
       "name": "Ceramic Capacitors (Assorted)",
@@ -794,7 +871,7 @@
       "protectedStock": 2,
       "maxActivePerTeam": 2,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 31. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $1.20. Original usage notes (needs review): 20 -> 19, we should make sure we know how to use these, maybe use some in our gbody? idk"
+      "adminNotes": "Spreadsheet rows: 31. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $1.20. Original usage notes (needs review): 20 -> 19, we should make sure we know how to use these, maybe use some in our gbody? idk\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 30. Physical stock: 19 individual checkout units."
     },
     {
       "name": "DC-DC Converters",
@@ -831,6 +908,215 @@
       "maxActivePerTeam": 3,
       "active": true,
       "adminNotes": "Spreadsheet rows: 33. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $0.70"
+    },
+    {
+      "name": "ELEGOO 10 kΩ Potentiometer",
+      "totalQuantity": 5,
+      "description": "10 kΩ Potentiometer from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO 10 kΩ Potentiometer",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P42:R42. Physical stock: 5 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P42:R42. Physical stock: 5 individual components."
+    },
+    {
+      "name": "ELEGOO 4-Digit 7-Segment LED Display",
+      "totalQuantity": 8,
+      "description": "4-Digit 7-Segment LED Display from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO 4-Digit 7-Segment LED Display",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P44:R44. Physical stock: 8 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P44:R44. Physical stock: 8 individual components."
+    },
+    {
+      "name": "ELEGOO Active Buzzer, 74HC595, L293D and Tilt Switch Pack",
+      "totalQuantity": 3,
+      "description": "Active Buzzer, 74HC595, L293D and Tilt Switch Pack from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued as one whole pack per checkout unit. Individual contents have not been counted. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO Active Buzzer, 74HC595, L293D and Tilt Switch Pack",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P37:R37. Physical stock: 3 whole packs."
+    },
+    {
+      "name": "ELEGOO Infrared Remote Control",
+      "totalQuantity": 9,
+      "description": "Infrared Remote Control from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO Infrared Remote Control",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P46:R46. Physical stock: 9 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P46:R46. Physical stock: 9 individual components."
+    },
+    {
+      "name": "ELEGOO Large Solderless Breadboard",
+      "totalQuantity": 3,
+      "description": "Large Solderless Breadboard from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO Large Solderless Breadboard",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P53:R53. Physical stock: 3 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P53:R53. Physical stock: 3 individual components."
+    },
+    {
+      "name": "ELEGOO LCD1602 16×2 Character Display Module",
+      "totalQuantity": 9,
+      "description": "LCD1602 16×2 Character Display Module from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO LCD1602 16×2 Character Display Module",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P41:R41. Physical stock: 9 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P41:R41. Physical stock: 9 individual components."
+    },
+    {
+      "name": "ELEGOO Photoresistor, PN2222, Button, Thermistor and Rectifier Diode Pack",
+      "totalQuantity": 10,
+      "description": "Photoresistor, PN2222, Button, Thermistor and Rectifier Diode Pack from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued as one whole pack per checkout unit. Individual contents have not been counted. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO Photoresistor, PN2222, Button, Thermistor and Rectifier Diode Pack",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P50:R50. Physical stock: 10 whole packs."
+    },
+    {
+      "name": "ELEGOO Single-Digit 7-Segment LED Display",
+      "totalQuantity": 11,
+      "description": "Single-Digit 7-Segment LED Display from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO Single-Digit 7-Segment LED Display",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P43:R43. Physical stock: 11 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P43:R43. Physical stock: 11 individual components."
+    },
+    {
+      "name": "ELEGOO Small Solderless Breadboard",
+      "totalQuantity": 10,
+      "description": "Small Solderless Breadboard from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO Small Solderless Breadboard",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P47:R47. Physical stock: 10 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P47:R47. Physical stock: 10 individual components."
+    },
+    {
+      "name": "ELEGOO UNO R3 Prototype Expansion Shield",
+      "totalQuantity": 9,
+      "description": "UNO R3 Prototype Expansion Shield from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO UNO R3 Prototype Expansion Shield",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P27:R27. Physical stock: 9 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P27:R27. Physical stock: 9 individual components."
+    },
+    {
+      "name": "ELEGOO UNO R3 USB Cable",
+      "totalQuantity": 4,
+      "description": "UNO R3 USB Cable from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO UNO R3 USB Cable",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P48:R48. Physical stock: 4 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P48:R48. Physical stock: 4 individual components."
     },
     {
       "name": "Ethernet Breakout",
@@ -992,7 +1278,7 @@
       "protectedStock": 1,
       "maxActivePerTeam": 3,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 40. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: digikey"
+      "adminNotes": "Spreadsheet rows: 40. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: digikey\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 39. Physical stock: 10 individual checkout units."
     },
     {
       "name": "JST Headers 4 pin male",
@@ -1005,12 +1291,12 @@
       "raspberryPiGuidance": "",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 3,
+      "totalQuantity": 13,
       "unavailableQuantity": 0,
       "protectedStock": 0,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 42. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: digikey"
+      "adminNotes": "Spreadsheet rows: 42. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: digikey\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 40. Physical stock: 13 individual checkout units."
     },
     {
       "name": "JST Headers 8 pin male",
@@ -1023,12 +1309,12 @@
       "raspberryPiGuidance": "",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 10,
+      "totalQuantity": 0,
       "unavailableQuantity": 0,
-      "protectedStock": 1,
+      "protectedStock": 0,
       "maxActivePerTeam": 3,
-      "active": true,
-      "adminNotes": "Spreadsheet rows: 41. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: digikey"
+      "active": false,
+      "adminNotes": "Spreadsheet rows: 41. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: digikey\nOrganizer confirmed this stock is already included in the surviving JST (13) or ELEGOO SG90 (11) inventory; archived to prevent double counting."
     },
     {
       "name": "LCD Display",
@@ -1103,6 +1389,44 @@
       "adminNotes": "Spreadsheet rows: 46. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: SpierceTech"
     },
     {
+      "name": "Mini Grabber Test Clip",
+      "totalQuantity": 25,
+      "description": "Mini grabber test clip for making temporary connections to small component leads during circuit measurements.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Mini Grabber Test Clip",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 211. Physical stock: 25 individual checkout units. Inventory note: ADD TO WEB"
+    },
+    {
+      "name": "Mini-USB Cable",
+      "totalQuantity": 4,
+      "description": "USB cable with a Mini-USB connector for compatible development boards and peripherals.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Mini-USB Cable",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 218. Physical stock: 4 individual checkout units."
+    },
+    {
       "name": "Misc. LEDs",
       "description": "Mixed LEDs for indicators, light effects, and optical sensing experiments. Identify color and polarity, then use an appropriate current-limiting resistor.",
       "imageUrl": "/images/checkout/components/Misc. LEDs.webp",
@@ -1139,8 +1463,27 @@
       "adminNotes": "Spreadsheet rows: 48. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Adafruit"
     },
     {
+      "name": "NE555P Timer IC",
+      "totalQuantity": 32,
+      "description": "NE555P timer integrated circuit for oscillator, pulse generation, and timing circuits. Consult the NE555P datasheet for the pinout.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for NE555P Timer IC",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 225. Physical stock: 32 individual checkout units. Inventory note: ADD to WEB"
+    },
+    {
       "name": "Pin Headers",
-      "description": "Breakaway male pin-header strips for adding board connections, making adapters, and exposing signals. Cut or snap off the required number of positions and solder them in place.",
+      "description": "Pin header strips for soldered connections on development boards and prototyping circuits.",
       "imageUrl": "/images/checkout/components/Pin headers.webp",
       "imageAlt": "Product photo of breakaway male pin-header strips",
       "category": "Electronics",
@@ -1154,7 +1497,7 @@
       "protectedStock": 2,
       "maxActivePerTeam": 2,
       "active": true,
-      "adminNotes": "Added from the organizer-provided inventory update with a stated quantity of 25."
+      "adminNotes": "Added from the organizer-provided inventory update with a stated quantity of 25.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 51. Physical stock: 25 individual checkout units."
     },
     {
       "name": "Pluggable Terminal Blocks",
@@ -1172,7 +1515,25 @@
       "protectedStock": 1,
       "maxActivePerTeam": 2,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 53. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Digikey"
+      "adminNotes": "Spreadsheet rows: 53. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Digikey\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 52. Physical stock: 10 individual checkout units."
+    },
+    {
+      "name": "Potentiometers",
+      "description": "Assorted WH148 rotary potentiometers for adjustable analog inputs. Issued individually from the counted 50-piece kit.",
+      "imageUrl": "/images/checkout/components/50pcs-potentiometer-kit-13de19a5a6.webp",
+      "imageAlt": "Product photo of 50Pcs Potentiometer Kit from the linked supplier page",
+      "category": "Electronics",
+      "compatibility": "Arduino",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "totalQuantity": 50,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 5,
+      "active": true,
+      "adminNotes": "Spreadsheet rows: 22. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $12.99. Original notes: RPI can to analog, so you would need ADC\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 21. Physical stock: 50 individual checkout units."
     },
     {
       "name": "Power Hub",
@@ -1265,7 +1626,7 @@
       "adminNotes": "Spreadsheet rows: 57. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Kowatec"
     },
     {
-      "name": "Sense CAP Indicator",
+      "name": "SenseCAP Indicator",
       "description": "SenseCAP indicator/display unit for showing data from compatible sensors and connected services. Confirm the exact SenseCAP model and supported inputs before planning integration.",
       "imageUrl": "/images/checkout/components/Sense CAP Indicator.webp",
       "imageAlt": "Product photo of a SenseCAP Indicator display",
@@ -1301,6 +1662,25 @@
       "adminNotes": "Spreadsheet rows: 61. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Adafruit"
     },
     {
+      "name": "Small Solderable Prototyping Board",
+      "totalQuantity": 6,
+      "description": "Small solderable prototyping board for permanent through-hole circuit assembly. Inspect the copper layout before soldering.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Small Solderable Prototyping Board",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 235. Physical stock: 6 individual checkout units. Inventory note: ADD TO WEB"
+    },
+    {
       "name": "Solder Pad",
       "description": "Solderable prototyping pad or board for making a more permanent version of a breadboard circuit. Plan power rails and continuity before soldering.",
       "imageUrl": "/images/checkout-image-pending.svg",
@@ -1319,7 +1699,7 @@
       "adminNotes": "Spreadsheet rows: 62. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: not listed"
     },
     {
-      "name": "Solderless Breadboard",
+      "name": "Solderless Breadboard (full)",
       "description": "830-point solderless breadboard for reusable through-hole prototypes. It provides connected terminal rows and power rails without requiring solder.",
       "imageUrl": "/images/checkout/components/solderless-breadboard-9f19f1a7aa.webp",
       "imageAlt": "Product photo of Solderless Breadboard from the linked supplier page",
@@ -1329,12 +1709,31 @@
       "raspberryPiGuidance": "",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 16,
+      "totalQuantity": 6,
       "unavailableQuantity": 0,
       "protectedStock": 2,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 63. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Elegoo. Original usage notes (needs review): 7.0"
+      "adminNotes": "Spreadsheet rows: 63. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Elegoo. Original usage notes (needs review): 7.0\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 62. Physical stock: 6 individual checkout units. Inventory note: UPDATE QTY"
+    },
+    {
+      "name": "Solderless Breadboard (Half Size)",
+      "totalQuantity": 10,
+      "description": "Half-size solderless breadboard for prototyping circuits without solder. Check the power-rail continuity before wiring.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Solderless Breadboard (Half Size)",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 63. Physical stock: 10 individual checkout units. Inventory note: ADD TO WEB"
     },
     {
       "name": "SparkFun Snappable protoboard",
@@ -1370,10 +1769,10 @@
       "active": true,
       "name": "SSD1306 0.96-inch OLED Display",
       "totalQuantity": 15,
-      "adminNotes": "Wishlist row 10. Three packages of five displays (15 checkout units). Listed package cost: $14.99. Priority: High."
+      "adminNotes": "Wishlist row 10. Three packages of five displays (15 checkout units). Listed package cost: $14.99. Priority: High.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 10. Physical stock: 15 individual checkout units."
     },
     {
-      "name": "Through Hole Mosfet",
+      "name": "Through Hole MOSFET",
       "description": "IRFZ44N N-channel power MOSFET in a through-hole package for switching higher-current DC loads. Use a gate resistor, flyback protection for inductive loads, and adequate cooling.",
       "imageUrl": "/images/checkout/components/Through Hole Mosfet.webp",
       "imageAlt": "Product illustration of a through-hole power MOSFET",
@@ -1406,10 +1805,10 @@
       "protectedStock": 0,
       "maxActivePerTeam": 2,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 72. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: digikey"
+      "adminNotes": "Spreadsheet rows: 72. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: digikey\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 72. Physical stock: 5 individual checkout units."
     },
     {
-      "name": "USB 3.1TYPE male plug breakout",
+      "name": "USB 3.1 Type male plug breakout",
       "description": "USB Type-C male plug breakout that exposes connector pins for power or USB experiments. Follow USB-C configuration and signal-integrity requirements rather than treating every pin as general-purpose.",
       "imageUrl": "/images/checkout/components/usb 3.1 type male plug breakout.webp",
       "imageAlt": "Product photo of a USB Type-C male plug breakout board",
@@ -1425,6 +1824,25 @@
       "maxActivePerTeam": 1,
       "active": true,
       "adminNotes": "Spreadsheet rows: 73. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Saiko Systems"
+    },
+    {
+      "name": "USB-C Cable",
+      "totalQuantity": 4,
+      "description": "Cable with a USB-C connector. Verify the other connector and data or power capability for the intended device.",
+      "category": "Electronics",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for USB-C Cable",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 219. Physical stock: 4 individual checkout units."
     },
     {
       "name": "Vanja SD Card Reader",
@@ -1477,8 +1895,8 @@
       "maxActivePerTeam": 1,
       "active": true,
       "name": "WS2812B Addressable RGB LED Strip (5 m)",
-      "totalQuantity": 8,
-      "adminNotes": "Wishlist row 8. Eight five-meter strips. Listed unit cost: $13.99. Priority: High."
+      "totalQuantity": 7,
+      "adminNotes": "Wishlist row 8. Eight five-meter strips. Listed unit cost: $13.99. Priority: High.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 8. Physical stock: 7 individual checkout units. Inventory note: Found 7"
     },
     {
       "description": "Circular board with 24 individually addressable RGB LEDs for indicators, wearables, clocks, and animated lighting effects.",
@@ -1495,8 +1913,8 @@
       "maxActivePerTeam": 2,
       "active": true,
       "name": "WS2812B NeoPixel Ring (24 pixels)",
-      "totalQuantity": 10,
-      "adminNotes": "Wishlist row 9. Two packages of five rings (10 checkout units). Listed package cost: $23.99. Priority: High."
+      "totalQuantity": 9,
+      "adminNotes": "Wishlist row 9. Two packages of five rings (10 checkout units). Listed package cost: $23.99. Priority: High.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 9. Physical stock: 9 individual checkout units. Inventory note: Found 9??"
     },
     {
       "name": "XBee 3 PCB Antenna",
@@ -1553,6 +1971,25 @@
       "adminNotes": "Spreadsheet rows: 178. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: MLH. Product/vendor: not listed"
     },
     {
+      "name": "ELEGOO Arduino Nano-Compatible Controller Board",
+      "totalQuantity": 1,
+      "description": "Arduino Nano-Compatible Controller Board from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Microcontroller",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO Arduino Nano-Compatible Controller Board",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P54:R54. Physical stock: 1 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P54:R54. Physical stock: 1 individual components."
+    },
+    {
       "name": "Elegoo Kit",
       "description": "ELEGOO Arduino project kit with a controller, breadboard, common sensors, displays, motors, and passives. Useful as an all-in-one starting point for mixed prototypes.",
       "imageUrl": "/images/checkout/components/elegoo-kit-ad63d27dcb.webp",
@@ -1571,6 +2008,25 @@
       "adminNotes": "Spreadsheet rows: 82. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $44.99"
     },
     {
+      "name": "ELEGOO UNO R3 Arduino-Compatible Controller Board",
+      "totalQuantity": 2,
+      "description": "UNO R3 Arduino-Compatible Controller Board from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Microcontroller",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO UNO R3 Arduino-Compatible Controller Board",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P39:R39. Physical stock: 2 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P39:R39. Physical stock: 2 individual components."
+    },
+    {
       "description": "General-purpose Wi-Fi and Bluetooth microcontroller development board with USB programming, GPIO, ADC, DAC, PWM, SPI, UART, and I2C support.",
       "imageUrl": "/images/checkout/components/esp32-esp-wroom-32-development-board-81fee4d9ed.webp",
       "imageAlt": "Product photo of ESP32 ESP-WROOM-32 Development Board from the linked supplier page",
@@ -1586,7 +2042,7 @@
       "active": true,
       "name": "ESP32 ESP-WROOM-32 Development Board",
       "totalQuantity": 30,
-      "adminNotes": "Wishlist row 15. Ten packages of three boards (30 checkout units). Listed package cost: $14.39. Priority: Essential."
+      "adminNotes": "Wishlist row 15. Ten packages of three boards (30 checkout units). Listed package cost: $14.39. Priority: Essential.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 15. Physical stock: 30 individual checkout units."
     },
     {
       "name": "Raspberry Pi 4 (1GB)",
@@ -1604,7 +2060,7 @@
       "protectedStock": 1,
       "maxActivePerTeam": 3,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 83. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Adafruit. Listed unit cost: $38.50. Original usage notes (needs review): one of them has a nice case, 9->10 lol"
+      "adminNotes": "Spreadsheet rows: 83. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Adafruit. Listed unit cost: $38.50. Original usage notes (needs review): one of them has a nice case, 9->10 lol\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 82. Physical stock: 10 individual checkout units."
     },
     {
       "name": "Raspberry Pi 5 (2GB)",
@@ -1617,12 +2073,12 @@
       "raspberryPiGuidance": "Use a regulated 5 V supply rated for the specific Pi model. Power motors and servos separately rather than from the Pi headers.",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 1,
+      "totalQuantity": 2,
       "unavailableQuantity": 0,
       "protectedStock": 0,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 84. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Raspberry Pi. Listed unit cost: $50.00. Original usage notes (needs review): 2->1"
+      "adminNotes": "Spreadsheet rows: 84. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Raspberry Pi. Listed unit cost: $50.00. Original usage notes (needs review): 2->1\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 83. Physical stock: 2 individual checkout units."
     },
     {
       "name": "Raspberry Pi 5 (4GB)",
@@ -1635,12 +2091,12 @@
       "raspberryPiGuidance": "Use a regulated 5 V supply rated for the specific Pi model. Power motors and servos separately rather than from the Pi headers.",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 8,
+      "totalQuantity": 7,
       "unavailableQuantity": 0,
       "protectedStock": 0,
       "maxActivePerTeam": 2,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 85. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Raspberry Pi. Listed unit cost: $66.00. Original usage notes (needs review): 10->8"
+      "adminNotes": "Spreadsheet rows: 85. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Raspberry Pi. Listed unit cost: $66.00. Original usage notes (needs review): 10->8\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 84. Physical stock: 7 individual checkout units."
     },
     {
       "name": "RPI Kit",
@@ -1671,12 +2127,12 @@
       "raspberryPiGuidance": "Use a servo driver for stable PWM. Do not power servos from the Raspberry Pi; use a separate supply matched to the servos and connect the grounds.",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 2,
+      "totalQuantity": 4,
       "unavailableQuantity": 0,
       "protectedStock": 0,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 86. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: gobilba and goilba. Original usage notes (needs review): one speed one torque"
+      "adminNotes": "Spreadsheet rows: 86. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: gobilba and goilba. Original usage notes (needs review): one speed one torque\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 85. Physical stock: 4 individual checkout units. Inventory note: UPDATE WEBSITE They are with bag with the stuff below"
     },
     {
       "name": "28BYJ-48 stepper",
@@ -1748,7 +2204,7 @@
       "protectedStock": 0,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 90. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Hitec"
+      "adminNotes": "Spreadsheet rows: 90. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Hitec\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 90. Physical stock: 1 individual checkout units."
     },
     {
       "name": "DC Gearbox",
@@ -1769,6 +2225,101 @@
       "adminNotes": "Spreadsheet rows: 181. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: MLH. Product/vendor: digikey"
     },
     {
+      "name": "DSSERVO DS3218MG 20 kg Servo",
+      "totalQuantity": 1,
+      "description": "DSSERVO DS3218MG servo labeled 20 kg for robotics and mechanism projects. Consult the exact model specifications for voltage and travel.",
+      "category": "Motor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for DSSERVO DS3218MG 20 kg Servo",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 233. Physical stock: 1 individual checkout units. Inventory note: ADD TO WEB"
+    },
+    {
+      "name": "ELEGOO 28BYJ-48 Stepper Motor",
+      "totalQuantity": 9,
+      "description": "28BYJ-48 Stepper Motor from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Motor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO 28BYJ-48 Stepper Motor",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P30:R30. Physical stock: 9 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P30:R30. Physical stock: 9 individual components."
+    },
+    {
+      "name": "ELEGOO 3–6 V DC Motor with Fan Blade",
+      "totalQuantity": 7,
+      "description": "3–6 V DC Motor with Fan Blade from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Motor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO 3–6 V DC Motor with Fan Blade",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P36:R36. Physical stock: 7 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P36:R36. Physical stock: 7 individual components."
+    },
+    {
+      "name": "ELEGOO DC Motor (Red and Black Leads)",
+      "totalQuantity": 10,
+      "description": "DC Motor (Red and Black Leads) from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Motor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO DC Motor (Red and Black Leads)",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P52:R52. Physical stock: 10 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P52:R52. Physical stock: 10 individual components."
+    },
+    {
+      "name": "ELEGOO SG90 Micro Servo",
+      "totalQuantity": 11,
+      "description": "SG90 Micro Servo from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Motor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO SG90 Micro Servo",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P31:R31. Physical stock: 11 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P31:R31. Physical stock: 11 individual components."
+    },
+    {
       "name": "FT5330M servo",
       "description": "FT5330M servo actuator for controlled angular motion. Verify its operating voltage, pulse range, torque, and connector orientation before powering it.",
       "imageUrl": "/images/checkout-image-pending.svg",
@@ -1784,10 +2335,28 @@
       "protectedStock": 0,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 92. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Feetech"
+      "adminNotes": "Spreadsheet rows: 92. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Feetech\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 92. Physical stock: 1 individual checkout units. Inventory note: Took photo"
     },
     {
-      "name": "Grover Stepper Motor",
+      "name": "FUTABA S3004 servo",
+      "description": "Futaba S3004 standard ball-bearing servo for general positional control. It uses a conventional three-wire servo connection and needs a suitable external supply.",
+      "imageUrl": "/images/checkout/components/s3004-servo-0c0cc2418d.webp",
+      "imageAlt": "Product photo of S3004 servo from the linked supplier page",
+      "category": "Motor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "Standard servo PWM control is compatible. For multiple servos, use a servo driver and a separate supply matched to the servos; connect the grounds.",
+      "raspberryPiGuidance": "Use a servo driver for stable PWM. Do not power servos from the Raspberry Pi; use a separate supply matched to the servos and connect the grounds.",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "totalQuantity": 1,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 1,
+      "active": true,
+      "adminNotes": "Spreadsheet rows: 97. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: amazon\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 97. Physical stock: 1 individual checkout units."
+    },
+    {
+      "name": "Grove Stepper Motor",
       "description": "SparkFun stepper motor for precise incremental rotation in positioning mechanisms. Use an appropriate bipolar stepper driver and set the current limit before operation.",
       "imageUrl": "/images/checkout/components/Grover stepper motor.webp",
       "imageAlt": "Product photo of a compact geared stepper motor",
@@ -1833,12 +2402,12 @@
       "raspberryPiGuidance": "Use a servo driver for stable PWM. Do not power servos from the Raspberry Pi; use a separate supply matched to the servos and connect the grounds.",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 11,
+      "totalQuantity": 18,
       "unavailableQuantity": 0,
       "protectedStock": 1,
       "maxActivePerTeam": 3,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 94. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: amazon"
+      "adminNotes": "Spreadsheet rows: 94. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: amazon\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 94. Physical stock: 18 individual checkout units. Inventory note: Try to give with horns (1 pack of horn per team)"
     },
     {
       "name": "Nema 17",
@@ -1856,43 +2425,7 @@
       "protectedStock": 0,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 96. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon"
-    },
-    {
-      "name": "S3004 servo",
-      "description": "Futaba S3004 standard ball-bearing servo for general positional control. It uses a conventional three-wire servo connection and needs a suitable external supply.",
-      "imageUrl": "/images/checkout/components/s3004-servo-0c0cc2418d.webp",
-      "imageAlt": "Product photo of S3004 servo from the linked supplier page",
-      "category": "Motor",
-      "compatibility": "Arduino + Raspberry Pi",
-      "arduinoGuidance": "Standard servo PWM control is compatible. For multiple servos, use a servo driver and a separate supply matched to the servos; connect the grounds.",
-      "raspberryPiGuidance": "Use a servo driver for stable PWM. Do not power servos from the Raspberry Pi; use a separate supply matched to the servos and connect the grounds.",
-      "binLocation": "",
-      "technicalSpecs": "",
-      "totalQuantity": 1,
-      "unavailableQuantity": 0,
-      "protectedStock": 0,
-      "maxActivePerTeam": 1,
-      "active": true,
-      "adminNotes": "Spreadsheet rows: 97. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: amazon"
-    },
-    {
-      "name": "SF3218MG Servo",
-      "description": "High-torque metal-gear digital servo for robotic joints and steering. Confirm voltage, current, and travel settings, and use the matching servo horn and fastener.",
-      "imageUrl": "/images/checkout-image-pending.svg",
-      "imageAlt": "Photo pending review for SF3218MG Servo",
-      "category": "Motor",
-      "compatibility": "Arduino + Raspberry Pi",
-      "arduinoGuidance": "Standard servo PWM control is compatible. For multiple servos, use a servo driver and a separate supply matched to the servos; connect the grounds.",
-      "raspberryPiGuidance": "Use a servo driver for stable PWM. Do not power servos from the Raspberry Pi; use a separate supply matched to the servos and connect the grounds.",
-      "binLocation": "",
-      "technicalSpecs": "",
-      "totalQuantity": 1,
-      "unavailableQuantity": 0,
-      "protectedStock": 0,
-      "maxActivePerTeam": 1,
-      "active": true,
-      "adminNotes": "Spreadsheet rows: 98. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: SunFounder. Original usage notes (needs review): i have the key but not the motor"
+      "adminNotes": "Spreadsheet rows: 96. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 96. Physical stock: 2 individual checkout units."
     },
     {
       "name": "SG90 Servo",
@@ -1905,12 +2438,49 @@
       "raspberryPiGuidance": "Use a servo driver for stable PWM. Do not power servos from the Raspberry Pi; use a separate supply matched to the servos and connect the grounds.",
       "binLocation": "",
       "technicalSpecs": "",
+      "totalQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 1,
+      "active": false,
+      "adminNotes": "Spreadsheet rows: 99. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Tower Pro\nOrganizer confirmed this stock is already included in the surviving JST (13) or ELEGOO SG90 (11) inventory; archived to prevent double counting."
+    },
+    {
+      "name": "Sunfounder 55 g Servo",
+      "totalQuantity": 2,
+      "description": "Sunfounder 55 g servo for robotics mechanisms. This is a separate servo type from the SF3218MG. Verify the label, voltage, and horn fit before use.",
+      "category": "Motor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Sunfounder 55 g Servo",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 98. Physical stock: 2 individual checkout units. Inventory note: ADD TO WEB"
+    },
+    {
+      "name": "Sunfounder SF3218MG Servo",
+      "description": "Sunfounder SF3218MG servo for robotics mechanisms. Research the SF3218MG model for voltage, control pulse, and mechanical specifications.",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending review for SF3218MG Servo",
+      "category": "Motor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "Standard servo PWM control is compatible. For multiple servos, use a servo driver and a separate supply matched to the servos; connect the grounds.",
+      "raspberryPiGuidance": "Use a servo driver for stable PWM. Do not power servos from the Raspberry Pi; use a separate supply matched to the servos and connect the grounds.",
+      "binLocation": "",
+      "technicalSpecs": "",
       "totalQuantity": 2,
       "unavailableQuantity": 0,
       "protectedStock": 0,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 99. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Tower Pro"
+      "adminNotes": "Spreadsheet rows: 98. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: SunFounder. Original usage notes (needs review): i have the key but not the motor\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 232. Physical stock: 2 individual checkout units. Inventory note: ADD TO WEB https://servodatabase.com/servo/sunfounder/55g"
     },
     {
       "name": "TT Gearbox motor",
@@ -1923,12 +2493,12 @@
       "raspberryPiGuidance": "Requires a 3.3 V-compatible motor driver and external motor power. Never power or drive the motor directly from Raspberry Pi GPIO.",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 2,
+      "totalQuantity": 4,
       "unavailableQuantity": 0,
       "protectedStock": 0,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 100. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: not listed. Original usage notes (needs review): yellow shits"
+      "adminNotes": "Spreadsheet rows: 100. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: not listed. Original usage notes (needs review): yellow shits\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 100. Physical stock: 4 individual checkout units. Inventory note: change qty"
     },
     {
       "name": "Type 130",
@@ -1967,7 +2537,26 @@
       "adminNotes": "Spreadsheet rows: 102, 110. Inventory check: 0 of 2 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Adafruit, Digikey. Listed unit cost: $1.20. Original notes: Vibration motor"
     },
     {
-      "name": "Buck convertor (lipos to PIs)",
+      "name": "30 A DC Motor Driver",
+      "totalQuantity": 2,
+      "description": "DC motor driver labeled 30 A. Identify the board model, voltage range, control inputs, cooling needs, and continuous current rating before use.",
+      "category": "Motor Related",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for 30 A DC Motor Driver",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 226. Physical stock: 2 individual checkout units. Inventory note: took photo (blue box) ADD TO WEBSITE"
+    },
+    {
+      "name": "Buck converter (lipos to PIs)",
       "description": "Step-down regulator module for converting a LiPo battery voltage to the stable 5 V rail needed by a Raspberry Pi. Set and verify the output before connecting the Pi.",
       "imageUrl": "/images/checkout/components/buck-convertor-lipos-to-pis-004150b944.webp",
       "imageAlt": "Product photo of Buck convertor (lipos to PIs) from the linked supplier page",
@@ -2013,12 +2602,31 @@
       "raspberryPiGuidance": "Requires a 3.3 V-compatible motor driver and external motor power. Never power or drive the motor directly from Raspberry Pi GPIO.",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 18,
+      "totalQuantity": 36,
       "unavailableQuantity": 0,
       "protectedStock": 2,
       "maxActivePerTeam": 3,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 105. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Digikey. Listed unit cost: $2.70. Original notes: DC motors, some teams might want 8, 4, or none"
+      "adminNotes": "Spreadsheet rows: 105. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Digikey. Listed unit cost: $2.70. Original notes: DC motors, some teams might want 8, 4, or none\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 105. Physical stock: 36 individual checkout units. Inventory note: updated qty"
+    },
+    {
+      "name": "ELEGOO ULN2003 Stepper Motor Driver",
+      "totalQuantity": 8,
+      "description": "ULN2003 Stepper Motor Driver from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Motor Related",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO ULN2003 Stepper Motor Driver",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P29:R29. Physical stock: 8 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P29:R29. Physical stock: 8 individual components."
     },
     {
       "name": "Grove Buzzer",
@@ -2054,7 +2662,7 @@
       "protectedStock": 3,
       "maxActivePerTeam": 2,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 106. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $2.50. Original notes: We need driver to power motor anyway, and this is the simplest driver to play with. Original usage notes (needs review): 27 look still good, 5 unwrapped, 1/5 looks kinda cooked; we should also contemplate using these (the unwrapped ones at LEAST) in gbodies to do stuff//we should buy more stuff to like play with in gbodies"
+      "adminNotes": "Spreadsheet rows: 106. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $2.50. Original notes: We need driver to power motor anyway, and this is the simplest driver to play with. Original usage notes (needs review): 27 look still good, 5 unwrapped, 1/5 looks kinda cooked; we should also contemplate using these (the unwrapped ones at LEAST) in gbodies to do stuff//we should buy more stuff to like play with in gbodies\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 106. Physical stock: 32 individual checkout units. Inventory note: From previous inventory:  27 look still good, 5 unwrapped, 1/5 looks kinda cooked; we should also contemplate using these (the unwrapped ones at LEAST) in gbodies to do stuff//we should buy more stuff to like play with in gbodies"
     },
     {
       "name": "Motor Shield V2.0",
@@ -2108,7 +2716,7 @@
       "protectedStock": 0,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 109. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: amazon"
+      "adminNotes": "Spreadsheet rows: 109. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: amazon\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 109. Physical stock: 1 individual checkout units. Inventory note: ADD TO WEB"
     },
     {
       "description": "Compact dual H-bridge driver for controlling two brushed DC motors or one bipolar stepper with higher efficiency than an L298N module.",
@@ -2126,25 +2734,26 @@
       "active": true,
       "name": "TB6612FNG Dual Motor Driver",
       "totalQuantity": 16,
-      "adminNotes": "Wishlist row 16. Four packages of four boards (16 checkout units). Listed package cost: $9.99. Priority: High."
+      "adminNotes": "Wishlist row 16. Four packages of four boards (16 checkout units). Listed package cost: $9.99. Priority: High.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 16. Physical stock: 16 individual checkout units."
     },
     {
-      "description": "Quiet microstepping driver module for bipolar stepper motors, with configurable current limiting and UART control.",
-      "imageUrl": "/images/checkout/components/tmc2209-v1-3-stepper-motor-driver-194c1b6ada.webp",
-      "imageAlt": "Product photo of TMC2209 V1.3 Stepper Motor Driver from the linked supplier page",
+      "name": "Traxxas Titan 550 12-Turn Motor with ESC",
+      "totalQuantity": 1,
+      "description": "Titan 550 12-turn brushed DC motor with an electronic speed controller. Check the ESC input voltage and control connections before powering.",
       "category": "Motor Related",
       "compatibility": "Arduino + Raspberry Pi",
       "arduinoGuidance": "",
       "raspberryPiGuidance": "",
       "binLocation": "",
-      "technicalSpecs": "TMC2209 V1.3 stepper driver carrier; Step/Dir and UART control; six drivers per linked package.",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Traxxas Titan 550 12-Turn Motor with ESC",
+      "mlhQuantity": 0,
       "unavailableQuantity": 0,
       "protectedStock": 0,
       "maxActivePerTeam": 2,
       "active": true,
-      "name": "TMC2209 V1.3 Stepper Motor Driver",
-      "totalQuantity": 6,
-      "adminNotes": "Wishlist row 29. One package of six drivers. Listed package cost: $29.99. Priority: Essential."
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 89. Physical stock: 1 individual checkout units."
     },
     {
       "name": "Wheels",
@@ -2157,12 +2766,12 @@
       "raspberryPiGuidance": "",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 2,
+      "totalQuantity": 7,
       "unavailableQuantity": 0,
       "protectedStock": 0,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 111. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: not listed. Original usage notes (needs review): we have six"
+      "adminNotes": "Spreadsheet rows: 111. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: not listed. Original usage notes (needs review): we have six\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 111. Physical stock: 7 individual checkout units."
     },
     {
       "name": "Ethernet Cable (1ft, 10GB)",
@@ -2198,7 +2807,45 @@
       "active": true,
       "name": "Micro-HDMI to HDMI Cable",
       "totalQuantity": 2,
-      "adminNotes": "Wishlist row 17. Two cables. Listed unit cost: $6.56. Priority: Essential."
+      "adminNotes": "Wishlist row 17. Two cables. Listed unit cost: $6.56. Priority: Essential.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 17. Physical stock: 2 individual checkout units."
+    },
+    {
+      "name": "Raspberry Pi Camera Holder with Cable",
+      "totalQuantity": 1,
+      "description": "Camera holder with a cable for Raspberry Pi camera projects. Check camera fit and connector compatibility.",
+      "category": "Pi-related",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Raspberry Pi Camera Holder with Cable",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 230. Physical stock: 1 individual checkout units. Inventory note: ADD to WEB"
+    },
+    {
+      "name": "Raspberry Pi Camera Ribbon Cable Set",
+      "totalQuantity": 1,
+      "description": "Ribbon cable set for Raspberry Pi camera connections. Match the cable width, pin count, and board connectors before insertion.",
+      "category": "Pi-related",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Raspberry Pi Camera Ribbon Cable Set",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 228. Physical stock: 1 individual checkout units. Inventory note: ADD TO WEB"
     },
     {
       "name": "SD Cards (16GB)",
@@ -2211,12 +2858,12 @@
       "raspberryPiGuidance": "",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 20,
+      "totalQuantity": 6,
       "unavailableQuantity": 0,
       "protectedStock": 2,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 113. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $3.50"
+      "adminNotes": "Spreadsheet rows: 113. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $3.50\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 113. Physical stock: 6 individual checkout units. Inventory note: SOME RPI HAVE THEM"
     },
     {
       "description": "Full-size USB keyboard and optical mouse set for Raspberry Pi desktop setup, terminal access, and local debugging.",
@@ -2234,7 +2881,7 @@
       "active": true,
       "name": "USB Keyboard and Mouse Combo",
       "totalQuantity": 1,
-      "adminNotes": "Wishlist row 18. One keyboard-and-mouse set. Listed set cost: $15.00. Priority: Essential."
+      "adminNotes": "Wishlist row 18. One keyboard-and-mouse set. Listed set cost: $15.00. Priority: Essential.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 18. Physical stock: 1 individual checkout units."
     },
     {
       "name": "XBee Dongle",
@@ -2255,6 +2902,25 @@
       "adminNotes": "Spreadsheet rows: 114. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: sparkfun"
     },
     {
+      "name": "1584EN DC Voltage Regulator Module",
+      "totalQuantity": 3,
+      "description": "Voltage regulator module marked 1584EN. Check the board input range, output setting, and polarity before powering a circuit.",
+      "category": "Power",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for 1584EN DC Voltage Regulator Module",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 223. Physical stock: 3 individual checkout units. Inventory note: ADD TO WEB"
+    },
+    {
       "name": "3S Lipo Battery",
       "description": "Three-cell lithium-polymer battery pack for high-current mobile projects. Use only with a 3S-compatible charger, monitor cell voltage, and protect it from shorts or physical damage.",
       "imageUrl": "/images/checkout-image-pending.svg",
@@ -2271,6 +2937,82 @@
       "maxActivePerTeam": 2,
       "active": true,
       "adminNotes": "Spreadsheet rows: 115. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $14.59"
+    },
+    {
+      "name": "4×AA Battery Holder with DC Barrel Jack",
+      "totalQuantity": 1,
+      "description": "Holder for four AA batteries with a DC barrel connector. Check the output voltage and center-pin polarity before connecting a device.",
+      "category": "Power",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for 4×AA Battery Holder with DC Barrel Jack",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 224. Physical stock: 1 individual checkout units. Inventory note: ADD TO WEB"
+    },
+    {
+      "name": "8-Channel Servo Power Distribution Node",
+      "totalQuantity": 2,
+      "description": "Eight-channel servo power distribution node. Verify supply polarity, connector pinout, and current rating before connecting servos.",
+      "category": "Power",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for 8-Channel Servo Power Distribution Node",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 86. Physical stock: 2 individual checkout units. Inventory note: Took photo"
+    },
+    {
+      "name": "9 V Battery Snap Connector (Bare Leads)",
+      "totalQuantity": 9,
+      "description": "Snap connector with bare leads for a 9 V battery. This connector has no DC barrel jack. Verify polarity before wiring.",
+      "category": "Power",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for 9 V Battery Snap Connector (Bare Leads)",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 210. Physical stock: 9 individual checkout units. Inventory note: ADD TO WEB"
+    },
+    {
+      "name": "AAA Battery",
+      "totalQuantity": 36,
+      "description": "Individual AAA battery. Check chemistry, voltage, polarity, and condition before installing in a holder.",
+      "category": "Power",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for AAA Battery",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 215. Physical stock: 36 individual checkout units. Inventory note: ADD TO WEB"
     },
     {
       "name": "Battery Bank",
@@ -2291,26 +3033,84 @@
       "adminNotes": "Spreadsheet rows: 116. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $6.30. Original notes: Did not spend long looking, could probobly find better (max current is a concern for moter heavy builds)"
     },
     {
-      "description": "5 V/5 A USB-C power adapter sized for Raspberry Pi 5 boards and attached USB, camera, and wireless peripherals.",
-      "imageUrl": "/images/checkout/components/raspberry-pi-5-usb-c-power-supply-27-w-e71baa283b.webp",
-      "imageAlt": "Product photo of Raspberry Pi 5 USB-C Power Supply (27 W) from the linked supplier page",
+      "name": "ELEGOO 5 V Relay",
+      "totalQuantity": 9,
+      "description": "5 V Relay from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
       "category": "Power",
-      "compatibility": "Raspberry Pi",
+      "compatibility": "Arduino + Raspberry Pi",
       "arduinoGuidance": "",
       "raspberryPiGuidance": "",
       "binLocation": "",
-      "technicalSpecs": "USB-C Power Delivery supply; 27 W maximum; 5 V/5 A Raspberry Pi 5 output profile.",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO 5 V Relay",
+      "mlhQuantity": 0,
       "unavailableQuantity": 0,
       "protectedStock": 0,
-      "maxActivePerTeam": 1,
+      "maxActivePerTeam": 2,
       "active": true,
-      "name": "Raspberry Pi 5 USB-C Power Supply (27 W)",
-      "totalQuantity": 12,
-      "adminNotes": "Wishlist row 19. Twelve power supplies. Listed unit cost: $11.29. Priority: Essential."
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P26:R26. Physical stock: 9 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P26:R26. Physical stock: 9 individual components."
     },
     {
-      "name": "Wall power supply",
-      "description": "Adjustable AC-to-DC wall adapter for bench or installed power. Set the voltage and plug polarity before connection, and stay below the supply's current rating.",
+      "name": "ELEGOO 9 V Battery Snap Connector",
+      "totalQuantity": 7,
+      "description": "9 V Battery Snap Connector from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Power",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO 9 V Battery Snap Connector",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P49:R49. Physical stock: 7 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P49:R49. Physical stock: 7 individual components."
+    },
+    {
+      "name": "ELEGOO Breadboard Power Supply Module",
+      "totalQuantity": 9,
+      "description": "Breadboard Power Supply Module from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Power",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO Breadboard Power Supply Module",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P28:R28. Physical stock: 9 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P28:R28. Physical stock: 9 individual components."
+    },
+    {
+      "name": "ELEGOO Power Distribution Hub",
+      "totalQuantity": 1,
+      "description": "Power Distribution Hub from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Power",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO Power Distribution Hub",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P51:R51. Physical stock: 1 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P51:R51. Physical stock: 1 individual components."
+    },
+    {
+      "name": "Facmogu Adjustable DC Power Supply",
+      "description": "Facmogu adjustable DC power supply. Set and measure the output voltage and verify connector polarity before connecting hardware.",
       "imageUrl": "/images/checkout/components/wall-power-supply-cbdbf49bb3.webp",
       "imageAlt": "Product photo of Wall power supply from the linked supplier page",
       "category": "Power",
@@ -2319,12 +3119,31 @@
       "raspberryPiGuidance": "",
       "binLocation": "",
       "technicalSpecs": "",
-      "totalQuantity": 6,
+      "totalQuantity": 7,
       "unavailableQuantity": 0,
       "protectedStock": 0,
       "maxActivePerTeam": 2,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 117. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $15.12. Original notes: Wall power. Original usage notes (needs review): 7->6"
+      "adminNotes": "Spreadsheet rows: 117. Inventory check: 1 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $15.12. Original notes: Wall power. Original usage notes (needs review): 7->6\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 117. Physical stock: 7 individual checkout units."
+    },
+    {
+      "name": "USB-C Power Supply",
+      "totalQuantity": 1,
+      "description": "USB-C power supply for compatible hardware. Check the adapter label and supported output profiles before use.",
+      "category": "Power",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for USB-C Power Supply",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 207. Physical stock: 1 individual checkout units. Inventory note: ADD TO WEB"
     },
     {
       "name": "Wire Spool",
@@ -2471,6 +3290,25 @@
       "adminNotes": "Spreadsheet rows: 125. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Adafruit"
     },
     {
+      "name": "Adafruit SHTC3 Temperature and Humidity Sensor",
+      "totalQuantity": 2,
+      "description": "Adafruit SHTC3 sensor module for temperature and relative humidity measurement over I2C.",
+      "category": "Sensor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Adafruit SHTC3 Temperature and Humidity Sensor",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 222. Physical stock: 2 individual checkout units. Inventory note: ADD TO WEB"
+    },
+    {
       "name": "Air Quality Sensor",
       "description": "SparkFun air-quality sensor board for detecting changes in indoor volatile compounds and pollution-related gases. Allow warm-up and treat readings as relative unless calibrated.",
       "imageUrl": "/images/checkout/components/Air quality sensor.webp",
@@ -2504,7 +3342,7 @@
       "active": true,
       "name": "Analog Pulse Sensor",
       "totalQuantity": 6,
-      "adminNotes": "Wishlist row 31. Two packages of three sensors (six checkout units). Listed package cost: $16.99. Kept separate from MAX30102 digital pulse-oximeter modules."
+      "adminNotes": "Wishlist row 31. Two packages of three sensors (six checkout units). Listed package cost: $16.99. Kept separate from MAX30102 digital pulse-oximeter modules.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 31. Physical stock: 6 individual checkout units. Inventory note: Found 2"
     },
     {
       "description": "Multichannel visible and near-infrared light sensor for color measurement, material comparison, and simple spectrometry experiments.",
@@ -2522,7 +3360,7 @@
       "active": true,
       "name": "AS7341 11-channel Spectral Sensor",
       "totalQuantity": 3,
-      "adminNotes": "Wishlist row 27. Three modules. Listed unit cost: $19.99. Priority: Medium."
+      "adminNotes": "Wishlist row 27. Three modules. Listed unit cost: $19.99. Priority: Medium.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 27. Physical stock: 3 individual checkout units. Inventory note: Found 3"
     },
     {
       "name": "Barometer Sense Board",
@@ -2557,8 +3395,65 @@
       "maxActivePerTeam": 2,
       "active": true,
       "name": "BME680 Environmental Sensor",
-      "totalQuantity": 6,
-      "adminNotes": "Wishlist row 22. Three packages of two modules (six checkout units). Listed package cost: $21.88. Priority: Medium."
+      "totalQuantity": 4,
+      "adminNotes": "Wishlist row 22. Three packages of two modules (six checkout units). Listed package cost: $21.88. Priority: Medium.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 22. Physical stock: 4 individual checkout units. Inventory note: Found 4"
+    },
+    {
+      "name": "ELEGOO 2-Axis Analog Joystick Module",
+      "totalQuantity": 12,
+      "description": "2-Axis Analog Joystick Module from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. There are 12 joystick modules but only 7 removable thumb caps. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Sensor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO 2-Axis Analog Joystick Module",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P33:R33. Physical stock: 12 individual checkout units. Inventory note: only 7 joystick toppers though\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P33:R33. Physical stock: 12 individual components. Inventory note: only 7 joystick toppers though"
+    },
+    {
+      "name": "ELEGOO DHT11 Temperature and Humidity Module",
+      "totalQuantity": 13,
+      "description": "DHT11 Temperature and Humidity Module from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Sensor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO DHT11 Temperature and Humidity Module",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P34:R34. Physical stock: 13 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P34:R34. Physical stock: 13 individual components."
+    },
+    {
+      "name": "ELEGOO Infrared Receiver Module",
+      "totalQuantity": 13,
+      "description": "Infrared Receiver Module from the reorganized ELEGOO Super Starter Arduino kit inventory. Issued individually. Check the ELEGOO UNO R3 Super Starter Kit tutorial for wiring and example projects.",
+      "category": "Sensor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for ELEGOO Infrared Receiver Module",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P32:R32. Physical stock: 13 individual checkout units.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row P32:R32. Physical stock: 13 individual components."
     },
     {
       "name": "Encoder Sensor - slotted optical interrupter",
@@ -2577,24 +3472,6 @@
       "maxActivePerTeam": 2,
       "active": true,
       "adminNotes": "Spreadsheet rows: 126. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: components101"
-    },
-    {
-      "description": "Bend-sensitive variable resistor for wearable controls, gesture gloves, and joint-angle prototypes. Use it in a voltage divider and avoid sharp folds.",
-      "imageUrl": "/images/checkout/components/flex-sensor-2-2-inch-b54b0addc5.webp",
-      "imageAlt": "Product photo of Flex Sensor (2.2-inch) from the linked supplier page",
-      "category": "Sensor",
-      "compatibility": "Arduino + Raspberry Pi",
-      "arduinoGuidance": "",
-      "raspberryPiGuidance": "",
-      "binLocation": "",
-      "technicalSpecs": "2.2-inch resistive flex/bend sensor; resistance increases as the strip bends.",
-      "unavailableQuantity": 0,
-      "protectedStock": 0,
-      "maxActivePerTeam": 2,
-      "active": true,
-      "name": "Flex Sensor (2.2-inch)",
-      "totalQuantity": 8,
-      "adminNotes": "Wishlist row 33. Eight sensors. Listed unit cost: $10.59. Priority: Medium. The linked Amazon page returned 404 during image retrieval, so the local preview uses the equivalent SparkFun SEN-10264 product photo."
     },
     {
       "name": "Gesture Sensor",
@@ -2767,14 +3644,14 @@
       "arduinoGuidance": "",
       "raspberryPiGuidance": "",
       "binLocation": "",
-      "technicalSpecs": "INA219; I2C; monitors up to 26 V bus voltage; onboard shunt resistor; one module per linked package.",
+      "technicalSpecs": "INA219 current and power monitor; I2C interface; two modules per received package.",
       "unavailableQuantity": 0,
       "protectedStock": 0,
       "maxActivePerTeam": 2,
       "active": true,
       "name": "INA219 Current and Power Monitor",
       "totalQuantity": 8,
-      "adminNotes": "Wishlist row 25. Eight modules. Listed unit cost: $6.99. Priority: Medium."
+      "adminNotes": "Wishlist row 25. Eight modules. Listed unit cost: $6.99. Priority: Medium.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 25. Physical stock: 8 individual checkout units. Inventory note: Found 4 (each has 2)"
     },
     {
       "name": "IR Break Beam Sensor",
@@ -2828,7 +3705,7 @@
       "active": true,
       "name": "LD2410C mmWave Presence Radar",
       "totalQuantity": 2,
-      "adminNotes": "Wishlist row 20. Two modules. Listed unit cost: $20.48. Priority: High."
+      "adminNotes": "Wishlist row 20. Two modules. Listed unit cost: $20.48. Priority: High.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 20. Physical stock: 2 individual checkout units. Inventory note: Found 2"
     },
     {
       "name": "Light Dependent Resistor",
@@ -2849,22 +3726,23 @@
       "adminNotes": "Spreadsheet rows: 132. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $0.74. Original notes: ADC to work with the PI"
     },
     {
-      "description": "Digital sensor for ultraviolet-A intensity and ambient visible-light measurements, useful for UV-index and illuminance projects.",
-      "imageUrl": "/images/checkout/components/ltr390-uv-and-ambient-light-sensor-4e7b107f03.webp",
-      "imageAlt": "Product photo of LTR390 UV and Ambient Light Sensor from the linked supplier page",
+      "name": "Liquid Level Sensor",
+      "totalQuantity": 6,
+      "description": "Liquid level sensor for tank monitoring and liquid detection prototypes. Identify the connector and supply requirements before use.",
       "category": "Sensor",
       "compatibility": "Arduino + Raspberry Pi",
       "arduinoGuidance": "",
       "raspberryPiGuidance": "",
       "binLocation": "",
-      "technicalSpecs": "LTR390; UVA and ambient-light modes; I2C digital output.",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Liquid Level Sensor",
+      "mlhQuantity": 0,
       "unavailableQuantity": 0,
       "protectedStock": 0,
-      "maxActivePerTeam": 1,
+      "maxActivePerTeam": 2,
       "active": true,
-      "name": "LTR390 UV and Ambient Light Sensor",
-      "totalQuantity": 2,
-      "adminNotes": "Wishlist row 28. Two modules. Listed unit cost: $14.60. Priority: Medium."
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 221. Physical stock: 6 individual checkout units. Inventory note: ADD TO WEB"
     },
     {
       "name": "MAX30102 Pulse Oximeter (Heart Rate + SpO₂)",
@@ -2877,12 +3755,12 @@
       "raspberryPiGuidance": "",
       "binLocation": "",
       "technicalSpecs": "MAX30102 reflective photoplethysmography sensor; red and infrared LEDs; I2C interface; measures pulse waveform and supports estimated SpO₂ calculations.",
-      "totalQuantity": 13,
+      "totalQuantity": 7,
       "unavailableQuantity": 0,
       "protectedStock": 0,
       "maxActivePerTeam": 1,
       "active": true,
-      "adminNotes": "Spreadsheet rows: 129. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $6.50. Original notes: Says arduino, but uses I2C Wishlist rows 26 and 32 add three single modules and two two-packs (seven checkout units) to the existing six MAX30102 modules."
+      "adminNotes": "Spreadsheet rows: 129. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: Amazon. Listed unit cost: $6.50. Original notes: Says arduino, but uses I2C Wishlist rows 26 and 32 add three single modules and two two-packs (seven checkout units) to the existing six MAX30102 modules.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 26,32. Physical stock: 7 individual checkout units. Inventory note: Found 3"
     },
     {
       "name": "Moisture sensor",
@@ -2990,7 +3868,7 @@
       "active": true,
       "name": "PMS5003 Particulate Matter Sensor",
       "totalQuantity": 3,
-      "adminNotes": "Wishlist row 24. Three sensors. Listed unit cost: $22.99. Priority: Medium."
+      "adminNotes": "Wishlist row 24. Three sensors. Listed unit cost: $22.99. Priority: Medium.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 24. Physical stock: 3 individual checkout units. Inventory note: Found 3"
     },
     {
       "name": "Pressure Resistance Strain Gauge",
@@ -3062,7 +3940,7 @@
       "active": true,
       "name": "SCD41 NDIR CO₂ Sensor",
       "totalQuantity": 4,
-      "adminNotes": "Wishlist row 21. Four modules. Listed unit cost: $26.99. Priority: Medium."
+      "adminNotes": "Wishlist row 21. Four modules. Listed unit cost: $26.99. Priority: Medium.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 21. Physical stock: 4 individual checkout units."
     },
     {
       "name": "SEN-14585 (fingerprint)",
@@ -3081,6 +3959,25 @@
       "maxActivePerTeam": 1,
       "active": true,
       "adminNotes": "Spreadsheet rows: 197. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: MLH. Product/vendor: digikey"
+    },
+    {
+      "name": "Sonar Altimeter and Echosounder (PING)",
+      "totalQuantity": 1,
+      "description": "Sonar altimeter and echosounder for acoustic ranging projects. Identify the model, interface, supply requirements, and operating medium before use.",
+      "category": "Sensor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Sonar Altimeter and Echosounder",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 236. Physical stock: 1 individual checkout units. Inventory note: ADD TO WEB"
     },
     {
       "name": "Temperature Sensor",
@@ -3137,6 +4034,25 @@
       "adminNotes": "Spreadsheet rows: 144. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: CURC. Product/vendor: not listed"
     },
     {
+      "name": "TouchTronix SNX0505-SNS-01 Tactile Sensor",
+      "totalQuantity": 8,
+      "description": "TouchTronix Robotics SNX0505-SNS-01 tactile sensor for contact sensing in robotics. Research this exact part number for integration and connection details.",
+      "category": "Sensor",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "https://mm.digikey.com/Volume0/opasdata/d220001/derivates/1/008/216/330/MFG_SNX0505-SNS-01_secondary_sml%28200x200%29.jpg",
+      "imageAlt": "Supplier photo of the TouchTronix SNX0505-SNS-01 tactile sensor",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 206. Physical stock: 8 individual checkout units. Inventory note: ADD TO WEB"
+    },
+    {
       "description": "Multizone laser ranging module for gesture sensing, presence detection, depth maps, and short-range obstacle measurements.",
       "imageUrl": "/images/checkout/components/vl53l5cx-multizone-time-of-flight-sensor-d59e619e8a.webp",
       "imageAlt": "Product photo of VL53L5CX Multizone Time-of-Flight Sensor from the linked supplier page",
@@ -3152,7 +4068,7 @@
       "active": true,
       "name": "VL53L5CX Multizone Time-of-Flight Sensor",
       "totalQuantity": 4,
-      "adminNotes": "Wishlist row 23. Two packages of two modules (four checkout units). Listed package cost: $25.99. Priority: Medium."
+      "adminNotes": "Wishlist row 23. Two packages of two modules (four checkout units). Listed package cost: $25.99. Priority: Medium.\nReconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: Inventory of Wishlist 110526, row 23. Physical stock: 4 individual checkout units."
     },
     {
       "name": "Curved Tweezers EROP7SA-ND",
@@ -3245,6 +4161,25 @@
       "adminNotes": "Spreadsheet rows: 204. Inventory check: 0 of 1 source rows confirmed on 10/4/26. Source: MLH. Product/vendor: digikey"
     },
     {
+      "name": "Small Camera Tripod",
+      "totalQuantity": 1,
+      "description": "Compact tripod for supporting compatible cameras or project fixtures. Check the mounting thread and load before use.",
+      "category": "Tool",
+      "compatibility": "Arduino + Raspberry Pi",
+      "arduinoGuidance": "",
+      "raspberryPiGuidance": "",
+      "binLocation": "",
+      "technicalSpecs": "",
+      "imageUrl": "/images/checkout-image-pending.svg",
+      "imageAlt": "Photo pending for Small Camera Tripod",
+      "mlhQuantity": 0,
+      "unavailableQuantity": 0,
+      "protectedStock": 0,
+      "maxActivePerTeam": 2,
+      "active": true,
+      "adminNotes": "Reconciled with November 6 physical inventory and received wishlist, reviewed November 7, 2026. Source: FINAL Inventory Check - 1106202, row 227. Physical stock: 1 individual checkout units. Inventory note: ADD TO WEB"
+    },
+    {
       "name": "Wire Strippers K604-ND",
       "description": "Jonard JIC-2030 wire stripper for removing insulation from common hookup-wire gauges. Match the conductor to the correct notch to avoid nicking the copper.",
       "imageUrl": "/images/checkout/components/Wire Strippers K604-ND.webp",
@@ -3321,7 +4256,7 @@
       "message": "For multiple servos, use a multi-channel servo driver and a separate power supply matched to the servo voltage and total current."
     },
     {
-      "sourceName": "Grover Stepper Motor",
+      "sourceName": "Grove Stepper Motor",
       "targetName": "L298N motor driver",
       "relationType": "recommends",
       "quantityRatio": 1,
@@ -3337,7 +4272,7 @@
       "message": "For multiple servos, use a multi-channel servo driver and a separate power supply matched to the servo voltage and total current."
     },
     {
-      "sourceName": "S3004 servo",
+      "sourceName": "FUTABA S3004 servo",
       "targetName": "Servo Driver",
       "relationType": "recommends",
       "quantityRatio": 16,
@@ -3345,7 +4280,7 @@
       "message": "For multiple servos, use a multi-channel servo driver and a separate power supply matched to the servo voltage and total current."
     },
     {
-      "sourceName": "SF3218MG Servo",
+      "sourceName": "Sunfounder SF3218MG Servo",
       "targetName": "Servo Driver",
       "relationType": "recommends",
       "quantityRatio": 16,

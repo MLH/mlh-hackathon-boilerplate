@@ -19,16 +19,16 @@ test("the finalized catalog imports atomically only into an empty inventory", as
   const catalog = readCatalog(catalogPath);
   const result = await importCatalog(database, catalog);
 
-  assert.deepEqual(result, { componentCount: 181, relationshipCount: 14 });
+  assert.deepEqual(result, { componentCount: catalog.components.length, relationshipCount: catalog.relationships.length });
   const counts = await database.query(
     `SELECT
        (SELECT COUNT(*) FROM checkout_components) AS components,
        (SELECT COUNT(*) FROM checkout_component_relationships) AS relationships,
        (SELECT COUNT(*) FROM checkout_inventory_transactions) AS transactions`
   );
-  assert.equal(Number(counts.rows[0].components), 181);
+  assert.equal(Number(counts.rows[0].components), catalog.components.length);
   assert.equal(Number(counts.rows[0].relationships), 14);
-  assert.equal(Number(counts.rows[0].transactions), 181);
+  assert.equal(Number(counts.rows[0].transactions), catalog.components.length);
   const mlh = await database.query(
     `SELECT
        COUNT(*) FILTER (WHERE mlh_quantity = total_quantity AND total_quantity > 0) AS mlh_only,

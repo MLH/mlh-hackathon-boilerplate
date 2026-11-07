@@ -5,6 +5,9 @@ const { liveStatus } = require("./_lib/checkout-live");
 const { verifyPassword } = require("./_lib/checkout-security");
 const { cleanString, httpError } = require("./_lib/checkout-validation");
 const service = require("./_lib/checkout-service");
+const MAX_REQUEST_BYTES = 64 * 1024;
+const MAX_FAILED_LOGINS = 10;
+const DUMMY_PASSWORD_HASH = `scrypt:${"0".repeat(32)}:${"0".repeat(128)}`;
 
 function canonicalJson(value) {
   if (Array.isArray(value)) {
@@ -71,6 +74,9 @@ function send(response, status, payload) {
   response.statusCode = status;
   response.setHeader("Content-Type", "application/json; charset=utf-8");
   response.setHeader("Cache-Control", "no-store");
+  response.setHeader("X-Content-Type-Options", "nosniff");
+  response.setHeader("X-Frame-Options", "DENY");
+  response.setHeader("Referrer-Policy", "no-referrer");
   response.end(JSON.stringify(payload));
 }
 
@@ -96,33 +102,69 @@ function validateRequestOrigin(request) {
 
   const origin = request.headers.origin;
   const host = request.headers.host;
+  const fetchSite = request.headers["sec-fetch-site"];
+
+  if (fetchSite === "cross-site") {
+    throw httpError(403, "Cross-site requests are not allowed.");
+  }
 
   if (origin && host) {
-    const parsed = new URL(origin);
+    let parsed;
 
-    if (parsed.host !== host) {
+    try {
+      parsed = new URL(origin);
+    } catch (error) {
+      throw httpError(403, "Cross-site requests are not allowed.");
+    }
+
+    if (!/^https?:$/.test(parsed.protocol) || parsed.host !== host) {
       throw httpError(403, "Cross-site requests are not allowed.");
     }
   }
 }
 
 async function bodyOf(request) {
+  const declaredLength = Number(request.headers["content-length"] || 0);
+
+  if (Number.isFinite(declaredLength) && declaredLength > MAX_REQUEST_BYTES) {
+    throw httpError(413, "The request is too large.");
+  }
+
   if (request.body && typeof request.body === "object") {
+    if (Buffer.byteLength(JSON.stringify(request.body), "utf8") > MAX_REQUEST_BYTES) {
+      throw httpError(413, "The request is too large.");
+    }
     return request.body;
   }
 
   if (typeof request.body === "string") {
+    if (Buffer.byteLength(request.body, "utf8") > MAX_REQUEST_BYTES) {
+      throw httpError(413, "The request is too large.");
+    }
     return request.body ? JSON.parse(request.body) : {};
   }
 
   const chunks = [];
+  let bytes = 0;
 
   for await (const chunk of request) {
+    bytes += chunk.length;
+    if (bytes > MAX_REQUEST_BYTES) {
+      throw httpError(413, "The request is too large.");
+    }
     chunks.push(chunk);
   }
 
   const raw = Buffer.concat(chunks).toString("utf8");
   return raw ? JSON.parse(raw) : {};
+}
+
+function clientAddress(request) {
+  const forwarded = request.headers["x-forwarded-for"];
+  const value = request.headers["x-real-ip"] ||
+    (Array.isArray(forwarded) ? forwarded[0] : String(forwarded || "").split(",")[0]) ||
+    request.socket && request.socket.remoteAddress || "unknown";
+  return String(value).trim().slice(0, 120) || "unknown";
 }
 
 async function handler(request, response) {
@@ -153,6 +195,21 @@ async function handler(request, response) {
     if (action === "login") {
       const username = cleanString(body.username, "Username", { max: 80 }).toLowerCase();
       const password = cleanString(body.password, "Password", { max: 200 });
+      const address = clientAddress(request);
+      const failedAttempts = await database.query(
+        `SELECT COUNT(*) AS address_count,
+                COUNT(*) FILTER (WHERE username = $1) AS username_count
+           FROM checkout_login_attempts
+          WHERE client_address = $2 AND succeeded = FALSE
+            AND attempted_at > NOW() - INTERVAL '15 minutes'`,
+        [username, address]
+      );
+
+      if (Number(failedAttempts.rows[0].username_count) >= MAX_FAILED_LOGINS ||
+          Number(failedAttempts.rows[0].address_count) >= 50) {
+        throw httpError(429, "Too many sign-in attempts. Try again in 15 minutes.");
+      }
+
       const result = await database.query(
         `SELECT users.*, teams.name AS team_name
            FROM checkout_users users
@@ -161,8 +218,14 @@ async function handler(request, response) {
         [username]
       );
       const user = result.rows[0];
+      const passwordMatches = await verifyPassword(password, user ? user.password_hash : DUMMY_PASSWORD_HASH);
 
-      if (!user || !(await verifyPassword(password, user.password_hash))) {
+      if (!user || !passwordMatches) {
+        await database.query(
+          `INSERT INTO checkout_login_attempts (username, client_address, succeeded)
+           VALUES ($1, $2, FALSE)`,
+          [username, address]
+        );
         throw httpError(401, "The username or password is incorrect.");
       }
 
@@ -170,6 +233,17 @@ async function handler(request, response) {
         throw httpError(423, "Team checkout is available only while the MakeCU hackathon is live.", { status });
       }
 
+      await database.query(
+        `INSERT INTO checkout_login_attempts (username, client_address, succeeded)
+         VALUES ($1, $2, TRUE)`,
+        [username, address]
+      );
+      await database.query(
+        `DELETE FROM checkout_login_attempts
+          WHERE attempted_at < NOW() - INTERVAL '24 hours'
+             OR (username = $1 AND client_address = $2 AND succeeded = FALSE)`,
+        [username, address]
+      );
       await createSession(database, response, user.id);
       send(response, 200, { user: publicUser(user) });
       return;
@@ -196,7 +270,8 @@ async function handler(request, response) {
       throw httpError(423, "New hardware orders are closed. Volunteers can still process returns.", { status });
     }
 
-    if ((action === "process-return" || action === "correct-return") && !status.returnsOpen && user.role !== "admin") {
+    if ((action === "process-return" || action === "correct-return") && !status.returnsOpen &&
+        (!user || user.role !== "admin")) {
       throw httpError(423, "The hardware return period is closed.", { status });
     }
 
@@ -281,6 +356,10 @@ async function handler(request, response) {
     } else if (action === "reset-team-password") {
       send(response, 200, await mutate(function (transaction) {
         return service.resetTeamPassword(transaction, body, admin);
+      }));
+    } else if (action === "grant-order-timeout-exception") {
+      send(response, 201, await mutate(function (transaction) {
+        return service.grantOrderCooldownOverride(transaction, body, admin);
       }));
     } else if (action === "process-return") {
       send(response, 201, await mutate(function (transaction) {
