@@ -171,6 +171,9 @@
     session.hidden = !user;
 
     if (user) {
+      var nameButton = session.querySelector("[data-change-account-name]");
+      nameButton.disabled = !user.canChangeName;
+      nameButton.textContent = user.canChangeName ? "Change name (once)" : "Name change used";
       session.querySelector("[data-session-name]").textContent = user.role === "team"
         ? user.teamName
         : user.displayName;
@@ -650,6 +653,11 @@
     }
 
     var draft = { returns: {}, overrides: {}, corrections: {} };
+    var profile = container.querySelector("[data-team-profile-form]");
+    if (profile && profile.dataset.dirty === "true") {
+      draft.profile = Array.from(profile.querySelectorAll("input")).map(captureFieldDraft);
+      draft.profileVersion = profile.dataset.version;
+    }
     container.querySelectorAll("[data-return-component]").forEach(function (row) {
       draft.returns[row.dataset.returnComponent] = {
         quantity: captureFieldDraft(row.querySelector("[data-return-quantity]")),
@@ -692,6 +700,13 @@
       return;
     }
 
+    var profile = container.querySelector("[data-team-profile-form]");
+    if (profile && draft.profile) {
+      profile.dataset.dirty = "true";
+      profile.dataset.version = draft.profileVersion;
+      profile.querySelectorAll("input").forEach(function (field, index) { restoreFieldDraft(field, draft.profile[index]); });
+    }
+
     container.querySelectorAll("[data-return-component]").forEach(function (row) {
       var rowDraft = draft.returns[row.dataset.returnComponent];
       if (!rowDraft) return;
@@ -729,6 +744,7 @@
     if (!container || !container.dataset.teamDetailTeam) {
       return false;
     }
+    if (container.querySelector('[data-team-profile-form][data-dirty="true"]')) return true;
 
     if (container.querySelector(".checkout-protected-order[open], .checkout-return-correction[open]")) {
       return true;
@@ -783,7 +799,11 @@
         '</p>' + (cooldown.overrideAvailable ? '' : '<button class="checkout-button checkout-button-secondary" type="button" data-remove-order-timeout="' + detail.team.id + '">Grant one-order exception</button>') + '</section>'
       : '';
 
-    container.innerHTML = '<div class="checkout-order-card-header"><div><span class="checkout-kicker">TEAM</span><h2>' + escapeHtml(detail.team.name) + '</h2><p class="checkout-order-card-meta">' + escapeHtml(detail.team.identifier) + '</p></div><button class="checkout-button checkout-button-secondary" type="button" data-reset-password="' + detail.team.id + '">Reset password</button></div>' + timeoutControl + '<h3 class="checkout-section-title">Currently Holding</h3>' + holding + protectedOrder + '<h3 class="checkout-section-title">Orders & Pickup History</h3>' + orders + '<h3 class="checkout-section-title">Return History</h3>' + receipts + corrections;
+    var profile = '<aside class="checkout-team-profile"><form class="checkout-form" data-team-profile-form data-version="' + detail.team.profileVersion + '"><h3>Team members & contact</h3><p class="checkout-form-note">Only admins can add or change these details. Leave unused names blank.</p>' +
+      [0, 1, 2, 3].map(function (index) {
+        return '<label>Member ' + (index + 1) + '<input name="member' + index + '" maxlength="120" autocomplete="off" value="' + escapeHtml((detail.team.memberNames || [])[index] || '') + '"></label>';
+      }).join('') + '<label>Contact email<input name="contactEmail" type="email" maxlength="254" autocomplete="off" value="' + escapeHtml(detail.team.contactEmail || '') + '"></label><p class="checkout-form-error" data-profile-error role="alert" hidden></p><button class="checkout-button checkout-button-primary" type="submit">Save team details</button><button class="checkout-button checkout-button-secondary" type="button" data-reload-team-profile>Reload saved details</button></form></aside>';
+    container.innerHTML = '<div class="checkout-team-detail-grid"><div class="checkout-team-history"><div class="checkout-order-card-header"><div><span class="checkout-kicker">TEAM</span><h2>' + escapeHtml(detail.team.name) + '</h2><p class="checkout-order-card-meta">' + escapeHtml(detail.team.identifier) + '</p></div><button class="checkout-button checkout-button-secondary" type="button" data-reset-password="' + detail.team.id + '">Reset password</button></div>' + timeoutControl + '<h3 class="checkout-section-title">Currently Holding</h3>' + holding + protectedOrder + '<h3 class="checkout-section-title">Orders & Pickup History</h3>' + orders + '<h3 class="checkout-section-title">Return History</h3>' + receipts + corrections + '</div>' + profile + '</div>';
     container.dataset.teamDetailTeam = detail.team.id;
     restoreTeamDetailDraft(container, draft);
   };
@@ -1373,6 +1393,69 @@
         setBusy(timeoutButton, false);
       }
     }
+  });
+
+  document.querySelector("[data-team-detail]").addEventListener("input", function (event) {
+    var profile = event.target.closest("[data-team-profile-form]");
+    if (profile) profile.dataset.dirty = "true";
+  });
+  document.querySelector("[data-team-detail]").addEventListener("click", async function (event) {
+    if (!event.target.closest("[data-reload-team-profile]")) return;
+    var form = event.target.closest("[data-team-profile-form]");
+    form.dataset.dirty = "false";
+    try { await loadTeamDetail(state.selectedTeamId); }
+    catch (error) { notify(error.message); }
+  });
+  document.querySelector("[data-team-detail]").addEventListener("submit", async function (event) {
+    var form = event.target.closest("[data-team-profile-form]");
+    if (!form) return;
+    event.preventDefault();
+    var button = form.querySelector('button[type="submit"]');
+    var errorElement = form.querySelector("[data-profile-error]");
+    var teamId = Number(form.closest("[data-team-detail]").dataset.teamDetailTeam);
+    errorElement.hidden = true;
+    setBusy(button, true, "Saving…");
+    try {
+      await mutate("save-team-profile", {
+        teamId: teamId, version: Number(form.dataset.version),
+        memberNames: [0, 1, 2, 3].map(function (index) { return form.elements['member' + index].value; }),
+        contactEmail: form.elements.contactEmail.value
+      });
+      form.dataset.dirty = "false";
+      if (state.selectedTeamId === teamId) await loadTeamDetail(teamId);
+      await loadTeams();
+      notify("Team members and contact saved.");
+    } catch (error) {
+      errorElement.textContent = error.message;
+      errorElement.hidden = false;
+    } finally { setBusy(button, false); }
+  });
+
+  document.querySelector("[data-change-account-name]").addEventListener("click", function () {
+    var dialog = document.querySelector("[data-account-name-dialog]");
+    dialog.querySelector("input").value = state.user.displayName;
+    dialog.querySelector("[data-account-name-error]").hidden = true;
+    dialog.showModal();
+  });
+  document.querySelector("[data-cancel-account-name]").addEventListener("click", function () {
+    document.querySelector("[data-account-name-dialog]").close();
+  });
+  document.querySelector("[data-account-name-form]").addEventListener("submit", async function (event) {
+    event.preventDefault();
+    var form = event.currentTarget;
+    var button = form.querySelector('button[type="submit"]');
+    var errorElement = form.querySelector("[data-account-name-error]");
+    errorElement.hidden = true;
+    setBusy(button, true, "Saving…");
+    try {
+      var result = await mutate("change-account-name", { name: form.elements.accountName.value });
+      setSession(result.user);
+      document.querySelector("[data-account-name-dialog]").close();
+      notify("Account name changed. Your one name change has been used.");
+    } catch (error) {
+      errorElement.textContent = error.message;
+      errorElement.hidden = false;
+    } finally { setBusy(button, false); }
   });
 
   document.querySelector("[data-open-team-create]").addEventListener("click", function () { teamCreateDialog.showModal(); });

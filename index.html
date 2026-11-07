@@ -122,10 +122,7 @@ layout: default
       <p class="location-line">{{ site.event.location }}</p>
       <p class="hero-copy">{{ site.event.description }}</p>
       <div class="hero-actions" id="registration">
-        <span class="button button-application-closed" aria-disabled="true">
-          <span>Application Form</span>
-          <small>Closed. No late apps.</small>
-        </span>
+        <a class="button button-primary" href="{{ '/checkout/' | relative_url }}">Hardware Checkout</a>
         <a class="button button-volunteer" href="{{ site.event.volunteer_url }}" target="_blank" rel="noopener noreferrer">Volunteering Form</a>
         <a class="button button-discord" href="{{ site.event.discord_url }}"><img class="button-icon button-icon-discord" src="{{ '/images/icons/discord-logo.webp' | relative_url }}" alt="" aria-hidden="true">Discord</a>
         <a class="button button-instagram" href="{{ site.social.instagram }}" target="_blank" rel="noopener noreferrer"><img class="button-icon" src="{{ '/images/icons/instagram-logo.webp' | relative_url }}" alt="" aria-hidden="true">Instagram</a>

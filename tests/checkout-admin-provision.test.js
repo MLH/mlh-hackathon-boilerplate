@@ -28,7 +28,7 @@ after(async function () {
   fs.rmSync(directory, { recursive: true, force: true });
 });
 
-test("provisions four distinct admin accounts without storing plaintext passwords in the database", async function () {
+test("provisions 15 distinct admin accounts without storing plaintext passwords in the database", async function () {
   const result = await provisionAdminAccounts(database, { credentialsPath });
   const credentials = JSON.parse(fs.readFileSync(credentialsPath, "utf8"));
   const rows = await database.query(
@@ -36,12 +36,12 @@ test("provisions four distinct admin accounts without storing plaintext password
     [ADMIN_ACCOUNTS.map(function (account) { return account.username; })]
   );
 
-  assert.deepEqual(result.usernames, ["admin-1", "admin-2", "admin-3", "admin-4"]);
-  assert.equal(credentials.accounts.length, 4);
-  assert.equal(new Set(credentials.accounts.map(function (account) { return account.password; })).size, 4);
+  assert.deepEqual(result.usernames, Array.from({ length: 15 }, (_, index) => `admin-${index + 1}`));
+  assert.equal(credentials.accounts.length, 15);
+  assert.equal(new Set(credentials.accounts.map(function (account) { return account.password; })).size, 15);
   assert.ok(credentials.accounts.every(function (account) { return account.password.length >= 30; }));
-  assert.equal(rows.rows.length, 4);
-  assert.deepEqual(rows.rows.map(function (row) { return row.display_name; }), ["Otavio", "Alice", "Nehal", "Sarrah"]);
+  assert.equal(rows.rows.length, 15);
+  assert.equal(rows.rows.find(row => row.username === "admin-1").display_name, "Otavio Paz");
   const legacy = await database.query("SELECT active FROM checkout_users WHERE username = 'admin'");
   assert.equal(legacy.rows[0].active, false);
 
@@ -61,5 +61,19 @@ test("re-running provisioning preserves existing passwords unless rotation is ex
   const after = fs.readFileSync(credentialsPath, "utf8");
   assert.equal(after, before);
   const refreshed = await database.query("SELECT display_name FROM checkout_users WHERE username = 'admin-1'");
-  assert.equal(refreshed.rows[0].display_name, "Otavio");
+  assert.equal(refreshed.rows[0].display_name, "Otavio Paz");
+});
+
+test("provisioning preserves a name after its one-time change, including during password rotation", async function () {
+  await database.query("UPDATE checkout_users SET display_name = 'New volunteer name', name_change_count = 1 WHERE username = 'admin-2'");
+  await provisionAdminAccounts(database, { credentialsPath });
+  let credentials = JSON.parse(fs.readFileSync(credentialsPath, "utf8"));
+  assert.equal(credentials.accounts.find(account => account.username === "admin-2").displayName, "New volunteer name");
+  const passwordBefore = credentials.accounts[0].password;
+  await provisionAdminAccounts(database, { credentialsPath, rotate: true });
+  credentials = JSON.parse(fs.readFileSync(credentialsPath, "utf8"));
+  assert.notEqual(credentials.accounts[0].password, passwordBefore);
+  assert.equal(credentials.accounts.find(account => account.username === "admin-2").displayName, "New volunteer name");
+  const user = await database.query("SELECT name_change_count FROM checkout_users WHERE username = 'admin-2'");
+  assert.equal(user.rows[0].name_change_count, 1);
 });

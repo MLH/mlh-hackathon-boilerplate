@@ -12,9 +12,20 @@ custom_class: checkout-page
   </a>
   <div class="checkout-session" data-session hidden>
     <span data-session-name></span>
+    <button class="checkout-link-button" type="button" data-change-account-name>Change name (once)</button>
     <button class="checkout-link-button" type="button" data-logout>Sign out</button>
   </div>
 </header>
+
+<dialog class="checkout-dialog" data-account-name-dialog>
+  <form class="checkout-form" data-account-name-form>
+    <h2>Change your account name</h2>
+    <p class="checkout-form-note">You can change your display name once. Your login username stays the same. The old and new names will appear in Activity.</p>
+    <label>Account name<input name="accountName" maxlength="120" required autocomplete="off"></label>
+    <p class="checkout-form-error" data-account-name-error role="alert" hidden></p>
+    <div class="checkout-order-actions"><button class="checkout-button checkout-button-primary" type="submit">Save name</button><button class="checkout-button checkout-button-secondary" type="button" data-cancel-account-name>Cancel</button></div>
+  </form>
+</dialog>
 
 <main class="checkout-main" data-checkout-app>
   <section class="checkout-state-card" data-loading-state aria-live="polite">
@@ -137,7 +148,7 @@ custom_class: checkout-page
 
     <div data-admin-panel="teams" hidden>
       <div class="checkout-page-heading"><h1>Team hardware</h1><button class="checkout-button checkout-button-secondary" type="button" data-open-team-create>Add team</button></div>
-      <label class="checkout-search checkout-team-search"><span class="screen-reader-text">Search teams</span><input type="search" placeholder="Search team name or identifier" data-team-search></label>
+      <label class="checkout-search checkout-team-search"><span class="screen-reader-text">Search teams</span><input type="search" placeholder="Search team, member, or email" data-team-search></label>
       <div class="checkout-team-layout"><div class="checkout-team-list" data-team-list></div><div class="checkout-team-detail" data-team-detail><p class="checkout-empty">Select a team to view outstanding hardware and receipts.</p></div></div>
     </div>
 

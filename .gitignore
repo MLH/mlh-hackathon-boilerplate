@@ -13,6 +13,9 @@ checkout-legacy-restore/
 checkout-legacy-data.zip
 checkout-preview*.log
 checkout-admin-credentials*.local.json
+checkout-team-credentials*.local.json
+checkout-account-credentials*.local.md
+.checkout-secrets/
 .env
 .env.*
 inventory-workbook-evidence.local.json

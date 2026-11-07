@@ -1066,6 +1066,22 @@
   padding: 22px;
 }
 
+.checkout-team-detail-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(0, 1fr) minmax(210px, 260px);
+}
+
+.checkout-team-history { min-width: 0; }
+.checkout-team-profile { border-left: 1px solid #d1dce3; padding-left: 20px; }
+.checkout-team-profile .checkout-form { display: grid; gap: 14px; padding: 0; }
+.checkout-team-profile h3 { margin-top: 0; }
+
+@media (max-width: 1250px) {
+  .checkout-team-detail-grid { grid-template-columns: minmax(0, 1fr); }
+  .checkout-team-profile { border-left: 0; border-top: 1px solid #d1dce3; padding: 20px 0 0; }
+}
+
 .checkout-section-title {
   border-top: 1px solid #d1dce3;
   font-family: var(--font-ui);

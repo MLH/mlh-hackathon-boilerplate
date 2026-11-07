@@ -91,7 +91,8 @@ function publicUser(user) {
     role: user.role,
     teamId: user.team_id == null ? null : Number(user.team_id),
     teamName: user.team_name,
-    displayName: user.display_name
+    displayName: user.display_name,
+    canChangeName: Number(user.name_change_count || 0) === 0
   };
 }
 
@@ -262,6 +263,15 @@ async function handler(request, response) {
       return;
     }
 
+    if (action === "change-account-name") {
+      const current = requireUser(user);
+      const result = await runIdempotent(database, current, action, body, async function (transaction) {
+        return { user: publicUser(await service.changeAccountName(transaction, body, current)) };
+      });
+      send(response, 200, result);
+      return;
+    }
+
     if (!status.live && (!user || user.role !== "admin")) {
       throw httpError(423, "Hardware checkout is available only while the MakeCU hackathon is live. Organizers may sign in with an admin account.", { status });
     }
@@ -356,6 +366,10 @@ async function handler(request, response) {
     } else if (action === "reset-team-password") {
       send(response, 200, await mutate(function (transaction) {
         return service.resetTeamPassword(transaction, body, admin);
+      }));
+    } else if (action === "save-team-profile") {
+      send(response, 200, await mutate(function (transaction) {
+        return service.saveTeamProfile(transaction, body, admin);
       }));
     } else if (action === "grant-order-timeout-exception") {
       send(response, 201, await mutate(function (transaction) {

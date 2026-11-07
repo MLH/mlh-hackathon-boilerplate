@@ -434,6 +434,64 @@ async function createTeam(database, body, actor) {
   }
 }
 
+async function changeAccountName(database, body, actor) {
+  const name = cleanString(body.name, "Account name", { max: 120 });
+  return database.transaction(async function (transaction) {
+    const locked = await transaction.query("SELECT * FROM checkout_users WHERE id = $1 FOR UPDATE", [actor.id]);
+    const user = locked.rows[0];
+    if (!user || !user.active) throw httpError(401, "Please sign in to continue.");
+    if (user.name_change_count >= 1) throw httpError(409, "You have already used your one account name change.");
+    if (name === user.display_name) throw httpError(400, "Choose a different account name.");
+    await transaction.query(
+      "UPDATE checkout_users SET display_name = $2, name_change_count = name_change_count + 1 WHERE id = $1",
+      [user.id, name]
+    );
+    // The account label changes; team roster names remain administrator-managed.
+    if (user.role === "team") {
+      await transaction.query("UPDATE checkout_teams SET name = $2 WHERE id = $1", [user.team_id, name]);
+    }
+    await transaction.query(
+      "INSERT INTO checkout_activity (actor_user_id, team_id, message) VALUES ($1, $2, $3)",
+      [user.id, user.team_id, `Account @${user.username} changed name from "${user.display_name}" to "${name}" (one-time change used).`]
+    );
+    return Object.assign({}, user, { display_name: name, team_name: user.role === "team" ? name : undefined, name_change_count: 1 });
+  });
+}
+
+async function saveTeamProfile(database, body, actor) {
+  if (actor.role !== "admin") throw httpError(403, "Only admins may edit team members and contact details.");
+  const teamId = positiveInteger(body.teamId, "Team ID");
+  const version = positiveInteger(body.version, "Profile version", true);
+  if (!Array.isArray(body.memberNames) || body.memberNames.length > 4) {
+    throw httpError(400, "Provide up to four member names.");
+  }
+  const memberNames = Array.from({ length: 4 }, function (_, index) {
+    if (body.memberNames[index] != null && typeof body.memberNames[index] !== "string") {
+      throw httpError(400, "Member names must be text.");
+    }
+    return cleanString(body.memberNames[index], `Member ${index + 1}`, { optional: true, max: 120 });
+  });
+  const contactEmail = cleanString(body.contactEmail, "Contact email", { optional: true, max: 254 });
+  if (contactEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contactEmail)) {
+    throw httpError(400, "Enter a valid contact email.");
+  }
+  return database.transaction(async function (transaction) {
+    const locked = await transaction.query("SELECT * FROM checkout_teams WHERE id = $1 FOR UPDATE", [teamId]);
+    const before = locked.rows[0];
+    if (!before) throw httpError(404, "Team not found.");
+    if (before.profile_version !== version) throw httpError(409, "Another admin updated this team. Reload the team before saving.");
+    const result = await transaction.query(
+      `UPDATE checkout_teams SET member_names = $2, contact_email = $3, profile_version = profile_version + 1
+        WHERE id = $1 RETURNING *`, [teamId, memberNames, contactEmail]
+    );
+    await transaction.query(
+      "INSERT INTO checkout_activity (actor_user_id, team_id, message) VALUES ($1, $2, $3)",
+      [actor.id, teamId, `Updated team members/contact: ${JSON.stringify({ memberNames: before.member_names, contactEmail: before.contact_email })} → ${JSON.stringify({ memberNames, contactEmail })}.`]
+    );
+    return { team: result.rows[0] };
+  });
+}
+
 async function resetTeamPassword(database, body, actor) {
   const teamId = positiveInteger(body.teamId, "Team ID");
   const password = cleanString(body.password, "Password", { max: 200 });
@@ -1543,8 +1601,10 @@ async function teamsList(database, search) {
        JOIN checkout_users users ON users.team_id = teams.id AND users.role = 'team'
        LEFT JOIN checkout_team_inventory inventory ON inventory.team_id = teams.id
       WHERE $1 = '' OR teams.name ILIKE '%' || $1 || '%' OR teams.identifier ILIKE '%' || $1 || '%'
+         OR array_to_string(teams.member_names, ' ') ILIKE '%' || $1 || '%'
+         OR teams.contact_email ILIKE '%' || $1 || '%'
       GROUP BY teams.id, users.username
-      ORDER BY teams.name`,
+      ORDER BY CASE WHEN teams.identifier ~ '^team-[0-9]+$' THEN substring(teams.identifier FROM 6)::INTEGER END NULLS LAST, teams.name`,
     [query]
   );
 
@@ -1691,7 +1751,10 @@ async function teamAdminDetail(database, teamIdInput) {
     team: {
       id: Number(teamResult.rows[0].id),
       name: teamResult.rows[0].name,
-      identifier: teamResult.rows[0].identifier
+      identifier: teamResult.rows[0].identifier,
+      memberNames: teamResult.rows[0].member_names,
+      contactEmail: teamResult.rows[0].contact_email,
+      profileVersion: teamResult.rows[0].profile_version
     },
     cooldown,
     inventory: inventory.rows.map(function (row) {
@@ -2106,6 +2169,8 @@ module.exports = {
   catalog,
   cartAdvice,
   createTeam,
+  changeAccountName,
+  saveTeamProfile,
   resetTeamPassword,
   saveComponent,
   submitOrder,

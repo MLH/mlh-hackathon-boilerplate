@@ -57,7 +57,9 @@ $env:DATABASE_URL="postgresql://..."
 npm run checkout:provision-admins
 ```
 
-This creates `admin-1` through `admin-4` with independent 192-bit random passwords and deactivates the legacy generic `admin` login. Passwords are written only to the ignored and Jekyll-excluded `checkout-admin-credentials.local.json` file on that trusted computer and are never printed. Move the passwords into the club's approved password manager, distribute each account to one volunteer, then remove the local plaintext file after confirming the password-manager copy. Use `npm run checkout:provision-admins -- --rotate` only when all four passwords should change.
+This creates `admin-1` through `admin-15` with independent 192-bit random passwords, starts `admin-1` as **Otavio Paz**, and deactivates the legacy generic `admin` login. Passwords are written only to an ignored and Jekyll-excluded credential file on that trusted computer and are never printed. With `DATABASE_URL`, the default is `checkout-admin-credentials.production.local.json`; otherwise it is `checkout-admin-credentials.local.json`. Move the passwords into the club's approved password manager and distribute each account to one volunteer. Use `npm run checkout:provision-admins -- --rotate` only when all 15 passwords should change; rotation revokes admin sessions and preserves used name-change allowances.
+
+To provision the complete event roster, run `npm run checkout:provision-accounts` with `DATABASE_URL` set (or `node --env-file=.env.production.local scripts/provision-checkout-accounts.js` on the trusted organizer computer). This preserves existing admin passwords and creates `team-1` through `team-40`. The private handoff file `.checkout-secrets/checkout-account-credentials.production.local.md` contains all 55 credentials; member names and contact emails remain blank until admins enter them in Teams / Returns. The hidden `.checkout-secrets/` directory also holds the team credential JSON, protecting it from previews started before new exclusions were added. Existing unrelated demonstration accounts and their order history are preserved. All credential files are excluded from Git and Jekyll builds.
 
 The database stores salted scrypt password hashes, and signed-in browsers receive random sessions in `HttpOnly`, `SameSite=Strict`, and production-only `Secure` cookies. Only a SHA-256 hash of each session token is stored. Every volunteer endpoint checks the database role server-side; a team session receives HTTP 403 even if someone manually calls an admin endpoint. Same-origin validation and the strict cookie limit cross-site requests.
 
@@ -89,7 +91,7 @@ Before the event, verify all three production window timestamps from `/api/check
 
 Vercel's Hobby plan is free for personal and small-scale projects, but Vercel's docs say it is restricted to non-commercial, personal use. If Columbia Robotics wants shared team access or official organization ownership, check whether the club should use a Vercel team or another free host such as GitHub Pages.
 
-The `checkout` branch is mergeable into `gh-pages` as source, and the main website intentionally contains no navigation link to `/checkout/`; organizers share that direct URL. However, GitHub Pages by itself only serves the static Jekyll frontend and cannot run `api/checkout.js` or PostgreSQL authentication. The branch that receives this code must still be deployed through Vercel (or an equivalent same-origin Node/serverless host) for the checkout to function.
+The homepage's Hardware Checkout button links to `/checkout/` for teams and admins to sign in. The `checkout` branch is mergeable into `gh-pages` as source. GitHub Pages by itself only serves the static Jekyll frontend and cannot run `api/checkout.js` or PostgreSQL authentication. The branch that receives this code must still be deployed through Vercel (or an equivalent same-origin Node/serverless host) for the checkout to function.
 
 ## Connecting `makecu.dev`
 

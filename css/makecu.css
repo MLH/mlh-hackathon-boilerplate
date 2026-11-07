@@ -527,25 +527,6 @@ a {
   box-shadow: 0 0 18px rgba(255, 103, 0, 0.48);
 }
 
-.button-application-closed {
-  background: #686d75;
-  border-color: #9ca1a8;
-  box-shadow: none;
-  color: #f0f0f0;
-  cursor: not-allowed;
-  flex-direction: column;
-  gap: 1px;
-  line-height: 1.1;
-  padding-block: 5px;
-}
-
-.button-application-closed small {
-  color: #d6d8db;
-  font-size: 10px;
-  font-weight: 400;
-}
-
-
 .button-volunteer {
   background: #ff9f5a;
   box-shadow: 0 0 18px rgba(255, 159, 90, 0.4);

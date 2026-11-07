@@ -20,6 +20,7 @@
     "checkout:merge-components": "node scripts/merge-checkout-components.js",
     "checkout:remove-untracked-components": "node scripts/remove-checkout-components.js",
     "checkout:provision-admins": "node scripts/provision-checkout-admins.js",
+    "checkout:provision-accounts": "node scripts/provision-checkout-accounts.js",
     "checkout:verify-production": "node scripts/verify-checkout-production.js",
     "checkout:release-check": "node scripts/check-checkout-release.js",
     "checkout:seed": "node scripts/seed-checkout.js",

@@ -17,6 +17,13 @@ CREATE TABLE IF NOT EXISTS checkout_users (
   CHECK ((role = 'team' AND team_id IS NOT NULL) OR (role = 'admin' AND team_id IS NULL))
 );
 
+ALTER TABLE checkout_users ADD COLUMN IF NOT EXISTS name_change_count INTEGER NOT NULL DEFAULT 0
+  CHECK (name_change_count BETWEEN 0 AND 1);
+ALTER TABLE checkout_teams ADD COLUMN IF NOT EXISTS member_names TEXT[] NOT NULL DEFAULT ARRAY['', '', '', '']::TEXT[]
+  CHECK (cardinality(member_names) = 4);
+ALTER TABLE checkout_teams ADD COLUMN IF NOT EXISTS contact_email TEXT NOT NULL DEFAULT '';
+ALTER TABLE checkout_teams ADD COLUMN IF NOT EXISTS profile_version INTEGER NOT NULL DEFAULT 0;
+
 CREATE TABLE IF NOT EXISTS checkout_sessions (
   token_hash TEXT PRIMARY KEY,
   user_id BIGINT NOT NULL REFERENCES checkout_users(id) ON DELETE CASCADE,

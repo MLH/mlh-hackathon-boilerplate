@@ -17,7 +17,7 @@ async function sessionUser(database, request) {
   }
 
   const result = await database.query(
-    `SELECT users.id, users.username, users.role, users.team_id, users.display_name,
+    `SELECT users.id, users.username, users.role, users.team_id, users.display_name, users.name_change_count,
             teams.name AS team_name
        FROM checkout_sessions sessions
        JOIN checkout_users users ON users.id = sessions.user_id
